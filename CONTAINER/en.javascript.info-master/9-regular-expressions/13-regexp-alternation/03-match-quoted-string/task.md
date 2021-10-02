@@ -5,7 +5,7 @@ Create a regexp to find strings in double quotes `subject:"..."`.
 The strings should support escaping, the same way as JavaScript strings do. For instance, quotes can be inserted as `subject:\"` a newline as `subject:\n`, and the slash itself as `subject:\\`.
 
 ```js
-let str = "Just like \"here\".";
+let str = 'Just like "here".';
 ```
 
 Please note, in particular, that an escaped quote `subject:\"` does not end a string.
@@ -15,8 +15,9 @@ So we should search from one quote to the other ignoring escaped quotes on the w
 That's the essential part of the task, otherwise it would be trivial.
 
 Examples of strings to match:
+
 ```js
-.. *!*"test me"*/!* ..  
+.. *!*"test me"*/!* ..
 .. *!*"Say \"Hello\"!"*/!* ... (escaped quotes inside)
 .. *!*"\\"*/!* ..  (double slash inside)
 .. *!*"\\ \""*/!* ..  (double slash and an escaped quote inside)

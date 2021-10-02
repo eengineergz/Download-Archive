@@ -1,4 +1,3 @@
-
 - Drag events
 - History api
 - Pointer events

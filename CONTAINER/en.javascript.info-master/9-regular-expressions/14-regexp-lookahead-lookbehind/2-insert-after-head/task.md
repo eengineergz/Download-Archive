@@ -21,10 +21,12 @@ str = str.replace(regexp, `<h1>Hello</h1>`);
 ```
 
 After that the value of `str` should be:
+
 ```html
 <html>
-  <body style="height: 200px"><h1>Hello</h1>
-  ...
+  <body style="height: 200px">
+    <h1>Hello</h1>
+    ...
   </body>
 </html>
 ```

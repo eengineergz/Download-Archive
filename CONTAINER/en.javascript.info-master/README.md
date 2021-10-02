@@ -26,14 +26,15 @@ The folder is named like `N-url`, where `N` is a number for the sorting purposes
 
 The type of the material is defined by the file inside the folder:
 
-  - `index.md` stands for a chapter
-  - `article.md` stands for an article
-  - `task.md` stands for a task (solution must be provided in `solution.md` file as well)
+- `index.md` stands for a chapter
+- `article.md` stands for an article
+- `task.md` stands for a task (solution must be provided in `solution.md` file as well)
 
 Each of these files starts from the `# Main header`.
 
 It's very easy to add something new.
 
----  
+---
+
 ♥  
 Ilya Kantor @iliakan

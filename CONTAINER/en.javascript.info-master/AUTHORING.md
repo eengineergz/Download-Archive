@@ -1,4 +1,3 @@
-
 # Authoring
 
 This describes important stuff about authoring new articles of the tutorial.
@@ -26,6 +25,7 @@ We'll cover that in the chapter <info:function-basics>.
 ```
 
 Becomes:
+
 ```html
 We'll cover that in the chapter <a href="/function-basics">Function basics</a>.
 ```

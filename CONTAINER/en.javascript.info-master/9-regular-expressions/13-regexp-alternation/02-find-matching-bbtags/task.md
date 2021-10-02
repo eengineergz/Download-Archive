@@ -3,6 +3,7 @@
 A "bb-tag" looks like `[tag]...[/tag]`, where `tag` is one of: `b`, `url` or `quote`.
 
 For instance:
+
 ```
 [b]text[/b]
 [url]http://google.com[/url]
