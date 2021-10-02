@@ -1,4 +1,4 @@
-  /*
+/*
 // kurishiro is async =((( unusable in md plugins =((
 // all other modules don't translate kanji
 // 私は ひらがな が大好き - OK
@@ -15,5 +15,5 @@ kuroshiro.init(analyzer);
 let counter = 1;
 
 module.exports = function transliterate(str) {
-  return 'ref-'+counter++;
+  return "ref-" + counter++;
 };
