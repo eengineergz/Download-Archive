@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Roadmap Family Promise Homeless Shelter Intake Sys 7afa870a84f64c9c865391668d054cda</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+</head>
+<body>
+<h1 id="roadmap-family-promise-homeless-shelter-intake-system-labs-29">Roadmap: Family Promise Homeless Shelter Intake System (Labs 29)</h1>
+<h2 id="type">Type</h2>
+<p><strong>Web (Node), DS</strong> (Greenfield)</p>
+<h2 id="overview">Overview</h2>
+<p>Family Promise helps local communities coordinate their compassion to address the root causes of family homelessness. They tap existing local resources to empower families towards economic stability. Families come to them in crisis; they help them rebuild their lives with new skills and ongoing support. They address the issue holistically, providing prevention services before families reach crisis, shelter and case management when they become homeless, and stabilization programs once they have secured housing to ensure they remain independent.</p>
+<p>The shelter currently has a paper intake system, so the head of household needs to fill out around 30 pages of questions.</p>
+<p>Family Promise needs a digital intake system to digitize the intake process and allow supervisors, case managers, the executive director, and guests to access data relevant to them. They also need a way to identify risk factors for guests who are unlikely to exit to housing and determine which guests are more likely to require additional case management.</p>
+<p>This product will take multiple Labs cohorts to complete.</p>
+<p>For this initial round, we’re focusing on the core functionality for the Guest, Supervisor, and Case Manager roles. We’ll also develop a multiclass predictive model to attempt to identify risk factors for arriving guests.</p>
+<p>This is a <strong>user experience-heavy challenge</strong>. We can’t present the model in the traditional wonky, academic way—it has to be translated visually and verbally into a form highly suitable for a lay user.</p>
+<h2 id="contacts">Contacts</h2>
+<p><strong>Stakeholder Name:</strong> J Wylie</p>
+<p><strong>Stakeholder Email:</strong> <a href="mailto:jwylie@familypromiseofspokane.org">jwylie@familypromiseofspokane.org</a></p>
+<h2 id="technology-stack">Technology Stack</h2>
+<ul>
+<li><strong>BE:</strong> Node</li>
+<li><strong>FE:</strong> React</li>
+<li><strong>DS:</strong> PostgreSQL</li>
+<li><strong>Auth:</strong> Okta</li>
+</ul>
+<h2 id="user-base">User Base</h2>
+<ul>
+<li><strong>Family Promise Supervisor</strong>: Responsible for handling the day-to-day needs of the guests at the shelter, including conducting intakes of new families.</li>
+<li><strong>Family Promise Case Manager:</strong> Writes case notes on guests the shelter is serving as they work with them.</li>
+<li><strong>Guest:</strong> A “head of household” arriving to or checked into the shelter as part of a family unit of some kind.</li>
+</ul>
+<p><a href="https://www.notion.so/5257d6ed0dcd44a3a0852d576dc3786f">Feature List</a></p>
+<h2 id="resources">Resources</h2>
+<p>(Work with stakeholder for canonical versions)</p>
+<p><a href="https://colab.research.google.com/drive/15Y1WTWgVKQN8pKLTWCqWKJs_ZQnDKpmT?usp=sharing">Exit Destination Model</a> [Google Colaboratory]</p>
+<p><a href="https://drive.google.com/file/d/1faYmEHN0Braa-Gyc-fLpQjBjHw8SjixD/view?usp=sharing">Data</a> (2 years, redacted, “semi-”cleaned)</p>
+<p><a href="https://drive.google.com/file/d/1iLUgQtalpiRlW1x_nNg75CcIO09hunAr/view?usp=sharing">Current Intake Packet</a> [Google Drive]</p>
+<p><a href="https://fp-prediction.herokuapp.com">Currently Deployed Prediction Model</a> (binary classification)</p>
+<p><strong>FamilyPromise Colors:</strong></p>
+<ul>
+<li>Purple: #472D5B</li>
+<li>Blue: #006FBA</li>
+<li>Lilac: #8D4982</li>
+<li>Yellow: #FEC357</li>
+</ul>
+<p><a href="https://pair.withgoogle.com/guidebook/">PAIR People + AI Guidebook</a></p>
+</body>
+</html>
