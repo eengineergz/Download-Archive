@@ -1,0 +1,17 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 30 Sep 2021 03:37:37 at https://lcf2qvr8lfj.typeform.com/to/z33bdBCq?typeform-source=www.aesthetic.com +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://lcf2qvr8lfj.typeform.com/to/z33bdBCq?typeform-source=www.aesthetic.com -O1 "C:\Users\bryan\Downloads\https___lcf2qvr8lfj.typeform.com_to_z33bdBCq_typeform-source=www.aesthetic.com" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+03:37:43	Warning: 	Found for https://lcf2qvr8lfj.typeform.com/to/Trident/
+03:37:43	Warning: 	File has moved from https://lcf2qvr8lfj.typeform.com/to/Trident/ to https://www.typeform.com/explore/?utm_source=typeform.com&utm_medium=typeform&utm_content=typeform-incorrectURL&utm_campaign=viral_expt
+03:37:50	Warning: 	Found for https://lcf2qvr8lfj.typeform.com/to/$&/
+03:37:50	Warning: 	File has moved from https://lcf2qvr8lfj.typeform.com/to/$&/ to https://www.typeform.com/explore/?utm_source=typeform.com&utm_medium=typeform&utm_content=typeform-incorrectURL&utm_campaign=viral_expt
+03:37:50	Warning: 	Found for https://lcf2qvr8lfj.typeform.com/to/ï¼/
+03:37:50	Warning: 	File has moved from https://lcf2qvr8lfj.typeform.com/to/ï¼/ to https://www.typeform.com/explore/?utm_source=typeform.com&utm_medium=typeform&utm_content=typeform-incorrectURL&utm_campaign=viral_expt
+
+HTTrack Website Copier/3.49-2 mirror complete in 13 seconds : 19 links scanned, 15 files written (2399472 bytes overall) [724698 bytes received at 55746 bytes/sec], 2396216 bytes transferred using HTTP compression in 13 files, ratio 29%, 3.7 requests per connection
+(No errors, 6 warnings, 0 messages)
