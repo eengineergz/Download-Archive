@@ -12,12 +12,11 @@ What is the result of accessing its `ref`? Why?
 function makeUser() {
   return {
     name: "John",
-    ref: this
+    ref: this,
   };
 }
 
 let user = makeUser();
 
-alert( user.ref.name ); // What's the result?
+alert(user.ref.name); // What's the result?
 ```
-

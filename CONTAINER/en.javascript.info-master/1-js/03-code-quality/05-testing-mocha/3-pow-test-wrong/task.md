@@ -7,7 +7,7 @@ importance: 5
 What's wrong in the test of `pow` below?
 
 ```js
-it("Raises x to the power n", function() {
+it("Raises x to the power n", function () {
   let x = 5;
 
   let result = x;

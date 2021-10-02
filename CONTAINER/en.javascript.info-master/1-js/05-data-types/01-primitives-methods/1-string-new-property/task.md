@@ -4,7 +4,6 @@ importance: 5
 
 # Can I add a string property?
 
-
 Consider the following code:
 
 ```js

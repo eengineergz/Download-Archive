@@ -1,4 +1,3 @@
-
 To fetch a user we need: `fetch('https://api.github.com/users/USERNAME')`.
 
 If the response has status `200`, call `.json()` to read the JS object.
@@ -11,16 +10,16 @@ So here's the code:
 async function getUsers(names) {
   let jobs = [];
 
-  for(let name of names) {
+  for (let name of names) {
     let job = fetch(`https://api.github.com/users/${name}`).then(
-      successResponse => {
+      (successResponse) => {
         if (successResponse.status != 200) {
           return null;
         } else {
           return successResponse.json();
         }
       },
-      failResponse => {
+      (failResponse) => {
         return null;
       }
     );

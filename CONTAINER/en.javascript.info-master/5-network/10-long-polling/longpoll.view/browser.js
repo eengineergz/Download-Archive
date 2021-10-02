@@ -1,17 +1,16 @@
 // Sending messages, a simple POST
 function PublishForm(form, url) {
-
   function sendMessage(message) {
     fetch(url, {
-      method: 'POST',
-      body: message
+      method: "POST",
+      body: message,
     });
   }
 
-  form.onsubmit = function() {
+  form.onsubmit = function () {
     let message = form.message.value;
     if (message) {
-      form.message.value = '';
+      form.message.value = "";
       sendMessage(message);
     }
     return false;
@@ -20,9 +19,8 @@ function PublishForm(form, url) {
 
 // Receiving messages with long polling
 function SubscribePane(elem, url) {
-
   function showMessage(message) {
-    let messageElem = document.createElement('div');
+    let messageElem = document.createElement("div");
     messageElem.append(message);
     elem.append(messageElem);
   }
@@ -39,7 +37,7 @@ function SubscribePane(elem, url) {
       // Show Error
       showMessage(response.statusText);
       // Reconnect in one second
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      await new Promise((resolve) => setTimeout(resolve, 1000));
       await subscribe();
     } else {
       // Got message
@@ -50,5 +48,4 @@ function SubscribePane(elem, url) {
   }
 
   subscribe();
-
 }

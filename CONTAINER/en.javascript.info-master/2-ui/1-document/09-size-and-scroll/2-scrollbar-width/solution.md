@@ -4,11 +4,11 @@ Then the difference between its full width `offsetWidth` and the inner content a
 
 ```js run
 // create a div with the scroll
-let div = document.createElement('div');
+let div = document.createElement("div");
 
-div.style.overflowY = 'scroll';
-div.style.width = '50px';
-div.style.height = '50px';
+div.style.overflowY = "scroll";
+div.style.width = "50px";
+div.style.height = "50px";
 
 // must put it in the document, otherwise sizes will be 0
 document.body.append(div);

@@ -13,7 +13,7 @@ For instance:
 let menu = {
   width: 200,
   height: 300,
-  title: "My menu"
+  title: "My menu",
 };
 
 multiplyNumeric(menu);
@@ -22,12 +22,10 @@ multiplyNumeric(menu);
 menu = {
   width: 400,
   height: 600,
-  title: "My menu"
+  title: "My menu",
 };
 ```
 
 Please note that `multiplyNumeric` does not need to return anything. It should modify the object in-place.
 
 P.S. Use `typeof` to check for a number here.
-
-

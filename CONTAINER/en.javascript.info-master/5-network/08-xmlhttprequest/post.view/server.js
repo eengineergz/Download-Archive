@@ -1,19 +1,17 @@
-let http = require('http');
-let url = require('url');
-let querystring = require('querystring');
-let static = require('node-static');
-let file = new static.Server('.', {
-  cache: 0
+let http = require("http");
+let url = require("url");
+let querystring = require("querystring");
+let static = require("node-static");
+let file = new static.Server(".", {
+  cache: 0,
 });
 
-
 function accept(req, res) {
-
-  if (req.method == 'POST') {
+  if (req.method == "POST") {
     let chunks = [];
     let length = 0;
 
-    req.on('data', function (data) {
+    req.on("data", function (data) {
       chunks.push(data);
       length += data.length;
 
@@ -23,31 +21,27 @@ function accept(req, res) {
       }
     });
 
-    req.on('end', function() {
+    req.on("end", function () {
       // let post = JSON.parse(chunks.join(''));
 
-      if (req.url == '/user') {
-        res.writeHead(200, { 'Content-Type': 'application/json' });
-        res.end(JSON.stringify({ message: 'User saved' }));
-      } else if (req.url == '/image') {
-        res.writeHead(200, { 'Content-Type': 'application/json' });
+      if (req.url == "/user") {
+        res.writeHead(200, { "Content-Type": "application/json" });
+        res.end(JSON.stringify({ message: "User saved" }));
+      } else if (req.url == "/image") {
+        res.writeHead(200, { "Content-Type": "application/json" });
         res.end(JSON.stringify({ message: "Image saved", imageSize: length }));
-      } else if (req.url == '/upload') {
-        res.writeHead(200, { 'Content-Type': 'application/json' });
+      } else if (req.url == "/upload") {
+        res.writeHead(200, { "Content-Type": "application/json" });
         res.end(JSON.stringify({ message: "Upload complete", size: length }));
       } else {
         res.writeHead(404);
         res.end("Not found");
       }
     });
-
-
   } else {
     file.serve(req, res);
   }
-
 }
-
 
 // ------ запустить сервер -------
 

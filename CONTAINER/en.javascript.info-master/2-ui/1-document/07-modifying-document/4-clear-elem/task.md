@@ -13,7 +13,9 @@ Create a function `clear(elem)` that removes everything from the element.
 </ol>
 
 <script>
-  function clear(elem) { /* your code */ }
+  function clear(elem) {
+    /* your code */
+  }
 
   clear(elem); // clears the list
 </script>

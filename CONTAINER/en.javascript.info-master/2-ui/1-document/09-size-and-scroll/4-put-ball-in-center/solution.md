@@ -9,8 +9,8 @@ The inner field width/height is `clientWidth/clientHeight`. So the field center 
 ...But if we set `ball.style.left/top` to such values, then not the ball as a whole, but the left-upper edge of the ball would be in the center:
 
 ```js
-ball.style.left = Math.round(field.clientWidth / 2) + 'px';
-ball.style.top = Math.round(field.clientHeight / 2) + 'px';
+ball.style.left = Math.round(field.clientWidth / 2) + "px";
+ball.style.top = Math.round(field.clientHeight / 2) + "px";
 ```
 
 Here's how it looks:
@@ -20,8 +20,10 @@ Here's how it looks:
 To align the ball center with the center of the field, we should move the ball to the half of its width to the left and to the half of its height to the top:
 
 ```js
-ball.style.left = Math.round(field.clientWidth / 2 - ball.offsetWidth / 2) + 'px';
-ball.style.top = Math.round(field.clientHeight / 2 - ball.offsetHeight / 2) + 'px';
+ball.style.left =
+  Math.round(field.clientWidth / 2 - ball.offsetWidth / 2) + "px";
+ball.style.top =
+  Math.round(field.clientHeight / 2 - ball.offsetHeight / 2) + "px";
 ```
 
 Now the ball is finally centered.

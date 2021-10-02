@@ -1,5 +1,5 @@
-
 CSS to animate both `width` and `height`:
+
 ```css
 /* original class */
 

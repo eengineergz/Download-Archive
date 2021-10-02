@@ -9,15 +9,16 @@ There's a `ladder` object that allows to go up and down:
 ```js
 let ladder = {
   step: 0,
-  up() { 
+  up() {
     this.step++;
   },
-  down() { 
+  down() {
     this.step--;
   },
-  showStep: function() { // shows the current step
-    alert( this.step );
-  }
+  showStep: function () {
+    // shows the current step
+    alert(this.step);
+  },
 };
 ```
 

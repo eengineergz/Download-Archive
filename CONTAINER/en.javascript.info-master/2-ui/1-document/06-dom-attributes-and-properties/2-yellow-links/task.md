@@ -7,6 +7,7 @@ importance: 3
 Make all external links orange by altering their `style` property.
 
 A link is external if:
+
 - Its `href` has `://` in it
 - But doesn't start with `http://internal.com`.
 
@@ -25,8 +26,8 @@ Example:
 
 <script>
   // setting style for a single link
-  let link = document.querySelector('a');
-  link.style.color = 'orange';
+  let link = document.querySelector("a");
+  link.style.color = "orange";
 </script>
 ```
 

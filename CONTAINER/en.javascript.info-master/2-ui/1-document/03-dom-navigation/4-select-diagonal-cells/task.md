@@ -10,7 +10,7 @@ You'll need to get all diagonal `<td>` from the `<table>` and paint them using t
 
 ```js
 // td should be the reference to the table cell
-td.style.backgroundColor = 'red';
+td.style.backgroundColor = "red";
 ```
 
 The result should be:

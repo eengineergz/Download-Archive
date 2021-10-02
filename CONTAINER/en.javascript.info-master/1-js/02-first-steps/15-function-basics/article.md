@@ -10,17 +10,17 @@ We've already seen examples of built-in functions, like `alert(message)`, `promp
 
 ## Function Declaration
 
-To create a function we can use a *function declaration*.
+To create a function we can use a _function declaration_.
 
 It looks like this:
 
 ```js
 function showMessage() {
-  alert( 'Hello everyone!' );
+  alert("Hello everyone!");
 }
 ```
 
-The `function` keyword goes first, then goes the *name of the function*, then a list of *parameters* between the parentheses (comma-separated, empty in the example above, we'll see examples later) and finally the code of the function, also named "the function body", between curly braces.
+The `function` keyword goes first, then goes the _name of the function_, then a list of _parameters_ between the parentheses (comma-separated, empty in the example above, we'll see examples later) and finally the code of the function, also named "the function body", between curly braces.
 
 ```js
 function name(parameter1, parameter2, ... parameterN) {
@@ -107,7 +107,7 @@ alert( userName ); // *!*Bob*/!*, the value was modified by the function
 
 The outer variable is only used if there's no local one.
 
-If a same-named variable is declared inside the function then it *shadows* the outer one. For instance, in the code below the function uses the local `userName`. The outer one is ignored:
+If a same-named variable is declared inside the function then it _shadows_ the outer one. For instance, in the code below the function uses the local `userName`. The outer one is ignored:
 
 ```js run
 let userName = 'John';
@@ -172,7 +172,7 @@ showMessage(from, "Hello"); // *Ann*: Hello
 alert( from ); // Ann
 ```
 
-When a value is passed as a function parameter, it's also called an *argument*.
+When a value is passed as a function parameter, it's also called an _argument_.
 
 In other words, to put these terms straight:
 
@@ -182,7 +182,6 @@ In other words, to put these terms straight:
 We declare functions listing their parameters, then call them passing arguments.
 
 In the example above, one might say: "the function `showMessage` is declared with two parameters, then called with two arguments: `from` and `"Hello"`".
-
 
 ## Default values
 
@@ -330,13 +329,14 @@ function showMovie(age) {
 
 In the code above, if `checkAge(age)` returns `false`, then `showMovie` won't proceed to the `alert`.
 
-````smart header="A function with an empty `return` or without it returns `undefined`"
-If a function does not return a value, it is the same as if it returns `undefined`:
+````smart header="A function with an empty `return`or without it returns`undefined`" If a function does not return a value, it is the same as if it returns `undefined`:
 
 ```js run
-function doNothing() { /* empty */ }
+function doNothing() {
+  /* empty */
+}
 
-alert( doNothing() === undefined ); // true
+alert(doNothing() === undefined); // true
 ```
 
 An empty `return` is also the same as `return undefined`:
@@ -346,9 +346,10 @@ function doNothing() {
   return;
 }
 
-alert( doNothing() === undefined ); // true
+alert(doNothing() === undefined); // true
 ```
-````
+
+`````
 
 ````warn header="Never add a newline between `return` and the value"
 For a long expression in `return`, it might be tempting to put it on a separate line, like this:
@@ -376,7 +377,7 @@ return (
   )
 ```
 And it will work just as we expect it to.
-````
+`````
 
 ## Naming a function [#function-naming]
 
@@ -440,12 +441,11 @@ The first variant uses a label:
 ```js
 function showPrimes(n) {
   nextPrime: for (let i = 2; i < n; i++) {
-
     for (let j = 2; j < i; j++) {
       if (i % j == 0) continue nextPrime;
     }
 
-    alert( i ); // a prime
+    alert(i); // a prime
   }
 }
 ```
@@ -470,7 +470,7 @@ function isPrime(n) {
 }
 ```
 
-The second variant is easier to understand, isn't it? Instead of the code piece we see a name of the action (`isPrime`). Sometimes people refer to such code as *self-describing*.
+The second variant is easier to understand, isn't it? Instead of the code piece we see a name of the action (`isPrime`). Sometimes people refer to such code as _self-describing_.
 
 So, functions can be created even if we don't intend to reuse them. They structure the code and make it readable.
 

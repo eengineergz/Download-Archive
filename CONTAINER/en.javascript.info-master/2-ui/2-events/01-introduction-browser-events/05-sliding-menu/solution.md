@@ -1,5 +1,5 @@
-
 # HTML/CSS
+
 First let's create HTML/CSS.
 
 A menu is a standalone graphical component on the page, so it's better to put it into a single DOM element.
@@ -32,7 +32,9 @@ So if we set `onclick` on it, then it will catch clicks to the right of the text
 As `<span>` has an implicit `display: inline`, it occupies exactly enough place to fit all the text:
 
 ```html autorun height=50
-<span style="border: solid red 1px" onclick="alert(1)">Sweeties (click me)!</span>
+<span style="border: solid red 1px" onclick="alert(1)"
+  >Sweeties (click me)!</span
+>
 ```
 
 # Toggling the menu
@@ -52,7 +54,7 @@ Without it, the menu will be closed:
 }
 
 .menu .title::before {
-  content: '▶ ';
+  content: "▶ ";
   font-size: 80%;
   color: green;
 }
@@ -62,7 +64,7 @@ Without it, the menu will be closed:
 
 ```css
 .menu.open .title::before {
-  content: '▼ ';
+  content: "▼ ";
 }
 
 .menu.open ul {

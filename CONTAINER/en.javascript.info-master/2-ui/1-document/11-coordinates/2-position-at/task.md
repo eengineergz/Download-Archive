@@ -7,6 +7,7 @@ importance: 5
 Create a function `positionAt(anchor, position, elem)` that positions `elem`, depending on `position` near `anchor` element.
 
 The `position` must be a string with any one of 3 values:
+
 - `"top"` - position `elem` right above `anchor`
 - `"right"` - position `elem` immediately at the right of `anchor`
 - `"bottom"` - position `elem` right below `anchor`

@@ -1,16 +1,15 @@
-let http = require('http');
-let static = require('node-static');
-let fileServer = new static.Server('.');
-let path = require('path');
-let fs = require('fs');
-let debug = require('debug')('example:resume-upload');
+let http = require("http");
+let static = require("node-static");
+let fileServer = new static.Server(".");
+let path = require("path");
+let fs = require("fs");
+let debug = require("debug")("example:resume-upload");
 
 let uploads = Object.create(null);
 
 function onUpload(req, res) {
-
-  let fileId = req.headers['x-file-id'];
-  let startByte = +req.headers['x-start-byte'];
+  let fileId = req.headers["x-file-id"];
+  let startByte = +req.headers["x-start-byte"];
 
   if (!fileId) {
     res.writeHead(400, "No file id");
@@ -18,7 +17,7 @@ function onUpload(req, res) {
   }
 
   // we'll files "nowhere"
-  let filePath = '/dev/null';
+  let filePath = "/dev/null";
   // could use a real path instead, e.g.
   // let filePath = path.join('/tmp', fileId);
 
@@ -28,7 +27,7 @@ function onUpload(req, res) {
   if (!uploads[fileId]) uploads[fileId] = {};
   let upload = uploads[fileId];
 
-  debug("bytesReceived:" + upload.bytesReceived + " startByte:" + startByte)
+  debug("bytesReceived:" + upload.bytesReceived + " startByte:" + startByte);
 
   let fileStream;
 
@@ -36,7 +35,7 @@ function onUpload(req, res) {
   if (!startByte) {
     upload.bytesReceived = 0;
     fileStream = fs.createWriteStream(filePath, {
-      flags: 'w'
+      flags: "w",
     });
     debug("New file created: " + filePath);
   } else {
@@ -48,13 +47,12 @@ function onUpload(req, res) {
     }
     // append to existing file
     fileStream = fs.createWriteStream(filePath, {
-      flags: 'a'
+      flags: "a",
     });
     debug("File reopened: " + filePath);
   }
 
-
-  req.on('data', function(data) {
+  req.on("data", function (data) {
     debug("bytes received", upload.bytesReceived);
     upload.bytesReceived += data.length;
   });
@@ -63,8 +61,8 @@ function onUpload(req, res) {
   req.pipe(fileStream);
 
   // when the request is finished, and all its data is written
-  fileStream.on('close', function() {
-    if (upload.bytesReceived == req.headers['x-file-size']) {
+  fileStream.on("close", function () {
+    if (upload.bytesReceived == req.headers["x-file-size"]) {
       debug("Upload finished");
       delete uploads[fileId];
 
@@ -79,45 +77,39 @@ function onUpload(req, res) {
   });
 
   // in case of I/O error - finish the request
-  fileStream.on('error', function(err) {
+  fileStream.on("error", function (err) {
     debug("fileStream error");
     res.writeHead(500, "File error");
     res.end();
   });
-
 }
 
 function onStatus(req, res) {
-  let fileId = req.headers['x-file-id'];
+  let fileId = req.headers["x-file-id"];
   let upload = uploads[fileId];
   debug("onStatus fileId:", fileId, " upload:", upload);
   if (!upload) {
-    res.end("0")
+    res.end("0");
   } else {
     res.end(String(upload.bytesReceived));
   }
 }
 
-
 function accept(req, res) {
-  if (req.url == '/status') {
+  if (req.url == "/status") {
     onStatus(req, res);
-  } else if (req.url == '/upload' && req.method == 'POST') {
+  } else if (req.url == "/upload" && req.method == "POST") {
     onUpload(req, res);
   } else {
     fileServer.serve(req, res);
   }
-
 }
-
-
-
 
 // -----------------------------------
 
 if (!module.parent) {
   http.createServer(accept).listen(8080);
-  console.log('Server listening at port 8080');
+  console.log("Server listening at port 8080");
 } else {
   exports.accept = accept;
 }

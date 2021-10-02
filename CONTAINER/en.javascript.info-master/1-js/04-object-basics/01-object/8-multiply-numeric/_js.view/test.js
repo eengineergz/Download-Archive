@@ -1,9 +1,9 @@
-describe("multiplyNumeric", function() {
-  it("multiplies all numeric properties by 2", function() {
+describe("multiplyNumeric", function () {
+  it("multiplies all numeric properties by 2", function () {
     let menu = {
       width: 200,
       height: 300,
-      title: "My menu"
+      title: "My menu",
     };
     let result = multiplyNumeric(menu);
     assert.equal(menu.width, 400);
@@ -11,8 +11,7 @@ describe("multiplyNumeric", function() {
     assert.equal(menu.title, "My menu");
   });
 
-  it("returns nothing", function() {
-    assert.isUndefined( multiplyNumeric({}) );
+  it("returns nothing", function () {
+    assert.isUndefined(multiplyNumeric({}));
   });
-
 });

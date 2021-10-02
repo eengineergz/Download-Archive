@@ -27,12 +27,12 @@ Also we can use `event.preventDefault()`, like this:
 
 ```html run
 <script>
-*!*
-  function handler(event) {
-    alert("...");
-    event.preventDefault();
-  }
-*/!*
+  *!*
+    function handler(event) {
+      alert("...");
+      event.preventDefault();
+    }
+  */!*
 </script>
 
 <a href="https://w3.org" onclick="*!*handler(event)*/!*">w3.org</a>

@@ -1,4 +1,3 @@
-
 # Object to primitive conversion
 
 What happens when objects are added `obj1 + obj2`, subtracted `obj1 - obj2` or printed using `alert(obj)`?
@@ -83,7 +82,8 @@ They're called "hints", as described in the [specification](https://tc39.github.
 Please note -- there are only three hints. It's that simple.
 
 There is no "boolean" hint (all objects are `true` in boolean context) or anything else. And if we treat `"default"` and `"number"` the same, like most built-ins do, then there are only two conversions.
-```
+
+````
 
 **To do the conversion, JavaScript tries to find and call three object methods:**
 
@@ -103,7 +103,7 @@ obj[Symbol.toPrimitive] = function(hint) {
   // it must return a primitive value
   // hint = one of "string", "number", "default"
 };
-```
+````
 
 If the method `Symbol.toPrimitive` exists, it's used for all hints, and no more methods are needed.
 
@@ -117,7 +117,7 @@ let user = {
   [Symbol.toPrimitive](hint) {
     alert(`hint: ${hint}`);
     return hint == "string" ? `{name: "${this.name}"}` : this.money;
-  }
+  },
 };
 
 // conversions demo:
@@ -127,7 +127,6 @@ alert(user + 500); // hint: default -> 1500
 ```
 
 As we can see from the code, `user` becomes a self-descriptive string or a money amount depending on the conversion. The single method `user[Symbol.toPrimitive]` handles all conversion cases.
-
 
 ## toString/valueOf
 
@@ -148,7 +147,7 @@ By default, a plain object has following `toString` and `valueOf` methods:
 Here's the demo:
 
 ```js run
-let user = {name: "John"};
+let user = { name: "John" };
 
 alert(user); // [object Object]
 alert(user.valueOf() === user); // true
@@ -175,8 +174,7 @@ let user = {
   // for hint="number" or "default"
   valueOf() {
     return this.money;
-  }
-
+  },
 };
 
 alert(user); // toString -> {name: "John"}
@@ -194,7 +192,7 @@ let user = {
 
   toString() {
     return this.name;
-  }
+  },
 };
 
 alert(user); // toString -> John
@@ -222,6 +220,7 @@ In contrast, `Symbol.toPrimitive` *must* return a primitive, otherwise there wil
 As we know already, many operators and functions perform type conversions, e.g. multiplication `*` converts operands to numbers.
 
 If we pass an object as an argument, then there are two stages:
+
 1. The object is converted to a primitive (using the rules described above).
 2. If the resulting primitive isn't of the right type, it's converted.
 
@@ -232,7 +231,7 @@ let obj = {
   // toString handles all conversions in the absence of other methods
   toString() {
     return "2";
-  }
+  },
 };
 
 alert(obj * 2); // 4, object converted to primitive "2", then multiplication made it a number
@@ -247,7 +246,7 @@ Binary plus will concatenate strings in the same situation, as it gladly accepts
 let obj = {
   toString() {
     return "2";
-  }
+  },
 };
 
 alert(obj + 2); // 22 ("2" + 2), conversion to primitive returned a string => concatenation
@@ -258,6 +257,7 @@ alert(obj + 2); // 22 ("2" + 2), conversion to primitive returned a string => co
 The object-to-primitive conversion is called automatically by many built-in functions and operators that expect a primitive as a value.
 
 There are 3 types (hints) of it:
+
 - `"string"` (for `alert` and other operations that need a string)
 - `"number"` (for maths)
 - `"default"` (few operators)
@@ -268,10 +268,10 @@ The conversion algorithm is:
 
 1. Call `obj[Symbol.toPrimitive](hint)` if the method exists,
 2. Otherwise if hint is `"string"`
-    - try `obj.toString()` and `obj.valueOf()`, whatever exists.
+   - try `obj.toString()` and `obj.valueOf()`, whatever exists.
 3. Otherwise if hint is `"number"` or `"default"`
-    - try `obj.valueOf()` and `obj.toString()`, whatever exists.
+   - try `obj.valueOf()` and `obj.toString()`, whatever exists.
 
-In practice, it's often enough to implement only `obj.toString()` as a "catch-all" method for string conversions that should return a "human-readable" representation of an object, for logging or debugging purposes.  
+In practice, it's often enough to implement only `obj.toString()` as a "catch-all" method for string conversions that should return a "human-readable" representation of an object, for logging or debugging purposes.
 
 As for math operations, JavaScript doesn't provide a way to "override" them using methods, so real life projects rarely use them on objects.

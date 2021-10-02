@@ -4,7 +4,9 @@ Each component of the time would look great in its own `<span>`:
 
 ```html
 <div id="clock">
-  <span class="hour">hh</span>:<span class="min">mm</span>:<span class="sec">ss</span>
+  <span class="hour">hh</span>:<span class="min">mm</span>:<span class="sec"
+    >ss</span
+  >
 </div>
 ```
 
@@ -39,8 +41,10 @@ The clock-managing functions:
 ```js
 let timerId;
 
-function clockStart() { // run the clock  
-  if (!timerId) { // only set a new interval if the clock is not running
+function clockStart() {
+  // run the clock
+  if (!timerId) {
+    // only set a new interval if the clock is not running
     timerId = setInterval(update, 1000);
   }
   update(); // (*)

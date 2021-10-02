@@ -28,7 +28,7 @@ We could use CSS way:
 ```js
 let answer4 = [
   coords.right - parseInt(getComputedStyle(field).borderRightWidth),
-  coords.bottom - parseInt(getComputedStyle(field).borderBottomWidth)
+  coords.bottom - parseInt(getComputedStyle(field).borderBottomWidth),
 ];
 ```
 
@@ -37,6 +37,6 @@ An alternative way would be to add `clientWidth/clientHeight` to coordinates of 
 ```js
 let answer4 = [
   coords.left + elem.clientLeft + elem.clientWidth,
-  coords.top + elem.clientTop + elem.clientHeight
+  coords.top + elem.clientTop + elem.clientHeight,
 ];
 ```

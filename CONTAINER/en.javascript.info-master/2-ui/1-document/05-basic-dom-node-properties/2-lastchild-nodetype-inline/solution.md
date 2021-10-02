@@ -6,12 +6,10 @@ So the result is `1` (element node).
 
 ```html run height=60
 <html>
-
-<body>
-  <script>
-    alert(document.body.lastChild.nodeType);
-  </script>
-</body>
-
+  <body>
+    <script>
+      alert(document.body.lastChild.nodeType);
+    </script>
+  </body>
 </html>
 ```

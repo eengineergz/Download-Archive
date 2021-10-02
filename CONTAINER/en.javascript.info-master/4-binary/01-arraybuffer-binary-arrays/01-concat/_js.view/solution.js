@@ -9,7 +9,7 @@ function concat(arrays) {
   // for each array - copy it over result
   // next array is copied right after the previous one
   let length = 0;
-  for(let array of arrays) {
+  for (let array of arrays) {
     result.set(array, length);
     length += array.length;
   }

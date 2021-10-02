@@ -1,10 +1,9 @@
-
-First, let's see how *not* to do it:
+First, let's see how _not_ to do it:
 
 ```js
 function clear(elem) {
-  for (let i=0; i < elem.childNodes.length; i++) {
-      elem.childNodes[i].remove();
+  for (let i = 0; i < elem.childNodes.length; i++) {
+    elem.childNodes[i].remove();
   }
 }
 ```
@@ -27,6 +26,6 @@ And also there's a simpler way to do the same:
 
 ```js
 function clear(elem) {
-  elem.innerHTML = '';
+  elem.innerHTML = "";
 }
 ```

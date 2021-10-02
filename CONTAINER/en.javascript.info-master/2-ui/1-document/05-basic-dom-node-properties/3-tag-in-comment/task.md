@@ -12,6 +12,6 @@ What does this code show?
 
   body.innerHTML = "<!--" + body.tagName + "-->";
 
-  alert( body.firstChild.data ); // what's here?
+  alert(body.firstChild.data); // what's here?
 </script>
 ```

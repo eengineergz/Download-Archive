@@ -16,17 +16,17 @@ let width = 100;
 animate({
   duration: 2000,
   timing: makeEaseOut(bounce),
-  draw: function(progress) {
-    ball.style.top = height * progress + 'px'
-  }
+  draw: function (progress) {
+    ball.style.top = height * progress + "px";
+  },
 });
 
 // animate left (moving to the right)
 animate({
   duration: 2000,
   timing: makeEaseOut(quad),
-  draw: function(progress) {
-    ball.style.left = width * progress + "px"
-  }
+  draw: function (progress) {
+    ball.style.left = width * progress + "px";
+  },
 });
 ```

@@ -2,7 +2,9 @@ The solution is short, yet may look a bit tricky, so here I provide it with exte
 
 ```js
 let sortedRows = Array.from(table.tBodies[0].rows) // 1
-  .sort((rowA, rowB) => rowA.cells[0].innerHTML.localeCompare(rowB.cells[0].innerHTML));
+  .sort((rowA, rowB) =>
+    rowA.cells[0].innerHTML.localeCompare(rowB.cells[0].innerHTML)
+  );
 
 table.tBodies[0].append(...sortedRows); // (3)
 ```

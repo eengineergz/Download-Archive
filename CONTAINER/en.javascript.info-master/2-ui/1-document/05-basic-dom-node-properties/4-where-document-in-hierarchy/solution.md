@@ -1,4 +1,3 @@
-
 We can see which class it belongs by outputting it, like:
 
 ```js run

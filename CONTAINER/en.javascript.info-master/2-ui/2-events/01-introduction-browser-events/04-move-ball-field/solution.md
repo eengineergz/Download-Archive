@@ -1,4 +1,3 @@
-
 First we need to choose a method of positioning the ball.
 
 We can't use `position:fixed` for it, because scrolling the page would move the ball from the field.
@@ -43,7 +42,8 @@ We need to move the ball half-width left and half-height up to make it center.
 So the final `left` would be:
 
 ```js
-let left = event.clientX - fieldCoords.left - field.clientLeft - ball.offsetWidth/2;
+let left =
+  event.clientX - fieldCoords.left - field.clientLeft - ball.offsetWidth / 2;
 ```
 
 The vertical coordinate is calculated using the same logic.

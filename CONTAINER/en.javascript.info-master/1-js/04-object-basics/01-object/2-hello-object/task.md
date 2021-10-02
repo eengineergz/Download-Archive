@@ -11,4 +11,3 @@ Write the code, one line for each action:
 3. Add the property `surname` with the value `Smith`.
 4. Change the value of the `name` to `Pete`.
 5. Remove the property `name` from the object.
-
