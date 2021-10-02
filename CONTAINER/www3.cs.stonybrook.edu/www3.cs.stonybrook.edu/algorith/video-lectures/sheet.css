@@ -1,0 +1,300 @@
+ body {
+     /*         background-color: Gainsboro; */
+     min-width: 700px
+ }
+
+ dt img {
+     float: left;
+ }
+
+ .right {
+     font-size: .8em;
+     float: right;
+     width: 115px;
+     height: 155px;
+     margin: 2px;
+     border: 2px solid blue;
+ }
+
+ .left {
+     font-size: .8em;
+     float: left;
+     display: block;
+     width: 115px;
+     height: 155px;
+     margin: 2px;
+     border: 2px solid blue;
+ }
+
+ .topic {
+     font-size: .9em;
+     text-align: center;
+     /*         padding:0px 5px 15px 5px; */
+ }
+
+ #topicTable {
+     white-space: nowrap;
+     width: 1px;
+ }
+
+ #topicTable td {
+     width: 1px;
+     white-space: nowrap;
+ }
+
+ #2012Table tr:first-child {
+     width: 1px;
+     white-space: nowrap;
+ }
+
+ .topics {
+     color: Navy;
+ }
+
+ .video {
+     margin-top: 55px;
+     float: left;
+     /*         margin-left: 10px; */
+     text-align: center;
+ }
+
+ .video embed {
+     width: 400px;
+     height: 326px;
+ }
+
+ .otherLinks {
+     float: right;
+     /*         margin:1%; */
+     text-align: center;
+     height: 475px;
+     width: 600px;
+ }
+
+ .otherLinks img {
+     border: none;
+ }
+
+ .years {
+     margin-top: 20px;
+     text-align: center;
+     width: 100%;
+     float: left;
+ }
+
+ .years td {
+     background: white;
+     padding: 5px;
+     border: 3px solid #889962;
+ }
+
+ .lecture {
+     text-align: center;
+ }
+
+ .title {
+     /*        padding-top:10px;
+        padding-bottom:10px;*/
+     border: 0px;
+     /*         margin: 2px; */
+     /*         font-size:2em; */
+     color: Navy;
+ }
+
+ .clear {
+     clear: both;
+     height: 1px;
+     overflow: hidden;
+ }
+
+ .index {
+     margin-left: auto;
+     margin-right: auto;
+     width: 90%;
+     /*         border:thin solid gray; */
+ }
+
+ .index table {
+     border: 1px solid #C1DAD7;
+ }
+
+ .head {
+     background: #CAE8EA;
+     text-align: center;
+ }
+
+ .index tr {
+     /*         width:90%; */
+ }
+
+ .index td.top {
+     /*         border:thin solid gray; */
+     width: 50%;
+ }
+
+ .index td {
+     /*         border:thin solid gray; */
+     width: 12%;
+     border-bottom: 1px solid #C1DAD7;
+     border-right: 1px solid #C1DAD7;
+ }
+
+ .index td.alt {
+     /*         border:thin solid gray; */
+     background: #F5FAFA none repeat scroll 0%;
+ }
+
+ .stext {
+     text-align: center;
+     font-size: .75em;
+ }
+
+ #top {
+     text-align: center;
+ }
+
+ .filler {
+     font-size: 1em;
+ }
+
+ #top a:link {
+     color: black;
+ }
+
+ #implink dd {
+     font-size: 75%
+ }
+
+ #implink A:link {
+     color: black
+ }
+
+ #implink c1 {
+     color: #000
+ }
+
+ #implink c2 {
+     color: #200
+ }
+
+ #implink c3 {
+     color: #420
+ }
+
+ #implink c4 {
+     color: #420
+ }
+
+ #implink c5 {
+     color: #630
+ }
+
+ #implink c6 {
+     color: #630
+ }
+
+ #implink c7 {
+     color: #950
+ }
+
+ #implink c8 {
+     color: #950
+ }
+
+ #implink c9 {
+     color: #C80
+ }
+
+ #implink c10 {
+     color: #C80
+ }
+
+ #section {
+     padding-top: 0;
+     text-align: center
+ }
+
+ #section pre {
+     min-height: 100px
+ }
+
+ #section td {
+     padding: 20px;
+ }
+
+ #section table {
+     margin-left: auto;
+     margin-right: auto;
+     text-align: center;
+ }
+
+ #section IMG {
+     border: 3px solid #889962;
+ }
+
+ table.books {
+     border-width: 0px 0px 0px 0px;
+     border-spacing: 2px;
+     border-collapse: separate;
+ }
+
+ table.books td {
+     border-width: 0px 0px 0px 0px;
+     padding: 4px 4px 4px 4px;
+ }
+
+ table.books img {
+     float: left;
+     border: 1px solid black;
+     margin: 0px 15px 15px 20px;
+     width: 60px;
+     height: 90px;
+ }
+
+ table.books a:hover img {
+     border: 1px solid #0000ff;
+ }
+
+ img.corner {
+     width: 15px;
+     height: 15px;
+     border: none;
+     display: block !important;
+ }
+
+ .current {
+     color: red;
+ }
+
+ #cover {
+     float: left;
+     margin: 0 5px 0px 0;
+     border: 1px dotted;
+     padding: 0 0px 0px 0px;
+     text-align: center;
+ }
+
+ .content {
+     width: 1170px;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ .nav {
+     padding: 10px;
+     text-align: center;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ .nav td {
+     padding: 0px 10px 5px 10px;
+ }
+
+ .nav img {
+     border: none;
+ }
+
+ #imps {
+     clear: both;
+ }
