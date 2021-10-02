@@ -1,4 +1,3 @@
-
 # gif.js
 
 JavaScript GIF encoder that runs in your browser.
@@ -9,7 +8,6 @@ Uses typed arrays and web workers to render each frame in the background, it's r
 
 Works in browsers supporting: [Web Workers](http://www.w3.org/TR/workers/), [File API](http://www.w3.org/TR/FileAPI/) and [Typed Arrays](https://www.khronos.org/registry/typedarray/specs/latest/)
 
-
 ## Usage
 
 Include `gif.js` found in `dist/` in your page. Also make sure to have `gif.worker.js` in the same location.
@@ -17,24 +15,23 @@ Include `gif.js` found in `dist/` in your page. Also make sure to have `gif.work
 ```javascript
 var gif = new GIF({
   workers: 2,
-  quality: 10
+  quality: 10,
 });
 
 // add an image element
 gif.addFrame(imageElement);
 
 // or a canvas element
-gif.addFrame(canvasElement, {delay: 200});
+gif.addFrame(canvasElement, { delay: 200 });
 
 // or copy the pixels from a canvas context
-gif.addFrame(ctx, {copy: true});
+gif.addFrame(ctx, { copy: true });
 
-gif.on('finished', function(blob) {
+gif.on("finished", function (blob) {
   window.open(URL.createObjectURL(blob));
 });
 
 gif.render();
-
 ```
 
 ## Options
@@ -42,7 +39,7 @@ gif.render();
 Options can be passed to the constructor or using the `setOptions` method.
 
 | Name         | Default         | Description                                        |
-| -------------|-----------------|----------------------------------------------------|
+| ------------ | --------------- | -------------------------------------------------- |
 | repeat       | `0`             | repeat count, `-1` = no repeat, `0` = forever      |
 | quality      | `10`            | pixel sample interval, lower is better             |
 | workers      | `2`             | number of web workers to spawn                     |
@@ -58,20 +55,20 @@ If width or height is `null` image size will be deteremined by first frame added
 
 Available dithering methods are:
 
- * `FloydSteinberg`
- * `FalseFloydSteinberg`
- * `Stucki`
- * `Atkinson`
+- `FloydSteinberg`
+- `FalseFloydSteinberg`
+- `Stucki`
+- `Atkinson`
 
 You can add `-serpentine` to use serpentine scanning, e.g. `Stucki-serpentine`.
 
 ### addFrame options
 
-| Name         | Default         | Description                                        |
-| -------------|-----------------|----------------------------------------------------|
-| delay        | `500`           | frame delay                                        |
-| copy         | `false`         | copy the pixel data                                |
-| dispose      | `-1`            | frame disposal code. See [GIF89a Spec][gif89aspec] |
+| Name    | Default | Description                                        |
+| ------- | ------- | -------------------------------------------------- |
+| delay   | `500`   | frame delay                                        |
+| copy    | `false` | copy the pixel data                                |
+| dispose | `-1`    | frame disposal code. See [GIF89a Spec][gif89aspec] |
 
 [gif89aspec]: https://www.w3.org/Graphics/GIF/spec-gif89a.txt
 
@@ -79,12 +76,11 @@ You can add `-serpentine` to use serpentine scanning, e.g. `Stucki-serpentine`.
 
 gif.js is based on:
 
- * [Kevin Weiner's Animated gif encoder classes](http://www.fmsware.com/stuff/gif.html)
- * [Neural-Net color quantization algorithm by Anthony Dekker](http://members.ozemail.com.au/~dekker/NEUQUANT.HTML)
- * [Thibault Imbert's as3gif](https://code.google.com/p/as3gif/)
+- [Kevin Weiner's Animated gif encoder classes](http://www.fmsware.com/stuff/gif.html)
+- [Neural-Net color quantization algorithm by Anthony Dekker](http://members.ozemail.com.au/~dekker/NEUQUANT.HTML)
+- [Thibault Imbert's as3gif](https://code.google.com/p/as3gif/)
 
 Dithering code contributed by @PAEz and @panrafal
-
 
 ## License
 

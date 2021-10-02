@@ -17,4 +17,3 @@ template: test.html
 </video>
 
 <img id="result">
-

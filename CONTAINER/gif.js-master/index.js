@@ -7,8 +7,8 @@
 (_____|       (_*/
 
 module.exports = {
-  NeuQuant: require('./src/NeuQuant.js'),
-  TypedNeuQuant: require('./src/TypedNeuQuant.js'),
-  GIFEncoder: require('./src/GIFEncoder.js'),
-  LZWEncoder: require('./src/LZWEncoder.js')
+  NeuQuant: require("./src/NeuQuant.js"),
+  TypedNeuQuant: require("./src/TypedNeuQuant.js"),
+  GIFEncoder: require("./src/GIFEncoder.js"),
+  LZWEncoder: require("./src/LZWEncoder.js"),
 };
