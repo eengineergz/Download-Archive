@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+lcf2qvr8lfj.typeform.com	TRUE	/	FALSE	1999999999	device_view	full
+.typeform.com	TRUE	/	FALSE	1999999999	__cf_bm	fzSrDqsdeD1zFlKoCMXaAtbOQ.xGDQ0DuJaEae2_bkU-1632987281-0-AX5LFbFusbzsH1hLZ2lMrKfWsLRdKyPghBRzfQ/GbacJuVtN66xuInp6ZVhsStecQh5H+4ZjBtpIlRaJRjkHGzY=
+lcf2qvr8lfj.typeform.com	TRUE	/	FALSE	1999999999	SameSite	None
+
