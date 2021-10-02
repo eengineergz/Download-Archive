@@ -2,8 +2,7 @@
     font-family: "IVEEL";
     font-style: normal;
     font-weight: normal;
-    src:
-        url("../fonts/IVEEL.ttf") format("truetype"),
+    src: url("../fonts/IVEEL.ttf") format("truetype"),
         url("../fonts/IVEEL.woff") format("woff"),
         url("../fonts/IVEEL.svg") format("svg");
 }

@@ -18,8 +18,8 @@ A versatile theme suitable for documentation. Publish your posts or business inf
 
 ```html
 <script>
-    var gh_search_key = 'API_KEY';
-    var gh_search_migration = 'v1';
+    var gh_search_key = "API_KEY";
+    var gh_search_migration = "v1";
 </script>
 ```
 
@@ -49,7 +49,7 @@ yarn zip
 
 # PostCSS Features Used
 
-- Autoprefixer - Don't worry about writing browser prefixes of any kind, it's all done automatically with support for the latest 2 major versions of every browser.
+-   Autoprefixer - Don't worry about writing browser prefixes of any kind, it's all done automatically with support for the latest 2 major versions of every browser.
 
 # Copyright & License
 
