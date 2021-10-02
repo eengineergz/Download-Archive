@@ -1,0 +1,26 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+en.wikipedia.org	TRUE	/	FALSE	1999999999	WMF-Last-Access	30-Sep-2021
+.wikipedia.org	TRUE	/	FALSE	1999999999	GeoIP	US:NJ:Union_City:40.77:-74.03:v4
+en.m.wikipedia.org	TRUE	/	FALSE	1999999999	WMF-Last-Access	30-Sep-2021
+.wikipedia.org	TRUE	/	FALSE	1999999999	WMF-Last-Access-Global	30-Sep-2021
+en.wikipedia.org	TRUE	/	FALSE	1999999999	ss0-enwikiSession	u3ld3fg0anar7tt0ljvjb8minjp4liav
+en.wikipedia.org	TRUE	/	FALSE	1999999999	enwikiSession	u3ld3fg0anar7tt0ljvjb8minjp4liav
+en.wikipedia.org	TRUE	/	FALSE	1999999999	SameSite	None
+github.com	TRUE	/	FALSE	1999999999	_gh_sess	i7HLNstwqZKZPk1fSXPwgks437zSQqTAF4tsO2ta8YRsEECwKeQBRe60Q0ZmJr%2FNjg7V%2B8qSDiruFV1jXvVcM2OBogTCpxW9w3qFtd52nS5KGJOkpG6lIVtZKu2KgzPjHdpC4yQYSpUfj0Dx5FjcnOtNDqGh%2FZcD1Dk6X1apfuh6kHGbtfMikihO%2BsnTIyZMiqfB3ytsDUeDqkecAvUC7Y%2Fa06Occpx8VQIIlTl0nRRysQTwCuHGTH1JrteFlqtlHBOx6VrxdJ9vUxO70r8o4w%3D%3D--m0gVvvtivGRPhN3p--lyVUOEUSfRbd1sr9B%2FNYVg%3D%3D
+github.com	TRUE	/	FALSE	1999999999	_octo	GH1.1.1981271235.1632977189
+github.com	TRUE	/	FALSE	1999999999	logged_in	no
+github.com	TRUE	/	FALSE	1999999999	SameSite	Lax
+wakatime.com	TRUE	/	FALSE	1999999999	csrftoken	e3761403062812277b7b0d2118e40cfcf625a2663073c8428d01b0020c1ab601
+wakatime.com	TRUE	/	FALSE	1999999999	session	.eJx1zEESgiAUgOGrMKwtHg8Chwu0apX7RvBhTiYO4qIa754doPU_3__hYcmxpAdN3HFS1kgNCgzWEtFabz10KGVNGkIM0eCpRWMUWBVqjXUH0gMgBNl6A5JXPOWhv2WKlDPlfXkvZXZC-D6l6X3wY-qPE5VxiK9jO8-iS2ERrU9rETtey_O2pDUHWrj78D_ol1i3v5v7WjEF7EozQ0DJQDttnFLsfGn4tm1fRAFEQQ.YVVBKQ.8EVRMkWc9WPUu1wBJ9ZMUzFKYp4
+wakatime.com	TRUE	/	FALSE	1999999999	SameSite	Lax
+.medium.com	TRUE	/	FALSE	1999999999	__cfruid	3ae1589f1a3f5472a3428574fa3cb336ca735da4-1632977221
+miro.medium.com	TRUE	/	FALSE	1999999999	SameSite	None
+upload.wikimedia.org	TRUE	/	FALSE	1999999999	WMF-Last-Access	30-Sep-2021
+commons.wikimedia.org	TRUE	/	FALSE	1999999999	WMF-Last-Access	30-Sep-2021
+.wikimedia.org	TRUE	/	FALSE	1999999999	GeoIP	US:NJ:Union_City:40.77:-74.03:v4
+firebase.google.com	TRUE	/	FALSE	1999999999	_ga_devsite	GA1.3.2686918362.1632977265
+.codepen.io	TRUE	/	FALSE	1999999999	__cf_bm	x_A6nLP9vT9syMtlkW3Sr6HeEQh_s5bMio.pMO5WW84-1632977422-0-ARUr1A03VkPmbM/sW/ZlSE2UL6c+i6Ej16ADMSEppvKbcCagYbxLX+DYwge2WTx8HxHeUi4ziklcutgbtBZgQ8k=
+cpwebassets.codepen.io	TRUE	/	FALSE	1999999999	SameSite	None
+bgoonz-blog.netlify.app	TRUE	/	FALSE	1999999999	nf_ab	0.181002
+
