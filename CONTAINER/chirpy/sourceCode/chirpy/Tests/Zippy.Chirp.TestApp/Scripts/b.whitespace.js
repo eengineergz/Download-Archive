@@ -1,3 +1,3 @@
 ﻿$(function () {
-    alert("test test");
+  alert("test test");
 });
