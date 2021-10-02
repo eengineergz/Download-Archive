@@ -1,0 +1,17 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 30 Sep 2021 03:51:37 at https://blog.superhuman.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://blog.superhuman.com/ -O1 "C:\Users\bryan\Downloads\https___blog.superhuman.com_" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+03:52:57	Error: 	"Not Found" (404) at link https://blog.superhuman.com/c/ (from https://connect.facebook.net/en_US/fbevents.js)
+03:52:57	Error: 	"Not Found" (404) at link https://blog.superhuman.com/b/ (from https://connect.facebook.net/en_US/fbevents.js)
+03:52:57	Warning: 	Moved Permanently for https://blog.superhuman.com/POST/
+03:52:57	Warning: 	Redirected link is identical because of 'URL Hack' option: https://blog.superhuman.com/POST/ and https://blog.superhuman.com/post/
+03:52:57	Warning: 	Warning moved treated for https://blog.superhuman.com/POST/ (real one is https://blog.superhuman.com/post/)
+03:53:08	Error: 	"Not Found" (404) at link https://blog.superhuman.com/post/ (from https://connect.facebook.net/en_US/fbevents.js)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 31 seconds : 286 links scanned, 281 files written (174328046 bytes overall) [166725963 bytes received at 1832153 bytes/sec], 10661835 bytes transferred using HTTP compression in 94 files, ratio 23%, 21.0 requests per connection
+(3 errors, 3 warnings, 0 messages)
