@@ -1,0 +1,23 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 30 Sep 2021 00:13:05 at https://goonlinetools.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://goonlinetools.com/ -O1 "C:\Users\bryan\Downloads\https___goonlinetools.com_" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+00:13:27	Error: 	"Bad Request" (400) at link https://www.googletagmanager.com/gtm.js?id= (from https://goonlinetools.com/)
+00:16:02	Error: 	"Error when decompressing" (-1) at link https://goonlinetools.com/fancy-font-generator/(/◔◡◔)/ (from https://goonlinetools.com/fancy-font-generator/)
+00:16:02	Error: 	"Error when decompressing" (-1) at link https://goonlinetools.com/facebook-font-generator/(/◔◡◔)/ (from https://goonlinetools.com/facebook-font-generator/)
+00:16:02	Error: 	"Error when decompressing" (-1) at link https://goonlinetools.com/instagram-font-generator/(/◔◡◔)/ (from https://goonlinetools.com/instagram-font-generator/)
+00:16:02	Error: 	"Error when decompressing" (-1) at link https://goonlinetools.com/tiktok-font-generator/(/◔◡◔)/ (from https://goonlinetools.com/tiktok-font-generator/)
+00:16:02	Error: 	"Error when decompressing" (-1) at link https://goonlinetools.com/snapchat-font-generator/(/◔◡◔)/ (from https://goonlinetools.com/snapchat-font-generator/)
+00:16:31	Warning: 	Link https://goonlinetools.com/cdn-cgi/l/email-protection not scanned (follow robots meta tag)
+00:16:31	Error: 	"Error when decompressing" (-1) at link https://goonlinetools.com/es/generador-de-letras/(/◔◡◔)/ (from https://goonlinetools.com/es/generador-de-letras/)
+00:16:31	Error: 	"Error when decompressing" (-1) at link https://goonlinetools.com/es/letras-para-facebook/(/◔◡◔)/ (from https://goonlinetools.com/es/letras-para-facebook/)
+00:16:31	Error: 	"Error when decompressing" (-1) at link https://goonlinetools.com/es/letras-para-instagram/(/◔◡◔)/ (from https://goonlinetools.com/es/letras-para-instagram/)
+00:16:31	Error: 	"Not Found" (404) at link https://app.goonlinetools.com/wp-content/uploads/2021/02/fdb8664e-df4e-4d71-9f90-291fae01377f_thumbnil_dlzg3u.png (from https://goonlinetools.com/blog/best-online-photo-editor/)
+00:16:31	Error: 	"Not Found" (404) at link https://goonlinetools.com/_nuxt/img/jsoneditor-icons.svg (from https://goonlinetools.com/_nuxt/img/jsoneditor-icons.15f2789.svg)
+
+HTTrack Website Copier/3.49-2 mirror complete in 3 minutes 26 seconds : 692 links scanned, 680 files written (30887953 bytes overall) [14352217 bytes received at 69670 bytes/sec], 23280348 bytes transferred using HTTP compression in 542 files, ratio 25%, 28.1 requests per connection
+(11 errors, 1 warnings, 0 messages)

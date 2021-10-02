@@ -1,0 +1,1866 @@
+<!DOCTYPE html>
+<html
+  data-n-head-ssr
+  lang="en-us"
+  data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en-us%22%7D%7D"
+>
+  <!-- Mirrored from goonlinetools.com/base32-encode-file/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Sep 2021 04:14:45 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=UTF-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <title>Base32 Encode File | GoOnlineTools.com</title>
+    <meta data-n-head="ssr" charset="utf-8" />
+    <meta
+      data-n-head="ssr"
+      data-hid="viewport"
+      name="viewport"
+      content="width=device-width,initial-scale=1"
+    />
+    <meta
+      data-n-head="ssr"
+      data-hid="twitter:card"
+      name="twitter:card"
+      content="summary_large_image"
+    />
+    <meta data-n-head="ssr" data-hid="author" name="author" content="Rahul" />
+    <meta data-n-head="ssr" name="HandheldFriendly" content="true" />
+    <meta data-n-head="ssr" property="og:site_name" content="GO Online Tools" />
+    <meta data-n-head="ssr" name="mobile-web-app-capable" content="yes" />
+    <meta
+      data-n-head="ssr"
+      name="apple-mobile-web-app-title"
+      content="Go Online Tools"
+    />
+    <meta
+      data-n-head="ssr"
+      name="apple-mobile-web-app-status-bar-style"
+      content="white"
+    />
+    <meta data-n-head="ssr" name="theme-color" content="#ffffff" />
+    <meta data-n-head="ssr" data-hid="charset" charset="utf-8" />
+    <meta
+      data-n-head="ssr"
+      data-hid="og:type"
+      name="og:type"
+      property="og:type"
+      content="website"
+    />
+    <meta
+      data-n-head="ssr"
+      data-hid="og:site_name"
+      name="og:site_name"
+      property="og:site_name"
+      content="GoOnlineTools"
+    />
+    <meta
+      data-n-head="ssr"
+      data-hid="keywords"
+      name="keywords"
+      content="Base32 Encode File, Base32 File Encode, GO Online Tools"
+    />
+    <meta
+      data-n-head="ssr"
+      name="description"
+      content="Base32 Encode File tools is to encode your File using Base32 Encoder Online : This utiltiy will Encode File to Base32."
+      data-hid="description"
+    />
+    <meta
+      data-n-head="ssr"
+      data-hid="og:title"
+      property="og:title"
+      content="Base32 Encode File | GoOnlineTools.com"
+    />
+    <meta
+      data-n-head="ssr"
+      data-hid="og:description"
+      property="og:description"
+      content="Base32 Encode File tools is to encode your File using Base32 Encoder Online : This utiltiy will Encode File to Base32."
+    />
+    <meta
+      data-n-head="ssr"
+      name="og:image"
+      data-hid="og:image"
+      content="../thumbnail/Base32-Encode-File.png"
+    />
+    <link
+      data-n-head="ssr"
+      data-hid="shortcut-icon"
+      rel="shortcut icon"
+      href="../favicon.ico"
+    />
+    <link
+      data-n-head="ssr"
+      data-hid="apple-touch-icon"
+      rel="apple-touch-icon"
+      href="../icons/GOT_6_512x512.png"
+      sizes="512x512"
+    />
+    <link
+      data-n-head="ssr"
+      rel="manifest"
+      href="../_nuxt/manifest.7b1db711.json"
+      data-hid="manifest"
+    />
+    <style
+      data-n-head="vuetify"
+      type="text/css"
+      id="vuetify-theme-stylesheet"
+      nonce="undefined"
+    >
+      .v-application a {
+        color: #1565c0;
+      }
+      .v-application .primary {
+        background-color: #1565c0 !important;
+        border-color: #1565c0 !important;
+      }
+      .v-application .primary--text {
+        color: #1565c0 !important;
+        caret-color: #1565c0 !important;
+      }
+      .v-application .primary.lighten-5 {
+        background-color: #bfe9ff !important;
+        border-color: #bfe9ff !important;
+      }
+      .v-application .primary--text.text--lighten-5 {
+        color: #bfe9ff !important;
+        caret-color: #bfe9ff !important;
+      }
+      .v-application .primary.lighten-4 {
+        background-color: #a1cdff !important;
+        border-color: #a1cdff !important;
+      }
+      .v-application .primary--text.text--lighten-4 {
+        color: #a1cdff !important;
+        caret-color: #a1cdff !important;
+      }
+      .v-application .primary.lighten-3 {
+        background-color: #83b2ff !important;
+        border-color: #83b2ff !important;
+      }
+      .v-application .primary--text.text--lighten-3 {
+        color: #83b2ff !important;
+        caret-color: #83b2ff !important;
+      }
+      .v-application .primary.lighten-2 {
+        background-color: #6497f9 !important;
+        border-color: #6497f9 !important;
+      }
+      .v-application .primary--text.text--lighten-2 {
+        color: #6497f9 !important;
+        caret-color: #6497f9 !important;
+      }
+      .v-application .primary.lighten-1 {
+        background-color: #437edc !important;
+        border-color: #437edc !important;
+      }
+      .v-application .primary--text.text--lighten-1 {
+        color: #437edc !important;
+        caret-color: #437edc !important;
+      }
+      .v-application .primary.darken-1 {
+        background-color: #004ea4 !important;
+        border-color: #004ea4 !important;
+      }
+      .v-application .primary--text.text--darken-1 {
+        color: #004ea4 !important;
+        caret-color: #004ea4 !important;
+      }
+      .v-application .primary.darken-2 {
+        background-color: #00378a !important;
+        border-color: #00378a !important;
+      }
+      .v-application .primary--text.text--darken-2 {
+        color: #00378a !important;
+        caret-color: #00378a !important;
+      }
+      .v-application .primary.darken-3 {
+        background-color: #002370 !important;
+        border-color: #002370 !important;
+      }
+      .v-application .primary--text.text--darken-3 {
+        color: #002370 !important;
+        caret-color: #002370 !important;
+      }
+      .v-application .primary.darken-4 {
+        background-color: #000e57 !important;
+        border-color: #000e57 !important;
+      }
+      .v-application .primary--text.text--darken-4 {
+        color: #000e57 !important;
+        caret-color: #000e57 !important;
+      }
+      .v-application .secondary {
+        background-color: #1976d2 !important;
+        border-color: #1976d2 !important;
+      }
+      .v-application .secondary--text {
+        color: #1976d2 !important;
+        caret-color: #1976d2 !important;
+      }
+      .v-application .secondary.lighten-5 {
+        background-color: #c7fdff !important;
+        border-color: #c7fdff !important;
+      }
+      .v-application .secondary--text.text--lighten-5 {
+        color: #c7fdff !important;
+        caret-color: #c7fdff !important;
+      }
+      .v-application .secondary.lighten-4 {
+        background-color: #a8e0ff !important;
+        border-color: #a8e0ff !important;
+      }
+      .v-application .secondary--text.text--lighten-4 {
+        color: #a8e0ff !important;
+        caret-color: #a8e0ff !important;
+      }
+      .v-application .secondary.lighten-3 {
+        background-color: #8ac5ff !important;
+        border-color: #8ac5ff !important;
+      }
+      .v-application .secondary--text.text--lighten-3 {
+        color: #8ac5ff !important;
+        caret-color: #8ac5ff !important;
+      }
+      .v-application .secondary.lighten-2 {
+        background-color: #6aaaff !important;
+        border-color: #6aaaff !important;
+      }
+      .v-application .secondary--text.text--lighten-2 {
+        color: #6aaaff !important;
+        caret-color: #6aaaff !important;
+      }
+      .v-application .secondary.lighten-1 {
+        background-color: #488fef !important;
+        border-color: #488fef !important;
+      }
+      .v-application .secondary--text.text--lighten-1 {
+        color: #488fef !important;
+        caret-color: #488fef !important;
+      }
+      .v-application .secondary.darken-1 {
+        background-color: #005eb6 !important;
+        border-color: #005eb6 !important;
+      }
+      .v-application .secondary--text.text--darken-1 {
+        color: #005eb6 !important;
+        caret-color: #005eb6 !important;
+      }
+      .v-application .secondary.darken-2 {
+        background-color: #00479b !important;
+        border-color: #00479b !important;
+      }
+      .v-application .secondary--text.text--darken-2 {
+        color: #00479b !important;
+        caret-color: #00479b !important;
+      }
+      .v-application .secondary.darken-3 {
+        background-color: #003180 !important;
+        border-color: #003180 !important;
+      }
+      .v-application .secondary--text.text--darken-3 {
+        color: #003180 !important;
+        caret-color: #003180 !important;
+      }
+      .v-application .secondary.darken-4 {
+        background-color: #001e67 !important;
+        border-color: #001e67 !important;
+      }
+      .v-application .secondary--text.text--darken-4 {
+        color: #001e67 !important;
+        caret-color: #001e67 !important;
+      }
+      .v-application .accent {
+        background-color: #3f51b5 !important;
+        border-color: #3f51b5 !important;
+      }
+      .v-application .accent--text {
+        color: #3f51b5 !important;
+        caret-color: #3f51b5 !important;
+      }
+      .v-application .accent.lighten-5 {
+        background-color: #d2d2ff !important;
+        border-color: #d2d2ff !important;
+      }
+      .v-application .accent--text.text--lighten-5 {
+        color: #d2d2ff !important;
+        caret-color: #d2d2ff !important;
+      }
+      .v-application .accent.lighten-4 {
+        background-color: #b5b7ff !important;
+        border-color: #b5b7ff !important;
+      }
+      .v-application .accent--text.text--lighten-4 {
+        color: #b5b7ff !important;
+        caret-color: #b5b7ff !important;
+      }
+      .v-application .accent.lighten-3 {
+        background-color: #989cff !important;
+        border-color: #989cff !important;
+      }
+      .v-application .accent--text.text--lighten-3 {
+        color: #989cff !important;
+        caret-color: #989cff !important;
+      }
+      .v-application .accent.lighten-2 {
+        background-color: #7b82ee !important;
+        border-color: #7b82ee !important;
+      }
+      .v-application .accent--text.text--lighten-2 {
+        color: #7b82ee !important;
+        caret-color: #7b82ee !important;
+      }
+      .v-application .accent.lighten-1 {
+        background-color: #5e69d1 !important;
+        border-color: #5e69d1 !important;
+      }
+      .v-application .accent--text.text--lighten-1 {
+        color: #5e69d1 !important;
+        caret-color: #5e69d1 !important;
+      }
+      .v-application .accent.darken-1 {
+        background-color: #193a9a !important;
+        border-color: #193a9a !important;
+      }
+      .v-application .accent--text.text--darken-1 {
+        color: #193a9a !important;
+        caret-color: #193a9a !important;
+      }
+      .v-application .accent.darken-2 {
+        background-color: #00257f !important;
+        border-color: #00257f !important;
+      }
+      .v-application .accent--text.text--darken-2 {
+        color: #00257f !important;
+        caret-color: #00257f !important;
+      }
+      .v-application .accent.darken-3 {
+        background-color: #001265 !important;
+        border-color: #001265 !important;
+      }
+      .v-application .accent--text.text--darken-3 {
+        color: #001265 !important;
+        caret-color: #001265 !important;
+      }
+      .v-application .accent.darken-4 {
+        background-color: #00004d !important;
+        border-color: #00004d !important;
+      }
+      .v-application .accent--text.text--darken-4 {
+        color: #00004d !important;
+        caret-color: #00004d !important;
+      }
+      .v-application .error {
+        background-color: #ff5252 !important;
+        border-color: #ff5252 !important;
+      }
+      .v-application .error--text {
+        color: #ff5252 !important;
+        caret-color: #ff5252 !important;
+      }
+      .v-application .error.lighten-5 {
+        background-color: #ffe4d5 !important;
+        border-color: #ffe4d5 !important;
+      }
+      .v-application .error--text.text--lighten-5 {
+        color: #ffe4d5 !important;
+        caret-color: #ffe4d5 !important;
+      }
+      .v-application .error.lighten-4 {
+        background-color: #ffc6b9 !important;
+        border-color: #ffc6b9 !important;
+      }
+      .v-application .error--text.text--lighten-4 {
+        color: #ffc6b9 !important;
+        caret-color: #ffc6b9 !important;
+      }
+      .v-application .error.lighten-3 {
+        background-color: #ffa99e !important;
+        border-color: #ffa99e !important;
+      }
+      .v-application .error--text.text--lighten-3 {
+        color: #ffa99e !important;
+        caret-color: #ffa99e !important;
+      }
+      .v-application .error.lighten-2 {
+        background-color: #ff8c84 !important;
+        border-color: #ff8c84 !important;
+      }
+      .v-application .error--text.text--lighten-2 {
+        color: #ff8c84 !important;
+        caret-color: #ff8c84 !important;
+      }
+      .v-application .error.lighten-1 {
+        background-color: #ff6f6a !important;
+        border-color: #ff6f6a !important;
+      }
+      .v-application .error--text.text--lighten-1 {
+        color: #ff6f6a !important;
+        caret-color: #ff6f6a !important;
+      }
+      .v-application .error.darken-1 {
+        background-color: #df323b !important;
+        border-color: #df323b !important;
+      }
+      .v-application .error--text.text--darken-1 {
+        color: #df323b !important;
+        caret-color: #df323b !important;
+      }
+      .v-application .error.darken-2 {
+        background-color: #bf0025 !important;
+        border-color: #bf0025 !important;
+      }
+      .v-application .error--text.text--darken-2 {
+        color: #bf0025 !important;
+        caret-color: #bf0025 !important;
+      }
+      .v-application .error.darken-3 {
+        background-color: #9f0010 !important;
+        border-color: #9f0010 !important;
+      }
+      .v-application .error--text.text--darken-3 {
+        color: #9f0010 !important;
+        caret-color: #9f0010 !important;
+      }
+      .v-application .error.darken-4 {
+        background-color: #800000 !important;
+        border-color: #800000 !important;
+      }
+      .v-application .error--text.text--darken-4 {
+        color: #800000 !important;
+        caret-color: #800000 !important;
+      }
+      .v-application .info {
+        background-color: #2196f3 !important;
+        border-color: #2196f3 !important;
+      }
+      .v-application .info--text {
+        color: #2196f3 !important;
+        caret-color: #2196f3 !important;
+      }
+      .v-application .info.lighten-5 {
+        background-color: #d4ffff !important;
+        border-color: #d4ffff !important;
+      }
+      .v-application .info--text.text--lighten-5 {
+        color: #d4ffff !important;
+        caret-color: #d4ffff !important;
+      }
+      .v-application .info.lighten-4 {
+        background-color: #b5ffff !important;
+        border-color: #b5ffff !important;
+      }
+      .v-application .info--text.text--lighten-4 {
+        color: #b5ffff !important;
+        caret-color: #b5ffff !important;
+      }
+      .v-application .info.lighten-3 {
+        background-color: #95e8ff !important;
+        border-color: #95e8ff !important;
+      }
+      .v-application .info--text.text--lighten-3 {
+        color: #95e8ff !important;
+        caret-color: #95e8ff !important;
+      }
+      .v-application .info.lighten-2 {
+        background-color: #75ccff !important;
+        border-color: #75ccff !important;
+      }
+      .v-application .info--text.text--lighten-2 {
+        color: #75ccff !important;
+        caret-color: #75ccff !important;
+      }
+      .v-application .info.lighten-1 {
+        background-color: #51b0ff !important;
+        border-color: #51b0ff !important;
+      }
+      .v-application .info--text.text--lighten-1 {
+        color: #51b0ff !important;
+        caret-color: #51b0ff !important;
+      }
+      .v-application .info.darken-1 {
+        background-color: #007cd6 !important;
+        border-color: #007cd6 !important;
+      }
+      .v-application .info--text.text--darken-1 {
+        color: #007cd6 !important;
+        caret-color: #007cd6 !important;
+      }
+      .v-application .info.darken-2 {
+        background-color: #0064ba !important;
+        border-color: #0064ba !important;
+      }
+      .v-application .info--text.text--darken-2 {
+        color: #0064ba !important;
+        caret-color: #0064ba !important;
+      }
+      .v-application .info.darken-3 {
+        background-color: #004d9f !important;
+        border-color: #004d9f !important;
+      }
+      .v-application .info--text.text--darken-3 {
+        color: #004d9f !important;
+        caret-color: #004d9f !important;
+      }
+      .v-application .info.darken-4 {
+        background-color: #003784 !important;
+        border-color: #003784 !important;
+      }
+      .v-application .info--text.text--darken-4 {
+        color: #003784 !important;
+        caret-color: #003784 !important;
+      }
+      .v-application .success {
+        background-color: #4caf50 !important;
+        border-color: #4caf50 !important;
+      }
+      .v-application .success--text {
+        color: #4caf50 !important;
+        caret-color: #4caf50 !important;
+      }
+      .v-application .success.lighten-5 {
+        background-color: #dcffd6 !important;
+        border-color: #dcffd6 !important;
+      }
+      .v-application .success--text.text--lighten-5 {
+        color: #dcffd6 !important;
+        caret-color: #dcffd6 !important;
+      }
+      .v-application .success.lighten-4 {
+        background-color: #beffba !important;
+        border-color: #beffba !important;
+      }
+      .v-application .success--text.text--lighten-4 {
+        color: #beffba !important;
+        caret-color: #beffba !important;
+      }
+      .v-application .success.lighten-3 {
+        background-color: #a2ff9e !important;
+        border-color: #a2ff9e !important;
+      }
+      .v-application .success--text.text--lighten-3 {
+        color: #a2ff9e !important;
+        caret-color: #a2ff9e !important;
+      }
+      .v-application .success.lighten-2 {
+        background-color: #85e783 !important;
+        border-color: #85e783 !important;
+      }
+      .v-application .success--text.text--lighten-2 {
+        color: #85e783 !important;
+        caret-color: #85e783 !important;
+      }
+      .v-application .success.lighten-1 {
+        background-color: #69cb69 !important;
+        border-color: #69cb69 !important;
+      }
+      .v-application .success--text.text--lighten-1 {
+        color: #69cb69 !important;
+        caret-color: #69cb69 !important;
+      }
+      .v-application .success.darken-1 {
+        background-color: #2d9437 !important;
+        border-color: #2d9437 !important;
+      }
+      .v-application .success--text.text--darken-1 {
+        color: #2d9437 !important;
+        caret-color: #2d9437 !important;
+      }
+      .v-application .success.darken-2 {
+        background-color: #00791e !important;
+        border-color: #00791e !important;
+      }
+      .v-application .success--text.text--darken-2 {
+        color: #00791e !important;
+        caret-color: #00791e !important;
+      }
+      .v-application .success.darken-3 {
+        background-color: #006000 !important;
+        border-color: #006000 !important;
+      }
+      .v-application .success--text.text--darken-3 {
+        color: #006000 !important;
+        caret-color: #006000 !important;
+      }
+      .v-application .success.darken-4 {
+        background-color: #004700 !important;
+        border-color: #004700 !important;
+      }
+      .v-application .success--text.text--darken-4 {
+        color: #004700 !important;
+        caret-color: #004700 !important;
+      }
+      .v-application .warning {
+        background-color: #fb8c00 !important;
+        border-color: #fb8c00 !important;
+      }
+      .v-application .warning--text {
+        color: #fb8c00 !important;
+        caret-color: #fb8c00 !important;
+      }
+      .v-application .warning.lighten-5 {
+        background-color: #ffff9e !important;
+        border-color: #ffff9e !important;
+      }
+      .v-application .warning--text.text--lighten-5 {
+        color: #ffff9e !important;
+        caret-color: #ffff9e !important;
+      }
+      .v-application .warning.lighten-4 {
+        background-color: #fffb82 !important;
+        border-color: #fffb82 !important;
+      }
+      .v-application .warning--text.text--lighten-4 {
+        color: #fffb82 !important;
+        caret-color: #fffb82 !important;
+      }
+      .v-application .warning.lighten-3 {
+        background-color: #ffdf67 !important;
+        border-color: #ffdf67 !important;
+      }
+      .v-application .warning--text.text--lighten-3 {
+        color: #ffdf67 !important;
+        caret-color: #ffdf67 !important;
+      }
+      .v-application .warning.lighten-2 {
+        background-color: #ffc24b !important;
+        border-color: #ffc24b !important;
+      }
+      .v-application .warning--text.text--lighten-2 {
+        color: #ffc24b !important;
+        caret-color: #ffc24b !important;
+      }
+      .v-application .warning.lighten-1 {
+        background-color: #ffa72d !important;
+        border-color: #ffa72d !important;
+      }
+      .v-application .warning--text.text--lighten-1 {
+        color: #ffa72d !important;
+        caret-color: #ffa72d !important;
+      }
+      .v-application .warning.darken-1 {
+        background-color: #db7200 !important;
+        border-color: #db7200 !important;
+      }
+      .v-application .warning--text.text--darken-1 {
+        color: #db7200 !important;
+        caret-color: #db7200 !important;
+      }
+      .v-application .warning.darken-2 {
+        background-color: #bb5900 !important;
+        border-color: #bb5900 !important;
+      }
+      .v-application .warning--text.text--darken-2 {
+        color: #bb5900 !important;
+        caret-color: #bb5900 !important;
+      }
+      .v-application .warning.darken-3 {
+        background-color: #9d4000 !important;
+        border-color: #9d4000 !important;
+      }
+      .v-application .warning--text.text--darken-3 {
+        color: #9d4000 !important;
+        caret-color: #9d4000 !important;
+      }
+      .v-application .warning.darken-4 {
+        background-color: #802700 !important;
+        border-color: #802700 !important;
+      }
+      .v-application .warning--text.text--darken-4 {
+        color: #802700 !important;
+        caret-color: #802700 !important;
+      }
+      .v-application .button {
+        background-color: #ffffff !important;
+        border-color: #ffffff !important;
+      }
+      .v-application .button--text {
+        color: #ffffff !important;
+        caret-color: #ffffff !important;
+      }
+      .v-application .button.lighten-5 {
+        background-color: #ffffff !important;
+        border-color: #ffffff !important;
+      }
+      .v-application .button--text.text--lighten-5 {
+        color: #ffffff !important;
+        caret-color: #ffffff !important;
+      }
+      .v-application .button.lighten-4 {
+        background-color: #ffffff !important;
+        border-color: #ffffff !important;
+      }
+      .v-application .button--text.text--lighten-4 {
+        color: #ffffff !important;
+        caret-color: #ffffff !important;
+      }
+      .v-application .button.lighten-3 {
+        background-color: #ffffff !important;
+        border-color: #ffffff !important;
+      }
+      .v-application .button--text.text--lighten-3 {
+        color: #ffffff !important;
+        caret-color: #ffffff !important;
+      }
+      .v-application .button.lighten-2 {
+        background-color: #ffffff !important;
+        border-color: #ffffff !important;
+      }
+      .v-application .button--text.text--lighten-2 {
+        color: #ffffff !important;
+        caret-color: #ffffff !important;
+      }
+      .v-application .button.lighten-1 {
+        background-color: #ffffff !important;
+        border-color: #ffffff !important;
+      }
+      .v-application .button--text.text--lighten-1 {
+        color: #ffffff !important;
+        caret-color: #ffffff !important;
+      }
+      .v-application .button.darken-1 {
+        background-color: #e2e2e2 !important;
+        border-color: #e2e2e2 !important;
+      }
+      .v-application .button--text.text--darken-1 {
+        color: #e2e2e2 !important;
+        caret-color: #e2e2e2 !important;
+      }
+      .v-application .button.darken-2 {
+        background-color: #c6c6c6 !important;
+        border-color: #c6c6c6 !important;
+      }
+      .v-application .button--text.text--darken-2 {
+        color: #c6c6c6 !important;
+        caret-color: #c6c6c6 !important;
+      }
+      .v-application .button.darken-3 {
+        background-color: #ababab !important;
+        border-color: #ababab !important;
+      }
+      .v-application .button--text.text--darken-3 {
+        color: #ababab !important;
+        caret-color: #ababab !important;
+      }
+      .v-application .button.darken-4 {
+        background-color: #919191 !important;
+        border-color: #919191 !important;
+      }
+      .v-application .button--text.text--darken-4 {
+        color: #919191 !important;
+        caret-color: #919191 !important;
+      }
+    </style>
+    <script data-n-head="ssr" data-hid="gtm-script">
+      if (!window._gtm_init) {
+        window._gtm_init = 1;
+        (function (w, n, d, m, e, p) {
+          w[d] =
+            w[d] == 1 ||
+            n[d] == "yes" ||
+            n[d] == 1 ||
+            n[m] == 1 ||
+            (w[e] && w[e][p] && w[e][p]())
+              ? 1
+              : 0;
+        })(
+          window,
+          navigator,
+          "doNotTrack",
+          "msDoNotTrack",
+          "external",
+          "msTrackingProtectionEnabled"
+        );
+        (function (w, d, s, l, x, y) {
+          w[x] = {};
+          w._gtm_inject = function (i) {
+            if (w.doNotTrack || w[x][i]) return;
+            w[x][i] = 1;
+            w[l] = w[l] || [];
+            w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+            var f = d.getElementsByTagName(s)[0],
+              j = d.createElement(s);
+            j.async = true;
+            j.src = "../../www.googletagmanager.com/gtm5445.html?id=" + i;
+            f.parentNode.insertBefore(j, f);
+          };
+          w[y]("GTM-N356CGN");
+        })(window, document, "script", "dataLayer", "_gtm_ids", "_gtm_inject");
+      }
+    </script>
+    <script
+      data-n-head="ssr"
+      data-hid="adsbygoogle-script"
+      defer
+      crossorigin="anonymous"
+      src="../../pagead2.googlesyndication.com/pagead/js/f35ed.txt?client=ca-pub-5164873565615648"
+    ></script>
+    <script data-n-head="ssr" data-hid="adsbygoogle">
+      if (!window.__abg_called) {
+        (adsbygoogle = window.adsbygoogle || []).pauseAdRequests = 0;
+        (window.adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-5164873565615648",
+          enable_page_level_ads: false,
+          overlays: { bottom: false },
+        });
+        window.__abg_called = true;
+      }
+    </script>
+    <link rel="stylesheet" href="../_nuxt/css/f90fbe6.css" />
+    <link rel="stylesheet" href="../_nuxt/css/38ad169.css" />
+    <link
+      rel="preload"
+      href="../_nuxt/static/1632644133/base32-encode-file/state.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="../_nuxt/static/1632644133/base32-encode-file/payload.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="../_nuxt/static/1632644133/manifest.js"
+      as="script"
+    />
+  </head>
+  <body>
+    <noscript data-n-head="ssr" data-hid="gtm-noscript" data-pbody="true"
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-N356CGN&amp;"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+        title="gtm"
+      ></iframe
+    ></noscript>
+    <div data-server-rendered="true" id="__nuxt">
+      <!---->
+      <div id="__layout">
+        <div
+          data-app="true"
+          id="app"
+          class="v-application v-application--is-ltr theme--light"
+        >
+          <div class="v-application--wrap">
+            <div data-v-26c838ca>
+              <div class="d-none d-sm-flex" data-v-26c838ca>
+                <header
+                  class="
+                    v-sheet v-sheet--outlined
+                    theme--light
+                    rounded-0
+                    v-toolbar v-toolbar--flat
+                  "
+                  style="height: 56px"
+                  data-v-26c838ca
+                >
+                  <div class="v-toolbar__content" style="height: 56px">
+                    <a
+                      href="../index.html"
+                      aria-label="menu"
+                      class="
+                        mr-2
+                        v-btn v-btn--icon v-btn--round v-btn--router
+                        theme--light
+                        v-size--default
+                      "
+                      data-v-26c838ca
+                      ><span class="v-btn__content"
+                        ><i
+                          aria-hidden="true"
+                          class="
+                            v-icon
+                            notranslate
+                            mdi mdi-arrow-left
+                            theme--light
+                          "
+                          data-v-26c838ca
+                        ></i></span
+                    ></a>
+                    <div
+                      class="v-image v-responsive ml-2 theme--light"
+                      style="max-width: 40px"
+                      data-v-26c838ca
+                    >
+                      <div
+                        class="
+                          v-image__image
+                          v-image__image--preload
+                          v-image__image--cover
+                        "
+                        style="
+                          background-image: url('../lazy.png');
+                          background-position: center center;
+                        "
+                      ></div>
+                      <div class="v-responsive__content"></div>
+                    </div>
+                    <div
+                      class="v-toolbar__title ml-4 font-bold"
+                      data-v-26c838ca
+                    >
+                      GoOnlineTools
+                    </div>
+                    <div class="spacer" data-v-26c838ca></div>
+                    <div
+                      readonly
+                      class="v-menu mx-auto text-center"
+                      data-v-21708b45
+                      data-v-26c838ca
+                    >
+                      <div
+                        class="
+                          v-input
+                          mx-2 mx-md-4
+                          v-input--hide-details v-input--dense
+                          theme--light
+                          v-text-field
+                          v-text-field--single-line
+                          v-text-field--solo
+                          v-text-field--solo-flat
+                          v-text-field--enclosed
+                          v-text-field--placeholder
+                          rounded-lg
+                        "
+                        style="max-width: 350px"
+                        data-v-21708b45
+                      >
+                        <div class="v-input__control">
+                          <div class="v-input__slot grey lighten-3">
+                            <div class="v-input__prepend-inner">
+                              <i
+                                aria-hidden="true"
+                                class="
+                                  v-icon
+                                  notranslate
+                                  ml-1
+                                  mr-2
+                                  mdi mdi-magnify
+                                  theme--light
+                                  grey--text
+                                "
+                                data-v-21708b45
+                              ></i>
+                            </div>
+                            <div class="v-text-field__slot">
+                              <input
+                                autocomplete="off"
+                                role="button"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                id="input-523"
+                                placeholder="Search tool"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!---->
+                    </div>
+                    <div class="spacer" data-v-26c838ca></div>
+                    <div class="v-menu" data-v-26c838ca>
+                      <button
+                        type="button"
+                        aria-label="report issue"
+                        class="
+                          v-btn v-btn--icon v-btn--round
+                          theme--light
+                          v-size--default
+                          red--text
+                        "
+                      >
+                        <span class="v-btn__content"
+                          ><i
+                            aria-hidden="true"
+                            class="
+                              v-icon
+                              notranslate
+                              mdi mdi-alert
+                              theme--light
+                            "
+                          ></i
+                        ></span></button
+                      ><!---->
+                    </div>
+                    <div data-v-26c838ca>
+                      <button
+                        type="button"
+                        aria-label="share"
+                        class="
+                          v-btn v-btn--icon v-btn--round
+                          theme--light
+                          v-size--default
+                        "
+                      >
+                        <span class="v-btn__content"
+                          ><i
+                            aria-hidden="true"
+                            class="
+                              v-icon
+                              notranslate
+                              mdi mdi-share-variant
+                              theme--light
+                            "
+                          ></i
+                        ></span>
+                      </button>
+                      <div role="dialog" class="v-dialog__container">
+                        <!---->
+                      </div>
+                    </div>
+                    <div class="v-menu" data-v-26c838ca>
+                      <button
+                        type="button"
+                        aria-label="notification"
+                        role="button"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        class="
+                          v-btn v-btn--icon v-btn--round
+                          theme--light
+                          v-size--default
+                        "
+                      >
+                        <span class="v-btn__content"
+                          ><span
+                            right=""
+                            class="v-badge v-badge--overlap theme--light"
+                            ><i
+                              aria-hidden="true"
+                              class="
+                                v-icon
+                                notranslate
+                                mdi mdi-bell-outline
+                                theme--light
+                              "
+                            ></i
+                            ><span class="v-badge__wrapper"
+                              ><span
+                                aria-atomic="true"
+                                aria-label="Badge"
+                                aria-live="polite"
+                                role="status"
+                                class="v-badge__badge red"
+                                style="
+                                  bottom: calc(100% - 10px);
+                                  left: calc(100% - 12px);
+                                  right: auto;
+                                  top: auto;
+                                  display: none;
+                                "
+                              ></span></span></span
+                        ></span></button
+                      ><!---->
+                    </div>
+                    <div data-v-26c838ca>
+                      <button
+                        type="button"
+                        aria-label="dark mode"
+                        class="
+                          v-btn v-btn--icon v-btn--round
+                          theme--light
+                          v-size--default
+                        "
+                      >
+                        <span class="v-btn__content"
+                          ><i
+                            aria-hidden="true"
+                            class="
+                              v-icon
+                              notranslate
+                              mdi mdi-brightness-7
+                              theme--light
+                            "
+                          ></i
+                        ></span>
+                      </button>
+                    </div>
+                    <span class="v-tooltip v-tooltip--bottom" data-v-26c838ca
+                      ><!----><span data-v-26c838ca
+                        ><div data-v-26c838ca>
+                          <div>
+                            <div class="v-menu">
+                              <button
+                                type="button"
+                                class="
+                                  v-btn v-btn--icon v-btn--round
+                                  theme--light
+                                  v-size--default
+                                "
+                              >
+                                <span class="v-btn__content"
+                                  ><i
+                                    aria-hidden="true"
+                                    class="
+                                      v-icon
+                                      notranslate
+                                      mdi mdi-login
+                                      theme--light
+                                    "
+                                  ></i
+                                ></span></button
+                              ><!---->
+                            </div>
+                          </div>
+                          <div></div></div></span
+                    ></span>
+                  </div>
+                </header>
+              </div>
+              <div class="d-flex d-sm-none" data-v-26c838ca>
+                <div
+                  class="v-image v-responsive ml-4 mt-2 theme--light"
+                  style="max-height: 35px; max-width: 35px"
+                  data-v-26c838ca
+                >
+                  <div
+                    class="
+                      v-image__image
+                      v-image__image--preload
+                      v-image__image--cover
+                    "
+                    style="
+                      background-image: url('../lazy.png');
+                      background-position: center center;
+                    "
+                  ></div>
+                  <div class="v-responsive__content"></div>
+                </div>
+                <header
+                  class="
+                    v-sheet
+                    theme--light
+                    rounded-0
+                    v-toolbar v-toolbar--flat
+                  "
+                  style="height: 56px"
+                  data-v-26c838ca
+                >
+                  <div class="v-toolbar__content" style="height: 56px">
+                    <div class="v-toolbar__title" data-v-26c838ca>
+                      GoOnlineTools
+                    </div>
+                    <div class="spacer" data-v-26c838ca></div>
+                    <div data-v-26c838ca>
+                      <button
+                        type="button"
+                        aria-label="search"
+                        class="
+                          v-btn v-btn--icon v-btn--round
+                          theme--light
+                          v-size--default
+                        "
+                      >
+                        <span class="v-btn__content"
+                          ><i
+                            aria-hidden="true"
+                            class="
+                              v-icon
+                              notranslate
+                              mdi mdi-magnify
+                              theme--light
+                            "
+                          ></i
+                        ></span>
+                      </button>
+                      <div role="dialog" class="v-dialog__container">
+                        <!---->
+                      </div>
+                    </div>
+                  </div>
+                </header>
+              </div>
+              <div class="d-flex d-sm-none" data-v-26c838ca>
+                <header
+                  class="
+                    v-sheet
+                    theme--light
+                    rounded-0
+                    v-toolbar v-toolbar--flat
+                  "
+                  style="height: 56px"
+                  data-v-26c838ca
+                >
+                  <div class="v-toolbar__content" style="height: 56px">
+                    <a
+                      href="../index.html"
+                      aria-label="home"
+                      class="
+                        ml-1
+                        v-btn v-btn--icon v-btn--round v-btn--router
+                        theme--light
+                        v-size--default
+                      "
+                      data-v-26c838ca
+                      ><span class="v-btn__content"
+                        ><i
+                          aria-hidden="true"
+                          class="v-icon notranslate mdi mdi-home theme--light"
+                          data-v-26c838ca
+                        ></i></span
+                    ></a>
+                    <div class="spacer" data-v-26c838ca></div>
+                    <div data-v-26c838ca>
+                      <button
+                        type="button"
+                        aria-label="share"
+                        class="
+                          v-btn v-btn--icon v-btn--round
+                          theme--light
+                          v-size--default
+                        "
+                      >
+                        <span class="v-btn__content"
+                          ><i
+                            aria-hidden="true"
+                            class="
+                              v-icon
+                              notranslate
+                              mdi mdi-share-variant
+                              theme--light
+                            "
+                          ></i
+                        ></span>
+                      </button>
+                      <div role="dialog" class="v-dialog__container">
+                        <!---->
+                      </div>
+                    </div>
+                    <div class="spacer" data-v-26c838ca></div>
+                    <div class="v-menu" data-v-26c838ca>
+                      <button
+                        type="button"
+                        aria-label="notification"
+                        role="button"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        class="
+                          v-btn v-btn--icon v-btn--round
+                          theme--light
+                          v-size--default
+                        "
+                      >
+                        <span class="v-btn__content"
+                          ><span
+                            right=""
+                            class="v-badge v-badge--overlap theme--light"
+                            ><i
+                              aria-hidden="true"
+                              class="
+                                v-icon
+                                notranslate
+                                mdi mdi-bell-outline
+                                theme--light
+                              "
+                            ></i
+                            ><span class="v-badge__wrapper"
+                              ><span
+                                aria-atomic="true"
+                                aria-label="Badge"
+                                aria-live="polite"
+                                role="status"
+                                class="v-badge__badge red"
+                                style="
+                                  bottom: calc(100% - 10px);
+                                  left: calc(100% - 12px);
+                                  right: auto;
+                                  top: auto;
+                                  display: none;
+                                "
+                              ></span></span></span
+                        ></span></button
+                      ><!---->
+                    </div>
+                    <div class="spacer" data-v-26c838ca></div>
+                    <div data-v-26c838ca>
+                      <button
+                        type="button"
+                        aria-label="dark mode"
+                        class="
+                          v-btn v-btn--icon v-btn--round
+                          theme--light
+                          v-size--default
+                        "
+                      >
+                        <span class="v-btn__content"
+                          ><i
+                            aria-hidden="true"
+                            class="
+                              v-icon
+                              notranslate
+                              mdi mdi-brightness-7
+                              theme--light
+                            "
+                          ></i
+                        ></span>
+                      </button>
+                    </div>
+                    <div class="spacer" data-v-26c838ca></div>
+                    <span class="v-tooltip v-tooltip--left" data-v-26c838ca
+                      ><!----><span data-v-26c838ca
+                        ><div data-v-26c838ca>
+                          <div>
+                            <div class="v-menu">
+                              <button
+                                type="button"
+                                class="
+                                  v-btn v-btn--icon v-btn--round
+                                  theme--light
+                                  v-size--default
+                                "
+                              >
+                                <span class="v-btn__content"
+                                  ><i
+                                    aria-hidden="true"
+                                    class="
+                                      v-icon
+                                      notranslate
+                                      mdi mdi-login
+                                      theme--light
+                                    "
+                                  ></i
+                                ></span></button
+                              ><!---->
+                            </div>
+                          </div>
+                          <div></div></div></span
+                    ></span>
+                  </div>
+                </header>
+              </div>
+              <hr
+                role="separator"
+                aria-orientation="horizontal"
+                class="d-flex d-sm-none v-divider theme--light"
+                data-v-26c838ca
+              />
+              <div
+                role="progressbar"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                class="
+                  v-progress-linear v-progress-linear--visible
+                  theme--light
+                "
+                style="height: 4px"
+                data-v-26c838ca
+              >
+                <div
+                  class="v-progress-linear__background primary"
+                  style="opacity: 0.3; left: 0%; width: 100%"
+                ></div>
+                <div class="v-progress-linear__buffer"></div>
+                <div
+                  class="
+                    v-progress-linear__indeterminate
+                    v-progress-linear__indeterminate--active
+                  "
+                >
+                  <div
+                    class="v-progress-linear__indeterminate long primary"
+                  ></div>
+                  <div
+                    class="v-progress-linear__indeterminate short primary"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <!---->
+            <div class="mx-auto text-center" style="display: none">
+              <div class="mt-2 text-center">
+                <ins
+                  data-ad-client="ca-pub-5164873565615648"
+                  data-ad-slot="8357442606"
+                  data-ad-format="manual"
+                  data-ad-region="page-0.09646777860094025"
+                  class="adsense adsbygoogle"
+                  style="display: inline-block"
+                ></ins>
+              </div>
+            </div>
+            <main
+              class="v-main"
+              style="
+                padding-top: 0px;
+                padding-right: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+              "
+            >
+              <div class="v-main__wrap">
+                <div class="container">
+                  <div class="base32encode">
+                    <script src="../js/jquery-1.10.1.min.js"></script>
+                    <script src="../js/basemain.js"></script>
+                    <script src="../js/base32.min.js"></script>
+                    <script type="text/javascript">
+                      function encode() {
+                        method = base32.encode;
+                      }
+                    </script>
+                    <div class="title">
+                      <h1 class="mb-1 mt-3 text-center font-weight-medium">
+                        Base32 Encode File
+                      </h1>
+                      <p
+                        class="
+                          mb-1
+                          mt-2
+                          mr-3
+                          ml-3
+                          text-center
+                          font-weight-light
+                        "
+                      >
+                        Encode Case Sensitive Information using Base32 Encode
+                        File Online Tool
+                      </p>
+                    </div>
+                    <br />
+                    <div id="main">
+                      <div
+                        class="
+                          mx-auto
+                          v-card v-sheet v-sheet--outlined
+                          theme--light
+                          elevation-8
+                        "
+                      >
+                        <div class="mt-8 ml-6 mr-6">
+                          <div class="input">
+                            <div id="droppable-zone">
+                              <input
+                                id="input"
+                                type="file"
+                                dropzone=""
+                                placeholder="Click here to upload a file"
+                                class="upfile"
+                              />
+                            </div>
+                            <br />
+                          </div>
+                          <div class="submit">
+                            <button
+                              type="button"
+                              value="Encode"
+                              id="execute"
+                              onclick="encode()"
+                              class="
+                                mb-4
+                                white--text
+                                v-btn v-btn--is-elevated v-btn--has-bg
+                                theme--light
+                                v-size--default
+                                blue
+                              "
+                            >
+                              <span class="v-btn__content">Encode</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mt-3 mb-3 text-center">
+                        <ins
+                          data-ad-client="ca-pub-5164873565615648"
+                          data-ad-slot="5770979810"
+                          data-ad-format="auto"
+                          data-ad-region="page-0.1421272347284901"
+                          class="adsbygoogle"
+                          style="display: block"
+                        ></ins>
+                      </div>
+                      <div
+                        class="mx-auto v-card v-sheet theme--light elevation-8"
+                      >
+                        <div class="ml-6 mr-6">
+                          <br />
+                          <div class="output">
+                            <div class="output">
+                              <p class="overline text-center">Encoded Data</p>
+                              <textarea
+                                id="output"
+                                rows="6"
+                                placeholder="Output"
+                                style="
+                                  width: 100%;
+                                  padding: 0.625rem 0.9375rem;
+                                  box-sizing: border-box;
+                                  border: 0.0625rem solid var(--border-color);
+                                  background-color: transparent;
+                                  color: var(--t1);
+                                  outline: none;
+                                  -webkit-transition: border-color 0.2s ease;
+                                  transition: border-color 0.2s ease;
+                                "
+                              ></textarea>
+                            </div>
+                            <br />
+                          </div>
+                        </div>
+                      </div>
+                      <br />
+                      <div>
+                        <div>
+                          <div
+                            aria-busy="true"
+                            aria-live="polite"
+                            role="alert"
+                            class="
+                              v-skeleton-loader
+                              v-skeleton-loader--is-loading
+                              v-skeleton-loader--tile
+                              theme--light
+                              elevation-8
+                            "
+                          >
+                            <div
+                              class="
+                                v-skeleton-loader__article
+                                v-skeleton-loader__bone
+                              "
+                            >
+                              <div
+                                class="
+                                  v-skeleton-loader__heading
+                                  v-skeleton-loader__bone
+                                "
+                              ></div>
+                              <div
+                                class="
+                                  v-skeleton-loader__paragraph
+                                  v-skeleton-loader__bone
+                                "
+                              >
+                                <div
+                                  class="
+                                    v-skeleton-loader__text
+                                    v-skeleton-loader__bone
+                                  "
+                                ></div>
+                                <div
+                                  class="
+                                    v-skeleton-loader__text
+                                    v-skeleton-loader__bone
+                                  "
+                                ></div>
+                                <div
+                                  class="
+                                    v-skeleton-loader__text
+                                    v-skeleton-loader__bone
+                                  "
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="
+                          mx-auto
+                          v-item-group
+                          theme--light
+                          v-expansion-panels
+                        "
+                        style="display: none"
+                      >
+                        <div
+                          aria-expanded="true"
+                          class="
+                            v-expansion-panel
+                            v-expansion-panel--active
+                            v-expansion-panel--next-active
+                            v-item--active
+                          "
+                        >
+                          <button
+                            type="button"
+                            aria-expanded="true"
+                            class="
+                              v-expansion-panel-header
+                              v-expansion-panel-header--active
+                            "
+                          >
+                            About Base32 Encode File
+                            <div class="v-expansion-panel-header__icon">
+                              <i
+                                aria-hidden="true"
+                                class="
+                                  v-icon
+                                  notranslate
+                                  mdi mdi-chevron-down
+                                  theme--light
+                                "
+                              ></i>
+                            </div>
+                          </button>
+                          <div class="v-expansion-panel-content">
+                            <div class="v-expansion-panel-content__wrap">
+                              <p class="font-weight-light body-1">
+                                The Base32 Encode File Tool Helps you to Encode
+                                File into Base32. This is Online Tool so you can
+                                access on any device through Browser. The Best
+                                Part of this Base32 Encode Tool is it Works
+                                Offline.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          aria-expanded="true"
+                          class="
+                            v-expansion-panel v-expansion-panel--active
+                            v-item--active
+                          "
+                        >
+                          <button
+                            type="button"
+                            aria-expanded="true"
+                            class="
+                              v-expansion-panel-header
+                              v-expansion-panel-header--active
+                            "
+                          >
+                            How to use Base32 File Encoder?
+                            <div class="v-expansion-panel-header__icon">
+                              <i
+                                aria-hidden="true"
+                                class="
+                                  v-icon
+                                  notranslate
+                                  mdi mdi-chevron-down
+                                  theme--light
+                                "
+                              ></i>
+                            </div>
+                          </button>
+                          <div class="v-expansion-panel-content">
+                            <div class="v-expansion-panel-content__wrap">
+                              <p class="font-weight-light body-1">
+                                Follow the Steps given below to Encode Base32::
+                              </p>
+                              <ol class="font-weight-light body-1">
+                                <li>First Open this Tool in Browser</li>
+                                <li>Open File in Input Box</li>
+                                <li>Now Press Encode Button</li>
+                                <li>Scroll Down to See/Copy Encoded Base32</li>
+                              </ol>
+                            </div>
+                          </div>
+                        </div>
+                        <div aria-expanded="false" class="v-expansion-panel">
+                          <button
+                            type="button"
+                            class="v-expansion-panel-header"
+                          >
+                            FAQs About Base32 Encode
+                            <div class="v-expansion-panel-header__icon">
+                              <i
+                                aria-hidden="true"
+                                class="
+                                  v-icon
+                                  notranslate
+                                  mdi mdi-chevron-down
+                                  theme--light
+                                "
+                              ></i>
+                            </div>
+                          </button>
+                          <!---->
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          class="
+                            mb-2
+                            mt-4
+                            v-card v-sheet v-sheet--outlined
+                            theme--light
+                            elevation-0
+                          "
+                        ></div>
+                        <!---->
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      class="
+                        mx-auto
+                        mt-3
+                        v-card v-sheet v-sheet--outlined
+                        theme--light
+                        elevation-8
+                      "
+                    >
+                      <div class="mt-5 ml-3 mr-3 mb-4 text-center">
+                        <h2 class="font-weight-light">
+                          Did you find this tool useful?
+                        </h2>
+                        <button
+                          type="button"
+                          class="
+                            mr-6
+                            mt-5
+                            mb-5
+                            v-btn v-btn--icon v-btn--round
+                            theme--light
+                            v-size--default
+                          "
+                        >
+                          <span class="v-btn__content"
+                            ><i
+                              aria-hidden="true"
+                              class="
+                                v-icon
+                                notranslate
+                                mdi mdi-48px mdi-thumb-up-outline
+                                theme--light
+                                green--text
+                              "
+                            ></i
+                          ></span>
+                        </button>
+                        <button
+                          type="button"
+                          class="
+                            mt-5
+                            mb-5
+                            v-btn v-btn--icon v-btn--round
+                            theme--light
+                            v-size--default
+                          "
+                        >
+                          <span class="v-btn__content"
+                            ><i
+                              aria-hidden="true"
+                              class="
+                                v-icon
+                                notranslate
+                                mdi mdi-48px mdi-thumb-down-outline
+                                theme--light
+                                red--text
+                              "
+                            ></i
+                          ></span>
+                        </button>
+                      </div>
+                    </div>
+                    <!---->
+                    <!---->
+                  </div>
+                  <div
+                    class="
+                      v-snack
+                      v-snack--bottom
+                      v-snack--has-background
+                      v-snack--right
+                    "
+                    style="padding-bottom: 0px; padding-top: 0px"
+                  >
+                    <div
+                      class="v-snack__wrapper v-sheet theme--dark elevation-24"
+                      style="display: none"
+                    >
+                      <div
+                        role="status"
+                        aria-live="polite"
+                        class="v-snack__content"
+                      ></div>
+                      <div class="v-snack__action">
+                        <button
+                          type="button"
+                          class="
+                            v-btn v-btn--icon v-btn--round
+                            theme--dark
+                            v-size--default
+                            v-snack__btn
+                          "
+                        >
+                          <span class="v-btn__content"
+                            ><i
+                              aria-hidden="true"
+                              class="
+                                v-icon
+                                notranslate
+                                mdi mdi-close
+                                theme--dark
+                              "
+                            ></i
+                          ></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+            <footer
+              class="
+                v-footer v-sheet v-sheet--outlined
+                theme--light
+                elevation-3
+                v-footer--padless
+              "
+            >
+              <div class="row no-gutters justify-center">
+                <a
+                  href="../index.html"
+                  roundedss=""
+                  class="my-2 v-btn v-btn--text theme--light v-size--default"
+                  ><span class="v-btn__content"> Home </span></a
+                ><a
+                  href="../blog/index.html"
+                  roundedss=""
+                  class="my-2 v-btn v-btn--text theme--light v-size--default"
+                  ><span class="v-btn__content"> Blog </span></a
+                ><a
+                  href="../about/index.html"
+                  roundedss=""
+                  class="my-2 v-btn v-btn--text theme--light v-size--default"
+                  ><span class="v-btn__content"> About Us </span></a
+                ><a
+                  href="../privacy-policy/index.html"
+                  roundedss=""
+                  class="my-2 v-btn v-btn--text theme--light v-size--default"
+                  ><span class="v-btn__content"> Privacy Policy </span></a
+                ><a
+                  href="../disclaimer/index.html"
+                  roundedss=""
+                  class="my-2 v-btn v-btn--text theme--light v-size--default"
+                  ><span class="v-btn__content"> Disclaimer </span></a
+                ><a
+                  href="../feedback/index.html"
+                  roundedss=""
+                  class="my-2 v-btn v-btn--text theme--light v-size--default"
+                  ><span class="v-btn__content"> Feedback </span></a
+                ><a
+                  href="../contact/index.html"
+                  roundedss=""
+                  class="my-2 v-btn v-btn--text theme--light v-size--default"
+                  ><span class="v-btn__content"> Contact Us </span></a
+                >
+                <div class="py-4 text-center col col-12">
+                  © 2020 - 2021 GoOnlineTools.com
+                </div>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      defer
+      src="../_nuxt/static/1632644133/base32-encode-file/state.js"
+    ></script>
+    <script src="../_nuxt/a0aec4a.js" defer></script>
+    <script src="../_nuxt/34358d0.js" defer></script>
+    <script src="../_nuxt/e09d057.js" defer></script>
+    <script src="../_nuxt/206930d.js" defer></script>
+    <script src="../_nuxt/51179fb.js" defer></script>
+  </body>
+
+  <!-- Mirrored from goonlinetools.com/base32-encode-file/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 Sep 2021 04:14:46 GMT -->
+</html>
