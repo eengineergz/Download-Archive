@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "668545",
+    "ThreadId": "271747",
+    "Html": "<p>How harder will it be to implement a feature that allows by configuration file to define a folder, or using a pattern, that allow each given matched files to be minified separatly, instead of merging the files together?</p>\n<p>This would be realy helpfull. Will look at the code later.</p>",
+    "PostedDate": "2011-09-07T04:29:58.487-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

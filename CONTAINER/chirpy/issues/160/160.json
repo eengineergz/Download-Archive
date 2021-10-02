@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "As per the documentation we can override the output file's extension by overwriting it in the settings file. It is not working as expected.\r\n\r\nE.g. The below stetting in the Chirpy config file should generate minified file with uimin.js extension. But it always generates min.js.\r\n\r\n<root>\r\n       <Settings>\r\n           <Setting key=\"OutputExtensionJS\" value=\".uimin.js\" />\r\n       <Settings>\r\n    \r\n....\r\n....\r\n</root>",
+    "LastUpdatedDate": "2012-10-11T18:37:24.123-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-10-11T18:37:24.123-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "OutputExtensionJSsetting do not work",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 160
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

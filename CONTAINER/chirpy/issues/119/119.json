@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Delete file in your add-ins directory.\n\nC:\\Users\\<login name>\\Documents\\Visual Studio 2010\\AddIns\n\n- Chirpy.dll\n- Zippy.AddIn\n- ...\n",
+    "ClosedDate": "2012-02-18T20:27:38.277-08:00",
+    "CommentCount": 2,
+    "Custom": null,
+    "Description": "can't see anyway to uninstall Chirpy...please advise.",
+    "LastUpdatedDate": "2012-12-30T23:07:57.333-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-02-16T02:02:54.69-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "uninstall",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 119
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "The fact that Chirpy doesn't provide a clean uninstall, makes me want to uninstall it even more!",
+      "PostedDate": "2012-12-28T01:35:07.757-08:00",
+      "Id": 84987
+    },
+    {
+      "Message": "So, I removed the DLL's from the AddIns folder, but there are still remnants of the add-in leftover in Visual Studio. I was able to get rid of the Solution Explorer contextual menu items by clicking on each one, at which point VS throws up a warning dialog saying that the AddIn cannot be found and offers to remove.",
+      "PostedDate": "2012-12-30T23:07:57.333-08:00",
+      "Id": 85076
+    }
+  ]
+}

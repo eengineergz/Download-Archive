@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "625625",
+    "ThreadId": "260826",
+    "Html": "\r\n<p>If you're not familiar, SASS is similar to LESS, and has (in my opinion) several advantages over LESS (user definable methods, for loops, etc). &nbsp;However, it requires Ruby and the SASS Gem to process. &nbsp;Now that IronRuby is available, it seems like\r\n it should be possible to add SASS to Chirpy without too much effort. &nbsp;There are already a couple of options for integrating ASP.NET and SASS:\r\n<a title=\"SassAndCoffee\" href=\"http://nuget.org/List/Packages/SassAndCoffee\" target=\"_blank\">\r\nSassAndCoffee</a> and <a title=\"SASS for Visual Studio 2010\" href=\"http://giri.sh/2011/01/21/sass-for-visual-studio-2010/\" target=\"_blank\">\r\nSASS for Visual Studio 2010</a>. &nbsp;Unfortunately, SassAndCoffee doesn't support explicit pre-processing of SASS files, but rather processes each file or combined files on the first HTTP request for that resource. &nbsp;SASS for Visual Studio is more like\r\n what I'm after, but it's alpha and doesn't support CoffeeScript, and we'd like a single package/extension that can handle all of our script/style preprocessing instead of having to rely on multiple libraries and/or extensions.</p>\r\n",
+    "PostedDate": "2011-06-09T13:53:03.28-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "627865",
+    "ThreadId": "260826",
+    "Html": "<p><a href=\"http://giri.sh/2011/01/21/sass-for-visual-studio-2010/\">http://giri.sh/2011/01/21/sass-for-visual-studio-2010/</a></p>",
+    "PostedDate": "2011-06-14T19:03:20.183-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "628136",
+    "ThreadId": "260826",
+    "Html": "<p>If you read the original post carefully, you'll see that I link to that very thing. &nbsp;I know it exists, but it's alpha, it's not clear whether or not it's still under continued development, it requires installing Ruby, and it's not available via NuGet. &nbsp;In addition, I'd rather  not globally clutter up my VS2010 install with an extension that basically just calls a single command (i.e. &nbsp;<span style=\"font-family: Consolas,'Courier New',Courier,monospace; white-space: pre;\">sass --watch Content/SASS:Content/Styles), </span>especially an extension that doesn't even do anything for non-web projects.</p>\n<p>I'd rather be able to use NuGet to install a single package (Chirpy) and be done with it. &nbsp;Not that there IS a NuGet package for Chirpy right now, but there's another feature request for that specific thing, so hopefully either someone will put it together  or I'll look into doing it myself.</p>",
+    "PostedDate": "2011-06-15T07:19:42.513-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "629745",
+    "ThreadId": "260826",
+    "Html": "This discussion has been copied to a work item. Click <a href=\"http://chirpy.codeplex.com/workitem/84\">here</a> to go to the work item and continue the discussion.",
+    "PostedDate": "2011-06-19T07:16:05.267-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

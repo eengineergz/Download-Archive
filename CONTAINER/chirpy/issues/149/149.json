@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "http://chirpy.codeplex.com/SourceControl/changeset/1fc005d2c4e8",
+    "ClosedDate": "2012-07-21T13:47:59.523-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Issue: when using Google Closure in offline mode, a \"file does not exist\" error is occasionally thrown if the final file for a filegroup does not exist. This is because the implementation of the closure compiler in offline mode was passing in the file path but not actually creating any files (or the files were being created after the call to the closure compiler). The fix creates (and deletes when done) a temp file that is passed to the closure compiler to get the minified code.\r\n\r\nBasically, I added an overload for the GoogleClosureOfflineCompiler.Compress() method (lines 16-38 of attached file: GoogleClosureOfflineCompiler.cs) and then changed the calls to use it in the GoogleClosureCompiler.Compress() method (lines 35 and 45 of attached file: GoogleClosureCompiler.cs)",
+    "LastUpdatedDate": "2012-07-21T13:47:59.523-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-07-18T15:57:15.713-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Proposed bug fix: \"file does not exist\" when using Closure offline",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 149
+  },
+  "FileAttachments": [
+    {
+      "FileId": 461215,
+      "FileName": "fix.zip",
+      "DownloadUrl": ".\\461215"
+    }
+  ],
+  "Comments": []
+}

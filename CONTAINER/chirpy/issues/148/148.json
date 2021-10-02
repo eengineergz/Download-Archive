@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 2,
+    "Custom": null,
+    "Description": "Hi,\r\nI've just started to use Chirpy, great tool so far... but recieved an error with one of my JS files, 'Unexpected token '<' in expression.', but I dont have any '<' characters in my JS code?!\r\n\r\nIs this unexpected token within the JSHint engine?\r\n\r\nOutput Below:\r\nError: Jurassic.JavaScriptException: SyntaxError: Unexpected token '<' in expression.\r\n   at Jurassic.Compiler.Parser.ParseExpression(Token[] endTokens)\r\n   at Jurassic.Compiler.Parser.ParseLabelOrExpressionStatement()\r\n   at Jurassic.Compiler.Parser.ParseStatementNoNewContext()\r\n   at Jurassic.Compiler.Parser.ParseStatement()\r\n   at Jurassic.Compiler.Parser.Parse()\r\n   at Jurassic.Compiler.GlobalMethodGenerator.Parse()\r\n   at Jurassic.ScriptEngine.Execute(ScriptSource source)\r\n   at Jurassic.ScriptEngine.Execute(String code)\r\n   at UglifyCS.Environment.Run(String script, Expression`1[] vars)\r\n   at UglifyCS.Environment.RunFile(String file)\r\n   at UglifyCS.JSHint.OnInit()\r\n   at UglifyCS.Environment.Init()\r\n   at UglifyCS.Environment.get_Context()\r\n   at UglifyCS.Environment.set_Item(String name, Object value)\r\n   at UglifyCS.JSHint.JSHINT(String source, options options)\r\n   at Zippy.Chirp.Engines.JSHintEngine.Run(String fullFileName, ProjectItem projectItem)\r\n   at Zippy.Chirp.Engines.EngineManager.Process(ProjectItem projectItem)",
+    "LastUpdatedDate": "2012-07-16T02:04:07.817-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-07-11T04:37:09.943-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Syntax error: JSHint",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 148
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Seems to be a duplicate of http://chirpy.codeplex.com/workitem/123\n\nI see this too, btw.",
+      "PostedDate": "2012-07-16T01:55:47.577-07:00",
+      "Id": 70201
+    },
+    {
+      "Message": "The problem seems to have been resolved in release 2.06 (http://chirpy.codeplex.com/releases/view/88455).",
+      "PostedDate": "2012-07-16T02:04:07.817-07:00",
+      "Id": 70204
+    }
+  ]
+}

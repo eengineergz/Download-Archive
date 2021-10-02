@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "http://www.weirdlover.com/2010/07/18/chirpy-attains-godlike-abilities-in-version-1-0-0-4/",
+    "ClosedDate": "2010-07-17T18:45:18.263-07:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "Hi,\r\n\r\n would it be possible to use the file name format {name}.chirp.less.css instead of {name}.chirp.less or support both so that Visual Studio gives you some degree of CSS syntax highlighting? I know it'll highlight mixins etc as errors but wouldn't it be better to have some form of syntax highlighting instead of none?",
+    "LastUpdatedDate": "2010-07-17T18:45:18.263-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-07-07T05:32:00.58-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "change less file extension to less.css",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 13
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Thanks for the suggestion! This is now handles in v 1.0.0.4.\n\nSee: http://www.weirdlover.com/2010/07/18/chirpy-attains-godlike-abilities-in-version-1-0-0-4/",
+      "PostedDate": "2010-07-17T18:45:08.83-07:00",
+      "Id": 14592
+    }
+  ]
+}

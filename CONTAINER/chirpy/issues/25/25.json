@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2010-08-01T09:03:09.793-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Add less file min. mode\r\nyui compressor\r\nms-ajax\r\n...",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-08-01T09:02:53.183-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "LESS specify min. method",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 25
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

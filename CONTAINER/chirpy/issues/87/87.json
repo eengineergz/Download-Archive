@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Looks like JSHint changed the download address for their script while simultaneously the code to fallback to the embedded version had a bug.  Both issues are now resolved, and a new release should be ready soon.",
+    "ClosedDate": "2011-07-15T17:26:30.947-07:00",
+    "CommentCount": 3,
+    "Custom": null,
+    "Description": "Whenever I open my MVC 3 project and add a JavaScript file then save it, an error shows up in a popup with the following message\r\n\r\nError: could not find file 'C:\\Documents and settings\\admin\\Local Settings\\http___jshint.com_js_jshint.js'.. See output window for details.\r\n\r\nIf I save it again, the following error shows:\r\n\r\nError: ReferenceError: JSHINT is not defined. See output window for details.\r\n\r\nIf I disable \"Run JSHint\" from the Options, everything works fine. Should JSHint be installed separately from Chirpy ? Not sure what I'm doing wrong here.\r\n\r\nThe content of the output window is (note that the name of the js file is \"JScript1.yui.js\") :\r\n\r\nReady\r\nYuiJsEngine -- D:\\Project\\Test\\Content\\js\\JScript1.yui.js\r\nT4Engine -- D:\\Project\\Test\\Content\\js\\JScript1.yui.js\r\nJSHintEngine -- D:\\Project\\Test\\Content\\js\\JScript1.yui.js\r\nError: System.IO.FileNotFoundException: Could not find file 'C:\\Documents and Settings\\admin\\Local Settings\\http___jshint.com_js_jshint.js'.\r\nFile name: 'C:\\Documents and Settings\\admin\\Local Settings\\http___jshint.com_js_jshint.js'\r\n   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)\r\n   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)\r\n   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)\r\n   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)\r\n   at System.IO.StreamReader..ctor(String path, Encoding encoding)\r\n   at System.IO.File.InternalReadAllText(String path, Encoding encoding)\r\n   at System.IO.File.ReadAllText(String path)\r\n   at UglifyCS.Extensibility.GetContents(Uri uri)\r\n   at UglifyCS.Extensibility.GetContents(Uri uri, String file)\r\n   at UglifyCS.Environment.GetContents(String file)\r\n   at UglifyCS.Environment.RunFile(String file)\r\n   at UglifyCS.JSHint.OnInit()\r\n   at UglifyCS.Environment.Init()\r\n   at UglifyCS.Environment.get_Context()\r\n   at UglifyCS.Environment.set_Item(String name, Object value)\r\n   at UglifyCS.JSHint.JSHINT(String source, options options)\r\n   at Zippy.Chirp.Engines.JSHintEngine.Run(String fullFileName, ProjectItem projectItem)\r\n   at Zippy.Chirp.Engines.EngineManager.Process(ProjectItem projectItem)",
+    "LastUpdatedDate": "2011-09-25T06:46:01.74-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-06-30T07:42:36.3-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Error caused by jshint when saving JavaScript file",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 6,
+    "Id": 87
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "This happened to me as well.  My workaround was to just download the jshint source and put it in the location \"C:\\Documents and settings\\admin\\Local Settings\\http___jshint.com_js_jshint.js\".  Then JSHint worked.  The other option is to turn off JSHint.",
+      "PostedDate": "2011-07-15T14:39:30.213-07:00",
+      "Id": 39798
+    },
+    {
+      "Message": "Is there any solutions for this problem ?",
+      "PostedDate": "2011-09-25T05:42:02.397-07:00",
+      "Id": 45464
+    },
+    {
+      "Message": "\"string \" :\nDownload last source code and build on your pc.",
+      "PostedDate": "2011-09-25T06:46:01.74-07:00",
+      "Id": 45467
+    }
+  ]
+}

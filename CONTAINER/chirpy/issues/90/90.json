@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "http://chirpy.codeplex.com/SourceControl/changeset/changes/5ca15412dd28",
+    "ClosedDate": "2011-08-10T09:12:29.07-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Is it possible to manually invoke Chirpy on a file? I'd rather it not automatically minify files, but instead have the ability to right-click a script file and have a .min version built.",
+    "LastUpdatedDate": "2011-08-10T09:12:29.07-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-07-15T17:15:06.94-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Right-click minify?",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 90
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

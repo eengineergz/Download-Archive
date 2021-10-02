@@ -1,0 +1,204 @@
+[
+  {
+    "Id": "0",
+    "Name": "Margogype Chirpy (ver 2.06)",
+    "DevelopmentStatus": "Beta",
+    "Description": "New release with minor fix.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2012-05-29T16:24:38.893-07:00",
+    "Files": [
+      {
+        "Id": "f457c74d-94bf-4af7-a4a6-634870d44451",
+        "FileName": "Chirpy-VisualStudioAll.vsi",
+        "Url": "./0/f457c74d-94bf-4af7-a4a6-634870d44451",
+        "Type": "Application",
+        "UploadDate": "2012-05-29T16:22:15.483-07:00"
+      },
+      {
+        "Id": "16b71701-1125-4087-8988-fa9facf807f0",
+        "FileName": "Chirpy-VisualStudio2010.vsi",
+        "Url": "./0/16b71701-1125-4087-8988-fa9facf807f0",
+        "Type": "Application",
+        "UploadDate": "2012-05-26T11:28:51.1-07:00"
+      },
+      {
+        "Id": "46b90964-a4a4-4eff-a888-5dc5418ba4bf",
+        "FileName": "Chirpy-VisualStudio2008.vsi",
+        "Url": "./0/46b90964-a4a4-4eff-a888-5dc5418ba4bf",
+        "Type": "Application",
+        "UploadDate": "2012-05-26T11:35:31.31-07:00"
+      },
+      {
+        "Id": "5eb50d30-8655-419d-ba71-c67a73b3daa9",
+        "FileName": "Chirpy-VisualStudio11.vsi",
+        "Url": "./0/5eb50d30-8655-419d-ba71-c67a73b3daa9",
+        "Type": "Application",
+        "UploadDate": "2012-05-26T11:35:31.793-07:00"
+      },
+      {
+        "Id": "68dce4dc-2412-4446-8a83-f026148ad870",
+        "FileName": "console.zip",
+        "Url": "./0/68dce4dc-2412-4446-8a83-f026148ad870",
+        "Type": "Application",
+        "UploadDate": "2012-05-26T11:35:32.043-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "1",
+    "Name": "Margogype Chirpy (ver 2.04)",
+    "DevelopmentStatus": "Beta",
+    "Description": "New release with minor fix.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2012-01-04T10:08:16.43-08:00",
+    "Files": [
+      {
+        "Id": "96e188ec-60f5-4ee3-b43f-5536ad570dda",
+        "FileName": "Chirpy.vsi",
+        "Url": "./1/96e188ec-60f5-4ee3-b43f-5536ad570dda",
+        "Type": "Application",
+        "UploadDate": "2012-01-04T10:08:15.26-08:00"
+      },
+      {
+        "Id": "71d6ccf3-ff3b-4ebc-8ca8-2852b889bdd5",
+        "FileName": "console.zip",
+        "Url": "./1/71d6ccf3-ff3b-4ebc-8ca8-2852b889bdd5",
+        "Type": "Application",
+        "UploadDate": "2012-01-04T10:08:15.557-08:00"
+      }
+    ]
+  },
+  {
+    "Id": "2",
+    "Name": "Chirpy to the XXXtreme (ver. 1.0.0.5)",
+    "DevelopmentStatus": "Beta",
+    "Description": "Pay for Chirpy to go to college. Because it's hard to make a living as a pole-dancing bird.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2010-10-09T15:21:19.1-07:00",
+    "Files": [
+      {
+        "Id": "3205485f-779f-4289-a796-53c63ac47eea",
+        "FileName": "Chirpy.vsi",
+        "Url": "./2/3205485f-779f-4289-a796-53c63ac47eea",
+        "Type": "Application",
+        "UploadDate": "2010-10-09T15:21:18.88-07:00"
+      },
+      {
+        "Id": "c4f32262-71d0-49ac-bb00-135af2ce146e",
+        "FileName": "Chirpy.vsi",
+        "Url": "./2/c4f32262-71d0-49ac-bb00-135af2ce146e",
+        "Type": "Application",
+        "UploadDate": "2010-09-16T01:30:58.16-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "3",
+    "Name": "Chirpy Installer for VS 2010 (Ver-1.0.0.4)",
+    "DevelopmentStatus": "Beta",
+    "Description": "http://www.weirdlover.com/2010/07/18/chirpy-attains-godlike-abilities-in-version-1-0-0-4/",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2010-07-17T18:29:27.05-07:00",
+    "Files": [
+      {
+        "Id": "3cd97c94-49e5-4210-8d31-80ab186b1f27",
+        "FileName": "Chirpy.vsi",
+        "Url": "./3/3cd97c94-49e5-4210-8d31-80ab186b1f27",
+        "Type": "Application",
+        "UploadDate": "2010-07-17T18:29:26.88-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "4",
+    "Name": "Chirpy Installer for VS 2010 (Ver-1.0.0.3)",
+    "DevelopmentStatus": "Beta",
+    "Description": "VSI Installer, with various bug fixes.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2010-06-22T05:02:25.84-07:00",
+    "Files": [
+      {
+        "Id": "1e311ba1-6861-469e-8839-eba28d67b7ff",
+        "FileName": "Zippy.vsi",
+        "Url": "./4/1e311ba1-6861-469e-8839-eba28d67b7ff",
+        "Type": "Application",
+        "UploadDate": "2010-06-22T05:02:25.153-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "5",
+    "Name": "Chirpy Installer for VS 2010 (Ver-1.0.0.2)",
+    "DevelopmentStatus": "Beta",
+    "Description": "VS 2010 Installer for the Chirpy AddIn.\nVersion 1.0.0.2",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2010-06-02T15:54:58.277-07:00",
+    "Files": [
+      {
+        "Id": "94d7c4ba-6142-46ef-acc3-3bdb29c08efb",
+        "FileName": "Zippy.Setup.VS10.msi",
+        "Url": "./5/94d7c4ba-6142-46ef-acc3-3bdb29c08efb",
+        "Type": "Application",
+        "UploadDate": "2010-06-02T15:50:00.7-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "6",
+    "Name": "Chirpy Installer for VS 2010",
+    "DevelopmentStatus": "Alpha",
+    "Description": "VS 2010 Installer for the Chirpy AddIn.\nVersion 1.0.0.1",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2010-05-30T02:34:24.42-07:00",
+    "Files": [
+      {
+        "Id": "70e240a1-8600-4cc2-91a1-4fa8d24679ae",
+        "FileName": "Skewer Zippy (VS10 Setup).msi",
+        "Url": "./6/70e240a1-8600-4cc2-91a1-4fa8d24679ae",
+        "Type": "Application",
+        "UploadDate": "2010-05-30T02:34:24.293-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "7",
+    "Name": "Chirpy Installer for VS 2008",
+    "DevelopmentStatus": "Alpha",
+    "Description": "VS 2008 Installer for the Chirpy AddIn.\nVersion 1.0.0.1",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2010-05-30T02:27:36.127-07:00",
+    "Files": [
+      {
+        "Id": "42f8bbdc-ca62-434d-870a-cfc8ae6b3164",
+        "FileName": "Skewer Zippy (VS08 Setup).msi",
+        "Url": "./7/42f8bbdc-ca62-434d-870a-cfc8ae6b3164",
+        "Type": "Application",
+        "UploadDate": "2010-05-30T02:27:35.953-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "8",
+    "Name": "Margogype Chirpy (ver 2.01)",
+    "DevelopmentStatus": "Beta",
+    "Description": "Chirpy loves Americans. Chirpy hates Americanos.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2012-04-12T23:43:42.593-07:00",
+    "Files": [
+      {
+        "Id": "5c2cb0ab-de0d-40b4-b349-d2f15f488901",
+        "FileName": "Chirpy.vsi",
+        "Url": "./8/5c2cb0ab-de0d-40b4-b349-d2f15f488901",
+        "Type": "Application",
+        "UploadDate": "2011-07-19T14:55:49.607-07:00"
+      },
+      {
+        "Id": "a4fc7a50-19df-4eb1-bff1-d6589623872e",
+        "FileName": "ChirpyConsole.zip",
+        "Url": "./8/a4fc7a50-19df-4eb1-bff1-d6589623872e",
+        "Type": "Application",
+        "UploadDate": "2011-03-02T16:17:11.337-08:00"
+      }
+    ]
+  }
+]

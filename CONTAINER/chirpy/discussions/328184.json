@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "780794",
+    "ThreadId": "328184",
+    "Html": "\r\n<ul>\r\n<li>Downloaded the latest source, opened the .sln and built it with with vs2010. Installed bin\\Chirp.vsi.&nbsp;\r\n</li><li>Tools -&gt; Options -&gt; Chirp -&gt; dynamic CSS -&gt; Syntax highlighting &nbsp;is checked\r\n</li><li>Opened an existing MVC test project, created Less1.chirp.less </li><li>There is no syntax highlighting.&nbsp; </li></ul>\r\n<p>&nbsp;</p>\r\n<p>Mindscape Web Workbench is uninstalled (orignally had it, but uninstalled it and re-installed Chirpy, but that didn't fix it). When I tried with both installed Chirp wasn't auto updating the .css code behinds when i saved the .chirp.less files.&nbsp;</p>\r\n",
+    "PostedDate": "2012-02-19T11:38:51.47-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "796295",
+    "ThreadId": "328184",
+    "Html": "<p>I &nbsp;can confirm the exact same scenario and problem (crazy coincidence, that is).</p>",
+    "PostedDate": "2012-02-22T14:13:40.103-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "796327",
+    "ThreadId": "328184",
+    "Html": "<p>Update: I just went ahead and purchased the Pro version of Mindscape Workbench and disabled Chirp.&nbsp;</p>",
+    "PostedDate": "2012-02-22T14:36:42.113-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "794116",
+    "ThreadId": "340418",
+    "Html": "<p>Hi,</p>\n<p>I have been using Chirpy for about 6 months now, and it seems like the output files of mashed content can differ (over time). From what I can remember of the beginning, mashing would generate a <em>filename.js</em> and and a <em>filename.min.js</em>. In our production site we use the <em>.min</em> version of the files, but it seems like after compiling the last source code (previous code was the 2.0.4 release), it does not generate a <em>.min</em> version, just the <em>filename.js</em>. The file is however minified.</p>\n<p>In the&nbsp;<span style=\"background: black; color: #ccc;\">&lt;FileGroup Name=\"filename.js\"&gt;</span> we dont have <em>Minify=\"false\"</em> (which we do have on some already minified files). The problem now is that we have several references to the <em>.min</em> files in several place that are now broken. Fixing these references once-off isn't a big deal, but not knowing what to expect in the future with possibly missing files is a little bigger :-)</p>\n<p>What is current&nbsp;expect-able&nbsp;workflow in the mashing process? Is it supposed to generate both files? Or just a minified one without the <em>.min</em>? Also does it make a difference if we're running in the Console version?</p>\n<p><strong>ClosureCompilerCompressMode</strong>&nbsp;</p>\n<p>With the latest source of Chirpy, the&nbsp;<em>ClosureCompilerCompressMode</em> has changed from `<em>SIMPLE_OPTIMIZATIONS</em>` (I think) to&nbsp;<em>ADVANCED_OPTIMIZATIONS</em>.. So my js is now compressed too hard and not working.. This is quite a major change of functionality.. How can I specify the compression level in Console.Chirpy for all my JS files? I think with the MinifyWith attribute, I can specify it in the mash.chirp file, but files files are compressed individually..</p>\n<p>Thanks again!</p>",
+    "PostedDate": "2012-02-22T00:02:06.12-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "800675",
+    "ThreadId": "340418",
+    "Html": "<p><strong>Min</strong></p>\r\n<p>Watch issue :&nbsp;<a href=\"http://chirpy.codeplex.com/workitem/62\">http://chirpy.codeplex.com/workitem/62</a></p>\r\n<p><strong>ClosureCompilerCompressMode</strong><span>&nbsp;</span></p>\r\n<p><span>Change default engine for js in config screen.</span></p>\r\n<p><span>Tools &gt; Options &gt; Chirpy &gt; Config</span></p>",
+    "PostedDate": "2012-02-26T11:33:59.043-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

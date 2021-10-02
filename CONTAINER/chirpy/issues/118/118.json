@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 2,
+    "Custom": null,
+    "Description": "I get an installer error as follows:\r\nCould not access network location \\\\[shared]\\[user]\\\\Visual Studio 2010\\AddIns.\r\n\r\nI'm pretty sure it's due to the extra backslash. Please help, I have a default installation of Visual Studio 2010 Professional.\r\n\r\nThanks!",
+    "LastUpdatedDate": "2012-11-26T05:23:49.04-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-02-14T16:18:51.313-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Installer Error - Could not access network location",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 118
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Fixed it myself using InstEd, searched for PersonalFolder, and removed the backslash after [PersonalFolder], then saved a new msi file. I also had to change the install location, otherwise Chirpy threw an exception when starting Visual Studio.",
+      "PostedDate": "2012-02-14T17:44:19.503-08:00",
+      "Id": 56019
+    },
+    {
+      "Message": "Thanks for posting this. I was looking for ages for a solution to this.",
+      "PostedDate": "2012-11-26T05:23:49.04-08:00",
+      "Id": 83003
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "476343",
+    "ThreadId": "222423",
+    "Html": "when I add properties like\r\n-moz-border-radius-topleft {5px;}\r\n-webkit-border-top-left-radius{5px;}\r\n-moz-border-radius-topright{5px;}\r\n-webkit-border-top-right-radius{5px;}\r\n\r\nto the chirp.less file, the compiler give me this error\r\n\r\nError\t363\tExpected '}' on line 179 in file 'aaaa.chirp.less':\r\n[178]: \t\t\t\twidth:295px;\r\n[179]: \t\t\t\t        -moz-border-radius-topleft {5px;}\r\n       --------------------------------^\r\n[180]: \t\t\t\t-webkit-border-top-left-radius{5px;}\taaa.chirp.less\t179\t33\t\r\n\r\n\r\nany idea how to avoid this?",
+    "PostedDate": "2010-08-04T02:52:31.98-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "476344",
+    "ThreadId": "222423",
+    "Html": "my bad. it was an error on my css formatting\r\n\r\n",
+    "PostedDate": "2010-08-04T02:53:37.843-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

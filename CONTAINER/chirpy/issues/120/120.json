@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Resolve in change set dcb15f5a06e1\nhttp://chirpy.codeplex.com/SourceControl/changeset/changes/dcb15f5a06e1",
+    "ClosedDate": "2012-02-19T10:51:32.33-08:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "When I put a scss file in my config, chirpy dumps the raw sass into the css file instead of acting upon the config settings. Also, I'm looking in the chirpy options and I don't see any references to sass in there.\r\n",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-02-18T06:58:39.013-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "scss not process in config file",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 120
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

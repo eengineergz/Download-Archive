@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2010-12-16T18:40:27.553-08:00",
+    "CommentCount": 4,
+    "Custom": null,
+    "Description": "It'd be nice with a console runner for hooking Chirpy into the build server (not much reason to minify resources before deployment).\r\n\r\nOnly truly useful if it can also detect and replace resource links (css/js) in views.",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-09-18T05:44:09.043-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Console runner",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 37
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "See last source code.\r\nhttp://chirpy.codeplex.com/SourceControl/changeset/changes/b1b7a2d4cca9",
+      "PostedDate": "2010-09-23T16:08:32.277-07:00",
+      "Id": 16370
+    },
+    {
+      "Message": "Awesome, will check it out this weekend.",
+      "PostedDate": "2010-09-24T04:04:50.623-07:00",
+      "Id": 16380
+    },
+    {
+      "Message": "Can't get the source code to compile. I get the following errors:\n\nError\t4\t'Yahoo.Yui.Compressor.JavaScriptCompressor' does not contain a constructor that takes 6 arguments  Zippy.Chirp\nError\t7\tMetadata file 'bin\\TempChirpy.dll' could not be found\tZippy.Chirp.Tests\n",
+      "PostedDate": "2010-10-23T12:37:09.89-07:00",
+      "Id": 17675
+    },
+    {
+      "Message": "I am download changeset dd3c317c3aa0  and all build success.\nWhat version \"Yahoo.Yui.Compressor\" you have ?\n",
+      "PostedDate": "2010-10-24T08:39:25.65-07:00",
+      "Id": 17737
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1113271",
+    "ThreadId": "463945",
+    "Html": "Hi, due to the death of this project and after talking to the @evannagle I've decided to open a new repository in GitHub from the last commit 1793f0dd3165, oct 07, 2012.\r<br />\n<br />\n<a href=\"https://github.com/codecoding/ChirpyR\" rel=\"nofollow\">https://github.com/codecoding/ChirpyR</a>\r<br />\n<br />\nI've added support for the latest version of dotless and fixed some issues with console minification order.\r<br />\n<br />\nIf any of you is still using this project and want to contribute please feel free to pull requests. In my case, I'm still using Chirpy as I'm stuck with VS2010 and there's no better alternative for LESS than chirpy. \r<br />\n<br />\nI must confess that I love this tool and it would be great to see it alive again.\r<br />\n<br />\nCheers!\r<br />\n<br />\n<a href=\"https://github.com/codecoding/ChirpyR\" rel=\"nofollow\">https://github.com/codecoding/ChirpyR</a><br />\n",
+    "PostedDate": "2013-10-28T11:49:37.307-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

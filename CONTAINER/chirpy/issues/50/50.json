@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 5,
+    "Custom": null,
+    "Description": "When using chirpy on projects that are source controlled through TFS, my colleagues and I have noticed that the grouping of files does not work. When i say grouping i refer to in the project list we would like to see one chirp file (.js, .less etc), and see the normal, and minified files underneath that file in the tree structure of the solution explorer.\r\n\r\nWe have this feature working on projects not source controlled, so can only come to the conclusion it is TFS managed projects having this issue.\r\n\r\nThanks,\r\nJoe",
+    "LastUpdatedDate": "2012-08-09T09:11:13.94-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-11-14T18:51:06.093-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Chirpy with TFS",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 8,
+    "Id": 50
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Hello!\n\nI have not received any feedback regarding this issue. Are we able to get some feedback as to a fix or if it requires a future release?\n\nThanks,\nJOe",
+      "PostedDate": "2010-11-30T16:00:11.04-08:00",
+      "Id": 19279
+    },
+    {
+      "Message": "You project is :\nweb site project\nweb application project\nMVC project\n\nIn web site project the grouping don't work.",
+      "PostedDate": "2010-12-01T16:08:43.467-08:00",
+      "Id": 19349
+    },
+    {
+      "Message": "Hi ploufs,\n\nI think I missed your comment, either way - the problem has presented itself in web site projects and web application projects (of both VB and C#), but we do not currently have any MVC projects in our tfs base to test this issue with.\n\nThanks,\nJoe.",
+      "PostedDate": "2010-12-01T20:12:32.963-08:00",
+      "Id": 19368
+    },
+    {
+      "Message": "I have an MVC Project (using TFS) that is experiencing the same thing.  I installed the latest Chirpy Console, and added it as a build event.  If I check out all files it runs fine, otherwise I get the access denied error.  \n\nI'm a big fan of Chirpy, but I'm afraid we may have to remove it due to conflicts with the mashed up files among the other developers here.\n\n\nHere is the error contents that show:\n\n\n------ Build started: Project: MyStuff.Web, Configuration: Debug Any CPU ------\n  Unhandled Exception: System.UnauthorizedAccessException: Access to the path 'C:\\MyStuff\\MyStuff.Web\\MyStuff.Web\\Content\\IconSets.css' is denied.\n     at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)\n     at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)\n     at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)\n     at System.IO.StreamWriter.CreateFile(String path, Boolean append)\n     at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)\n     at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding)\n     at System.IO.File.InternalWriteAllText(String path, String contents, Encoding encoding)\n     at System.IO.File.WriteAllText(String path, String contents)\n     at Console.Chirp.Program.Main(String[] args)\nc:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\Microsoft.Common.targets(902,9): error MSB3073: The command \"\"C:\\Program Files (x86)\\Chirpy Console\\Chirpy.exe\" \"C:\\MyStuff\\MyStuff.Web\\MyStuff.Web\"\" exited with code -532462766.\n",
+      "PostedDate": "2012-05-09T11:48:47.02-07:00",
+      "Id": 65277
+    }
+  ]
+}

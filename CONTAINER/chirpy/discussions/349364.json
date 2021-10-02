@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "813137",
+    "ThreadId": "349364",
+    "Html": "\r\n<p>It appears '&amp;' is breaking the transform less to css.</p>\r\n<p>For example, if less1.chip.less looks like this:</p>\r\n<p>&nbsp;</p>\r\n<div style=\"color:black; background-color:white\">\r\n<pre><span style=\"color:#a31515\">a </span>{\r\n  <span style=\"color:red\">color</span>: <span style=\"color:blue\">#fff</span>;\r\n}\r\n</pre>\r\n</div>\r\n<p>&nbsp;</p>\r\n<p>then it is correctly compiled in less1.css as:</p>\r\n<p>&nbsp;</p>\r\n<div style=\"color:black; background-color:white\">\r\n<pre><span style=\"color:#a31515\">a </span>{ <span style=\"color:red\">color</span>: <span style=\"color:blue\">white</span>; }\r\n</pre>\r\n</div>\r\n<p>&nbsp;</p>\r\n<p>However, if I have an ampersand like this:</p>\r\n<p>&nbsp;</p>\r\n<div style=\"color:black; background-color:white\">\r\n<pre>a {\r\n  color: #fff;\r\n  &amp;<span style=\"color:#a31515\">:hover </span>{\r\n    <span style=\"color:red\">color</span>: <span style=\"color:blue\">#000</span>;\r\n  }\r\n}</pre>\r\n</div>\r\n<p>Then less1.css is blank. Is this because this add-in is using an older version of .less?</p>\r\n<p>Thank you.</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2012-03-20T11:31:57.07-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "814920",
+    "ThreadId": "349364",
+    "Html": "<p>Chirpy use last <a href=\"http://www.dotlesscss.org/\">dotless </a>available on NuGet.</p>",
+    "PostedDate": "2012-03-23T17:44:07.923-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "820914",
+    "ThreadId": "349364",
+    "Html": "<p>Thanks for your response. Sorry for the really late reply! I was pulled onto other projects and just got back to this.</p>\r\n<p>I believe the problem is I was using the older version found here:&nbsp;<a href=\"http://chirpy.codeplex.com/releases/view/46194\">http://chirpy.codeplex.com/releases/view/46194</a>.&nbsp;I grabbed the latest one and it works perfectly.</p>",
+    "PostedDate": "2012-04-06T11:25:02.237-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

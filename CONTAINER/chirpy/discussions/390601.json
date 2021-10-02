@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "896601",
+    "ThreadId": "390601",
+    "Html": "\r\n<p>I have a theme.chirp.less file that I use as a template for more specific themes. &nbsp;The theme file is never used by itself, and contains references to variables that don't exist in itself. &nbsp;The variables are defined in specific theme files which\r\n import the main theme file. &nbsp;The result is that I can add a new theme to the site by simply copying/pasting a theme specific file and changing the variable definitions. &nbsp;</p>\r\n<p>The only problem with this approach is that chirpy tries to compile the main theme setting/template file and complains that variables are undefined, which in that file, they are undefined.</p>\r\n<p>Is there a way to tell that one file to not generate it's own css file, but have it still be imported by the others?</p>\r\n",
+    "PostedDate": "2012-08-07T09:33:02.557-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

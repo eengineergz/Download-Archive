@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2010-12-01T16:15:38.82-08:00",
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "Try this:\r\n\r\na {\r\n\tcolor:green;\r\n\t:hover {\r\n\t\tcolor:red;\r\n\t}\r\n}\r\n\r\n\r\nshould generate:\r\n\r\na {\r\n  color: green;\r\n}\r\na:hover {\r\n  color: red;\r\n}\r\n\r\nbut instead generates:\r\n\r\na {\r\n  color: green;\r\n}\r\na :hover {\r\n  color: red;\r\n}\r\n\r\nWith a space before the :hover, so the browser loses the hover effect.\r\nSame thing with any other css pseudoclass\r\n\r\nThanks for the project, love it.",
+    "LastUpdatedDate": "2010-12-01T16:15:38.82-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-10-27T18:42:07.783-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "pseudo classes don't generate correctly in dotless",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 46
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Looks like this is the expected behavior of DotLess? See: http://groups.google.com/group/dotless/browse_thread/thread/b8ea707c29b4fab2?pli=1\n\nLet me know if that thread helps. If it doesn't, we can troubleshoot.\n\nCheers,\nEvan",
+      "PostedDate": "2010-10-29T13:31:13.33-07:00",
+      "Id": 17937
+    }
+  ]
+}

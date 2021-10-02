@@ -1,0 +1,61 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "http://chirpy.codeplex.com/SourceControl/changeset/fba50e79edf5",
+    "ClosedDate": "2012-07-29T16:59:02.05-07:00",
+    "CommentCount": 3,
+    "Custom": null,
+    "Description": "JSHint will complain about window and document not being defined unless you set the browser option.  It's be nice if this was allowed.\r\n\r\nLook for a pull request from http://chirpy.codeplex.com/SourceControl/network/forks/dukesb11/Chirpy",
+    "LastUpdatedDate": "2012-07-29T16:59:02.05-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-07-27T08:13:33.32-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Allow specifying browser option for JSHint",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 154
+  },
+  "FileAttachments": [
+    {
+      "FileId": 463757,
+      "FileName": "jsHintBrowser-154.diff",
+      "DownloadUrl": ".\\463757"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Had weird issues with my fork, so I've attached a patch.",
+      "PostedDate": "2012-07-27T09:27:38.533-07:00",
+      "Id": 72513
+    },
+    {
+      "Message": "After updating Chirpy to test this, I wasn't able to get any warnings where I had been before, so I can't say this is 100% solid, but I'm pretty sure that this correctly adds and applies the option.",
+      "PostedDate": "2012-07-27T09:33:24.367-07:00",
+      "Id": 72514
+    },
+    {
+      "Message": "I figured out why it wasn't working (had it in the wrong AddIns folder), I can now verify that it works.",
+      "PostedDate": "2012-07-27T10:06:47.573-07:00",
+      "Id": 72517
+    }
+  ]
+}

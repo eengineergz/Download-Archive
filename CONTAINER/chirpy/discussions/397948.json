@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "921524",
+    "ThreadId": "397948",
+    "Html": "\r\n<p>Please create TypeScript support for Chirpy...</p>\r\n<p><a href=\"http://www.typescriptlang.org/\">http://www.typescriptlang.org</a></p>\r\n<p>Thanks</p>\r\n",
+    "PostedDate": "2012-10-03T14:20:35.357-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "921564",
+    "ThreadId": "397948",
+    "Html": "This discussion has been copied to a work item. Click <a href=\"http://chirpy.codeplex.com/workitem/159\">here</a> to go to the work item and continue the discussion.",
+    "PostedDate": "2012-10-03T15:52:14.427-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

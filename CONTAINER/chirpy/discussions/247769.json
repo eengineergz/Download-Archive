@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "572857",
+    "ThreadId": "247769",
+    "Html": "\r\n<p>Chirpy's cool but when I search for stuff in my JS and CSS files I get a bunch of duplicates from the combined and minified versions. Has anyone figured out how to exclude these from showing up when using Find in Visual Studio?</p>\r\n",
+    "PostedDate": "2011-02-27T11:03:35.477-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "621304",
+    "ThreadId": "247769",
+    "Html": "<p>I've check out the same inconvenience.</p>\r\n<p>Even more, because css/js files encoded in single line VS search shows content of all found files.</p>\r\n<p>I use file patterns i.e. \"*.cs;*.debug.js;*.chirp.less.css\" but it is not very handy...</p>",
+    "PostedDate": "2011-06-01T04:00:51.697-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

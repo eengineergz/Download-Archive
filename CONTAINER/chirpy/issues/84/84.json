@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Watch changeset\nhttp://chirpy.codeplex.com/SourceControl/changeset/changes/df68279f09d0\nhttp://chirpy.codeplex.com/SourceControl/changeset/changes/ca7939439d36",
+    "ClosedDate": "2011-12-17T15:58:21.773-08:00",
+    "CommentCount": 2,
+    "Custom": null,
+    "Description": "If you're not familiar, SASS is similar to LESS, and has (in my opinion) several advantages over LESS (user definable methods, for loops, etc).  However, it requires Ruby and the SASS Gem to process.  Now that IronRuby is available, it seems like\r\n it should be possible to add SASS to Chirpy without too much effort.  There are already a couple of options for integrating ASP.NET and SASS:\r\n\r\nSassAndCoffee and \r\nSASS for Visual Studio 2010.  Unfortunately, SassAndCoffee doesn't support explicit pre-processing of SASS files, but rather processes each file or combined files on the first HTTP request for that resource.  SASS for Visual Studio is more like\r\n what I'm after, but it's alpha and doesn't support CoffeeScript, and we'd like a single package/extension that can handle all of our script/style preprocessing instead of having to rely on multiple libraries and/or extensions.",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-06-19T07:16:05.097-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Feature Request - SASS Support",
+    "Type": {
+      "Name": "Task",
+      "Id": 2
+    },
+    "VoteCount": 6,
+    "Id": 84
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Mindscape Web Workbench\nhttp://visualstudiogallery.msdn.microsoft.com/2b96d16a-c986-4501-8f97-8008f9db141a\n\nThe Mindscape Web Workbench is a 100% free plugin for Visual Studio 2010 to provide CoffeeScript, Sass and Less editing! \n\nThis all in one package takes care of all dependencies and adds:\n\n    Syntax highlighting (all languages)\n    Intellisense (Sass & Less)\n    Automatically generates the required output (e.g. .JS for CoffeeScript, .CSS for Sass)\n    Collapsable code blocks ",
+      "PostedDate": "2011-07-22T16:01:04.497-07:00",
+      "Id": 40292
+    },
+    {
+      "Message": "Library for SASSAndCoffee Script\r\nhttp://requestreduce.com/\r\nhttp://nuget.org/packages/SassAndCoffee/0.5.1",
+      "PostedDate": "2011-12-14T05:19:29.13-08:00",
+      "Id": 51049
+    }
+  ]
+}

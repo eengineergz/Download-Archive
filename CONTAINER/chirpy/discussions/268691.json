@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "656494",
+    "ThreadId": "268691",
+    "Html": "\r\n<p>We are getting the following error in VS2010SP1 with a brand new MVC3 project -</p>\r\n<p>&nbsp;</p>\r\n<p></p>\r\n<pre>CSSLintEngine -- c:\\research\\MvcApplication1\\Content\\themes\\base\\jquery.ui.theme.css\r\nCSSLintEngine -- c:\\research\\MvcApplication1\\Content\\themes\\base\\jquery.ui.tabs.css\r\nCSSLintEngine -- c:\\research\\MvcApplication1\\Content\\themes\\base\\jquery.ui.slider.css\r\nCSSLintEngine -- c:\\research\\MvcApplication1\\Content\\themes\\base\\jquery.ui.selectable.css\r\nCSSLintEngine -- c:\\research\\MvcApplication1\\Content\\themes\\base\\jquery.ui.resizable.css\r\nCSSLintEngine -- c:\\research\\MvcApplication1\\Content\\themes\\base\\jquery.ui.progressbar.css\r\nCSSLintEngine -- c:\\research\\MvcApplication1\\Content\\themes\\base\\jquery.ui.dialog.css\r\nCSSLintEngine -- c:\\research\\MvcApplication1\\Content\\themes\\base\\jquery.ui.datepicker.css\r\nError: Jurassic.JavaScriptException: ReferenceError: CSSLint is not defined\r\n   at global_(ScriptEngine , Scope , Object )\r\n   at Jurassic.Compiler.GlobalMethodGenerator.Execute()\r\n   at Jurassic.ScriptEngine.Execute(ScriptSource source)\r\n   at Jurassic.ScriptEngine.Execute(String code)\r\n   at UglifyCS.Environment.Run(String script, Expression`1[] vars)\r\n   at UglifyCS.CSSLint.CSSLINT(String source, options options)\r\n   at Zippy.Chirp.Engines.CSSLintEngine.Run(String fullFileName, ProjectItem projectItem)\r\n   at Zippy.Chirp.Engines.EngineManager.Process(ProjectItem projectItem)\r\nCSSLintEngine -- c:\\research\\MvcApplication1\\Content\\themes\\base\\jquery.ui.core.css\r\nCSSLintEngine -- c:\\research\\MvcApplication1\\Content\\themes\\base\\jquery.ui.button.css\r\nCSSLintEngine -- c:\\research\\MvcApplication1\\Content\\themes\\base\\jquery.ui.base.css\r\nCSSLintEngine -- c:\\research\\MvcApplication1\\Content\\themes\\base\\jquery.ui.autocomplete.css\r\nCSSLintEngine -- c:\\research\\MvcApplication1\\Content\\themes\\base\\jquery.ui.all.css\r\nCSSLintEngine -- c:\\research\\MvcApplication1\\Content\\themes\\base\\jquery.ui.accordion.css</pre>\r\n<p></p>\r\n<p>&nbsp;</p>\r\n<p>Any suggestions as to how to correct?</p>\r\n",
+    "PostedDate": "2011-08-11T05:58:56.393-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "675310",
+    "ThreadId": "268691",
+    "Html": "<p>I am also having issues with the same error in VS2010SP1 with a MVC2 project</p>\r\n<p>LessEngine -- C:\\Web\\Content\\styles.chirp.less.css<br />CSSLintEngine -- C:\\Web\\Content\\styles.chirp.less.css<br />Error: Jurassic.JavaScriptException: ReferenceError: CSSLint is not defined<br />&nbsp; &nbsp;&nbsp;at global_(ScriptEngine , Scope , Object )<br />&nbsp; &nbsp;at Jurassic.Compiler.GlobalMethodGenerator.Execute()<br />&nbsp; &nbsp;at Jurassic.ScriptEngine.Execute(ScriptSource source)<br />&nbsp; &nbsp;at Jurassic.ScriptEngine.Execute(String code)<br />&nbsp; &nbsp;at UglifyCS.Environment.Run(String script, Expression`1[] vars)<br />&nbsp; &nbsp;at UglifyCS.CSSLint.CSSLINT(String source, options options)<br />&nbsp; &nbsp;at Zippy.Chirp.Engines.CSSLintEngine.Run(String fullFileName, ProjectItem projectItem)<br />&nbsp; &nbsp;at Zippy.Chirp.Engines.EngineManager.Process(ProjectItem projectItem)<br />ConfigEngine -- C:\\Web\\Content\\styles.chirp.config</p>\r\n<p>Any thoughts?</p>",
+    "PostedDate": "2011-09-22T07:28:24.82-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "681540",
+    "ThreadId": "268691",
+    "Html": "This discussion has been copied to a work item. Click <a href=\"http://chirpy.codeplex.com/workitem/103\">here</a> to go to the work item and continue the discussion.",
+    "PostedDate": "2011-10-07T18:32:30.027-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

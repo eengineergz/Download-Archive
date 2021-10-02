@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2010-07-21T09:43:38.553-07:00",
+    "CommentCount": 2,
+    "Custom": null,
+    "Description": "Take a look as :hover has additional whitespace, therefore it doesnt work.\r\nless source:\r\n.html {\r\n\tfont-size: 1.3em; border: solid .1em #fff;\r\n\t:hover { \r\n\t\tborder: solid .1em #ddd; \r\n\t}\r\n}\r\ngenerated css:\r\n.matter .html :hover {\r\n  border: solid .1em #ddd;\r\n}",
+    "LastUpdatedDate": "2010-07-21T09:43:38.553-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-07-20T15:08:36.26-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "pseudos doesnt work in last version",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 17
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "update, pseudos needs: &:hover\nPrevious versions worked without it.",
+      "PostedDate": "2010-07-20T15:12:22.873-07:00",
+      "Id": 14635
+    },
+    {
+      "Message": "steida,\n\nI'm assuming that this is a change in the way that the DotLess translator handles pseudos? In the newest version of Chirpy, I updated the DotLess library (http://github.com/dotless/dotless/downloads).\n\nCheers,\nEvan",
+      "PostedDate": "2010-07-20T15:45:30.283-07:00",
+      "Id": 14638
+    }
+  ]
+}

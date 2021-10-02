@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "514091",
+    "ThreadId": "232681",
+    "Html": "\r\n<p>I think I had 1.0.0.4 installed previously with the VS version # modified in the .Addin file. I tried doing the same with 1.0.0.5 but it fails every time I try to load VS 2008.</p>\r\n",
+    "PostedDate": "2010-10-28T10:11:49.513-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "514765",
+    "ThreadId": "232681",
+    "Html": "\r\n<p>Last version only work on vs 2010.</p>\r\n",
+    "PostedDate": "2010-10-29T14:53:38.897-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "514768",
+    "ThreadId": "232681",
+    "Html": "\r\n<p>Thanks ploufs. Any suggestion on where I can download the previous version from?</p>\r\n",
+    "PostedDate": "2010-10-29T15:04:29.687-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "514960",
+    "ThreadId": "232681",
+    "Html": "\r\n<p>All version available on download tab.</p>\r\n<p>&#65279;Version 1.0.0.4<br>\r\nhttp://chirpy.codeplex.com/releases/view/49152</p>\r\n",
+    "PostedDate": "2010-10-30T12:30:07.017-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "514961",
+    "ThreadId": "232681",
+    "Html": "\r\n<p>Thanks ploufs. I should have looked before asking :D</p>\r\n",
+    "PostedDate": "2010-10-30T12:51:45.857-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "495413",
+    "ThreadId": "227730",
+    "Html": "<p>I have a solution with a couple of EF4 domain model projects and a number of MVC projects, and would like Chirpy to run all of the T4 templates in the solution. I've tried separating the names of the .tt files with space and semicolon as well as using a wildcard (*.tt), but that didn't work.</p>\r\n<p>Is there a way to achieve this with the current version or should I add an issue (feature request) for it? ;)</p>",
+    "PostedDate": "2010-09-18T07:58:15.947-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "495594",
+    "ThreadId": "227730",
+    "Html": "<p>Separator is <span id=\"result_box\"><span style=\"background-color:#ffffff;color:#000000\">comma.</span></span></p>\r\n<p>t4TemplateList.Split(new char[] { ',' });</p>",
+    "PostedDate": "2010-09-19T07:09:59.64-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "496007",
+    "ThreadId": "227730",
+    "Html": "<p>Works as expected, thanks!</p>\r\n<p>I think it would make sense to make the input field multi-line and have every entry on a separate line.</p>\r\n<p>It'd also be nice if one could use wildcards, like *.tt.</p>",
+    "PostedDate": "2010-09-20T07:04:27.72-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

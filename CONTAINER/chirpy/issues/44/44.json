@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Just started using Chirpy, and its great!\r\n\r\nFound one issue with inline minification. \r\n\r\nThe following line in my code causes an error\r\n<script type=\"text/javascript\" src=\"<%= Url.JavaScript(\"plugins/jquery.rating.js\") %>\"></script>\r\nThe Url.JavaScript is my own Url extension, but you get the idea.  It gives me two errors:\r\na) syntax error\r\nb) unterminated string literal.\r\nwhen removing that line everything work fine.\r\n",
+    "LastUpdatedDate": "2010-10-25T22:19:16.583-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-10-20T06:50:29.693-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Inline minification - parsing error",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 44
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

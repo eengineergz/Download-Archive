@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hello,\r\n\r\nit would be nice to be able to specify the DefaultJavaScriptMinifier in a config file. \r\nFor example to have the following in a .chirp.config file:\r\n  <Settings>\r\n    <Setting key=\"GoogleClosureJavaPath\" value=\"C:\\Program Files (x86)\\Java\\jre7\\bin\\javaw.exe\" />\r\n    <Setting key=\"GoogleClosureOffline\" value=\"true\" />\r\n    <Setting key=\"DefaultJavaScriptMinifier\" value=\"gctSimple\"></Setting>\r\n  </Settings>\r\n\r\nHowever the Settings class can not currently read the DefaultJavaScriptMinifier property.\r\nThere is an easy fix to this:\r\nIn  private void SetSettings(IEnumerable<KeyValuePair<string, string>> settings) add\r\n\r\n                else if (prop.PropertyType == typeof(Xml.MinifyType))\r\n                {\r\n                    Xml.MinifyType t = Xml.MinifyType.Unspecified;\r\n                    if (Enum.TryParse(kvp.Value, true, out t)) {\r\n                        prop.SetValue(this, t, null);\r\n                    }\r\n                }\r\n\r\nin the bottom of the foreach loop.\r\n\r\nCould you please consider including this in Chirpy? \r\n\r\nThanks,\r\n/Bjarke\r\n\r\n",
+    "LastUpdatedDate": "2012-10-30T08:00:37.16-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-10-30T08:00:37.16-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Cannot specify DefaultJavaScriptMinifier in config file",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 163
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

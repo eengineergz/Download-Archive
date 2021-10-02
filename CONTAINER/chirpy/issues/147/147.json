@@ -1,0 +1,51 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "Hi,\r\nI'm trying to load the chirpy addin into VS2008, I have altered the Zippy.Addin lines to version 9.0, as indicated in a previous post but I recieve an error when starting Visual Studio 2008.\r\n\r\n\"The was a problem loading the add-in file 'C:\\documents and settings\\username\\my documents\\visual studio 2008\\addins\\Zippy.Addin'\r\n\r\nError (Line 1):\r\nSwitch from current encoding to specified encoding not supported.\"\r\n\r\nI havent found any other users with the same issue in the 'discussions' or 'issues' could you please tell me how to resolve this problem? Can I alter the encoding in the Zippy.Addin line? If so what to? or should I alter a setting somehwere in visual studio?\r\n\r\nThe add-in has installed correctly (showing up at least) in VS 2010 but I have a 2008 web application, which needs to remain in VS 2008 for support reasons... or I would ditch VS 2008?!?!\r\n\r\nRegards,\r\nTB",
+    "LastUpdatedDate": "2012-07-10T09:01:00.247-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-07-10T08:52:35.18-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "VS 2008 - Loading Add-in error (Latest Version)",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 147
+  },
+  "FileAttachments": [
+    {
+      "FileId": 437730,
+      "FileName": "chirpy_addin_error.JPG",
+      "DownloadUrl": ".\\437730"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Hi,\r\n\r\nSorry, worked it out...\r\n\r\nsomehow, no idea how, the Zippy.Addin file was corrupted in VS 2008 Addins folder but not in VS 2010 addins folder. I copied the 2010 versions and changed the version number again and VS2008 loaded successfully...\r\n\r\nPlease close...\r\n\r\nRegards,\r\nTartanBono",
+      "PostedDate": "2012-07-10T09:01:00.247-07:00",
+      "Id": 69875
+    }
+  ]
+}

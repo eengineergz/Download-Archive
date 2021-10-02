@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "631500",
+    "ThreadId": "262421",
+    "Html": "\r\n<p>Just updated to version 2, and many (not all) of my combined files now have .min in their file names. example: what was combinedFiles.js is now combinedFiles.min.js.</p>\r\n<p>Question 1, is there a way to control this or turn it off?</p>\r\n<p>Question 2, what is the logic for when .min is inserted into the resulting file name? When all files are minimized, .min is inserted. When no files are minimized, .min is not inserted. But what is the logic when SOME of the combined files are minimized?</p>\r\n<p>&nbsp;</p>\r\n<p>thanks</p>\r\n<p>-Geoff</p>\r\n",
+    "PostedDate": "2011-06-22T15:41:14.783-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "631540",
+    "ThreadId": "262421",
+    "Html": "<p><strong>Question 1, is there a way to control this or turn it off?</strong></p>\r\n<p>Presently no.</p>\r\n<p><strong>Question 2</strong></p>\r\n<p>Normal .min when file is minimized.</p>",
+    "PostedDate": "2011-06-22T16:55:22.153-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "631611",
+    "ThreadId": "262421",
+    "Html": "<p><br />Thanks for the quick reply.</p>\r\n<p>Would be nice if there were some way to control it, but I can work around it.</p>\r\n<p>For Question 2</p>\r\n<p>So if any of the combined files gets minimized, the. min will be inserted into the file name, correct?</p>",
+    "PostedDate": "2011-06-22T22:07:54.747-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "632794",
+    "ThreadId": "262421",
+    "Html": "<blockquote style=\"border: solid .1em #ccc; font-style: italic; margin: .25em 1em 0 1em; padding: 0 .25em 0 .25em;\"><strong>geoffreyk00 wrote:</strong><br />\r\n<p><br /> Thanks for the quick reply.</p>\r\n<p>Would be nice if there were some way to control it, but I can work around it.</p>\r\n<p>For Question 2</p>\r\n<p>So if any of the combined files gets minimized, the. min will be inserted into the file name, correct?</p>\r\n</blockquote>\r\n<p>Yes.</p>",
+    "PostedDate": "2011-06-24T14:52:41.16-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

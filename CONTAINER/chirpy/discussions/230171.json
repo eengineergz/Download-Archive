@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "504324",
+    "ThreadId": "230171",
+    "Html": "<p>I am using VS 2010 on Win 7 x64.&nbsp; I am getting this error when starting with Chirpy.</p>\r\n<p>The Add-in 'Chirpy' failed to load or caused an exception. Would you like to remove this Add-in? If you choose yes, the file it was loaded from...will be renamed.&nbsp; Error Message: &lt;Unknown Error&gt;&nbsp; Error Number: 80131515</p>\r\n<p>Thanks,</p>\r\n<p>Vincent</p>",
+    "PostedDate": "2010-10-08T08:53:27.953-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "505111",
+    "ThreadId": "230171",
+    "Html": "<p>Chirpy version ?</p>",
+    "PostedDate": "2010-10-10T13:35:10.87-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "505129",
+    "ThreadId": "230171",
+    "Html": "<p>The ver 1.0.0.5. I also download the most recent project and built it.&nbsp; Still doesn't work.</p>",
+    "PostedDate": "2010-10-10T15:20:41.44-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "505449",
+    "ThreadId": "230171",
+    "Html": "<p>Console version work ?</p>",
+    "PostedDate": "2010-10-11T08:00:01.54-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "505474",
+    "ThreadId": "230171",
+    "Html": "<p>I have exactly the same problem. The command llive version works perfectly but any attempt to install the add-in throws an unknown error on load.</p>\r\n<p>Just like Vincent I am using VS 2010 on Win 7 x64.</p>\r\n<p>I have tried building from source with the latest set (<span style=\"font-weight:bold\">545c2664560a</span>) and it's still the same problem. Also tried the packaged releases <span>v1.0.0.5.3</span>, v1.0.0.5.2, and a couple of earlier ones too just for good measure but so far no success.</p>\r\n<p>In fact I tried debugging the add-in but the error seems to occur before I can even get to the point of debugging. I started to wonder if I was missing some sort of dependency but I have the Visual Studio SDK, Java runtime and SDK, and everything else I could find that looks like it might even be a remote dependency. I am starting to think it's related to the way WOW64 has a seperate set of registry keys and if nobody has a solution soon I will go digging in that direction because this is exactly the tool I want my team to use - assuming we can make it work of course.</p>\r\n<p>Cheers,</p>\r\n<p>Philippe</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-10-11T08:34:54.467-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "505516",
+    "ThreadId": "230171",
+    "Html": "<p>Chirpy install on network drive ?<br><br>http://chirpy.codeplex.com/workitem/28</p>\r\n<p>&quot;</p>\r\n<p>The solution of adding the following switch to the devenv.exe.config  file in the blog post linked to by &quot;weirdlover&quot; worked for me.<br><br>&lt;configuration&gt;<br> &lt;runtime&gt;<br> &lt;loadFromRemoteSources enabled=&quot;true&quot;/&gt;<br> &lt;/runtime&gt;<br>&lt;/configuration&gt;</p>\r\n<p>&quot;</p>",
+    "PostedDate": "2010-10-11T10:33:45.207-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "505518",
+    "ThreadId": "230171",
+    "Html": "<p>Yep. I keep a lot of my user folders on a network device, and it turns out that Visual Studio sees the standard path for Add-Ins as being a remote location.</p>\r\n<p>Which actually explains perfectly the issue and enabling loadFromRemoteSources fixes the problem instantly. My latest project is now happily chirping away.</p>\r\n<p>Thanks - the quick reply on that is greatly appreciated.</p>\r\n<p>Philippe</p>",
+    "PostedDate": "2010-10-11T10:47:06.74-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "505989",
+    "ThreadId": "230171",
+    "Html": "<p>Worked for me too.&nbsp; Thanks.</p>",
+    "PostedDate": "2010-10-12T06:11:36-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

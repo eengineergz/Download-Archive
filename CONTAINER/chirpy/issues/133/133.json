@@ -1,0 +1,65 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Fix in change set : fc796a4ae01b\nhttp://chirpy.codeplex.com/SourceControl/changeset/changes/fc796a4ae01b",
+    "ClosedDate": "2012-04-21T12:44:05.14-07:00",
+    "CommentCount": 5,
+    "Custom": null,
+    "Description": "Hi!\r\n\r\n\r\nFirst of all, congrats on the brilliant add-on!\r\nI just upgraded to the latest v2 and I realized a strange behavior: on the previous release, all the Javascript files were compressed to single-line ones and now it's not like that (I'm using YUI). HAve I missed anything important?\r\nThanks in advance.\r\n\r\nkind regards,\r\n\r\nVaralonga",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-04-09T12:48:07.853-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "YUI doesn't compress JavaScript in a single line anymore",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 133
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Hi!\n\nThx for you feedback.\nI checked out the options as you mentioned and the settings are the following:\n\nDisable optimizations (NOT CHECKED)\nIs obfuscate javascript (CHECKED)\nLine Break position: 0\nPreserve all semicolons (NOT CHECKED)\n\n\nWhat should I tweak in order for YUI to compress all JS in a single line?\nThanks in advance.\n",
+      "PostedDate": "2012-04-16T04:06:27.957-07:00",
+      "Id": 62467
+    },
+    {
+      "Message": "Config line break position in config screen.\n\n->tools\n->Options\n->Chirpy\n-> Yui Js\n\r\n\r** Closed by ploufs 04/14/2012 5:30PM",
+      "PostedDate": "2012-04-14T17:30:30.283-07:00",
+      "Id": 62481
+    },
+    {
+      "Message": "Hi!\n\nThx for you feedback.\nI checked out the options as you mentioned and the settings are the following:\n\nDisable optimizations (NOT CHECKED)\nIs obfuscate javascript (CHECKED)\nLine Break position: 0\nPreserve all semicolons (NOT CHECKED)\n\n\nWhat is exactly wrong with these settings?\nWhat should I tweak in order to get YUI to compress all JS in a single line?\nThanks in advance.",
+      "PostedDate": "2012-04-16T06:30:01.643-07:00",
+      "Id": 62482
+    },
+    {
+      "Message": "Hi!\n\n\nSorry for the pressure, but I really need to know if it's possible to compress JS files (and maybe CSS files) to a single line. We're using many JS and CSS files, many of them with a considerable amount of lines, and this little detail can make the difference in the final size of the compressed file.\nThanks in advance and, once again, congrats for the awesome app!\n\nkind regards,\n\nVitor",
+      "PostedDate": "2012-04-18T03:24:04.887-07:00",
+      "Id": 62747
+    },
+    {
+      "Message": "Thanks a lot! Worked like a charm!\n\nkeep on chirpying!",
+      "PostedDate": "2012-04-21T16:09:58.233-07:00",
+      "Id": 62986
+    }
+  ]
+}

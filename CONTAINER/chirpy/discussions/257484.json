@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "612220",
+    "ThreadId": "257484",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>I am probably missing something, but when I save the .coffee file it doesn't get compiled and nothing happens.</p>\r\n<p>Steps I've done:</p>\r\n<ol>\r\n<li>Install the plug-in. </li><li>Download the Windows compiler and put it under&nbsp;C:\\Tools\\coffeescript-compiler\r\n</li><li>In VS 2010 went to Tools&gt;Options&gt;Chirpy&gt;CoffeeScript and set the compiler to&nbsp;C:\\Tools\\coffeescript-compiler\\coffee.bat\r\n</li><li>Added a new file to existing MVC3 project: public\\js\\a.coffee with the following content: &quot;1&#43;1&quot;\r\n</li><li>Saved it. </li><li>Nothing happened :( </li></ol>\r\n<p>I played a bit with different options but I don't even get any Console output from Chirpy.</p>\r\n<p>Could you please suggest what I might be missing?</p>\r\n<p>Cheers,<br>\r\nDima.&nbsp;</p>\r\n",
+    "PostedDate": "2011-05-13T01:15:52.523-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "626219",
+    "ThreadId": "257484",
+    "Html": "<p>All your steps look good, except the default extension Chirpy looks for is *.chirp.coffee.</p>\r\n<p>Change your a.coffee file to a.chirp.coffee and you should be in business!</p>\r\n<p>Noah</p>",
+    "PostedDate": "2011-06-10T17:45:04.647-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "645719",
+    "ThreadId": "257484",
+    "Html": "<p>I have same problem here, the only one diference is that I'm using coffee.exe on compiler.</p>\r\n<p>If I open file.js and change and save file.chip.coffee, VS ask me to reload it, but it have no content.</p>\r\n<p>What should I do?</p>",
+    "PostedDate": "2011-07-21T11:40:29.257-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "656041",
+    "ThreadId": "257484",
+    "Html": "<p>\"file.chip.coffee\" change to \"file.chi<strong>r</strong>p.coffee\" or change file extension in configuration screen.</p>",
+    "PostedDate": "2011-08-10T11:54:39.71-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "661215",
+    "ThreadId": "257484",
+    "Html": "<p>For some reason, I'am having problem to switch from the default (dll build-in) CoffeeScript compiler to custom one. Even filled an issue on this:&nbsp;<a href=\"http://chirpy.codeplex.com/workitem/95\">http://chirpy.codeplex.com/workitem/95</a></p>\r\n<p><br />The source code for the default compiler is in Chirpy dll and I can not fine the source code for the library to recompile.</p>",
+    "PostedDate": "2011-08-21T09:27:56.39-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

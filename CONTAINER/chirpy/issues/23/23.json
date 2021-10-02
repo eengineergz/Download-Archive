@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 4,
+    "Custom": null,
+    "Description": "When I'm developing (in debug build configuration) I'd like to not have my JS in a mashed FileGroup minified. Rather than manually putting Minify=\"False\" on each <File/> element, could Chirpy make the default False when in debug configuration?",
+    "LastUpdatedDate": "2010-08-03T03:57:58.193-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-07-26T06:41:33.907-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Choose default setting of Minify based on build configuration",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 23
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Are you using T4MVC or is this not an MVC project?",
+      "PostedDate": "2010-07-30T11:46:40.853-07:00",
+      "Id": 14853
+    },
+    {
+      "Message": "I'm not using T4MVC.\nHowever my project is an MVC project. How does this affect things?\nThanks.",
+      "PostedDate": "2010-08-03T03:02:43.333-07:00",
+      "Id": 14903
+    },
+    {
+      "Message": "Hey Andrew,\n\nNot sure what Wayne was getting at with that one.\n\nYou could create two chirp.config files. The first mashes together all of the files; the second points to the first mashed file, and you specify that the created file should be minified.\n\nThen, you can do a good old fashioned #if DEBUG conditional, swapping out the one mashed file for the other.\n\nDoes this solution not work for you? I can see what you've suggested as a nice feature, but I think it might complicate things a wee bit.\n\nCheers,\nEvan\n\n",
+      "PostedDate": "2010-08-03T03:56:54.12-07:00",
+      "Id": 14906
+    },
+    {
+      "Message": "Oh, I think Wayne was referencing this article by David Ebbo:\nhttp://blogs.msdn.com/b/davidebb/archive/2009/11/16/t4mvc-2-5-00-update-multiple-output-files-and-minified-javascript-support.aspx?wa=wsignin1.0\n\nYou can switch out a non-minified version of a file for a minified version with T4MVC. \n\nCheers,\nEvan",
+      "PostedDate": "2010-08-03T03:57:58.193-07:00",
+      "Id": 14907
+    }
+  ]
+}

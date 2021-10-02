@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "555526",
+    "ThreadId": "243351",
+    "Html": "\r\n<p>It would be great to be able to turn on and off the compression on a per project basis. That way we can reference the filenames for css/js created by chirpy but be able to disable their compression making debugging easier</p>\r\n",
+    "PostedDate": "2011-01-26T05:23:37.693-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "579511",
+    "ThreadId": "243351",
+    "Html": "<p>Presently</p>\r\n<p>1. menu \"tools\"</p>\r\n<p>2. item \"add-in manager...\"</p>\r\n<p>3. Uncheck checkbox on line Chirpy</p>",
+    "PostedDate": "2011-03-12T10:10:55.49-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "600153",
+    "ThreadId": "243351",
+    "Html": "<p>Perhaps use a property in the .﻿csproj file, like those used by StyleCop, etc.</p>",
+    "PostedDate": "2011-04-19T21:43:58.98-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "601326",
+    "ThreadId": "243351",
+    "Html": "This discussion has been copied to a work item. Click <a href=\"http://chirpy.codeplex.com/workitem/75\">here</a> to go to the work item and continue the discussion.",
+    "PostedDate": "2011-04-21T16:40:49.83-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "564434",
+    "ThreadId": "245578",
+    "Html": "\r\n<p>It would be nice to have a setting in the configuration file to add the build version of the CSS/JS file into the filename.&nbsp;</p>\r\n<p>Currently when I publish a new version of my website the users are not getting the new version of my css file in some occasions. If the build version would be in the filename of my CSS file, then I would know for certain that they would have the latest version\r\n of my CSS.</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2011-02-10T23:59:28.387-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "579503",
+    "ThreadId": "245578",
+    "Html": "This discussion has been copied to a work item. Click <a href=\"http://chirpy.codeplex.com/workitem/65\">here</a> to go to the work item and continue the discussion.",
+    "PostedDate": "2011-03-12T09:57:13.5-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

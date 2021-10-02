@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 2,
+    "Custom": null,
+    "Description": "Getting this exception whenever chirpy is trying to run which makes visual studio restart. Windows 7, visual studio 2010 premium, Team foundation server.\r\nEven getting it when \"run as administrator\" on visual studio.\r\n\r\nApplication: devenv.exe\r\nFramework Version: v4.0.30319\r\nDescription: The process was terminated due to an unhandled exception.\r\nException Info: System.UnauthorizedAccessException\r\nStack:\r\n   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)\r\n   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)\r\n   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)\r\n   at Microsoft.VisualStudio.Text.Implementation.TextDocument.PerformSave(FileMode fileMode, String filePath, Boolean createFolder)\r\n   at Microsoft.VisualStudio.Text.Implementation.TextDocument.Save()\r\n   at Microsoft.VisualStudio.Editor.Implementation.VsDocDataAdapter.<Save>b__a()\r\n   at Microsoft.VisualStudio.Editor.Implementation.VsDocDataAdapter.Save(Action saver)\r\n   at Microsoft.VisualStudio.Editor.Implementation.VsDocDataAdapter.Save(String pszFilename, Int32 fRemember, UInt32 nFormatIndex)\r\n   at EnvDTE.ProjectItem.Save(System.String)\r\n   at Zippy.Chirp.Engines.T4Engine.RunT4Template(EnvDTE80.DTE2, System.String)\r\n   at Zippy.Chirp.Engines.T4Engine.<Run>b__0(System.Object)\r\n   at System.Threading._TimerCallback.TimerCallback_Context(System.Object)\r\n   at System.Threading.ExecutionContext.runTryCode(System.Object)\r\n   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode, CleanupCode, System.Object)\r\n   at System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object)\r\n   at System.Threading.ExecutionContext.Run(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object, Boolean)\r\n   at System.Threading._TimerCallback.PerformTimerCallback(System.Object)\r\n\r\nHope this get fixed. I love chirpy!",
+    "LastUpdatedDate": "2011-03-09T20:49:39.613-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-11-09T03:57:54.233-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "System.UnauthorizedAccessException",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 4,
+    "Id": 47
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I was able to get a little more info on this. This happens when at least one .tt file in the solution isn't checked out. Team foundation server handles modification of a file using the read-only attribute. So if a file hasn't been checked out then it's read-only. \n\nHope this helps!\n\nBest Regards",
+      "PostedDate": "2010-11-10T05:18:28.72-08:00",
+      "Id": 18329
+    },
+    {
+      "Message": "Thanks for sussing this one out Dashu. That solved the problem.\n\nWhere the other code generation cleverness of Chirpy is buttery goodness with TFS, it's odd that T4MVC wouldn't work. Keep up the lovely work on Chirpy. TFS is a bit of a boor anyway.",
+      "PostedDate": "2011-03-09T20:49:39.613-08:00",
+      "Id": 30316
+    }
+  ]
+}

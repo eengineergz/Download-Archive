@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "542580",
+    "ThreadId": "240116",
+    "Html": "\r\n<p>Hi guys,</p>\r\n<p>have you considered moving the project to github? Even with Mercurial codeplex is not as contributor friendly as it should be.</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2010-12-31T14:06:10.597-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "542589",
+    "ThreadId": "240116",
+    "Html": "\r\n<p>No plan to move project to github.</p>\r\n",
+    "PostedDate": "2010-12-31T15:30:49.87-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "546930",
+    "ThreadId": "240116",
+    "Html": "\r\n<p>I'd love to move over to github too!</p>\r\n",
+    "PostedDate": "2011-01-10T13:07:14.457-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

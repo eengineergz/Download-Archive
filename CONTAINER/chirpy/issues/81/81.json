@@ -1,0 +1,51 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2011-05-23T08:11:15.433-07:00",
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "Hi,\r\nEvery time I'm going to Options - Chirpy - Config dialog, both minifiers lists populated with duplicated entries, please check attached screenshot.",
+    "LastUpdatedDate": "2011-05-23T08:11:15.433-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-05-22T23:04:22.623-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "VS 2010 config dialog minifiers list duplicated on every config display",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 81
+  },
+  "FileAttachments": [
+    {
+      "FileId": 242426,
+      "FileName": "chirpy.png",
+      "DownloadUrl": ".\\242426"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "I've built from source and it seems to be fixed already.",
+      "PostedDate": "2011-05-23T00:14:12.547-07:00",
+      "Id": 36227
+    }
+  ]
+}

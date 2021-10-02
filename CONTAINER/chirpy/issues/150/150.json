@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2012-07-21T13:20:34.55-07:00",
+    "CommentCount": 3,
+    "Custom": null,
+    "Description": "I've tried to install the add-in [(ver 2.06)] that seems to say that it will install for all versions of Visual Studio. However I don't see it in the list of add-ins or the options in Visual Studio 2012 RC.\r\n",
+    "LastUpdatedDate": "2012-09-30T13:45:29.223-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-07-20T09:28:46.447-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Can't see the Chirpy add-in in VS 2012 RC",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 150
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Check in your add-in folder \nC:\\Users\\<username>\\Documents\\Visual Studio 11\\AddIns\n\nby default vsi copy file to C:\\Users\\<username>\\Documents\\Visual Studio 2012\\Addins\n",
+      "PostedDate": "2012-07-21T13:20:27.113-07:00",
+      "Id": 70622
+    },
+    {
+      "Message": "I am having the same issue.\n\nI verified that Chirpy is in the Visual Studio 2012\\Addins folder but the extension still doesn't appear or function in Visual Studio 2012 RC",
+      "PostedDate": "2012-09-26T07:46:19.677-07:00",
+      "Id": 77792
+    },
+    {
+      "Message": "@wilkinsonj\n\nIn visual studio 2012 RC the add-in folder is \n\\Visual Studio 11\\AddIns\n\nAnd in file  \"Zippy.Addin\"\n<HostApplication>\n\t\t<Name>Microsoft Visual Studio</Name>\n\t\t<Version>11.0</Version>\n</HostApplication>",
+      "PostedDate": "2012-09-30T13:45:29.223-07:00",
+      "Id": 78136
+    }
+  ]
+}

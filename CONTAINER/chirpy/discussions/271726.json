@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "668481",
+    "ThreadId": "271726",
+    "Html": "\r\n<p>Hi</p>\r\n<p>I am trying to get the my scripts to be closure-compiled using the advanced options - I have given it the correct file extension as configured in Chirpy's options - but it compiles with the whitespace-only option. Looking at the request in fiddler, I can\r\n see that it requests with WHITESPACE_ONLY.</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2011-09-07T02:19:16.777-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "669447",
+    "ThreadId": "271726",
+    "Html": "<p>Fix in&nbsp;<a href=\"http://chirpy.codeplex.com/SourceControl/changeset/changes/231d0fb7a3ed\">Change Set 231d0fb7a3ed</a></p>",
+    "PostedDate": "2011-09-08T17:21:41.02-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "669553",
+    "ThreadId": "271726",
+    "Html": "<p>Thanks - do you know when the next release will be?</p>",
+    "PostedDate": "2011-09-09T01:20:03.753-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

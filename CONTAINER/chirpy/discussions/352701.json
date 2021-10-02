@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "825480",
+    "ThreadId": "352701",
+    "Html": "\r\n<p>I have hte following mash.chirp.config file</p>\r\n<p>&lt;root&gt; &nbsp;</p>\r\n<p>&lt;FileGroup Name=&quot;podPlayers.debug.js&quot;&gt;</p>\r\n<p>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &lt;File Path=&quot;core.js&quot; Minify=&quot;false&quot; /&gt;</p>\r\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;File Path=&quot;contentArea.js&quot; Minify=&quot;false&quot; /&gt;</p>\r\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;File Path=&quot;searchbar.js&quot; Minify=&quot;false&quot; /&gt;</p>\r\n<p>&nbsp; &nbsp; &nbsp; &lt;/FileGroup&gt;</p>\r\n<p>&nbsp; &nbsp; &nbsp; &lt;FileGroup Name=&quot;podPlayers.min.js&quot;&gt;</p>\r\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;File Path=&quot;core.js&quot; Minify=&quot;true&quot; /&gt;</p>\r\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;File Path=&quot;contentArea.js&quot; Minify=&quot;true&quot; /&gt;</p>\r\n<p>&nbsp; &nbsp; &nbsp; &nbsp; &lt;File Path=&quot;searchbar.js&quot; Minify=&quot;true&quot; /&gt;</p>\r\n<p>&nbsp; &nbsp; &nbsp; &lt;/FileGroup&gt;</p>\r\n<p>&nbsp; &nbsp; &lt;/root&gt;</p>\r\n<p><br>\r\nWhen I save this Chirpy generates 2 files, `podPlayers.js` and `podPlayers.min.js`. &nbsp;However it does NOT create `podPlayers.debug.js&quot;. &nbsp;<br>\r\nAny idea why? &nbsp;This is with Chirpy 2.0.0.4</p>\r\n",
+    "PostedDate": "2012-04-18T08:27:33.283-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "826737",
+    "ThreadId": "352701",
+    "Html": "<p>Same bug here.</p>",
+    "PostedDate": "2012-04-20T16:10:35.133-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "826739",
+    "ThreadId": "352701",
+    "Html": "This discussion has been copied to a work item. Click <a href=\"http://chirpy.codeplex.com/workitem/134\">here</a> to go to the work item and continue the discussion.",
+    "PostedDate": "2012-04-20T16:14:16.657-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

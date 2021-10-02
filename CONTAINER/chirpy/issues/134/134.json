@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Solve in changeset : 7132e19be7d8\nhttp://chirpy.codeplex.com/SourceControl/changeset/changes/7132e19be7d8",
+    "ClosedDate": "2012-04-20T17:04:55.517-07:00",
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "I have hte following mash.chirp.config file\r\n\r\n<root>  \r\n\r\n<FileGroup Name=\"podPlayers.debug.js\">\r\n\r\n         <File Path=\"core.js\" Minify=\"false\" />\r\n\r\n        <File Path=\"contentArea.js\" Minify=\"false\" />\r\n\r\n        <File Path=\"searchbar.js\" Minify=\"false\" />\r\n\r\n      </FileGroup>\r\n\r\n      <FileGroup Name=\"podPlayers.min.js\">\r\n\r\n        <File Path=\"core.js\" Minify=\"true\" />\r\n\r\n        <File Path=\"contentArea.js\" Minify=\"true\" />\r\n\r\n        <File Path=\"searchbar.js\" Minify=\"true\" />\r\n\r\n      </FileGroup>\r\n\r\n    </root>\r\n\r\n\r\nWhen I save this Chirpy generates 2 files, `podPlayers.js` and `podPlayers.min.js`.  However it does NOT create `podPlayers.debug.js\".  \r\nAny idea why?  This is with Chirpy 2.0.0.4",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-04-20T16:14:16.517-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "debug javascript not being created",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 134
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "The bug when fileGroup Name content debug.",
+      "PostedDate": "2012-04-20T16:20:41.58-07:00",
+      "Id": 62951
+    }
+  ]
+}

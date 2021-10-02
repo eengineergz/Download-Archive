@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "http://chirpy.codeplex.com/SourceControl/changeset/changes/0fd41f6c4691",
+    "ClosedDate": "2011-08-09T10:58:56.913-07:00",
+    "CommentCount": 3,
+    "Custom": null,
+    "Description": "So up until now I haven't been using Chirpy.\r\n\r\nI like it and I want to use it.  It's easy to install.\r\n\r\nBut getting my solution working after the install is harder than it needs to be.\r\n\r\nI wish I could tell Chirpy to process A.*.css and produce A.css.  If I could do that, then I wouldn't have to update any of my code that referenced the .css files, as the name wouldn't have changed, but I'd still be getting 100% Chirpiness.",
+    "LastUpdatedDate": "2011-08-09T10:58:56.913-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-01-13T11:10:28.31-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Allow control over output file name",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 7,
+    "Id": 55
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I am retrofitting and I don't want to have to use .min on all the pages that call my css.",
+      "PostedDate": "2011-01-19T14:21:44.943-08:00",
+      "Id": 26892
+    },
+    {
+      "Message": "I also do not like this behaviour.\nTo fix it, update line 163 in ConfigEngine from:\nif (minifyAnything) {\nto\nif (minifyAnything && !(fullPath.EndsWith(\".js\") || fullPath.EndsWith(\".css\"))) {\n\nand it will respect your filenames as defined in config, if they end with js or css extension.",
+      "PostedDate": "2011-03-04T01:06:53.013-08:00",
+      "Id": 29980
+    },
+    {
+      "Message": "I am using a chirp.config file to specify my files and Chirpy is automatically appending .min to the filename specified in the FileGroup Name attribute.  This is not useful when that filename already contains .min.  Or if I want to periodically change the Minify value, then the output filename changes.",
+      "PostedDate": "2011-04-08T09:44:39.117-07:00",
+      "Id": 33835
+    }
+  ]
+}

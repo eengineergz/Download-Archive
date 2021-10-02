@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "642900",
+    "ThreadId": "265300",
+    "Html": "\r\n<p>Is it possible to manually invoke Chirpy on a file? I'd rather it not automatically minify files, but instead have the ability to right-click a script file and have a .min version built.</p>\r\n",
+    "PostedDate": "2011-07-15T05:49:21.547-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "643179",
+    "ThreadId": "265300",
+    "Html": "<p>Presently no.</p>\r\n<p>Chirpy only minify file on save.</p>",
+    "PostedDate": "2011-07-15T17:14:56.04-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "643180",
+    "ThreadId": "265300",
+    "Html": "This discussion has been copied to a work item. Click <a href=\"http://chirpy.codeplex.com/workitem/90\">here</a> to go to the work item and continue the discussion.",
+    "PostedDate": "2011-07-15T17:15:07.127-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

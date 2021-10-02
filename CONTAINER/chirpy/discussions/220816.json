@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "471260",
+    "ThreadId": "220816",
+    "Html": "<p>If you are using roaming profiles at your workplace like we do, Visual Studio will put your add-ins in your profile, which resides on a server. .NET does not like to run managed code from a server and will cause a crash in Chirpy with error 80131515. To work around this you need to add a section to the config file for Visual Studio. This page tells you how:</p>\r\n<p><a href=\"http://blog.tabsstudio.com/2010/06/23/running-add-ins-from-a-network-location-in-visual-studio-2010/\">http://blog.tabsstudio.com/2010/06/23/running-add-ins-from-a-network-location-in-visual-studio-2010/</a></p>\r\n<p>I figured others may run into this problem and want to know how to fix it.</p>\r\n<p>Also, the existing .MSI (as of July 22, 2010) does not run in this environment either, saying a path is invalid (looks like it is adding an extra '/' in the path). This can be worked around by installing the .vsi directly (downloaded or build from source), but does make you unable to use the extension manager built-in to VS2010.</p>",
+    "PostedDate": "2010-07-22T16:18:32.833-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "471268",
+    "ThreadId": "220816",
+    "Html": "<p>Visual Studio have many folder for add-in.</p>\r\n<p>Folder is configure in menu :</p>\r\n<p>tools-&shy;&gt;options...-&gt;add-in/macros security</p>",
+    "PostedDate": "2010-07-22T16:56:11.35-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

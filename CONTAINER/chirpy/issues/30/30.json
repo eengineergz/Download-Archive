@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I'd like to be able to do this (with automatic updating):\r\n\r\n<?xml version=\"1.0\"?>\r\n\r\n<root \r\n  xmlns=\"urn:ChirpyConfig\" \r\n  xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" \r\n  xsi:schemaLocation=\"urn:ChirpyConfig http://www.weirdlover.com/chirpy/chirp.xsd\">\r\n\r\n  <FileGroup Name=\"mash.960.css\" Minify =\"False\">\r\n    <File Path=\"reset.css\"/>\r\n    <File Path=\"text.css\"/>\r\n    <File Path=\"960.css\"/>\r\n  </FileGroup>\r\n  \r\n  <FileGroup Name=\"mash.css\" Minify=\"False\">\r\n    <File Path=\"mash.960.css\"/>\r\n    <File Path=\"site.css\"/>\r\n  </FileGroup>\r\n\r\n  <FileGroup Name=\"mash.min.css\" Minify=\"True\" MinifyAt=\"Build\">\r\n    <File Path=\"mash.css\"/>\r\n  </FileGroup>  \r\n</root>\r\n\r\nSo, if 960.css is updated, ALL of the mashed files get updated. \r\nIf site.css is updated, mash.css and mash.min.css get updated (on build).\r\n",
+    "LastUpdatedDate": "2010-08-31T05:06:09.193-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-08-31T05:06:09.193-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Allow Nested Config Files",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 30
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

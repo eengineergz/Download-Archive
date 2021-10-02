@@ -1,0 +1,75 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Update in changeset :\nhttp://chirpy.codeplex.com/SourceControl/changeset/changes/d8143f201458",
+    "ClosedDate": "2011-02-26T13:58:58.81-08:00",
+    "CommentCount": 7,
+    "Custom": null,
+    "Description": "I'd love it if Chirpy could compile CoffeeScript files to plain js. The same way lesscss already works. http://jashkenas.github.com/coffee-script/",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-11-10T21:26:03.667-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Add support for CoffeeScript",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 5,
+    "Id": 48
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Same here. Just came here to ask for the same request.",
+      "PostedDate": "2010-12-03T10:35:17.277-08:00",
+      "Id": 19454
+    },
+    {
+      "Message": "FYI: If you want to implement it check out jurassic.codeplex.com. This is a ecma5 compliant javascript compiler that works with the coffeescript compiler. ",
+      "PostedDate": "2010-12-05T02:08:56.887-08:00",
+      "Id": 19508
+    },
+    {
+      "Message": "Presently use : EcmaScript.NET.modified\n\nThis librarie is used in yuicompressor",
+      "PostedDate": "2010-12-05T15:12:08.447-08:00",
+      "Id": 19525
+    },
+    {
+      "Message": "http://stackoverflow.com/questions/3175561/coffeescript-on-windows\n\nhttp://code.google.com/p/coffeescripthandler/\n\nhttps://github.com/alisey/CoffeeScript-Compiler-for-Windows",
+      "PostedDate": "2010-12-05T15:35:39.853-08:00",
+      "Id": 19526
+    },
+    {
+      "Message": "Watch changeset cf4a4452bc16\nhttp://chirpy.codeplex.com/SourceControl/changeset/changes/cf4a4452bc16",
+      "PostedDate": "2010-12-07T16:59:42.363-08:00",
+      "Id": 19676
+    },
+    {
+      "Message": "OK, I think I got it working on my fork, based mostly on other peoples' work. Check it out:\n\nhttp://chirpy.codeplex.com/SourceControl/network/Forks/Domenic/CoffeeScriptFixes",
+      "PostedDate": "2011-02-24T01:22:28.363-08:00",
+      "Id": 29588
+    },
+    {
+      "Message": "You update probably merge in main project this week-end",
+      "PostedDate": "2011-02-24T19:24:06.057-08:00",
+      "Id": 29624
+    }
+  ]
+}

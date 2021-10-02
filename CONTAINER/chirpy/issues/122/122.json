@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "changeset=a164a04528d5\nhttp://chirpy.codeplex.com/SourceControl/changeset/changes/a164a04528d5",
+    "ClosedDate": "2012-03-24T06:13:39.477-07:00",
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "I found this in the latest source code when I was trying to leverage the latest dotless. I couldn't get it to ever run.\r\n\r\nAction found 1 -- C:\\[FileName].hybrid.less.css\r\nLessEngine -- starting C:\\[FileName].hybrid.less.css\r\nError: System.Xml.XmlException: Data at the root level is invalid. Line 1, position 1.\r\n   at Zippy.Chirp.Engines.ConfigEngine.LoadConfigFileGroups(String configFileName)\r\n   at Zippy.Chirp.Engines.ConfigEngine.ReloadFileDependencies(ProjectItem projectItem)\r\n   at Zippy.Chirp.Engines.LessEngine.Transform(String fullFileName, String text, ProjectItem projectItem)\r\n   at Zippy.Chirp.Engines.TransformEngine.Run(String fullFileName, ProjectItem projectItem)\r\n   at Zippy.Chirp.Engines.EngineManager.Process(ProjectItem projectItem)\r\nLessEngine -- finished C:\\[FileName].hybrid.less.css\r\n\r\nI have no config file, nor do I intend to make a config file. I just want Chirpy to convert the current less file into the associated .css and .min.css",
+    "LastUpdatedDate": "2012-03-24T06:13:39.477-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-02-23T12:19:37.547-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": " Data at the root level is invalid. Line 1, position 1.",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 122
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Hi,\n\nI have run into this problem, today, having upgrading to the latest version.  After much investigation, I have found that the code is trying to load the '.less.css' file as a config file, which is then causing the XML error of 'Data at the root level...'.  This is happening because there is a hard-coded reference to '.less' in the ReloadFileDependencies sub.  Basically, it's checking for config files and the code excludes any file that ends with '.less' - obviously your file ends with '.less.css', so this is not being excluded and the code continues to process it as an XML document.  This is where it errors.\n\nThere are many ways to correct this, but I have changed it to check for and only process '.config' files.  I have only updated my local version, as I don't know enough about the project to contribute a fix to shared code.  There may be unknown problems associated with my change.\n\nHopefully this will help those who are having the same problem.  I'm happy to help with more details for a permanent fix in the next release.\n\nCheers\n\nMark",
+      "PostedDate": "2012-02-29T21:04:01.623-08:00",
+      "Id": 56881
+    }
+  ]
+}

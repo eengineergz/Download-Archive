@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chirp XML Config Documentation</title>
+        <style type="text/css">
+        body { font-family: arial; }
+        ul { margin: 0; }
+        dl { margin: 0; }
+        li { margin: 0; }
+        aside { font-size: smaller; }
+        pre a, pre a:visited { color: #000; text-decoration: none; }
+        pre a:hover { color: #F00; }
+        .setting-list li { margin: 5px 0; }
+        .setting-list li span { color: #A31515; }
+        .setting-list li var, .setting-list li var a:visited, .custom-type-list var { font-style: normal; color: #2D2DFF; }
+        .setting-list li var a:hover { color: #F00; }
+        .custom-type-list dt { color: #2D2DFF; margin-top: 10px; }
+        </style>
+    </head>
+    <body>
+        <h1>XML Config At-A-Glance</h1>
+        Click on a node or attribute name for details.
+<pre>&lt;<a href="#root">root</a> xmlns="urn:ChirpyConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+    &lt;<a href="#settings">Settings</a>&gt;
+        &lt;<a href="#setting">Setting</a>
+            <a href="#setting_key">key</a>=""
+            <a href="#setting_value">value</a>="" /&gt;
+    &lt;/Settings&gt;
+
+    &lt;<a href="#filegroup">FileGroup</a>
+        <a href="#filegroup_name">Name</a>="string"
+        <a href="#filegroup_path">Path</a>="string"
+        <a href="#filegroup_minify">Minify</a>="true|false|both"
+        <a href="#filegroup_debug">Debug</a>="true|false"
+        <a href="#filegroup_find">Find</a>="string|regex"
+        <a href="#filegroup_replace">Replace</a>="string"&gt;
+
+        &lt;<a href="#file">File</a>
+            <a href="#file_path">Path</a>="string"
+            <a href="#file_minify">Minify</a>="true|false|both"
+            <a href="#file_minifytype">MinifyType</a>="<a href="#minifytype">MinifyType</a>"
+            <a href="#file_engine">Engine</a>="Less|&lt;nothing&gt;"
+            <a href="#file_customargument">CustomArgument</a>="string"
+            <a href="#file_find">Find</a>="string|regex"
+            <a href="#file_replace">Replace</a>="string" /&gt;
+        
+        &lt;<a href="#folder">Folder</a>
+            <a href="#folder_pattern">Pattern</a>="string"
+            <a href="#folder_minify">Minify</a>="true|false"
+            <a href="#folder_deep">Deep</a>="true|false"
+            <a href="#folder_find">Find</a>="string|regex"
+            <a href="#folder_replace">Replace</a>="string" /&gt;
+        
+        &lt;<a href="#raw">Raw</a>
+            <a href="#raw_type">Type</a>="CSS|JS"&gt;
+            &lt;!-- Place your CSS or JS code here. --&gt;
+        &lt;/Raw&gt;
+
+    &lt;/FileGroup&gt;
+&lt;/root&gt;</pre>
+
+        <h1>Element and Attribute Overview</h1>
+        <ul>
+            <li>
+                <p>
+                    <strong id="root">Element: root</strong><br />
+                    This is the root node of the XML config file. It is required and must occur exactly once.
+                </p>
+                <ul>
+                    <li>
+                        <p>
+                            <strong id="settings">Element: Settings</strong><br />
+                            This is the container class for the Chirpy settings. It is not required, but must only occur once if used.
+                            Settings specified here will override the defaults set in the main Chirpy configuration window.
+                        </p>
+                        <ul>
+                            <li>
+                                <strong id="setting">Element: Setting</strong>
+                                <dl>
+                                    <dt>This is the node that contains an individual setting. It has two required attributes:</dt>
+                                    <dd>
+                                        <strong id="setting_key">key:</strong> The name of the setting. See the
+                                        <a href="#setting_list">list below</a> for a list of available settings and their values.
+                                    </dd>
+                                    <dd><strong id="setting_value">value:</strong> The value of the setting.</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>
+                            <strong id="filegroup">Element: FileGroup</strong><br />
+                            This element defines a group of files that will be combined into one "compiled" file. This element is optional,
+                            and can occur an unlimited number of times.
+                        </p>
+                        <p>
+                            Child nodes in the file group are processed in the order they appear. This way if you have files that need to be
+                            included in a certain order this is possible.
+                        </p>
+                        <dl>
+                            <dt>The following attributes are available:</dt>
+                            <dd>
+                                <p>
+                                    <strong id="filegroup_name">Name:</strong> The name of the "compiled" file. The file will be located in the
+                                    same folder as the config file (or if a path is specified, the path must be relative to the location of the
+                                    config file). Either <code>Name</code> or <code>Path</code> must be specified or an error will be thrown.
+                                </p>
+                            </dd>
+                            <dd>
+                                <p>
+                                    <strong id="filegroup_path">Path:</strong> The name and path of the "compiled" file. This value will override the
+                                    <code>Name</code> attribute (i.e. if both are specified, <code>Name</code> will be ignored). Paths are relative
+                                    to the root of the Visual Studio project. Either <code>Name</code> or <code>Path</code> must be specified or an
+                                    error will be thrown.
+                                </p>
+                                
+                                <aside>
+                                    <p>
+                                        <strong>Authors Note:</strong> As far as I can tell, <code>Path</code> is relative to the Visual Studio
+                                        project root. I have not experimented to see if that is actually the case. Perhaps one of the developers
+                                        can verify this.
+                                    </p>
+                                </aside>
+                            </dd>
+                            <dd>
+                                <p>
+                                    <strong id="filegroup_minify">Minify:</strong> A value indicating if files in the file group should be minified
+                                    or simply combined into a single file. Possible values are <code>true</code>, <code>false</code>, or
+                                    <code>both</code>. If <code>both</code> is specified, then the files will be combined into an uncompiled file
+                                    with the name specified in <code>Name</code> or <code>Path</code>, and a compiled version of the file will also
+                                    be generated with ".min" (or the configured suffix) suffixed to the end of the file name (before the file
+                                    extension). If this attribute is omitted, a <code>true</code> value is assumed.
+                                </p>
+                            </dd>
+                            <dd>
+                                <p>
+                                    <strong id="filegroup_debug">Debug:</strong> Indicates if debug information should be included in uncompiled
+                                    versions of files.
+                                </p>
+                                <aside>
+                                    <p>
+                                        <strong>Authors Note:</strong> In older versions of Chirpy, this was what determined if an uncompiled version
+                                        of the file group's file was generated. Currently it appears that all this option does is insert a comment
+                                        at the top of each file in the combined file stating what options were used and the name and path of the
+                                        original file.
+                                    </p>
+                                </aside>
+                            </dd>
+                            <dd>
+                                <p>
+                                    <strong id="filegroup_find">Find:</strong> A string or a regular expression search pattern to search for in the
+                                    code before it is processed (compiled). Used in conjunction with <code>Replace</code> to perform search and
+                                    replace operations on code files during the compilation process. For file groups, the search and replace
+                                    operation is performed after all the files are combined into one but before they are minified.
+                                </p>
+                                <aside>
+                                    <p>
+                                        <strong>Authors Note:</strong> This attribute seems to be ignored (for the <code>FileGroup</code> node only)
+                                        by source code currently. The <code>FileGroupXml</code> class never loads it's value from the config file.
+                                    </p>
+                                </aside>
+                            </dd>
+                            <dd>
+                                <p>
+                                    <strong id="filegroup_replace">Replace:</strong> A string to replace values found by the <code>Find</code>
+                                    attribute in the code before it is processed (compiled). Used in conjunction with <code>Find</code> to perform
+                                    search and replace operations on code files during the compilation process. For file groups, the search and
+                                    replace operation is performed after all the files are combined into one but before they are minified.
+                                </p>
+                                <aside>
+                                    <p>
+                                        <strong>Authors Note:</strong> This attribute seems to be ignored (for the <code>FileGroup</code> node only)
+                                        by source code currently. The <code>FileGroupXml</code> class never loads it's value from the config file.
+                                    </p>
+                                </aside>
+                            </dd>
+                        </dl>
+
+                        <ul>
+                            <li>
+                                <p>
+                                    <strong id="file">Element: File</strong><br />
+                                    This element is used to include a single file in a <code>FileGroup</code>. This element is optional and can
+                                    occur an unlimited number of times.
+                                </p>
+                                <dl>
+                                    <dt>The following attributes are available:</dt>
+                                    <dd>
+                                        <p>
+                                            <strong id="file_path">Path:</strong> The path to the file to include in the file group. Can be either
+                                            an absolute path or a path relative to the location of the config file. This attribute is required.
+                                        </p>
+                                    </dd>
+                                    <dd>
+                                        <p>
+                                            <strong id="file_minify">Minify:</strong> A Boolean value indicating if the file should be minified
+                                            before it is combined with other files in the file group. If this attribute is omitted,
+                                            <code>false</code> is assumed.
+                                        </p>
+                                        <aside>
+                                            <p>
+                                                <strong>Authors Note:</strong> Currently, if <code>true</code> is specified, the file code appears to
+                                                be compiled twice: once when iterating through the files (the file contents is compiled and then
+                                                appended to the code for the file group) and then again when the file group's code is compiled
+                                                (unless the file group has a <code>Minify</code> attribute value of <code>false</code>). This doesn't
+                                                appear to affect the code, although it may affect it when using the advanced optimizations mode for
+                                                the Google Closure compiler.
+                                            </p>
+                                        </aside>
+                                    </dd>
+                                    <dd>
+                                        <p>
+                                            <strong id="file_minifytype">MinifyType:</strong> Allows you to specify what compiler to use to compress
+                                            the file. This attribute is only used if the <code>Minify</code> attribute is <code>true</code>. If
+                                            omitted, the default compiler is used (specified in the Chirpy options).
+                                        </p>
+                                        <p>
+                                            See <a href="#minifytype">MinifyType</a> below for a list of possible values.
+                                        </p>
+                                    </dd>
+                                    <dd>
+                                        <p>
+                                            <strong id="file_engine">Engine:</strong> Allows a custom parser engine to be specified. Currently only
+                                            the <a href="http://lesscss.org" target="_blank">{less} CSS engine</a> is supported. If omitted, no
+                                            custom engine is used.
+                                        </p>
+                                    </dd>
+                                    <dd>
+                                        <p>
+                                            <strong id="file_customargument">CustomArgument:</strong> Allows custom arguments to be passed to the
+                                            compiler engine. This attribute is only used if the <code>Minify</code> attribute is <code>true</code>.
+                                        </p>
+                                    </dd>
+                                    <dd>
+                                        <p>
+                                            <strong id="file_find">Find:</strong> Same as <code>Find</code> for the <code>FileGroup</code> node, but
+                                            allows a search and replace operation that is limited to the contents of this file only.
+                                        </p>
+                                    </dd>
+                                    <dd>
+                                        <p>
+                                            <strong id="file_replace">Replace:</strong> Same as <code>Replace</code> for the <code>FileGroup</code>
+                                            node, but allows a search and replace operation that is limited to the contents of this file only.
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </li>
+
+                            <li>
+                                <p>
+                                    <strong id="folder">Element: Folder</strong><br />
+                                    This element is used to include a folder of files in a <code>FileGroup</code>. This element is optional and can
+                                    occur an unlimited number of times.
+                                </p>
+                                <dl>
+                                    <dt>The following attributes are available:</dt>
+                                    <dd>
+                                        <p>
+                                            <strong id="folder_pattern">Pattern:</strong> The path of the folder to include the files of. The path
+                                            must be either an absolute path or a path relative to the config file. The wildcard characters "*" and
+                                            "?" can be used to specify patterns in the file names of the files within the folder to include. The "*"
+                                            wildcard will match zero or more characters and the "?" wildcard character will match exactly zero or
+                                            one character. For example, "*.js" would include all files with the ".js" extension.
+                                        </p>
+                                        <p>
+                                            This attribute is required. See the remarks section of
+                                            <a href="http://msdn.microsoft.com/en-us/library/ms143316" target="_blank">http://msdn.microsoft.com/en-us/library/ms143316</a>
+                                            for more details on wildcard support and examples.
+                                        </p>
+                                    </dd>
+                                    <dd>
+                                        <p>
+                                            <strong id="folder_deep">Deep:</strong> A value indicating if files within sub-folders should also be
+                                            processed. If omitted, <code>true</code> is assumed.
+                                        </p>
+                                    </dd>
+                                    <dd>
+                                        <p>
+                                            <strong id="folder_minify">Minify:</strong> A Boolean value indicating if the files within the folder
+                                            should be minified before they are combined with other files in the file group. If this attribute is
+                                            omitted, <code>false</code> is assumed.
+                                        </p>
+                                        <aside>
+                                            <p>
+                                                <strong>Authors Note:</strong> Currently, if <code>true</code> is specified, the file code appears to
+                                                be compiled twice: once when iterating through the files (the file contents is compiled and then
+                                                appended to the code for the file group) and then again when the file group's code is compiled
+                                                (unless the file group has a <code>Minify</code> attribute value of <code>false</code>). This doesn't
+                                                appear to affect the code, although it may affect it when using the advanced optimizations mode for
+                                                the Google Closure compiler.
+                                            </p>
+                                        </aside>
+                                    </dd>
+                                    <dd>
+                                        <p>
+                                            <strong id="folder_find">Find:</strong> Same as <code>Find</code> for the <code>FileGroup</code> node,
+                                            but allows a search and replace operation that is limited to the files within this folder only.
+                                        </p>
+                                    </dd>
+                                    <dd>
+                                        <p>
+                                            <strong id="folder_replace">Replace:</strong> Same as <code>Replace</code> for the <code>FileGroup</code>
+                                            node, but allows a search and replace operation that is limited to the files within this folder only.
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </li>
+
+                            <li>
+                                <p>
+                                    <strong id="raw">Element: Raw</strong><br />
+                                    This element is used to include raw code in a <code>FileGroup</code> that is not in a file. This element is
+                                    optional and can occur an unlimited number of times.
+                                </p>
+                                <dl>
+                                    <dt>The following attributes are available:</dt>
+                                    <dd>
+                                        <p>
+                                            <strong id="raw_type">Type:</strong> Specifies the code type contained in the node. Possible values are
+                                            "CSS" for cascading style sheet code, or "JS" for JavaScript code. If omitted, "JS" is assumed.
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <h1 id="setting_list">List of Settings</h1>
+        <p>And their possible values.</p>
+        <ul class="setting-list">
+            <li><span>ChirpDeanEdwardsPackerFile:</span> <var>string</var></li>
+            <li><span>ChirpDeanEdwardsPackerFastDecode:</span> <var>true</var> | <var>false</var></li>
+            <li><span>ChirpDeanEdwardsPackerSpecialChars:</span> <var>true</var> | <var>false</var></li>
+            <li><span>ChirpDeanEdwardsPackerEncoding:</span> <var><a href="#DeanEdwardsPackerEncoding">DeanEdwardsPackerEncoding</a></var></li>
+            <li><span>ChirpJsFile:</span> <var>string</var></li>
+            <li><span>ChirpSimpleJsFile:</span> <var>string</var></li>
+            <li><span>ChirpWhiteSpaceJsFile:</span> <var>string</var></li>
+            <li><span>ChirpSassFile:</span> <var>string</var></li>
+            <li><span>ChirpMSAjaxSassFile:</span> <var>string</var></li>
+            <li><span>ChirpHybridSassFile:</span> <var>string</var></li>
+            <li><span>ChirpMichaelAshSassFile:</span> <var>string</var></li>
+            <li><span>ChirpScssFile:</span> <var>string</var></li>
+            <li><span>ChirpMSAjaxScssFile:</span> <var>string</var></li>
+            <li><span>ChirpHybridScssFile:</span> <var>string</var></li>
+            <li><span>ChirpMichaelAshScssFile:</span> <var>string</var></li>
+            <li><span>ChirpYUIJsFile:</span> <var>string</var></li>
+            <li><span>ChirpGctJsFile:</span> <var>string</var></li>
+            <li><span>ChirpMSAjaxJsFile:</span> <var>string</var></li>
+            <li><span>ChirpPartialViewFile:</span> <var>string</var></li>
+            <li><span>ChirpViewFile:</span> <var>string</var></li>
+            <li><span>ChirpRazorCSViewFile:</span> <var>string</var></li>
+            <li><span>ChirpRazorVBViewFile:</span> <var>string</var></li>
+            <li><span>ChirpLessFile:</span> <var>string</var></li>
+            <li><span>LessSyntaxHighlighting:</span> <var>true</var> | <var>false</var></li>
+            <li><span>ChirpMSAjaxLessFile:</span> <var>string</var></li>
+            <li><span>ChirpHybridLessFile:</span> <var>string</var></li>
+            <li><span>ChirpMichaelAshLessFile:</span> <var>string</var></li>
+            <li><span>ChirpUglifyJsFile:</span> <var>string</var></li>
+            <li><span>ChirpCoffeeScriptFile:</span> <var>string</var></li>
+            <li><span>ChirpSimpleCoffeeScriptFile:</span> <var>string</var></li>
+            <li><span>ChirpWhiteSpaceCoffeeScriptFile:</span> <var>string</var></li>
+            <li><span>ChirpYUICoffeeScriptFile:</span> <var>string</var></li>
+            <li><span>ChirpGctCoffeeScriptFile:</span> <var>string</var></li>
+            <li><span>ChirpMSAjaxCoffeeScriptFile:</span> <var>string</var></li>
+            <li><span>ChirpUglifyCoffeeScriptFile:</span> <var>string</var></li>
+            <li><span>ChirpCssFile:</span> <var>string</var></li>
+            <li><span>ChirpMSAjaxCssFile:</span> <var>string</var></li>
+            <li><span>ChirpHybridCssFile:</span> <var>string</var></li>
+            <li><span>ChirpMichaelAshCssFile:</span> <var>string</var></li>
+            <li><span>ChirpConfigFile:</span> <var>string</var></li>
+            <li><span>DefaultCssMinifier:</span> <var><a href="#minifytype">MinifyType</a></var></li>
+            <li><span>DefaultJavaScriptMinifier:</span> <var><a href="#minifytype">MinifyType</a></var></li>
+            <li><span>DotLessCompress:</span> <var>true</var> | <var>false</var></li>
+            <!--<li><span>AllLessExtensions:</span> comma delimited string</li>
+            <li><span>AllExtensions:</span> comma delimited string</li>
+            <li><span>JsHintOptions:</span> <var><a href="#JSHintOptions">JSHintOptions</a></var></li>
+            <li><span>CssLintOptions:</span> <var><a href="#CSSLintOptions">CSSLintOptions</a></var></li>
+            <li><span>CoffeeScriptOptions:</span> <var><a href="#CoffeeScriptOptions">CoffeeScriptOptions</a></var></li>
+            <li><span>MsJsSettings:</span> <var><a href="http://www.asp.net/ajaxlibrary/AjaxMinDLL.ashx" target="_blank">Microsoft.Ajax.Utilities.CodeSettings</a></var></li>
+            <li><span>MsCssSettings:</span> <var><a href="http://www.asp.net/ajaxlibrary/AjaxMinDLL.ashx" target="_blank">Microsoft.Ajax.Utilities.CssSettings</a></var></li>
+            <li><span>YuiCssSettings:</span> <var><a href="#YuiCssSettings">YuiCssSettings</a></var></li>
+            <li><span>YuiJsSettings:</span> <var><a href="#YuiJsSettings">YuiJsSettings</a></var></li>-->
+            <li><span>T4RunAsBuild:</span> <var>true</var> | <var>false</var></li>
+            <li><span>T4RunAsBuildTemplate:</span> <var>string</var></li>
+            <li><span>SmartRunT4MVC:</span> <var>true</var> | <var>false</var></li>
+            <li><span>RunJSHint:</span> <var>true</var> | <var>false</var></li>
+            <li><span>RunCSSLint:</span> <var>true</var> | <var>false</var></li>
+            <li><span>OutputExtensionJS:</span> <var>string</var></li>
+            <li><span>OutputExtensionCSS:</span> <var>string</var></li>
+            <li><span>GoogleClosureOffline:</span> <var>true</var> | <var>false</var></li>
+            <li><span>GoogleClosureJavaPath:</span> <var>string</var></li>
+            <li><span>ShowDetailLog:</span> <var>true</var> | <var>false</var></li>
+        </ul>
+
+        <h1>Custom Types</h1>
+        <dl class="custom-type-list">
+            <dt id="DeanEdwardsPackerEncoding">DeanEdwardsPackerEncoding</dt>
+                <dd><strong>None</strong></dd>
+                <dd><strong>Numeric</strong></dd>
+                <dd><strong>Mid</strong></dd>
+                <dd><strong>Normal</strong></dd>
+                <dd><strong>HighAscii</strong></dd>
+
+            <dt id="minifytype">MinifyType</dt>
+                <dd><strong>Unspecified:</strong> Not set/use default</dd>
+                <dd><strong>yui:</strong> Yahoo UI compressor</dd>
+                <dd><strong>yuiMARE:</strong> Yahoo UI with Michael Ash Regex Enhancement</dd>
+                <dd><strong>yuiHybrid:</strong> Yahoo UI hybrid</dd>
+                <dd><strong>gctAdvanced:</strong> Google Closure Tools - Advanced</dd>
+                <dd><strong>gctSimple:</strong> Google Closure Tools - Simple</dd>
+                <dd><strong>gctWhiteSpaceOnly:</strong> Google Closure Tools - Whitespace only</dd>
+                <dd><strong>msAjax:</strong> Microsoft Ajax Toolkit</dd>
+                <dd><strong>uglify:</strong> Uglify.js</dd>
+                <dd><strong>jsBeautifier:</strong> js Beautifier</dd>
+
+            <!--<dt id="JSHintOptions">JSHintOptions</dt>
+                <dd><strong>bitwise:</strong> <var>true</var> | <var>false</var> - Prohibit the use of bitwise operators.</dd>
+                <dd><strong>boss:</strong> <var>true</var> | <var>false</var> - Allow assignments inside if/for/while/do.</dd>
+                <dd><strong>curly:</strong> <var>true</var> | <var>false</var> - Require curly braces around all blocks.</dd>
+                <dd><strong>debug:</strong> <var>true</var> | <var>false</var> - Allow debugger statements.</dd>
+                <dd><strong>eqeqeq:</strong> <var>true</var> | <var>false</var> - Require that you use === and !== for all comparisons</dd>
+                <dd><strong>evil:</strong> <var>true</var> | <var>false</var> - Allow the use of eval.</dd>
+                <dd><strong>forin:</strong> <var>true</var> | <var>false</var> - Disallow the use of for in without hasOwnProperty.</dd>
+                <dd><strong>immed:</strong> <var>true</var> | <var>false</var> - Require immediate invocations to be wrapped in parens.</dd>
+                <dd><strong>laxbreak:</strong> <var>true</var> | <var>false</var> - Not check line breaks.</dd>
+                <dd><strong>maxerr:</strong> <var>integer</var> | <var>null</var> - Maximum number of errors before stops processing your source.</dd>
+                <dd><strong>newcap:</strong> <var>true</var> | <var>false</var> - Require that you capitalize all constructor functions.</dd>
+                <dd><strong>noarg:</strong> <var>true</var> | <var>false</var> - Prohibit the use of arguments.caller and arguments.callee.</dd>
+                <dd><strong>noempty:</strong> <var>true</var> | <var>false</var> - Prohibit the use of empty blocks.</dd>
+                <dd><strong>nonew:</strong> <var>true</var> | <var>false</var> - Prohibit the use of constructors for side-effects.</dd>
+                <dd><strong>nomen:</strong> <var>true</var> | <var>false</var> - Disallow the use of initial or trailing underbars in names.</dd>
+                <dd><strong>onevar:</strong> <var>true</var> | <var>false</var> - Allow only one var statement per function.</dd>
+                <dd><strong>passfail:</strong> <var>true</var> | <var>false</var> - Stop on the first error it encounter.</dd>
+                <dd><strong>plusplus:</strong> <var>true</var> | <var>false</var> - Prohibit the use of increment and decrement operators.</dd>
+                <dd><strong>regexp:</strong> <var>true</var> | <var>false</var> - Prohibit the use of unsafe in regular expressions.</dd>
+                <dd><strong>undef:</strong> <var>true</var> | <var>false</var> - Require all non-global variables be declared before they are used.</dd>
+                <dd><strong>sub:</strong> <var>true</var> | <var>false</var> - Tolerate all forms of subscript notation.</dd>
+                <dd><strong>strict:</strong> <var>true</var> | <var>false</var> - Require you to use "use strict"; pragma.</dd>
+                <dd><strong>white:</strong> <var>true</var> | <var>false</var> - Check your code against strict whitespace rules.</dd>
+
+            <dt id="CSSLintOptions">CSSLintOptions</dt>
+                <dd><strong>AdjoiningClasses:</strong> <var>true</var> | <var>false</var> - Don't use adjoining classes.</dd>
+                <dd><strong>Import:</strong> <var>true</var> | <var>false</var> - Don't use @import.</dd>
+                <dd><strong>Ids:</strong> <var>true</var> | <var>false</var> - Don't use IDs in selectors.</dd>
+                <dd><strong>EmptyRules:</strong> <var>true</var> | <var>false</var> - Remove empty rules.</dd>
+                <dd><strong>DisplayPropertyGrouping:</strong> <var>true</var> | <var>false</var> - Use correct properties for a display.</dd>
+                <dd><strong>Floats:</strong> <var>true</var> | <var>false</var> - Don't use too many floats.</dd>
+                <dd><strong>FontFaces:</strong> <var>true</var> | <var>false</var> - Don't use too many web fonts.</dd>
+                <dd><strong>FontSizes:</strong> <var>true</var> | <var>false</var> - Don't use too may font-size declarations.</dd>
+                <dd><strong>QualifiedHeadings:</strong> <var>true</var> | <var>false</var> - Don't qualify headings.</dd>
+                <dd><strong>UniqueHeadings:</strong> <var>true</var> | <var>false</var> - Heading styles should only be defined once.</dd>
+                <dd><strong>ZeroUnits:</strong> <var>true</var> | <var>false</var> - Zero values don't need units.</dd>
+                <dd><strong>VendorPrefix:</strong> <var>true</var> | <var>false</var> - Vendor prefixed properties should also have the standard.</dd>
+                <dd><strong>Gradients:</strong> <var>true</var> | <var>false</var> - CSS gradients require all browser prefixes.</dd>
+                <dd><strong>RegexSelectors:</strong> <var>true</var> | <var>false</var> - Avoid selectors that look like regular expressions.</dd>
+                <dd><strong>BoxModel:</strong> <var>true</var> | <var>false</var> - Beware of broken box models.</dd>
+                <dd><strong>Important:</strong> <var>true</var> | <var>false</var> - Don't use !important.</dd>
+                <dd><strong>CompatibleVendorPrefixes:</strong> <var>true</var> | <var>false</var> - Include all compatible vendor prefixes.</dd>
+                <dd><strong>DuplicateProperties:</strong> <var>true</var> | <var>false</var> - Avoid duplicate properties.</dd>
+
+            <dt id="CoffeeScriptOptions">CoffeeScriptOptions</dt>
+                <dd><strong>bare:</strong> <var>true</var> | <var>false</var> - Compile the JavaScript without the top-level function safety wrapper.</dd>
+
+            <dt id="YuiCssSettings">YuiCssSettings</dt>
+                <dd><strong>ColumnWidth:</strong> <var>integer</var> - Number of characters before text wrapping occurs.</dd>
+                <dd><strong>RemoveComments:</strong> <var>true</var> | <var>false</var> - Indicates if comments should be stripped.</dd>
+
+            <dt id="YuiJsSettings">YuiJsSettings</dt>
+                <dd><strong>IsObfuscateJavascript:</strong> <var>true</var> | <var>false</var></dd>
+                <dd><strong>PreserveAllSemiColons:</strong> <var>true</var> | <var>false</var></dd>
+                <dd><strong>DisableOptimizations:</strong> <var>true</var> | <var>false</var></dd>
+                <dd><strong>LineBreakPosition:</strong> <var>integer</var></dd>
+                <dd><strong>IgnoreEval:</strong> <var>true</var> | <var>false</var></dd>-->
+        </dl>
+    </body>
+</html>

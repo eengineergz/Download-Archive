@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "737498",
+    "ThreadId": "291024",
+    "Html": "<p>Hi -- thanks for all your work. Any idea where my vs arrows went? You can see I have them for the css files, not for the js files. I am using the most recent release (jan 2012)...the .chirp.config is the extension in the options for minification, and the  js actually does get minified...but only when i go in and edit the chripy file and then resave...I think my missing arrows may have something to do with the problem?</p>\n<p><a href=\"http://screencast.com/t/DrzTwdqaBR\">http://screencast.com/t/DrzTwdqaBR</a></p>\n<p>Thanks for your help.</p>",
+    "PostedDate": "2012-02-02T17:11:55.51-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "757607",
+    "ThreadId": "291024",
+    "Html": "<p>Your file is encode correctly ?</p>\r\n<p>Send config file content.</p>",
+    "PostedDate": "2012-02-11T14:29:56.517-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

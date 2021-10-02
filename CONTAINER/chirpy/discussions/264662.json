@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "640400",
+    "ThreadId": "264662",
+    "Html": "\r\n<p>I have created an question about Chirpy and T4MVC on stackoverflow: <a href=\"http://stackoverflow.com/questions/6615898/t4mvc-handling-minified-js-and-css-files-generated-with-chirpy\">\r\nhttp://stackoverflow.com/questions/6615898/t4mvc-handling-minified-js-and-css-files-generated-with-chirpy</a></p>\r\n<p>Maybe someone here knows an answer</p>\r\n<p>Greetings Wim</p>\r\n",
+    "PostedDate": "2011-07-11T05:23:22.63-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "641369",
+    "ThreadId": "264662",
+    "Html": "<p>New work item is create</p>\r\n<p><a href=\"http://chirpy.codeplex.com/workitem/89\">http://chirpy.codeplex.com/workitem/89</a></p>\r\n<p>&nbsp;</p>\r\n<p>Feature : Customize minified version name.</p>",
+    "PostedDate": "2011-07-12T15:47:14.377-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "655395",
+    "ThreadId": "264662",
+    "Html": "<p><a href=\"http://chirpy.codeplex.com/SourceControl/changeset/changes/ab7715fabba6\">http://chirpy.codeplex.com/SourceControl/changeset/changes/ab7715fabba6</a></p>",
+    "PostedDate": "2011-08-09T11:02:27.167-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

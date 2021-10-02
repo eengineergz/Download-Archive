@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "497924",
+    "ThreadId": "228429",
+    "Html": "<p>Hello,</p>\r\n<p>Chirpy is fantastic, but i cannot use it!</p>\r\n<p>i work in a corporate with an internal proxy.</p>\r\n<p>With the proxy chirpy not work, could you add the setting in the next build?</p>\r\n<p>(proxyname, proxypassword, proxydomani, proxyusername, proxypassword)</p>\r\n<p>Thank you</p>\r\n<p>Francesco</p>",
+    "PostedDate": "2010-09-24T00:11:55.333-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "498267",
+    "ThreadId": "228429",
+    "Html": "<p>All engine work offline, except google closure compiler.</p>\r\n<p>In last version you have setting for activate google closure compiler offline.</p>",
+    "PostedDate": "2010-09-24T15:45:46.147-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

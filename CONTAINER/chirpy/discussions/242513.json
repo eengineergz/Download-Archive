@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "552337",
+    "ThreadId": "242513",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>Any particular reason there is no official release with the latest changes ?</p>\r\n<p>cheers</p>\r\n<p>&nbsp;</p>\r\n<p>Pawel</p>\r\n",
+    "PostedDate": "2011-01-19T21:18:17.753-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "552949",
+    "ThreadId": "242513",
+    "Html": "\r\n<p>Great question.</p>\r\n<p>I send request to project coordinator for new release.</p>\r\n",
+    "PostedDate": "2011-01-20T19:09:27.193-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "553047",
+    "ThreadId": "242513",
+    "Html": "\r\n<p>&#43;1 ... I'd like too to see a new release, I think there are tons of new features which are worth it</p>\r\n",
+    "PostedDate": "2011-01-21T01:06:17.567-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "579506",
+    "ThreadId": "242513",
+    "Html": "<p>New release <a href=\"http://chirpy.codeplex.com/releases/view/61897\">Margogype Chirpy (ver 2.0)</a></p>\n<p>Released: Mar 2 2011</p>",
+    "PostedDate": "2011-03-12T10:04:24.367-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

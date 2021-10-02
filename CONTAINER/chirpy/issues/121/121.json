@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi, Guys, I think Chirpy is great and all that (same as everyone else :-)\r\n\r\nBut this simple bug does not seem to have been fixed for a while now.\r\n\r\nThis is the entry in the MyMash.chirp.config:\r\n\r\n\r\n\r\n\r\n    <FileGroup Name=\"SomeTests.js\">\r\n        <Folder Path=\"..\\..\\..\\TestProj\\TestFolder\\\" Pattern=\"*.js\" Minify=\"false\" />\r\n    </FileGroup>\r\n\r\n\r\n\r\n\r\n \r\n\r\nThis config entry has the effect of putting chirpy into an infinite loop; and from the console one can see SomeTests.js being repeated written to.\r\n\r\nI am using the latest version (2.0.0.4 released on 04-Jan-2012).\r\n\r\nIs there a solution to this problem? Needless to say this will be much appreciated.\r\n\r\nThanks!",
+    "LastUpdatedDate": "2012-05-25T06:06:07.617-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-02-19T15:45:15.337-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Mashing entire folders does not work",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 4,
+    "Id": 121
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

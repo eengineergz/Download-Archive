@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "681310",
+    "ThreadId": "275118",
+    "Html": "<p>Hi Guys,</p>\n<p>Thanks for this great product!</p>\n<p>I'm am having some issues using .less... &nbsp;.css and .js files work perfectly, but .less files don't. Chirpy does create the expected files, but they remain empty. So it seems there is something wrong with the dotless parser?</p>\n<p>I have just downloaded&nbsp;<a id=\"fileDownload0\" tabindex=\"9\" href=\"http://chirpy.codeplex.com/releases/61897/download/212976\">Maragogype Chirpy v2.01</a>, which is the latest version I think.</p>\n<p>Any idea what could be the issue here?</p>\n<p>&nbsp;</p>\n<p>Thanks in advance!</p>\n<p>Richard</p>\n<p>p.s. using VS 2010</p>",
+    "PostedDate": "2011-10-07T07:24:20.747-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "681330",
+    "ThreadId": "275118",
+    "Html": "<p>Sorry for my ignorance.</p>\r\n<p>There was an error (according to the dotless compiler) in the syntax of the .less file. I think this is an error in the dotless compiler, because it worked using the less.js file to compile on the fly and it was also done according to the lesscss documentation.</p>\r\n<p>It involves this line:&nbsp;</p>\r\n<pre> ~\"filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@from', endColorstr='@to',GradientType=0 );\"</pre>\r\n<pre><br /></pre>\r\n<pre>As you can see, the line is escape properly, but it wouldn't compile non the less..</pre>",
+    "PostedDate": "2011-10-07T08:03:37.983-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "693401",
+    "ThreadId": "275118",
+    "Html": "<p>Did you ever solve this problem? I'm having the exact same issue. The error I receive is as follows:</p>\r\n<p>Expected '}' on line 121 in file 'style.yui.less':<br />[120]: &nbsp; &nbsp; text-decoration: none;<br />[121]: &nbsp; &nbsp; filter: dropshadow(color=#999999, offx=3, offy=3);<br />&nbsp; &nbsp; &nbsp; &nbsp;----^<br />[122]: &nbsp; &nbsp; text-shadow: 3px 3px 15px #999999;</p>\r\n<p>I set my VS options to recognize .yui.less. When I include that 'filter' line, the min file is empty.&nbsp;</p>",
+    "PostedDate": "2011-11-03T09:03:30.443-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "693711",
+    "ThreadId": "275118",
+    "Html": "<p>Try</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;&nbsp;\r\n<div style=\"color: black; background-color: white;\">\r\n<pre>filter: formatstring(\"dropshadow(color=#999999, offx=3, offy=3)\");\r\n</pre>\r\n</div>\r\n</p>",
+    "PostedDate": "2011-11-04T00:00:38.893-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "696040",
+    "ThreadId": "275118",
+    "Html": "<blockquote style=\"border: solid .1em #ccc; font-style: italic; margin: .25em 1em 0 1em; padding: 0 .25em 0 .25em;\"><strong>richyk wrote:</strong><br />\r\n<p>Try&nbsp;&nbsp;</p>\r\n<div style=\"color: black; background-color: white;\">\r\n<pre>filter: formatstring(\"dropshadow(color=#999999, offx=3, offy=3)\");\r\n</pre>\r\n</div>\r\n<p>&nbsp;</p>\r\n</blockquote>\r\n<p>That worked! Thanks.</p>",
+    "PostedDate": "2011-11-09T11:09:54.563-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Fix changeset : 0f748258c54a\nhttp://chirpy.codeplex.com/SourceControl/changeset/changes/0f748258c54a",
+    "ClosedDate": "2012-03-11T09:52:01.383-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi, \r\nThank you! I tried that and it doesn't seem to be working. I can change the default for LESS files, but not coffeescript. I think a bug exists, unless someone else can change the default for coffeescript. I really do appreciate all you've done to make\r\n this tool possible for others. \r\n\r\n\r\nBest regards,\r\nChris\r\n\r\nSent from my iPad\r\n\r\nOn Mar 9, 2012, at 4:15 PM, \"ploufs\" <notifications@codeplex.com> wrote:\r\n\r\n\r\n\r\n\r\n\r\nFrom: ploufs\r\n\r\n\r\nYes, in config screen.\r\n\r\nIn visual studio menu tools\r\n\r\nItem options\r\n\r\nNode Chirpy\r\n\r\nNode CoffeeScript",
+    "LastUpdatedDate": "2012-03-11T09:52:01.383-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-03-10T19:55:45.433-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "How to change myfilename.chirp.coffee to just myfilename.coffee?",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 128
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

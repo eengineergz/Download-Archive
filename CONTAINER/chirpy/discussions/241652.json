@@ -1,0 +1,82 @@
+[
+  {
+    "Id": "548762",
+    "ThreadId": "241652",
+    "Html": "\r\n<p>I just started using this, and it rocks!</p>\r\n<p>My aim for it is to get full compile support for my js files - although all the css min &#43; combine, and ease with which I can combine and min my script is great.</p>\r\n<p>To do advanced compilation though, I need to get some extern files in and also to pick up the type argument erros that come as warnings</p>\r\n<p>To allow this, I have created a fork and have it working.</p>\r\n<p>I added 2 settings:</p>\r\n<pre style=\"font-family:consolas\"><span style=\"color:#000000\">GoogleClosureArguments</span>: <br></pre>\r\n<p>default --warning_level QUIET so works same as before, but allows for me: --warning_level VERBOSE</p>\r\n<pre style=\"font-family:consolas\"><span style=\"color:#000000\">GoogleClosureExternExtension</span>:<br></pre>\r\n<p>If you fill that in (say .externs) then when you do a simple or advanced compile it checks for yourfile.externs.js (by replacing from yourfile.gct.js based on your chosen .gct extension) it passes through to the compiler as --externs.&nbsp; Default is not\r\n to use this.</p>\r\n<p>1 caveat, only works in offline mode</p>\r\n<p>I also made a couple of tweaks to the config file work, as well as fixing a potential inifintie loop I hit.</p>\r\n<p>With this fork I can now use 2 config files to produce combine versions of all my extern and js files, and a second config file to produce simple and advanced versions, and give me compile errors if any types are wrong / undefined etc. (note: we use .com.js\r\n to indicate a js file should be combined and compiled)</p>\r\n<p>js.chirp.config:</p>\r\n<pre style=\"font-family:consolas\"><span style=\"color:#888888\">&lt;?xml&nbsp;version=&quot;1.0&quot;?&gt;</span><br><span style=\"color:#888888\">&lt;root&nbsp;</span><br><span style=\"color:#888888\">&nbsp;&nbsp;xmlns=&quot;urn:ChirpyConfig&quot;</span><br><span style=\"color:#888888\">&nbsp;&nbsp;xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span><br><span style=\"color:#888888\">&nbsp;&nbsp;xsi:schemaLocation=&quot;urn:ChirpyConfig&nbsp;http://www.weirdlover.com/chirpy/chirp.xsd&quot;&gt;&nbsp;&nbsp;</span><br><span style=\"color:#888888\">&nbsp;&nbsp;</span><br><span style=\"color:#888888\">&nbsp;&nbsp;&lt;FileGroup&nbsp;Name=&quot;core.debug.externs.js&quot;&gt;</span><br><span style=\"color:#888888\">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Folder&nbsp;Minify=&quot;false&quot;&nbsp;Pattern=&quot;*.extern.js&quot;/&gt;</span><br><span style=\"color:#888888\">&nbsp;&nbsp;&lt;/FileGroup&gt;&nbsp;&nbsp;</span><br><span style=\"color:#888888\">&nbsp;&nbsp;&lt;FileGroup&nbsp;Name=&quot;core.debug.js&quot;&gt;</span><br><span style=\"color:#888888\">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Folder&nbsp;Minify=&quot;false&quot;&nbsp;Pattern=&quot;*.com.js&quot;/&gt;</span><br><span style=\"color:#888888\">&nbsp;&nbsp;&lt;/FileGroup&gt;</span><br><span style=\"color:#888888\">&nbsp;&nbsp;</span><br><span style=\"color:#888888\">&lt;/root&gt;</span><br><span style=\"color:#40c4ff\">&nbsp; <br><span style=\"color:#000000\">js.min.chirp.config:</span><br></span><pre style=\"font-family:consolas\"><span style=\"color:#888888\">&lt;?xml&nbsp;version=&quot;1.0&quot;?&gt;</span><br><span style=\"color:#888888\">&lt;root&nbsp;</span><br><span style=\"color:#888888\">&nbsp;&nbsp;xmlns=&quot;urn:ChirpyConfig&quot;</span><br><span style=\"color:#888888\">&nbsp;&nbsp;xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span><br><span style=\"color:#888888\">&nbsp;&nbsp;xsi:schemaLocation=&quot;urn:ChirpyConfig&nbsp;http://www.weirdlover.com/chirpy/chirp.xsd&quot;&gt;&nbsp;&nbsp;</span><br><span style=\"color:#888888\">&nbsp; </span><pre style=\"font-family:consolas\"><pre style=\"font-family:consolas\"><span style=\"color:#888888\">&lt;FileGroup&nbsp;Name=&quot;core.min.js&quot;&gt;</span><br><span style=\"color:#888888\">&nbsp;&nbsp;&nbsp;&nbsp;&lt;File&nbsp;Minify=&quot;true&quot;&nbsp;Path=&quot;core.debug.js&quot;&nbsp;MinifyWith=&quot;gctSimple&quot;/&gt;</span><br><span style=\"color:#888888\">&nbsp;&nbsp;&lt;/FileGroup&gt; </span><br></pre>\r\n</pre>\r\n<span style=\"color:#888888\">&nbsp; &lt;FileGroup&nbsp;Name=&quot;core.minh.js&quot;&gt;</span><br><span style=\"color:#888888\">&nbsp;&nbsp;&nbsp;&nbsp;&lt;File&nbsp;Minify=&quot;true&quot;&nbsp;Path=&quot;core.debug.js&quot;&nbsp;MinifyWith=&quot;gctAdvanced&quot;/&gt;</span><br><span style=\"color:#888888\">&nbsp;&nbsp;&lt;/FileGroup&gt;&nbsp;</span><br><span style=\"color:#888888\">&nbsp;&nbsp;</span><br><span style=\"color:#888888\">&lt;/root&gt;</span><span style=\"color:#40c4ff\"><br></span></pre>\r\nHope that all makes sense, take a look at the fork, and let me know what you think?<br><a rel=\"nofollow\" href=\"https://hg01.codeplex.com/forks/bakesteve/googexterns\">https://hg01.codeplex.com/forks/bakesteve/googexterns</a><br><br>also, for the latest stuff on refactoring the config, I assume that is work underway as a few issues with the logic for minify seperately <br>(because missing attributes on files / folders arent taken from the fileGroup) and also looked like if minifySeperately was false, it didnt actually minify?<br>or should I pop what I found in the issue tracker?<br><br>thanks<br>steve<br></pre>\r\n",
+    "PostedDate": "2011-01-13T08:10:19.657-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "548941",
+    "ThreadId": "241652",
+    "Html": "\r\n<p>To be honest i forgot to add defaulting back in. Committed it back in now along with some other small fixes. Thanks for rubbing my face in it :)</p>\r\n<p>I love the --extern support.</p>\r\n<p>If you move the MinifyWith attribute to the FileGroup it will call gctAdvanced once after combining. In alot of cases this removes the need of calling --extern i would think.</p>\r\n<p>Do you need two config files for it too work though ? Since Directory.GetFiles loads them in alphabetic order it might get confusing. Or was it my sloppy commit that introduced this?&nbsp;</p>\r\n",
+    "PostedDate": "2011-01-13T13:07:59.167-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "549197",
+    "ThreadId": "241652",
+    "Html": "\r\n<p>yeah sorry - wasnt meant to be a face rubbing!</p>\r\n<p>Issue I was getting with 1 config file was it seemd to recursively call - worked fine from the console app, but when running as an add in it kept looping, even after I moved the manager.Process above the refreshconfigfiles</p>\r\n<p>Sure it must just be a dependency as effectively I wanted fileGroup1 to group everything together, and then filegroup2 to gct it, but guess that makes FG2 dependant on FG1 so causes the loop?</p>\r\n<p>In the end, I sort of lost patience trying to figure it and the 2 files are fine for me... perhaps worth a test after your changes?</p>\r\n<p>For us, we'll still need externs anyway for jquery and a couple of other apis that we ref scripts froma cdn so cant alter signatures.</p>\r\n",
+    "PostedDate": "2011-01-14T01:26:58.107-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "549396",
+    "ThreadId": "241652",
+    "Html": "\r\n<p>slightly off topic - with a folder group, is there anyway to reference scripts outside of the current folder, so if my structure is:</p>\r\n<p>root</p>\r\n<p>- controls</p>\r\n<p>- pages</p>\r\n<p>- scripts</p>\r\n<p>and I want to have a config in teh scripts folder pick up .js files in the controls folder?&nbsp; tried using Path=&quot;~/controls&quot; but no joy</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2011-01-14T07:56:52.6-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "550417",
+    "ThreadId": "241652",
+    "Html": "\r\n<p>I rewrote pattern handling to handle&nbsp;</p>\r\n<p>Fixed paths (d:\\somepath\\x\\*.js, \\\\some\\network-path\\*.js)</p>\r\n<p>Relative paths (&quot;..\\..\\scripts\\*.js, &quot;.\\scripts\\*.js)</p>\r\n<p>paths that start with a / or \\ however are treated as being rooted to the config directory. ~/ would result in two different meanings in console mode and when ran in VS. If you have any suggestions i would love to hear them.</p>\r\n<p>also the Recursive attribute might now be confusing when using paths like&nbsp;d:\\somepath\\x\\*.js Deep=&quot;True&quot; might be less ambigious ?</p>\r\n",
+    "PostedDate": "2011-01-17T02:55:32.517-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "551096",
+    "ThreadId": "241652",
+    "Html": "\r\n<p>sounds great, giving it a go now.</p>\r\n<p>Agree on deep vs recursive.</p>\r\n<p>Only other thing I can think of is getting all the sections in 1 config - but I was getting it recursively rebuilding teh files when I did that - will give it another go on latest code though.</p>\r\n<p>I was also going to add in config for where to find the closure compiler</p>\r\n<p>what is best approach for merging down from my fork?</p>\r\n",
+    "PostedDate": "2011-01-18T01:52:08.35-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "551237",
+    "ThreadId": "241652",
+    "Html": "\r\n<p>Gave it a go and works really well.&nbsp; Unfortunately I still get the recursuive issue with the following config:</p>\r\n<pre style=\"font-family:consolas\"><pre style=\"font-family:consolas\"><span style=\"color:#000000\">&lt;FileGroup&nbsp;Name=&quot;core.debug.externs&quot;&nbsp;Minify=&quot;False&quot;&gt;</span><br><span style=\"color:#000000\">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Folder&nbsp;Minify=&quot;false&quot;&nbsp;Pattern=&quot;*.extern.js&quot;&nbsp;/&gt;</span><br><span style=\"color:#000000\">&nbsp;&nbsp;&lt;/FileGroup&gt;&nbsp;&nbsp;</span><br><span style=\"color:#000000\">&nbsp;&nbsp;&lt;FileGroup&nbsp;Name=&quot;core.debug.js&quot;&nbsp;Minify=&quot;False&quot;&gt;</span><br><span style=\"color:#000000\">&nbsp;&nbsp;&nbsp;&nbsp;&lt;Folder&nbsp;Minify=&quot;false&quot;&nbsp;Pattern=&quot;*.adz.js&quot;&nbsp;Path=&quot;..\\controls&quot;/&gt;</span><br><span style=\"color:#000000\">&nbsp;&nbsp;&lt;/FileGroup&gt;</span><br><span style=\"color:#000000\">&nbsp;&nbsp;&lt;FileGroup&nbsp;Name=&quot;core.min.js&quot;&gt;</span><br><span style=\"color:#000000\">&nbsp;&nbsp;&nbsp;&nbsp;&lt;File&nbsp;Minify=&quot;false&quot;&nbsp;Path=&quot;core.debug.js&quot;&nbsp;MinifyWith=&quot;gctAdvanced&quot;/&gt;</span><br><span style=\"color:#000000\">&nbsp;&nbsp;&lt;/FileGroup&gt;</span></pre>\r\n<span style=\"color:#000000\"><br>but having the 2 configs works fine for now.<br><br>I've also made a start on specifying where the jar file sits and works fine for full paths but not relative yet.</span></pre>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2011-01-18T06:40:12.51-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "552726",
+    "ThreadId": "241652",
+    "Html": "\r\n<p>Hey bakesteve,</p>\r\n<p>Had a busy week i hope to commit my patches asap. That recursive thing needs to be solved too though since you have no control in&nbsp;which&nbsp;order configs are loaded apart from naming them alphabetically :)</p>\r\n<p>About merging, you could either request developer access from&nbsp;<a href=\"http://www.codeplex.com/site/users/view/weirdlover\">weirdlover</a>&nbsp;or i can pull from you and merge &#43; commit. Whichever one happens first :)</p>\r\n",
+    "PostedDate": "2011-01-20T10:01:36.38-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "553083",
+    "ThreadId": "241652",
+    "Html": "\r\n<p>sure - will do.&nbsp; I've rejigged things a little so all based off your changes on file configs in the trunk.&nbsp; I'll ask weirdlover, but probably also just recreate my fork and then maybe you can pull the changeset down?</p>\r\n<p>&nbsp;</p>\r\n<p>been using a bit more now and started playing with a couple of other changes/fixes:</p>\r\n<p>1 - made closure compiler write output / errors async - I was getting a problem where the compiler hung and that then seemed to stuff the thread all chirpy work was on - this way I kill the compiler process if it takes too long.</p>\r\n<p>2 - On my project we'll be combining a lot of script, so would probably like the option to only compile on build, not via file saves - thought initially that could go as a chirpy setting, but think it probably makes more sense on a config file setting so\r\n you can vary betweeen projects?&nbsp; Having a go at that now.</p>\r\n<p>3 - for the recursive - any ideas on best way to debug this or is it just a matter or using the chirpy output window to put out some text?&nbsp; All works fine in console mode, so a bit tricky to track down.&nbsp; I'm also getting times when teh filedependencies\r\n seem to get lost - chirpy picks up that I saved a file (ie test.com.js) that is handled by my config - but the config engine doesnt get run unless I change &amp; save the config file</p>\r\n",
+    "PostedDate": "2011-01-21T02:02:07.913-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "553247",
+    "ThreadId": "241652",
+    "Html": "\r\n<p>quick update on #3 - when dependencies werent being picked up - the issue was I had moved to the new relative path, which was great, but the path for the file created in folderXML included teh relative parts which file.read handled but dependencies didnt</p>\r\n<p>the fix is to change folder xml line 29 to use GetFullPath to resolve a path of c:&lt;user\\docs\\etc\\&gt;..\\..\\pages\\scripts\\file.js</p>\r\n<pre style=\"font-family:consolas\"><span style=\"color:#000000\">FileXmlList.Add(new&nbsp;FileXml&nbsp;{</span><br><span style=\"color:#000000\">  Minify&nbsp;=&nbsp;this.Minify,</span><br><span style=\"color:#000000\">  Path&nbsp;=&nbsp;System.IO.Path.GetFullPath(filePath),//handles&nbsp;relative&nbsp;paths&nbsp;-&nbsp;needed&nbsp;for&nbsp;file&nbsp;dependency&nbsp;to&nbsp;work&nbsp;later</span><br><span style=\"color:#000000\">  MinifyWith&nbsp;=&nbsp;this.MinifyWith</span><br><span style=\"color:#000000\"> });</span><br><br>not tracked down the recursive part yet - thats next!</pre>\r\n",
+    "PostedDate": "2011-01-21T07:05:31.337-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "Hallo,\r\n\r\ni've some problems to setup chirpy for my .net ajax application.\r\nthe problem is that chirpy renames all methode and object names.\r\n\r\ni tried to use the ms ajax minifier by setting the default javascript minifier\r\nto Microsoft Ajax toolkit, also i have unchecked all options \r\nin the ms js ajax minifier tab for testing purpose, but i don't see any effect.\r\nchirpy still renames/minifies all names which destroys my ajax callbacks.\r\n\r\nso my suggestion here is an exclude list for function and object names,\r\nthis keeps the minifier power of chirpy and saves my callbacks.\r\n\r\nlast but not least i'd like to know where chirpy stores it's config file, i was not able to find it.\r\n\r\nbtw: i've installed the latest chirpy version 2.04 and overwrote all dlls\r\nin the addin folder of visual studio with the latest dlls out of your source.",
+    "LastUpdatedDate": "2012-03-11T10:05:05.673-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-02-24T01:17:03.737-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Methode and Object Renaming failure",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 124
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Test with closure compiler simple or white space only.\n\nhttps://developers.google.com/closure/compiler/docs/compilation_levels\n",
+      "PostedDate": "2012-03-11T10:05:05.673-07:00",
+      "Id": 57513
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "714329",
+    "ThreadId": "283493",
+    "Html": "\r\n<p>Now that Chirpy supports CoffeeScript, it wold be great if it could also support:</p>\r\n<p>Eco: Embedded CoffeeScript templates</p>\r\n<p><a href=\"https://github.com/sstephenson/eco\">https://github.com/sstephenson/eco</a></p>\r\n<p>&quot;...<span>or compile your templates to JavaScript with the&nbsp;</span><code>eco</code><span>&nbsp;command-line utility.</span>&quot;</p>\r\n",
+    "PostedDate": "2011-12-19T10:09:25.787-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "718315",
+    "ThreadId": "283493",
+    "Html": "This discussion has been copied to a work item. Click <a href=\"http://chirpy.codeplex.com/workitem/112\">here</a> to go to the work item and continue the discussion.",
+    "PostedDate": "2011-12-29T07:24:13.757-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

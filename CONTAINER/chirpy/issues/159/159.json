@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 4,
+    "Custom": null,
+    "Description": "Please create TypeScript support for Chirpy...\r\n\r\nhttp://www.typescriptlang.org\r\n\r\nThanks",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-10-03T15:52:14.333-07:00",
+    "Status": {
+      "Name": "Resolved",
+      "Id": 7
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Typescript support",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 159
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "http://chirpy.codeplex.com/SourceControl/changeset/1793f0dd3165",
+      "PostedDate": "2012-10-06T19:22:14.14-07:00",
+      "Id": 78877
+    },
+    {
+      "Message": "Any documentation on how to use Typescript with Chirpy?",
+      "PostedDate": "2012-10-09T06:33:57.44-07:00",
+      "Id": 79138
+    },
+    {
+      "Message": "Name your file *chirp.ts or change it in config screen.\n\nJs is create on save.\nAlso right click menu item in solution explorer.\n\nRequired typeScript plugin http://www.microsoft.com/en-us/download/details.aspx?id=34790",
+      "PostedDate": "2012-10-11T15:03:03.663-07:00",
+      "Id": 79551
+    },
+    {
+      "Message": "I renamed my file to *chirp.ts and nothing happened.\n\nI'm using version 2.06, should this work?",
+      "PostedDate": "2012-11-11T12:45:44.857-08:00",
+      "Id": 82196
+    }
+  ]
+}

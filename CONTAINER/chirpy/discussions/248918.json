@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "577402",
+    "ThreadId": "248918",
+    "Html": "\r\n<p>I have been battling with this for hours looks like a great tool but I just cant get it working.</p>\r\n<p>I have tried installing 3 versions of the add-in and the MSI version.</p>\r\n<p>I see it in the Add-in manager</p>\r\n<p>I see the options in tools.</p>\r\n<p>However I create a file called&nbsp;file.chirp.css and I get no code behind view.</p>\r\n<p>What am I doing wrong have a missed something ?</p>\r\n",
+    "PostedDate": "2011-03-08T13:39:19.59-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "579505",
+    "ThreadId": "248918",
+    "Html": "<p>Code behind don't work on projet type web project. work on project type web appplication and MVC.</p>\r\n<p>In web project file is only&nbsp; create on hd.</p>\r\n<p>If not file is generate test with <a href=\"http://chirpy.codeplex.com/releases/61897/download/212977\">console version</a></p>",
+    "PostedDate": "2011-03-12T10:01:56.743-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "580041",
+    "ThreadId": "248918",
+    "Html": "<p>Thanks for the response, crated a new MVC application and tried it again and still no joy.</p>",
+    "PostedDate": "2011-03-14T07:47:03.72-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "583019",
+    "ThreadId": "248918",
+    "Html": "<p>Here at work our \"My Documents\" are stored on network storage, so its actually on \\\\someserver\\somelocation\\My Documents\\</p>\r\n<p>Some plugins that use java, or just plain ..some plugins. Don't like/trust paths like \\\\</p>\r\n<p>The solution here was to create a folder like c:\\vs-addins\\ and dump all my custom addins in there instead, and then add that folder to the visual studio addin paths.</p>\r\n<p>&nbsp;</p>\r\n<p>Download the vsix, open it as a zip, and take the files from inside and place the in for example your folder c:\\vs-addins\\chirpy</p>",
+    "PostedDate": "2011-03-19T05:28:02.307-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

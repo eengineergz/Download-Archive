@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Added possible feature for allowing remotely-created files. ",
+    "ClosedDate": "2010-07-20T02:46:47.403-07:00",
+    "CommentCount": 3,
+    "Custom": null,
+    "Description": "I successfully installed the latest Add-in (1.0.0.4) and can use the code-behind minification for both js and css, as well as validation. Love it! \r\nHowever, I can't get the mashing to work. I added a mash.chirp.config file to the root of my ASP.NET MVC 2 project in in VS2010 with this content:\r\n<root>\r\n\t<FileGroup Name=\"/public/javascript/application.js\">\r\n\t\t<File Path=\"/scripts/jquery-ui.min.js\" Minify=\"false\" />\r\n\t\t<File Path=\"/scripts/jquery.blockUI.js\" />\r\n\t\t<File Path=\"/scripts/jquery.form.js\" />\r\n\t\t<File Path=\"/scripts/jquery.gritter.js\" />\r\n\t\t<File Path=\"/scripts/jquery.plupload.queue.js\" />\r\n\t\t<File Path=\"/scripts/jquery.gritter.js\" />\r\n\t\t<File Path=\"/scripts/jquery.validate.js\" />\r\n\t\t<File Path=\"/scripts/MicrosoftAjax.js\" />\r\n\t\t<File Path=\"/scripts/plupload.full.min.js\" Minify=\"false\"/>\r\n\t\t<File Path=\"/scripts/soundmanager2-nodebug-jsmin.js\"  Minify=\"false\"/>\r\n\t\t<File Path=\"/scripts/gears_init.js\" />\r\n\t\t<File Path=\"/scripts/cw.app.main.min.js\" />\r\n\t\t<File Path=\"/scripts/cw.app.events.min.js\" />\r\n\t\t<File Path=\"/scripts/cw.app.ajax.min.js\" />\r\n\t\t<File Path=\"/scripts/cw.app.sound.min.js\" />\r\n\t\t<File Path=\"/scripts/cw.app.upload.min.js\" />\r\n\t</FileGroup>\r\n</root>\r\n\r\nWhen I save this I see no transformations being created. I also tried putting this in the scripts folder and have tried it with more simplified paths, no luck. I do config transformation for my web.config files in this project without issues. Any ideas?",
+    "LastUpdatedDate": "2010-07-20T02:46:47.403-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-07-19T22:03:14.997-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Mashing via config file not working",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 15
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Hey Augustlights,\n\nThanks for posting the issue, friend. I really do appreciate it.\n\nThe FileGroup Name can't have subfolders in it. If you want your \"application.js\" file to appear in the \"/public/javascript\" directory, place the \"chirp.config\" file into that folder. Then, set the FileGroup Name to \"application.js\". \n\nOnce you've done that, try adding one or two File elements to your config file. The paths should be relative to the calling config file, so if your config file is in the \"/public/javascript\" folder and your \"jquery-ui.min.js\" file is in the \"scripts/\" folder, your File Path should be \"../../scripts/jquery-ui.min.js.js\".\n\nOne more wee sidenote: if you want to, you can use a Folder element. You could even do something like:\n\n<Folder Path=\"/\" Type=\"*.app.js\" /> \n\nI'm sure that this issue will pop up for others (so a big thanks to you for posting it here). To help, I've written up a quick dirty demo that you can download and fiddle with. Hopefully, it'll make sense. If it doesn't, please feel free to punch me in a non-vital area. Here's the download link:\n\nhttp://www.weirdlover.com/wp-content/uploads/2010/07/ChirpyConfigDemo.zip",
+      "PostedDate": "2010-07-19T23:28:04.71-07:00",
+      "Id": 14618
+    },
+    {
+      "Message": "typo (one among many, I'm sure): ../../scripts/jquery-ui.min.js.js (extra .js)\n\nWhat can I say--I'm a stutterer.",
+      "PostedDate": "2010-07-19T23:31:58.947-07:00",
+      "Id": 14619
+    },
+    {
+      "Message": "Ok, cool, got it now. I put it in the folder and it works now. I'll also check out the demo for some tips. Thanks again!",
+      "PostedDate": "2010-07-20T02:04:29.537-07:00",
+      "Id": 14622
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "When I publish my website appair both js file, minized and \"source\". Is there an option for publish only the minify version?",
+    "LastUpdatedDate": "2012-06-27T20:25:55.68-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-01-04T09:52:08.257-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "When publish only min file.",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 113
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "In Visual Studio, right-click on the files you don't want to publish and change the Build Action to \"None\".",
+      "PostedDate": "2012-06-27T20:25:55.68-07:00",
+      "Id": 69175
+    }
+  ]
+}

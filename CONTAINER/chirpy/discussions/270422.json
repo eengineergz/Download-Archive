@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "663439",
+    "ThreadId": "270422",
+    "Html": "<p>Not sure why this is happening but Chirpy is logging TONS of errors and is not working, can anyone help?</p>\n<p>&nbsp;</p>\n<p>LOGS</p>\n<p>Javascript Intellisense Message: E:\\\\scripts\\sifr.js(10:4) : Object required <br /> Javascript Intellisense Message: C:\\Users\\\\AppData\\Local\\Microsoft\\Windows\\Temporary Internet Files\\Content.IE5\\LYWFO2XW\\jquery.min-fds90[1]..js(33:391) : Object required <br /> Javascript Intellisense Message: C:\\Users\\\\AppData\\Local\\Microsoft\\Windows\\Temporary Internet Files\\Content.IE5\\VOC6L2UE\\jquery-ui.min-fds90[1]..js(0:0) : Could not find file 'C:\\Users\\Brian\\AppData\\Local\\Microsoft\\Windows\\Temporary Internet Files\\Content.IE5\\VOC6L2UE\\jquery-ui.min-fds90[1]..js'. <br /> Javascript Intellisense Message: C:\\Users\\\\AppData\\Local\\Microsoft\\Windows\\Temporary Internet Files\\Content.IE5\\9QUA23XQ\\addthis_widget-fds90[1]..js(2:985) : Object required <br /> Javascript Intellisense Message: C:\\Users\\\\AppData\\Local\\Microsoft\\Windows\\Temporary Internet Files\\Content.IE5\\9QUA23XQ\\addthis_widget-fds90[1]..js(2:1126) : Object required <br /> Javascript Intellisense Message: C:\\Users\\\\AppData\\Local\\Microsoft\\Windows\\Temporary Internet Files\\Content.IE5\\9QUA23XQ\\addthis_widget-fds90[1]..js(2:943) : Object reference not set to an instance of an object. <br /> Javascript Intellisense Message: E:\\\\public\\web\\\\scripts\\sifr.js(10:4) : Object required <br /> Javascript Intellisense Message: JSIntellisense:Internal/(2:0) : Function expected <br /> Javascript Intellisense Message: JSIntellisense:Internal/(2:0) : Function expected <br /> Javascript Intellisense Message: JSIntellisense:Internal/(3:5) : Function expected <br /> Javascript Intellisense Message: JSIntellisense:Internal/(3:5) : Function expected</p>",
+    "PostedDate": "2011-08-25T12:45:38.88-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "663542",
+    "ThreadId": "270422",
+    "Html": "<p>The log is show in chirpy log windows or error windows ?</p>",
+    "PostedDate": "2011-08-25T15:47:07.137-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "671940",
+    "ThreadId": "270422",
+    "Html": "<p>Im an idiot.</p>",
+    "PostedDate": "2011-09-14T14:20:54.457-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "676794",
+    "ThreadId": "270422",
+    "Html": "<p>What Happened?</p>",
+    "PostedDate": "2011-09-26T10:56:47.843-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "681538",
+    "ThreadId": "270422",
+    "Html": "<p>Error is&nbsp;probably&nbsp;not in Chirpy.</p>",
+    "PostedDate": "2011-10-07T18:30:40.35-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "640848",
+    "ThreadId": "264769",
+    "Html": "\r\n<p>Hi there,<br>\r\n<br>\r\nWhen dealing with scriptmanager in asp.net webforms, it allows for scripts to be loaded as the debug version or released version<br>\r\n<br>\r\n&lt;ajax:ToolkitScriptManager ID=&quot;ToolkitScriptManager1&quot; runat=&quot;server&quot; ScriptMode=&quot;Inherit&quot;&gt;<br>\r\n&lt;CompositeScript&gt;<br>\r\n&lt;Scripts&gt;<br>\r\n&lt;asp:ScriptReference path=&quot;~/Scripts/woo.js&quot; ScriptMode=&quot;inherit&quot;/&gt;<br>\r\n<br>\r\n<br>\r\nBasically the above has a scriptmode inherit, meaning it will be dependent on compilation:<br>\r\nIf debug mode then it will try to load woo.debug.js<br>\r\nIf release mode it will try to load woo.js<br>\r\n<br>\r\nSo if I had woo.debug.js how can I get chirpy to name it's minified version as woo.js?</p>\r\n<p>Any help would be appreciated thanks</p>\r\n",
+    "PostedDate": "2011-07-11T22:00:35.137-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "641371",
+    "ThreadId": "264769",
+    "Html": "<p>Work item</p>\r\n<p><a href=\"../workitem/89\">http://chirpy.codeplex.com/workitem/89</a></p>\r\n<p>Feature : Customize minified version name.</p>",
+    "PostedDate": "2011-07-12T15:47:55.237-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "645631",
+    "ThreadId": "264769",
+    "Html": "<p>It would be great if they added this and I +1ed the new work item added.</p>\r\n<p>However I worked around this in an odd way by using a chirp.config like this:</p>\r\n<p>\r\n<div style=\"color: black; background-color: white;\">\r\n<pre><span style=\"color: blue;\">&lt;?</span><span style=\"color: #a31515;\">xml</span> <span style=\"color: red;\">version</span><span style=\"color: blue;\">=</span><span style=\"color: black;\">\"</span><span style=\"color: blue;\">1.0</span><span style=\"color: black;\">\"</span><span style=\"color: blue;\">?&gt;</span>\r\n<span style=\"color: blue;\">&lt;</span><span style=\"color: #a31515;\">root</span>\r\n  <span style=\"color: red;\">xmlns</span><span style=\"color: blue;\">=</span><span style=\"color: black;\">\"</span><span style=\"color: blue;\">urn:ChirpyConfig</span><span style=\"color: black;\">\"</span>\r\n  <span style=\"color: red;\">xmlns:xsi</span><span style=\"color: blue;\">=</span><span style=\"color: black;\">\"</span><span style=\"color: blue;\">http://www.w3.org/2001/XMLSchema-instance</span><span style=\"color: black;\">\"</span>\r\n  <span style=\"color: red;\">xsi:schemaLocation</span><span style=\"color: blue;\">=</span><span style=\"color: black;\">\"</span><span style=\"color: blue;\">urn:ChirpyConfig http://www.weirdlover.com/chirpy/chirp.xsd</span><span style=\"color: black;\">\"</span><span style=\"color: blue;\">&gt;</span>\r\n\r\n  <span style=\"color: green;\">&lt;!-- Chirpy automatically removes the last '.debug' so this ensures it stays.  \r\n       Also must include 'min' even if it isn't minified to work with ScriptManager automatic debug settings.\r\n  --&gt;</span>\r\n  <span style=\"color: blue;\">&lt;</span><span style=\"color: #a31515;\">FileGroup</span> <span style=\"color: red;\">Name</span><span style=\"color: blue;\">=</span><span style=\"color: black;\">\"</span><span style=\"color: blue;\">woo.min.debug.debug.js</span><span style=\"color: black;\">\"</span> <span style=\"color: red;\">Minify</span><span style=\"color: blue;\">=</span><span style=\"color: black;\">\"</span><span style=\"color: blue;\">False</span><span style=\"color: black;\">\"</span><span style=\"color: blue;\">&gt;</span>\r\n    <span style=\"color: blue;\">&lt;</span><span style=\"color: #a31515;\">File</span> <span style=\"color: red;\">Path</span><span style=\"color: blue;\">=</span><span style=\"color: black;\">\"</span><span style=\"color: blue;\">woo.js</span><span style=\"color: black;\">\"</span><span style=\"color: blue;\">/&gt;</span>\r\n  <span style=\"color: blue;\">&lt;/</span><span style=\"color: #a31515;\">FileGroup</span><span style=\"color: blue;\">&gt;</span>\r\n\r\n  <span style=\"color: green;\">&lt;!-- Chirpy automatically adds .min to the end when minifying so the name below really is 'woo.min.js' --&gt;</span>\r\n  <span style=\"color: blue;\">&lt;</span><span style=\"color: #a31515;\">FileGroup</span> <span style=\"color: red;\">Name</span><span style=\"color: blue;\">=</span><span style=\"color: black;\">\"</span><span style=\"color: blue;\">woo.js</span><span style=\"color: black;\">\"</span> <span style=\"color: red;\">Minify</span><span style=\"color: blue;\">=</span><span style=\"color: black;\">\"</span><span style=\"color: blue;\">True</span><span style=\"color: black;\">\"</span><span style=\"color: blue;\">&gt;</span>\r\n    <span style=\"color: blue;\">&lt;</span><span style=\"color: #a31515;\">File</span> <span style=\"color: red;\">Path</span><span style=\"color: blue;\">=</span><span style=\"color: black;\">\"</span><span style=\"color: blue;\">woo.js</span><span style=\"color: black;\">\"</span><span style=\"color: blue;\">/&gt;</span>\r\n  <span style=\"color: blue;\">&lt;/</span><span style=\"color: #a31515;\">FileGroup</span><span style=\"color: blue;\">&gt;</span>\r\n<span style=\"color: blue;\">&lt;/</span><span style=\"color: #a31515;\">root</span><span style=\"color: blue;\">&gt;</span>\r\n</pre>\r\n</div>\r\n</p>\r\n<p>Saving this XML as \"woo.chirp.config\", Chirpy will output a \"woo.min.debug.js\" and \"woo.min.js\". &nbsp;Then your script reference points to woo.min.js. &nbsp;It is odd because the woo.min.debug.js isn't actually minified, but it still works.&nbsp;</p>\r\n<p>A nice side-effect is that you can combine several js files into a single one by adding more File sections above.</p>\r\n<p>But globally, it would be great to have this functionality built-in.</p>",
+    "PostedDate": "2011-07-21T08:44:05.547-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "655398",
+    "ThreadId": "264769",
+    "Html": "<p><a href=\"http://chirpy.codeplex.com/SourceControl/changeset/changes/ab7715fabba6\">http://chirpy.codeplex.com/SourceControl/changeset/changes/ab7715fabba6</a></p>",
+    "PostedDate": "2011-08-09T11:04:52.113-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

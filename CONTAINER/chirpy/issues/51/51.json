@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2010-11-22T18:29:29.47-08:00",
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "To reproduce, create a file called test.chirp.less.  Put the following style in it:\r\n\r\ninput[type=\"text\"].medium { width: 15.5em; }\r\n\r\nVery simple.  But when Chirpy generates test.css and test.min.css, they will contain the following incorrect style:\r\n\r\ninput[type=\"text\"] .medium { width: 15.5em; }\r\n\r\nThis same problem is not present when using Chirpy to only minify.  If you reproduce the above situation but instead call the file test.chirp.css, the generated test.min.css will contain the correct selector.",
+    "LastUpdatedDate": "2010-11-22T18:29:29.47-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-11-22T10:04:07.1-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Attribute selector using .less generates incorrect styles",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 51
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "After getting version 1.0.0.53 of Chirpy, this issue appears to be resolved.",
+      "PostedDate": "2010-11-22T11:47:53.06-08:00",
+      "Id": 18915
+    }
+  ]
+}

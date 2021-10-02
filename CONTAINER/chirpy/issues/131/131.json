@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "When minifying the inline JS in a cshtml file in an MVC3 proejct ViewData references are currently being transformed into ViewBag style dynamic references (ViewData[\"key\"] becomes ViewData.key) which breaks the access.\r\n\r\nExample (ViewData[\"test\"] contains string \"test\"):\r\n<script type=\"text/javascript\">\r\n    var test;\r\n    if(@ViewData[\"test\"] == test) {\r\n        alert('success');\r\n    }\r\n</script>\r\n\r\nResult: Page loads, alert triggers\r\n\r\nAfter Transform:\r\n<script type=\"text/javascript\">var test;if(@ViewData.test==test){alert(\"success\")};</script>\r\n\r\nResult: Page doesn't load, error is\r\nCS1061: 'System.Web.Mvc.ViewDataDictionary<dynamic>' does not contain a definition for 'test' and no extension method 'test' accepting a first argument of type 'System.Web.Mvc.ViewDataDictionary<dynamic>' could be found (are you missing a using directive or an assembly reference?)",
+    "LastUpdatedDate": "2012-03-30T11:56:53.573-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-03-30T11:56:53.573-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "ViewData References in In-Line JS Break Minified HTML",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 131
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

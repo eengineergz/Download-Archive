@@ -1,0 +1,18 @@
+! Meet Chirpy
+{project:description}
+
+[image:Chirpy|http://www.weirdlover.com/wp-content/uploads/2010/05/Zippy-236x300.jpg]
+
+Chirpy is chippy. Use [url:Google Closure Tools|http://code.google.com/closure/], [url:YUI Compressor for .Net|http://yuicompressor.codeplex.com/], [url:Ajax Minifier|http://www.asp.net/ajaxlibrary/AjaxMinDocumentation.ashx], or [url:Uglify.js|https://github.com/mishoo/cl-uglify-js] to minify and mash all of your precious assets.  It's easy, it's flexible, and it's automatic.
+
+Chirpy also flirts with T4. Auto-run your T4 templates. Smart-run your T4MVC template. Make your friends and family members uber-jealous.
+
+*NEW* Chirpy now supports  [url:CoffeeScript|http://jashkenas.github.com/coffee-script/] ,  [url:Sass|http://sass-lang.com/]!
+----
+
+*For extensive documentation, please check out [url:weirdlover.com|http://www.weirdlover.com/2010/07/18/chirpy-attains-godlike-abilities-in-version-1-0-0-4/].*
+
+You can also follow project updates via [url:Twitter|http://twitter.com/evannagle].
+
+[image:Chirpy - Will Work For Birdfeed|http://www.pledgie.com/campaigns/12969.png?skin_name=chrome|http://www.pledgie.com/campaigns/12969]
+

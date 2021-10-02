@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2010-06-04T12:43:47.433-07:00",
+    "CommentCount": 2,
+    "Custom": null,
+    "Description": "Setting is save in registry.",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "Chirpy Installer for VS 2010 (Ver-1.0.0.3)",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-06-02T08:24:03.453-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Possibility to customize file extension chirp.js,simple.js....",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 5
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Sample : http://msdn.microsoft.com/en-us/library/b389wd38.aspx",
+      "PostedDate": "2010-06-02T18:03:43.69-07:00",
+      "Id": 12785
+    },
+    {
+      "Message": "http://msdn.microsoft.com/fr-ca/magazine/cc163575%28en-us%29.aspx#S3",
+      "PostedDate": "2010-06-03T15:50:14.513-07:00",
+      "Id": 12806
+    }
+  ]
+}

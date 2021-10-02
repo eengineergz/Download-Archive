@@ -1,0 +1,65 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 5,
+    "Custom": null,
+    "Description": "It would be excellent if the config file would generate updated output whenever a referenced file changes. \r\n\r\nFor eg: If I have a site with a number of required script files, and I am using the config file to combine and minify these files, I would like this output to be generated whenever I change any of the files which are included in the config file. This would avoid me having to save an  updated script file and then navigate to the config file and save it so that it generates the updated content. \r\n\r\nThanks for a fantastic tool!",
+    "LastUpdatedDate": "2012-01-10T18:55:02.557-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-11-14T15:42:01.413-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Auto-save Chirpy config file when referenced source file changes - APOLOGIES, ALREADY PROPOSED",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 8,
+    "Id": 49
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Test name file with name is handle by Chirpy",
+      "PostedDate": "2010-12-01T16:13:12.72-08:00",
+      "Id": 19351
+    },
+    {
+      "Message": "@Ploufs - I don't understand. You want us to put the word \"name\" in the config file?",
+      "PostedDate": "2010-12-02T06:20:54.067-08:00",
+      "Id": 19381
+    },
+    {
+      "Message": "no. \nFilename end with chirp.js  or simple.js ...",
+      "PostedDate": "2010-12-02T15:04:26.53-08:00",
+      "Id": 19416
+    },
+    {
+      "Message": "Looks like if the file is outside the directory of the chripy config file it does't regen the output files automatically.  You have to manually open and save the chripy config file to force the regen.  If the files in question are in the same folder as the chripy config file, then it regens automatically.",
+      "PostedDate": "2011-01-21T14:51:25.93-08:00",
+      "Id": 27026
+    },
+    {
+      "Message": "I can confirm wbreza's comment. When the file is in a different directory, chirpy doesnt regen. This is a very common use case. I hope it will be solved soon, as it is a pain to manually save lots of config files every time a modifiucation is made to the source files.",
+      "PostedDate": "2011-10-23T03:42:41.573-07:00",
+      "Id": 47570
+    }
+  ]
+}

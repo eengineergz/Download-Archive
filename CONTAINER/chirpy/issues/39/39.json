@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Simply click on button \"Find Java\"`to update java.exe to javaw.exe.",
+    "ClosedDate": "2010-09-27T14:54:13.503-07:00",
+    "CommentCount": 2,
+    "Custom": null,
+    "Description": "Please make an option (or just enable it by default) to run the compiler.jar with javaw.exe instead of java.exe to hide the command prompt window from popping up for each js file.",
+    "LastUpdatedDate": "2010-09-27T14:54:13.503-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-09-27T00:25:14.1-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Offline Google Closure Compiler Console Window",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 39
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Changeset 851ed9cc5194 solve this bug.\n\nhttp://chirpy.codeplex.com/SourceControl/changeset/changes/851ed9cc5194",
+      "PostedDate": "2010-09-27T14:46:36.723-07:00",
+      "Id": 16482
+    },
+    {
+      "Message": "Simply ",
+      "PostedDate": "2010-09-27T14:48:21.973-07:00",
+      "Id": 16483
+    }
+  ]
+}

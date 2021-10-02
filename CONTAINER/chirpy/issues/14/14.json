@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 2,
+    "Custom": null,
+    "Description": "Discussions : \r\nhttp://chirpy.codeplex.com/Thread/View.aspx?ThreadId=217629\r\n\r\n- Add checkbox in configuration (Convert image in css to base 64)\r\n-- This option run on chirp.css file\r\n- Create 2 version css :one regular (ie.min.css), one convert (min.css)\r\n\r\nExemple regex:\r\n\\s*url\\(\\s*[\"']?([^\"']+)[\".']?\\s*\\);",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-07-18T16:38:34.313-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Convert any image into a base64 string in CSS    ",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 1,
+    "Id": 14
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Hey Francis,\n\nMaybe we should also allow users to do this in the config files? That might make more sense? ImagesToBase64=\"true\" or something? I'm fine keeping it as a feature of the individual files as well, but it should def be turned off by default.",
+      "PostedDate": "2010-08-04T20:23:02.643-07:00",
+      "Id": 14940
+    },
+    {
+      "Message": "Microsoft release : \nThe ASP.NET Sprite Control and framework\nhttp://aspnet.codeplex.com/releases/view/50140",
+      "PostedDate": "2010-08-05T14:28:48.56-07:00",
+      "Id": 14959
+    }
+  ]
+}

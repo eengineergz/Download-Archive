@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Attribute MinifyWith add posible value: yui, yuiMARE, yuiHybird, gctAdvanced,gctSimple,gstWhiteSpaceOnly, msAjax",
+    "ClosedDate": "2010-08-02T19:58:36.403-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Evan\r\n\"That said, in the next release, I think that we should add a “MinifyWith” attribute. So, you could write MinifyWith=”yui” or MinifyWith=”gct”. Or maybe we should switch Minify=”true” to Minify=”minifyTypeName/none”. Something like that.\"\r\n\r\nFrom : http://www.weirdlover.com/2010/07/18/chirpy-attains-godlike-abilities-in-version-1-0-0-4/",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-07-25T06:10:40.827-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Can I choose js compressor in mash files",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 1,
+    "Id": 22
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 3,
+    "Custom": null,
+    "Description": "I'm getting the above error on one of my files every time I do something with it.\r\n\r\nI pin-pointed the error in the following code:\r\n@media only screen and (-webkit-min-device-pixel-ratio: 2),\r\nonly screen and (   min--moz-device-pixel-ratio: 2),\r\nonly screen and (     -o-min-device-pixel-ratio: 2/1),\r\nonly screen and (        min-device-pixel-ratio: 2),\r\nonly screen and (                min-resolution: 192dpi),\r\nonly screen and (                min-resolution: 2dppx) {...}\r\n\r\n\r\n",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-09-04T08:06:19.207-07:00",
+    "Status": {
+      "Name": "Resolved",
+      "Id": 7
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Fatal error, cannot continue: The method 'ToStringJS' is not generic",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 3,
+    "Id": 158
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Seems to be a common issue with Chirpy: http://stackoverflow.com/a/9827662/175679",
+      "PostedDate": "2012-10-02T14:35:40.933-07:00",
+      "Id": 78355
+    },
+    {
+      "Message": "Change Jurassic to ie (same JsHint engine).",
+      "PostedDate": "2012-10-03T18:03:12.33-07:00",
+      "Id": 78494
+    },
+    {
+      "Message": "changeset=3a154f30af96\r\nhttp://chirpy.codeplex.com/SourceControl/changeset/3a154f30af96",
+      "PostedDate": "2012-10-06T08:49:57.28-07:00",
+      "Id": 78818
+    }
+  ]
+}

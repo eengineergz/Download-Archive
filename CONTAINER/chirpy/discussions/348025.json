@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "808150",
+    "ThreadId": "348025",
+    "Html": "\r\n<p>When creating CoffeeScript files; is there a way to configure Chirpy so that I change the file naming convention from myfilename.chirp.coffee to just myfilename.coffee? &nbsp;</p>\r\n<p>Best regards,</p>\r\n<p>Chris</p>\r\n",
+    "PostedDate": "2012-03-09T09:07:12.787-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "808323",
+    "ThreadId": "348025",
+    "Html": "<p>Yes, in config screen.</p>\r\n<p>In visual studio menu tools</p>\r\n<p>Item options</p>\r\n<p>Node Chirpy</p>\r\n<p>Node CoffeeScript</p>",
+    "PostedDate": "2012-03-09T16:14:55.55-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "808627",
+    "ThreadId": "348025",
+    "Html": "\r\n<div>Hi, </div>\r\n<div>Thank you! I tried that and it doesn't seem to be working. I can change the default for LESS files, but not coffeescript. I think a bug exists, unless someone else can change the default for coffeescript. I really do appreciate all you've done to make\r\n this tool possible for others. </div>\r\n<div><br>\r\n</div>\r\n<div>Best regards,</div>\r\n<div>Chris<br>\r\n<br>\r\nSent from my iPad</div>\r\n<div><br>\r\nOn Mar 9, 2012, at 4:15 PM, &quot;ploufs&quot; &lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt; wrote:<br>\r\n<br>\r\n</div>\r\n<div></div>\r\n<blockquote type=\"cite\">\r\n<div>\r\n<p>From: ploufs</p>\r\n<div id=\"ThreadNotificationPostBody\">\r\n<p>Yes, in config screen.</p>\r\n<p>In visual studio menu tools</p>\r\n<p>Item options</p>\r\n<p>Node Chirpy</p>\r\n<p>Node CoffeeScript</p>\r\n</div>\r\n</div>\r\n</blockquote>\r\n",
+    "PostedDate": "2012-03-10T17:45:41.167-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "808643",
+    "ThreadId": "348025",
+    "Html": "This discussion has been copied to a work item. Click <a href=\"http://chirpy.codeplex.com/workitem/128\">here</a> to go to the work item and continue the discussion.",
+    "PostedDate": "2012-03-10T19:55:45.67-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "808713",
+    "ThreadId": "348025",
+    "Html": "\r\n<div>Thank you for opening an issue. I really do appreciate the good work you have done to make this neat\r\n<a href=\"http://vs.net\">vs.net</a> addin.</div>\r\n<div><br>\r\n</div>\r\n<div>Chris</div>\r\n<div><br>\r\nSent from my iPad</div>\r\n<div><br>\r\nOn Mar 10, 2012, at 7:55 PM, &quot;ploufs&quot; &lt;<a href=\"mailto:notifications@codeplex.com\">notifications@codeplex.com</a>&gt; wrote:<br>\r\n<br>\r\n</div>\r\n<div></div>\r\n<blockquote type=\"cite\">\r\n<div>\r\n<p>From: ploufs</p>\r\n<div id=\"ThreadNotificationPostBody\">This discussion has been copied to a work item. Click\r\n<a href=\"http://chirpy.codeplex.com/workitem/128\">here</a> to go to the work item and continue the discussion.</div>\r\n</div>\r\n</blockquote>\r\n",
+    "PostedDate": "2012-03-11T07:13:41.167-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

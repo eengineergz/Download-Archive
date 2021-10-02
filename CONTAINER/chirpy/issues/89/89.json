@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "http://chirpy.codeplex.com/SourceControl/changeset/changes/ab7715fabba6",
+    "ClosedDate": "2011-08-09T10:55:55.093-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi there,\r\n\r\nWhen dealing with scriptmanager in asp.net webforms, it allows for scripts to be loaded as the debug version or released version\r\n\r\n<ajax:ToolkitScriptManager ID=\"ToolkitScriptManager1\" runat=\"server\" ScriptMode=\"Inherit\">\r\n\t\t\t<CompositeScript>\r\n\t\t\t\t<Scripts>                                        \r\n                                         <asp:ScriptReference path=\"~/Scripts/woo.js\" ScriptMode=\"inherit\"/>\r\n\r\n\r\nBasically the above has a scriptmode inherit, meaning it will be dependent on compilation:\r\nIf debug mode then it will try to load woo.debug.js\r\nIf release mode it will try to load woo.js\r\n\r\nSo if I had woo.debug.js how can I get chirpy to name it's minified version as woo.js?\r\n\r\nThanks for your help",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-07-11T20:49:57.01-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "chirpy to name it's minified version ",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 4,
+    "Id": 89
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

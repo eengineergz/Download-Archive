@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "712681",
+    "ThreadId": "283079",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>&nbsp;</p>\r\n<p>I've just started using Chirpy (Both v2.01 and v2.03), and whilst it works great with .js and .css files, I'm having a bit of trouble with any Razor Syntax.</p>\r\n<p>&nbsp;</p>\r\n<p>Essentially, I have a Razor file which looks like follows:</p>\r\n<p>&nbsp;</p>\r\n<p>@{ ViewBag.Title = &quot;Blah&quot;}</p>\r\n<p>@section Styles{ ... }</p>\r\n<p>@section Scripts{ ... }</p>\r\n<p>html</p>\r\n<p>&nbsp;</p>\r\n<p>In various places I use @foreach loops, and use a either &quot;@:&quot; or &lt;text&gt; to notify what is code and what is to be output.</p>\r\n<p>&nbsp;</p>\r\n<p>All said and done, Chirpy gives me hundreds of errors. They are all either:</p>\r\n<p>&nbsp;</p>\r\n<p>Error<span> </span>60<span> </span>missing name after .@<span> </span>test.chirp.cshtml<span>\r\n</span>3<span> </span>26</p>\r\n<p>Error<span> </span>62<span> </span>syntax error<span> </span>test.chirp.cshtml<span>\r\n</span>5<span> </span>16</p>\r\n<p>Error<span> </span>63<span> </span>invalid property id<span> </span>test.chirp.cshtml<span>\r\n</span>22<span> </span>20</p>\r\n<p>Error<span> </span>67<span> </span>missing ; before statement<span> </span>test.chirp.cshtml<span>\r\n</span>28<span> </span>59</p>\r\n<p>&nbsp;</p>\r\n<p>There are actually no problems in the cshtml files as they all run perfectly in firefox/chrome with no errors.</p>\r\n<p>&nbsp;</p>\r\n<p>Could anyone help?</p>\r\n<p>Thanks again for an awesome tool - it's definitely going to be used for css and js accross my site.</p>\r\n<p>Regards,</p>\r\n<p>Daz.</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2011-12-15T05:40:22.903-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "713704",
+    "ThreadId": "283079",
+    "Html": "<p>Send&nbsp;sample&nbsp;project&nbsp;with&nbsp;error.</p>\r\n<p>In test project work with (empty error) :</p>\r\n<pre><span>@{</span>\r\n&nbsp;&nbsp;&nbsp;&nbsp;ViewBag.Title&nbsp;=&nbsp;<span>\"Test\"</span>;\r\n<span>}</span>\r\n \r\n<span>&lt;</span><span>h2</span><span>&gt;</span>Test<span>&lt;/</span><span>h2</span><span>&gt;</span>\r\n<span>@section&nbsp;Styles{</span>\r\n<span>}</span>\r\n<span>&lt;</span><span>text</span><span>&gt;</span>fsdfsd<span>&lt;/</span><span>text</span><span>&gt;</span>\r\n \r\n<span>@</span><span>foreach</span>&nbsp;(<span>var</span>&nbsp;item&nbsp;<span>in</span>&nbsp;ViewBag.Prod)\r\n\t{\r\n\t\t&nbsp;\r\n\t}\r\n \r\n<span>@section&nbsp;Scripts{</span>\r\n<span>}</span>\r\n</pre>",
+    "PostedDate": "2011-12-17T16:39:36.533-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "731612",
+    "ThreadId": "283079",
+    "Html": "<p>Hi Ploufs,</p>\r\n<p>Wow, I apologise for not getting back to you on this.</p>\r\n<p>The problem is that I have Razor syntax mixed in with my scripts, thus stopping minification from working.</p>\r\n<p>Ideally, when minification reaches an @{} block, or a&nbsp; @foreach loop, the content should be ignored.</p>\r\n<p>As an example:</p>\r\n<p>&lt;script type=\"text/javascript\"&gt;<br />&nbsp;&nbsp;&nbsp; var prices = [<br />&nbsp;&nbsp;&nbsp; @foreach(var p in Model.Prices)<br />&nbsp;&nbsp;&nbsp; {<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; @: @p.LowestPrice<br />&nbsp;&nbsp;&nbsp; }<br />&nbsp;&nbsp;&nbsp; ];</p>\r\n<p>&nbsp;&nbsp; // Alert first entry</p>\r\n<p>&nbsp;&nbsp; alert(prices[0]);</p>\r\n<p>&lt;/script&gt;</p>\r\n<p>Will not work with Chirpy...</p>\r\n<p>Regards,</p>\r\n<p>Daz.</p>",
+    "PostedDate": "2012-01-27T04:32:10.923-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "808756",
+    "ThreadId": "283079",
+    "Html": "This discussion has been copied to a work item. Click <a href=\"http://chirpy.codeplex.com/workitem/129\">here</a> to go to the work item and continue the discussion.",
+    "PostedDate": "2012-03-11T10:10:08.567-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

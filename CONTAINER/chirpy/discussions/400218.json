@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "930092",
+    "ThreadId": "400218",
+    "Html": "\r\n<p>Some scripts need&nbsp;specific&nbsp;minifier options to run&nbsp;correctly.</p>\r\n<p>For example I have some scripts that ';' must term&nbsp;semicolons&nbsp;to run correct!</p>\r\n<p>Please create minifier&nbsp;specific&nbsp;options on chirp config files to avoid incorrect compile!</p>\r\n<p>Thanks</p>\r\n",
+    "PostedDate": "2012-10-21T11:39:11.997-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "930176",
+    "ThreadId": "400218",
+    "Html": "<p><a href=\"http://chirpy.codeplex.com/wikipage?title=XML%20Config#file_customargument\">http://chirpy.codeplex.com/wikipage?title=XML%20Config#file_customargument</a></p>",
+    "PostedDate": "2012-10-21T15:32:07.813-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "931233",
+    "ThreadId": "400218",
+    "Html": "<p>Document is not clear</p>\r\n<p>Please take an example</p>\r\n<p>Specific options for file group or entire .chirp.config file</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks</p>",
+    "PostedDate": "2012-10-23T11:01:36.21-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

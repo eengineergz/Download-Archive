@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "543350",
+    "ThreadId": "240314",
+    "Html": "\r\n<p>I have been using Chirpy, even before you brought it over to codeplex, but I have recently noticed something strange.</p>\r\n<p>I have aspx and ascx files that have javascript embedded in, so I decided to utilize *.chirpy.aspx (ascx) to minimize the code,</p>\r\n<p>but noticed when I look at the controller generated code it points to the *.chirpy.* view, specifically under *controller.generated.cs code under the</p>\r\n<p>public class ViewNames.</p>\r\n<p>sinnerFA</p>\r\n",
+    "PostedDate": "2011-01-03T12:39:01.677-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

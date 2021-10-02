@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "594873",
+    "ThreadId": "253288",
+    "Html": "\r\n<p>Have you considered creating a Chirpy Add In for WebMatrix?</p>\r\n",
+    "PostedDate": "2011-04-10T06:34:28.32-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "594892",
+    "ThreadId": "253288",
+    "Html": "<p>No plan.</p>\r\n<p>Use console version.</p>\r\n<p><a href=\"http://chirpy.codeplex.com/releases/61897/download/212977\">http://chirpy.codeplex.com/releases/61897/download/212977</a></p>",
+    "PostedDate": "2011-04-10T08:13:02.65-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

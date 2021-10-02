@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "536509",
+    "ThreadId": "238545",
+    "Html": "\r\n<p>I've encountered a problem that I have a base.less in a folder &quot;A&quot; and<br>\r\nI have a sub.less in a folder &quot;B&quot; which is a sub folder of folder A (A<br>\r\n-- &gt; B) and sub.less imports base.less. And also it happens at the mash.chirp.config.<br>\r\n<br>\r\nIn base.less, I have url(images/logo.jpg) as a variable called @logo-<br>\r\nimage. Because I import this in my sub.less, so the generated sub.css<br>\r\nwill have the wrong path from the base.</p>\r\n<p><br>\r\nSo is it a way to rewrite the path when generating the css file?</p>\r\n",
+    "PostedDate": "2010-12-15T18:30:30.567-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "537088",
+    "ThreadId": "238545",
+    "Html": "\r\n<p>Presently, no.</p>\r\n",
+    "PostedDate": "2010-12-16T18:41:13.023-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "546934",
+    "ThreadId": "238545",
+    "Html": "\r\n<p>make the path absolute instead of relative. Rewriting relative paths to absolute paths automatically is on my todo list.</p>\r\n",
+    "PostedDate": "2011-01-10T13:12:49.477-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

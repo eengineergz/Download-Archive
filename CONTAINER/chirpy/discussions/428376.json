@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "982644",
+    "ThreadId": "428376",
+    "Html": "\r\n<p>I am using the latest 2.06 build with VS 2012 and seem to be unable to get it to work with CSS files.<br>\r\n<br>\r\nI use Chirpy by naming files like e.g. styles.chirpy.css which then automatically creates styles.min.css when you save the file.</p>\r\n<p>When I try and save the file I get the following error:</p>\r\n<p>Error&nbsp;&nbsp;&nbsp; 22&nbsp;&nbsp;&nbsp; Fatal error, cannot continue: The method 'ToStringJS' is not generic&nbsp;&nbsp;&nbsp; C:\\inetpub\\wwwroot\\accuwebnew\\css\\styles.chirp.css&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp; AccuWeb</p>\r\n<p>Googling bring me to http://stackoverflow.com/questions/7691415/fatal-error-cannot-continue-the-method-tostringjs-is-not-generic but this doesnt seem to help in any way.</p>\r\n<p>Doing the same with JS files works fine<br>\r\ne.g. scripts.yui.js creates scripts.min.js</p>\r\n<p>Does anyone have any ideas please?</p>\r\n<p>Thanks</p>\r\n",
+    "PostedDate": "2013-01-03T05:35:51.813-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "996734",
+    "ThreadId": "428376",
+    "Html": "Is this project still active, I love Chripy but this is driving me mad as it keeps throwing up these errors?<br />\n",
+    "PostedDate": "2013-02-05T07:52:29.863-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

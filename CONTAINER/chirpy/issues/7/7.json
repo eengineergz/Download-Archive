@@ -1,0 +1,51 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2010-07-18T16:41:22.897-07:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "When encoding scripts with non standard chars (like UTF-8 or ISO-8859-1), those special chars are corrupted.\r\nEx.: in a script I have a\r\n... _blank'>Ködel Solutions</a>...\r\nthat becomes a\r\n..._blank'>K�del Solutions</a>...\r\n\r\nAttached is the original file.",
+    "LastUpdatedDate": "2010-07-18T16:41:22.897-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-06-02T19:30:59.377-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Encoding problem",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 7
+  },
+  "FileAttachments": [
+    {
+      "FileId": 125109,
+      "FileName": "Index-debug.js",
+      "DownloadUrl": ".\\125109"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "I am test on my computer and ö is convert to \\u00f6.\n\nhttp://www.fileformat.info/info/unicode/char/00f6/index.htm",
+      "PostedDate": "2010-06-04T16:12:01.823-07:00",
+      "Id": 12831
+    }
+  ]
+}

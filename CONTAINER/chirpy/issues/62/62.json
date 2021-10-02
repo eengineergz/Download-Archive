@@ -1,0 +1,70 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "http://chirpy.codeplex.com/SourceControl/changeset/changes/0fd41f6c4691",
+    "ClosedDate": "2011-08-09T10:57:49.61-07:00",
+    "CommentCount": 6,
+    "Custom": null,
+    "Description": "Prior to v2, if you didn't specify the \"Minify\" attribute in your Chirpy config both a minified and unminified version was created.  I loved this feature, and now in v2 it looks like it defaults to Minify=true.  Anyway to have it produce both without having to duplicate the FileGroup?",
+    "LastUpdatedDate": "2011-08-21T15:40:02.847-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "High",
+      "Severity": 150,
+      "Id": 3
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-03-04T09:55:53.55-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "v2 no longer generating both minified and unminified version",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 11,
+    "Id": 62
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Huge pain... and the impact should be high. Also, adding a duplicate group creates two css files.  The second one ends with .min.min.css for some reason.  No way to generate what we used to have.",
+      "PostedDate": "2011-03-07T23:24:22.223-08:00",
+      "Id": 30152
+    },
+    {
+      "Message": "Please send sample file (.config)",
+      "PostedDate": "2011-07-21T15:04:13.387-07:00",
+      "Id": 40232
+    },
+    {
+      "Message": "I agree.  I fought against this change, and I would really like to see it go back.  \n\nA typical config looks like this:\n    <root>\n        <FileGroup Path=\"all.css\">\n            <File Path=\"blueprint\\screen.css\" />\n            <File Path=\"blueprint\\liquid.less\" />\n            <File Path=\"site.css\" />\n            <File Path=\"forms.css\" />\n            <File Path=\"plugins\\jquery.lightbox-0.5.css\" />\n        </FileGroup>\n    </root>\n\nIn previous versions, Chirpy would generate \"all.css\", and \"all.min.css\".  Since the ConfigEngine logic was rewritten for v2, that is not the case.  Now configs have to be doubled up to get the same effect:\n    <root>\n        <FileGroup Path=\"all.css\" Minify=\"true\">\n            <File Path=\"blueprint\\screen.css\" />\n            <File Path=\"blueprint\\liquid.less\" />\n            <File Path=\"site.css\" />\n            <File Path=\"forms.css\" />\n            <File Path=\"plugins\\jquery.lightbox-0.5.css\" />\n        </FileGroup> \n\n        <FileGroup Path=\"all.css\" Minify=\"false\">\n            <File Path=\"blueprint\\screen.css\" />\n            <File Path=\"blueprint\\liquid.less\" />\n            <File Path=\"site.css\" />\n            <File Path=\"forms.css\" />\n            <File Path=\"plugins\\jquery.lightbox-0.5.css\" />\n        </FileGroup>\n    </root>\n\nEssentially, the `Minify` attribute, which used to be an enum defaulting to \"Both\", is now only a nullable boolean.\n\nPlease let me add 'both' back in ... please?  It doesn't need to be default, just an option.  What does \"weirdlover\" think?!?",
+      "PostedDate": "2011-07-22T08:03:27.397-07:00",
+      "Id": 40259
+    },
+    {
+      "Message": "Weirdlover looks on in shame and horrification. :/ I think this was a change made to make way for a possible HtmlHelper, but it was a stupid idea and should be switched back to the old version. I've given a lot of control over to the awesome developers who've made Chirpy awesome (Andy is at the top of the list, and gets whatever he wants! :]). But, in the process of yielding control, I've had a few scragglers make some inappropriate changes that have caused some chaos. Please don't hurt me.\n\nWill fix soonly.\n\nCheers,\nEvan",
+      "PostedDate": "2011-07-22T15:01:53.003-07:00",
+      "Id": 40286
+    },
+    {
+      "Message": "Was this issue closed because it's resolved? If so, do you guys know when you'll be releasing a fix?",
+      "PostedDate": "2011-08-17T15:28:39.07-07:00",
+      "Id": 42945
+    },
+    {
+      "Message": "is resolve in change set\nhttp://chirpy.codeplex.com/SourceControl/changeset/changes/0fd41f6c4691",
+      "PostedDate": "2011-08-21T15:40:02.847-07:00",
+      "Id": 43082
+    }
+  ]
+}

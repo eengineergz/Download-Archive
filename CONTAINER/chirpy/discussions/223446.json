@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "480027",
+    "ThreadId": "223446",
+    "Html": "<p>Love &nbsp;the feature of the T4 Template &quot;run on build&quot;, but is there a &quot;run on build&quot; for .chirp.config files ?</p>\r\n<p>That way my FileGroups are refreshed during build, because I tend to forget to re-save my .chirp.config files after changing css and js files.</p>\r\n<p>Thx</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-08-12T23:49:41.02-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "480135",
+    "ThreadId": "223446",
+    "Html": "See work item 18\r\nhttp://chirpy.codeplex.com/workitem/18",
+    "PostedDate": "2010-08-13T04:20:21.377-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

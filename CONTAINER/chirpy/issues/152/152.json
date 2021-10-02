@@ -1,0 +1,56 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 2,
+    "Custom": null,
+    "Description": "Getting dialog:\r\n\r\nVisual Studio has encountered an exception. This may be caused by an extension.\r\n\r\nYou can get more information by running the application together with the /log parameter on the command line, and then examining the file 'C:\\Users\\frank.spafford\\AppData\\Roaming\\Microsoft\\VisualStudio\\10.0\\ActivityLog.xml'.\r\n\r\nThe file is attached. I am using Visual Studio 2010 with Windows 7 64-bit.\r\n\r\nI would like Chirpy (tried 2.0.0.6) to work, but if not, how do you uninstall Chirpy?",
+    "LastUpdatedDate": "2012-10-06T08:58:49.31-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-07-23T07:42:51.593-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Get a Visual Studio exception after installing.",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 152
+  },
+  "FileAttachments": [
+    {
+      "FileId": 462434,
+      "FileName": "ActivityLog.xml",
+      "DownloadUrl": ".\\462434"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "\" how do you uninstall Chirpy? \"\n\nRemove file in your addin folder\nC:\\Users\\frank.spafford\\Documents\\Visual Studio 2010\\AddIns\\Zippy.Addin\n",
+      "PostedDate": "2012-10-06T08:54:02.267-07:00",
+      "Id": 78820
+    },
+    {
+      "Message": "Your error message is ????",
+      "PostedDate": "2012-10-06T08:58:49.31-07:00",
+      "Id": 78821
+    }
+  ]
+}

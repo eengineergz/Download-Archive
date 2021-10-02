@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "462678",
+    "ThreadId": "218156",
+    "Html": "it appears that if a @import declaration doesn't work.  If i put one on top of a .chirp.less file it doesn't seem to included that in the parsing.  the file is located in the same folder as the .chirp.less file.  I have tried using a standard .less extension on the file to import as well as a .chirp.less (but i don't need this to be precessed into css so using a standard .less extension would be great.",
+    "PostedDate": "2010-07-02T08:10:34.323-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "468394",
+    "ThreadId": "218156",
+    "Html": "Hey jwscuba,\r\n\r\nHave you checked out this thread: http://groups.google.com/group/dotless/browse_thread/thread/488e4fdbc219b0c8\r\n\r\nI'll copy the pertinent comment (as I, too, was confused...): &quot;If the extension is &quot;.css&quot; dotless will output the @import statement as is.&quot;\r\n\r\nSo, only .less imports will get imported by the DotLess translator, and .css imports will be placed as-is into the css file. Does that make sense? I've tested @import *.less, and the imports do get appropriately translated into standard css.\r\n\r\nSorry for the delay on this. If you're still experiencing issues, let me know. I'll be releasing a cleaner version of the Add-In today. So, if all else fails... :)\r\n\r\nCheers,\r\nEvan\r\n\r\n",
+    "PostedDate": "2010-07-16T17:09:29.633-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

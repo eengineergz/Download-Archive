@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Project use last dotless form nuGet (1.2.1.0)\nhttp://nuget.org/List/Packages/dotless",
+    "ClosedDate": "2011-12-02T18:17:08.807-08:00",
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "I'm having trouble adding a css rule with escaping in a LESS file, as described here: http://lesscss.org/#-escaping.\r\n\r\nIf i add the example rule from the link:\r\n\r\nfilter: ~\"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='image.png')\";\r\n\r\nI get the following error:\r\n\r\nError\t201\tExpected '}' on line 34 in file 'include/css3.less':\r\n [33]: \tbackground-image: -webkit-gradient(linear, left top, left bottom, from(@from), to(@to));\r\n [34]: \tfilter: ~\"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='image.png')\";\r\n       -^\r\n\r\nDoes the LESS parser included in Chirpy support LESS escaping ?\r\n",
+    "LastUpdatedDate": "2011-12-02T18:17:08.807-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-11-28T02:56:48.74-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Escaping in LESS files",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 108
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I see from here that the issue is fixed in the dotlesscss library:\n\nhttp://stackoverflow.com/questions/7000357/chirpy-less-choking-on-filter-css-property-other-misc-errors\n\nIs there a way to update the dotlesscss library from Chirpy ? ",
+      "PostedDate": "2011-11-28T03:02:12.003-08:00",
+      "Id": 49620
+    }
+  ]
+}

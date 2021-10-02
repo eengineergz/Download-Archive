@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "http://chirpy.codeplex.com/SourceControl/changeset/changes/70deae721fa1",
+    "ClosedDate": "2011-04-17T08:48:25.503-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Your v2 chirpy sign the dll with version number 1.0.0.5.\r\n\r\nA colleague of mine spent a few minutes to figure out which version of chirp he was using.\r\n\r\nsmall but developer friendly change  \r\n",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-04-14T06:19:15.803-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "change your dll version to match the public version number",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 70
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "842777",
+    "ThreadId": "357747",
+    "Html": "\r\n<p>Since I was running into problems with the intellisense and highlighting for .less files.&nbsp; I uninstalled Chirpy.&nbsp; I had Workbench installed prior to installing Chirpy, but after I uninstalled it, all intellisense and highlighting for it stopped\r\n working.&nbsp; I checked and Chirpy was completely gone from my machine.&nbsp; It was removed from the&nbsp;&quot;Add-Ins&quot; folder in both VS2010 and VS2008.&nbsp; And sometimes the highlighting comes back intermittently, but is gone the next time&nbsp;I open VS.&nbsp;\r\n Any help would be apprieciated.</p>\r\n<p>Thanks.</p>\r\n",
+    "PostedDate": "2012-05-30T13:01:27.11-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "843755",
+    "ThreadId": "357747",
+    "Html": "<p>Chirpy add registry entry for treat less as css.</p>\r\n<p>Install last version and&nbsp;uncheck&nbsp;in less tab this setting.</p>",
+    "PostedDate": "2012-06-01T17:32:20.897-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

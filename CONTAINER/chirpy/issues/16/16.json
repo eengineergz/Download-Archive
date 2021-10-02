@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "Right now, the mashed files that Chirpy generates are created as \"codebehinds\" under the corresponding \".chirp.config\" file. I'm interested to know whether we should allow users to output the file anywhere, in any folder. Thoughts? I like that Chirpy protects against overwriting files, but I do see the benefit of NOT placing the config file in a public content folder.",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-07-19T23:38:54.877-07:00",
+    "Status": {
+      "Name": "Active",
+      "Id": 2
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Allow outputted files (generated via config file) to be placed in any folder",
+    "Type": {
+      "Name": "Task",
+      "Id": 2
+    },
+    "VoteCount": 2,
+    "Id": 16
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Just change the config file \"Build Action\" to \"None\" under the config file properties.  Then this folder will not be included in your builds.",
+      "PostedDate": "2011-01-18T12:46:45.76-08:00",
+      "Id": 26791
+    }
+  ]
+}

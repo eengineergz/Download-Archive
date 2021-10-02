@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Last source code solve this bug.",
+    "ClosedDate": "2011-09-30T07:37:37.43-07:00",
+    "CommentCount": 3,
+    "Custom": null,
+    "Description": "This is new to the Margogype version (for me). I have a co-working with the same issue. With Chirpy (Margogype) disabled the error window does not pop-up on save of a javascript file. \r\n\r\nI've been trying to sort out what has been causing this for days. I found the following reference on weblogs.asp.net: http://weblogs.asp.net/scottgu/archive/2011/03/15/visual-studio-2010-sp1.aspx\r\n\r\nAny help resolving this would be greatly appreciated. Keep up the good work.\r\n\r\n/jhd\r\n\r\n---- quote from above url comments ----\r\n\r\n# re: Visual Studio 2010 SP1\r\n\r\nMonday, March 28, 2011 1:54 PM by xinqiu\r\nHi, Daniel Steigerwald.  Could you please contact xinqiu at microsoft dot com to give more repro details and sample project files?  I have trouble reproduce your problem on VS2010 sp1.\r\n\r\nOn a side note, I think this might be possible that one of your extensions caused the problem, especially jslint, since it might produced warning message [{a}] is better written in dot notation (according to www.jameswiseman.com/.../jslint-messages-expression-is-better-written-in-dot-notation).  To workaround that, please check your extension options or contact the extension provider.\r\n\r\nThanks\r\n\r\nxinqiu\r\n\r\n# re: Visual Studio 2010 SP1\r\n\r\nMonday, March 28, 2011 4:09 PM by xinqiu\r\nA follow up to my previous message, Daniel contacted me and says chirpy.codeplex.com is the issue source. Uninstalling it fixed the issue.",
+    "LastUpdatedDate": "2011-09-30T07:37:37.43-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-08-25T20:24:52.993-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "VS 2010 Error Window pops up every time you save a javascript file",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 3,
+    "Id": 96
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Error Window show error ?\n\nIf , yes :\nNew feature validate css (ccs hint) and js (js Hint). Disabled in setting.",
+      "PostedDate": "2011-08-26T11:48:42.773-07:00",
+      "Id": 43413
+    },
+    {
+      "Message": "Like ploufs states, it is the js hint and css hint features. They check the css and js for best practices and display the error window every time you save because that's when chirpy inspects files.\nIn Tools -> Options -> Chirpy -> Cascading Style Sheets (css) -> uncheck \"Run CSS Hint\". \nIn Tools -> Options -> Chirpy -> Javascript (js) -> uncheck \"Run CSS Hint\". ",
+      "PostedDate": "2011-09-08T07:50:14.38-07:00",
+      "Id": 44366
+    },
+    {
+      "Message": "My co-workers and I have been experiencing the same issue. Disabling JSHint appears to be a good workaround, but it would be nice to see the root of the problem resolved. The specific error we get is \"SyntaxError: unexpected token < in expression\". After this error appears, each time we try to save a javascript file we get a different error about being unable to find JSHint.",
+      "PostedDate": "2011-09-29T08:52:23.99-07:00",
+      "Id": 45843
+    }
+  ]
+}

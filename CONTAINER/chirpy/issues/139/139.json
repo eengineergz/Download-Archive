@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Uglify JS has preprocessor capabilities (--define and --define-from-module parameters) allowing to optimize away parts of code based on predefined symbol declarations. For example,\r\nif (typeof DEBUG === \"undefined\") { DEBUG = true; }\r\nif (DEBUG) {\r\n    console.log(myObj);\r\n}\r\nran with --define DEBUG=false would've been completely removed from minified version. These capabilities allow having different versions of scripts generated based on symbol values configuration.\r\nIt would be great to have a support of such parameters for Uglify JS in .chirp.config files.",
+    "LastUpdatedDate": "2012-05-21T07:39:57.89-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-05-21T07:39:57.89-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Add support for Uglify JS's --define or --define-from-module parameters",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 139
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

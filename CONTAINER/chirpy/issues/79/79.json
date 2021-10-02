@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Lesscss output is : \n\ndiv {\n  width: 10px;\n  }\n  #imp1 {\n  width: 40px;\n  }\n  #imp1 > div {\n  width: 40px;\n  }\n  #imp1 > div > div {\n  width: 40px;\n  }\n  #imp1 > div > div > div {\n  width: 40px;\n  }\n  #imp2 {\n  width: 20px;\n  }\n  #imp2 > div {\n  width: 20px;\n  }\n  #imp2 > div > div {\n  width: 40px;\n  }\n  #imp2 > div > div > div {\n  width: 40px;\n  }\n  ",
+    "ClosedDate": "2011-05-23T07:37:20.113-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi,\r\n\r\nI have something like this:\r\n@var: 10px;\r\n\r\ndiv\r\n{\r\n    width: @var;\r\n}\r\n\r\n\r\n\r\n#imp1\r\n{\r\n    .myfunc(40px);\r\n}\r\n\r\n#imp2\r\n{\r\n    .myfunc(20px);\r\n}\r\n\r\n.myfunc(@myvar)\r\n{\r\n    width: @myvar;\r\n\r\n    > div\r\n    {\r\n        width: @myvar;\r\n        > div\r\n        {\r\n            width: @myvar;\r\n            > div\r\n            {\r\n                width: @myvar;\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\nWhich produced this:\r\ndiv {\r\n  width: 10px;\r\n}\r\n#imp1 {\r\n  width: 40px;\r\n}\r\n#imp1 > div {\r\n  width: 40px;\r\n}\r\n#imp1 > div > div {\r\n  width: 40px;\r\n}\r\n#imp1 > div > div > div {\r\n  width: 40px;\r\n}\r\n#imp2 {\r\n  width: 20px;\r\n}\r\n#imp2 > div {\r\n  width: 20px;\r\n}\r\n#imp2 > div > div {\r\n  width: 40px;\r\n}\r\n#imp2 > div > div > div {\r\n  width: 40px;\r\n}\r\n\r\nAfter some neasting the width is 40px ... when is should still be 20px.\r\n\r\nIs this a bug related to Chirpy or http://lesscss.org/ ... if is uses that to do the processing ?\r\n\r\n",
+    "LastUpdatedDate": "2011-05-23T07:37:20.113-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-05-12T14:01:56.877-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Using a variable in a function when neating items seems to fallback to the first used value later.",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 79
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "858068",
+    "ThreadId": "362187",
+    "Html": "\r\n<p>I'm getting a bug where if I create a switch statement with more then one case within a function it compiles an empty js file. So for example</p>\r\n<p>switch day&nbsp;</p>\r\n<p style=\"padding-left:30px\">when &quot;Mon&quot; then go work</p>\r\n<p>compiles but&nbsp;</p>\r\n<p>something: -&gt;</p>\r\n<p style=\"padding-left:30px\"><span style=\"white-space:pre\">&nbsp;</span>switch day</p>\r\n<p style=\"padding-left:60px\">when &quot;Mon&quot; then go work</p>\r\n<p style=\"padding-left:60px\">when &quot;Tues&quot; then go relax</p>\r\n<p>&nbsp;</p>\r\n<p>doesn't compile.</p>\r\n<p>Anyone else see this?</p>\r\n",
+    "PostedDate": "2012-07-05T14:21:25.97-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

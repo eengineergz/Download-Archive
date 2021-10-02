@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "709348",
+    "ThreadId": "282268",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>I just discovered Chirpy and absolutely love it. Props for creating this awesome add-in.</p>\r\n<p>I'm new to ASP.NET build tasks ... Could you please write a short example of how to add chirpy as a build task ?</p>\r\n<p>Thank you very much!</p>\r\n<p>tigerlily</p>\r\n",
+    "PostedDate": "2011-12-08T07:37:46.847-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "710147",
+    "ThreadId": "282268",
+    "Html": "<p>Use console version with folder path.</p>\r\n<p>Sample : Chirpy.exe c:\\webapp\\</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2011-12-09T16:30:10.357-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

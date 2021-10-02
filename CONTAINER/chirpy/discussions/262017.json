@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "630077",
+    "ThreadId": "262017",
+    "Html": "\r\n<p>When I try to use the following less syntax with Chirpy 2.0&nbsp;</p>\r\n<p></p>\r\n<div style=\"color:black; background-color:white\">\r\n<pre>@baseGray: #ddd;\r\n\r\n.gradientbackground(@topcolor: darken(@baseGray,20%), @bottomcolor:#eee)\r\n{\r\n    behavior: url(PIE.htc);\r\n    background:  linear-gradient(@topcolor, @bottomcolor);<span style=\"color:green\"> /*future CSS3 browsers*/</span>\r\n    background:  -moz-linear-gradient(@topcolor, @bottomcolor);<span style=\"color:green\"> /*gecko*/</span>\r\n    background:  -webkit-gradient(linear, center bottom,\r\n\t\t\t\tcenter top, from(@bottomcolor),to(@topcolor));<span style=\"color:green\"> /*webkit*/</span>\r\n    -pie-background: linear-gradient(@topcolor, @bottomcolor);<span style=\"color:green\"> /*PIE*/</span>\r\n }\r\n</pre>\r\n</div>\r\n<p></p>\r\n<p>what I'm getting is</p>\r\n<p></p>\r\n<pre>.highlight {\r\n  behavior: url(PIE.htc);\r\n  background: linear-gradient(darken(#dddddd, 20%), #eeeeee);\r\n  /*future CSS3 browsers*/\r\n\r\n  background: -moz-linear-gradient(darken(#dddddd, 20%), #eeeeee);\r\n  /*gecko*/\r\n\r\n  background: -webkit-gradient(linear, center bottom, center top, from(#eeeeee), to(darken(#dddddd, 20%)));\r\n  /*webkit*/\r\n\r\n  -pie-background: linear-gradient(darken(#dddddd, 20%), #eeeeee);\r\n  /*PIE*/\r\n</pre>\r\n<p></p>\r\n<p>This is my first project using less and I'm really loving it. &nbsp;So I'm assuming I'm doing something wrong, but I cannot see what it is.</p>\r\n",
+    "PostedDate": "2011-06-20T07:12:54.45-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "632805",
+    "ThreadId": "262017",
+    "Html": "<p>Documentation (mixins) : <a href=\"http://www.dotlesscss.org/\">http://www.dotlesscss.org/</a></p>",
+    "PostedDate": "2011-06-24T15:13:12.767-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "845494",
+    "ThreadId": "358564",
+    "Html": "\r\n<p>I have a .less-file with @import-statement to other less files. When I update those &quot;other&quot; files I'd like my css-files to be rebuilt (setup in mash.chirp.config). Is that possible? xD</p>\r\n",
+    "PostedDate": "2012-06-06T05:08:31.04-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "893829",
+    "ThreadId": "358564",
+    "Html": "<p>Did you see the work item I created about this issue? If not, perhaps you could vote on it? http://chirpy.codeplex.com/workitem/136</p>\r\n<div id=\"_mcePaste\" class=\"mcePaste\" style=\"position: absolute; left: -10000px; top: 0px; width: 1px; height: 1px; overflow: hidden;\">\r\n<p>http://chirpy.codeplex.com/workitem/136</p>\r\n<p>&nbsp;</p>\r\n</div>",
+    "PostedDate": "2012-07-31T11:20:02.023-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

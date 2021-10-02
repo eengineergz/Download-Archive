@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "752526",
+    "ThreadId": "303318",
+    "Html": "<p>Hi,</p>\n<p>We have compiled the latest version of Chirpy <span style=\"text-decoration: underline;\"> Console</span> today (<a id=\"ChangeSetLink0\" title=\"View change set 203d711e4f12\" href=\"http://chirpy.codeplex.com/SourceControl/changeset/changes/203d711e4f12\">203d711e4f12</a><span>&nbsp;-&nbsp;<span>Feb 4</span><span>&nbsp;at&nbsp;</span><span>6:37 PM</span></span>) (we were  running on release&nbsp;<span>ver 2.01 before), and now the <em>mash.chirpy.config</em> file we have isn't being picked up at all.&nbsp;</span></p>\n<p><span>We have a batch file that gets executed on build which references chirpy and the folder the mash.chirpy.config file is in. After compiling the latest version and running chirpy, the mash file isn't 'parsed':</span></p>\n<p><span>&nbsp;</span></p>\n<div style=\"color: green; background-color: black;\">\n<pre style=\"color: green;\"><span style=\"background-color: black;\">C:\\dev\\Scripts&gt;chirpy\\Chirpy.exe chirpy</span></pre>\n<pre style=\"color: green;\">C:\\dev\\Scripts&gt;pause\nPress any key to continue . . .</pre>\n</div>\n<p>Before it looked like this:</p>\n<div style=\"color: green; background-color: black;\">\n<pre style=\"color: green;\"><span style=\"background-color: black;\">C:\\dev\\Scripts&gt;chirpy\\Chirpy.exe chirpy</span></pre>\n<pre style=\"color: green;\"><strong>ConfigEngine -- chirpy.org\\mash.chirp.config</strong>\n\nC:\\dev\\Scripts&gt;pause\nPress any key to continue . . .</pre>\n</div>\n<p>What can have caused this? And is there someway to otherwise force it from the prompt? Trying to reference the file itself causes an error:</p>\n<div style=\"color: green; background-color: black;\">\n<pre style=\"color: green;\"><span style=\"background-color: black;\">C:\\dev\\Scripts&gt;chirpy\\Chirpy.exe chirpy\\mash.chirp.config</span></pre>\n<pre style=\"color: green;\">Unhandled Exception: System.IO.IOException: The directory name is invalid.</pre>\n</div>\n<p>Thanks in advance!</p>\n<p>Rich</p>",
+    "PostedDate": "2012-02-10T06:05:37.417-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "757602",
+    "ThreadId": "303318",
+    "Html": "<p>Work in test environment.</p>\r\n<p>Valid you configuration is really .chirp.config for config file.</p>\r\n<p>Send full sample (zip file) .&nbsp;</p>",
+    "PostedDate": "2012-02-11T14:26:46.72-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "762258",
+    "ThreadId": "303318",
+    "Html": "<p>Hi, I have uploaded a .rar file: http://www.safarinow.com/af/chirpytest.rar.</p>\r\n<p>I have changed the mash.chirp.config file to have a small test in it. You will see that if you run the batch file it will execute chirpy, but it won't read the mash file (just edit the .bat file to resemble the right folder on your machine)</p>",
+    "PostedDate": "2012-02-14T01:10:39.433-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "769502",
+    "ThreadId": "303318",
+    "Html": "<p>Were you able to look at the file? I've had no luck here...</p>",
+    "PostedDate": "2012-02-16T05:02:46.73-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "778467",
+    "ThreadId": "303318",
+    "Html": "<p>Error fix in change set :&nbsp;7edb4655ae4c</p>\r\n<p><a href=\"http://chirpy.codeplex.com/SourceControl/changeset/changes/7edb4655ae4c\">http://chirpy.codeplex.com/SourceControl/changeset/changes/7edb4655ae4c</a></p>",
+    "PostedDate": "2012-02-18T20:23:50.433-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "783368",
+    "ThreadId": "303318",
+    "Html": "<p>Legend!</p>",
+    "PostedDate": "2012-02-20T00:13:46.897-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

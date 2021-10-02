@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "726467",
+    "ThreadId": "286430",
+    "Html": "\r\n<p>Love the tool and have been using it for over half a year, however Chirpy automatically checks out the project file for the website that's using Chirpy every time I open the solution. Every time I open the solution I have to undo the checkout on my project\r\n file.&nbsp; Finally figured I should ask about this issue...</p>\r\n<p>I could be totally wrong -- but I think it's because Chirpy minifies on project load and removes then readds the .min files to the project.&nbsp; Is it possible to turn off on-load minifying or somehow fix this issue some other way?&nbsp; Would it be bad\r\n to turn off the on-load minifying if that's possible?</p>\r\n<p>Info: VS 2010, TFS 2010, Chirpy (I think I have the newest version but I can't figure out how to check), and we are using the &quot;web project&quot; type of project file (not &quot;website&quot; type)</p>\r\n",
+    "PostedDate": "2012-01-17T08:12:07.067-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "727068",
+    "ThreadId": "286430",
+    "Html": "<p>Forgot to include this in the last posting, but it also always errors as soon as I open up my web project as well which I believe is also related to the source control issue:</p>\r\n<p>&nbsp;</p>\r\n<p>\r\n<pre>Ready\r\nConfigEngine -- C:\\MyPath\\cssmash.chirp.config\r\nConfigEngine -- C:\\MyPath\\jsmash.chirp.config\r\nError: System.Runtime.InteropServices.COMException (0x8004000C): Unspecified error\r\n   at EnvDTE.ProjectItems.AddFromFile(String FileName)\r\n   at Zippy.Chirp.Manager.VSProjectItemManager.AddItem(ProjectItem projectItem, String fullFileNameToAdd)\r\n   at Zippy.Chirp.Manager.VSProjectItemManager.AddItems(ProjectItem projectItem, IEnumerable`1 filesToAdd)\r\n   at Zippy.Chirp.Manager.VSProjectItemManager.Process()\r\n   at Zippy.Chirp.Manager.VSProjectItemManager.Dispose()\r\n   at Zippy.Chirp.Engines.ConfigEngine.Run(String fullFileName, ProjectItem projectItem)\r\n   at Zippy.Chirp.Engines.EngineManager.Process(ProjectItem projectItem)</pre>\r\n</p>",
+    "PostedDate": "2012-01-18T07:03:42.913-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

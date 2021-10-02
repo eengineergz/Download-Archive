@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Sometimes when I have errors in my .less code and then go back and fix them, the errors aren't cleared from the Visual Studio Error List. \r\n\r\nI'm not 100% sure, but it seems the problem tends to happen when there is an error in a file that is included from another .less file (I have a .less file that has just common mixins that I @import into the .less files that are compiled by chirpy).\r\n\r\nI am using Visual Studio 2010 and the latest version of Chirpy. ",
+    "LastUpdatedDate": "2012-10-11T11:22:43.143-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-06-27T20:19:52.647-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Visual Studio errors not cleared",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 145
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

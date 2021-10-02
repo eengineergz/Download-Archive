@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Feature is part of v 1.0.0.4",
+    "ClosedDate": "2010-07-20T02:47:23.133-07:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "However, consider the speed factor.   On my computer and my projects I barely notice the template is running.  On others, it can be a bit slow - depending on size of project and on speed of computer.\r\n\r\nFor that reason, I wanted to change WHEN the add-in runs.  For the T4MVC, I would like to set it to run based on 'convention'.   This means it only runs if:\r\n\r\n    * A file is added/removed/renamed to the /Scripts, /Content, /Views, /Controllers, /Areas/*\r\n    * A file is saved (changed) that is in the /Views, /Controllers, /Areas/* folder\r\n    * The files above MUST be in the project that contains the T4MVC scripts for it to run.  This is a good general rule for any .tt file we want to auto run.\r\n\r\nThis makes it only run when necessary and not when you are in other areas of the project.\r\nThe above are really VERY specific rules about when to run a .tt file.  So we either need the add-in to locate all the .chirpy.tt files and then let you configure the above options on them - or we add VERY SPECIFIC support for a file named T4MVC.tt to do the above.",
+    "LastUpdatedDate": "2010-07-20T02:47:23.133-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-06-03T04:14:30.907-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "I would like to set it to run based on 'convention'.",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 1,
+    "Id": 8
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Suggest by : Wayne Brantley",
+      "PostedDate": "2010-06-03T04:14:51.657-07:00",
+      "Id": 12792
+    }
+  ]
+}

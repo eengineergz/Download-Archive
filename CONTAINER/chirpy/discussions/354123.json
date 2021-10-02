@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "830626",
+    "ThreadId": "354123",
+    "Html": "\r\n<p>I just tried the &quot;<strong>Inline minification for Razor Views</strong>&quot; feature, I found that Chirpy will change the minified lines from my original\r\n<strong>CRLF </strong>to <strong>LF </strong>which cause my Visual Studio 2010 notice me about the&nbsp;inconsistency&nbsp;linefeed problem.</p>\r\n<p>Hope Chirpy can keep my original line feed characters.</p>\r\n",
+    "PostedDate": "2012-05-01T06:34:41.683-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "838570",
+    "ThreadId": "354123",
+    "Html": "This discussion has been copied to a work item. Click <a href=\"http://chirpy.codeplex.com/workitem/138\">here</a> to go to the work item and continue the discussion.",
+    "PostedDate": "2012-05-20T07:59:58.43-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

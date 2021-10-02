@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Solve\nhttp://chirpy.codeplex.com/SourceControl/changeset/changes/dc10199e63d2",
+    "ClosedDate": "2011-03-07T14:57:37.74-08:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Environment: VS2010 + SP1 Beta + Chirpy v2.0\r\n\r\nReproduce:\r\n1. Open Tools > Options > Chirpy > Config\r\n  if this is the first time you open it, everything looks fine.\r\n2. Close the option dialog\r\n3. Reopen Tools > Options > Chirpy > Config\r\n  now, there are twice items in each combo box, the more you try, the more items there are!\r\n\r\n\r\nSeems it should do a cmbXXX.Items.Clear() in Zippy.Chirp.ConfigurationScreen.Config.OnAfterCreated(DTE DTEObject)\r\n",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-03-06T20:48:25.08-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "bug?: combobox items added repeatedly in Chirpy v2.0",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 64
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

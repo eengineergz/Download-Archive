@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "600279",
+    "ThreadId": "254629",
+    "Html": "\r\n<p>I have separate CSS files for IE and other browsers (style.css and style.ie.css) which should be compressed separately, bur now pattern can accept only * and ? wildcards. It will be useful to add regex support for folder's pattern attribute</p>\r\n",
+    "PostedDate": "2011-04-20T03:11:30.433-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "601324",
+    "ThreadId": "254629",
+    "Html": "<p>Presently only support * and ?</p>\r\n<p>Code use function Directory.<a href=\"http://msdn.microsoft.com/en-us/library/wz42302f.aspx\">GetFiles</a></p>",
+    "PostedDate": "2011-04-21T16:38:31.657-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "601353",
+    "ThreadId": "254629",
+    "Html": "<p>Yes, i know, saw it in source. You can just add Regex attribute to folder element and filter result of Directory.<a href=\"http://msdn.microsoft.com/en-us/library/wz42302f.aspx\">GetFiles</a> by it. Another variant is just to add string exlude attribute and filter by it's contents</p>",
+    "PostedDate": "2011-04-21T20:06:50.85-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

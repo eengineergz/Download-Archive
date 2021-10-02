@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "810502",
+    "ThreadId": "348640",
+    "Html": "\r\n<p>I uninstalled Chirpy from VS2010 a while ago, but when I right click on .less files in VS2010 i still see three Chirpy context menu options:&nbsp;</p>\r\n<ul>\r\n<li>Chirpy minifier file </li><li>Chirpy CSSLint&nbsp; </li><li>Chirpy JSHint&nbsp; </li></ul>\r\n<p>&nbsp;</p>\r\n<p>How do I completely uninstall Chirpy? What other settings, registry keys or anything else might Chirpy have left behind?&nbsp;</p>\r\n",
+    "PostedDate": "2012-03-14T15:10:22.81-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "812166",
+    "ThreadId": "348640",
+    "Html": "<p>Normally context menu is remove \"OnDisconnection\" .</p>\r\n<p>\"Implements&nbsp;the&nbsp;OnDisconnection&nbsp;method&nbsp;of&nbsp;the&nbsp;IDTExtensibility2&nbsp;interface.&nbsp;Receives&nbsp;notification&nbsp;that&nbsp;the&nbsp;Add-in&nbsp;is&nbsp;being&nbsp;unloaded.\"</p>\r\n<p>\r\n<hr />\r\n</p>\r\n<p>Context menu options is set in :</p>\r\n<p>Menu : \"Tools\"</p>\r\n<p>Item : \"Customize...\"</p>\r\n<p>Tab : \"Commands\"</p>\r\n<p>Context menu : \"Project and Solution Context Menus | Item\"</p>",
+    "PostedDate": "2012-03-18T09:37:40.263-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

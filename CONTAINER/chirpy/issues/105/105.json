@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2011-12-05T07:51:29.567-08:00",
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "Hi, I am trying to do the following in a chirpy mash config:\r\n\r\n<root>\r\n    <FileGroup Name =\"Test.cshtml\">\r\n        <File Path=\"Myproject\\views\\home\\home.cshtml\" Minify=\"false\" />\r\n    </FileGroup>\r\n</root>\r\n\r\nThis works, however the output file is called \"Test.css\" instead of the intended \"Test.cshtml\".\r\n\r\nI am finding uses for Chirpy outside of its original scope, so I hope this minor issue will be fixed in the next release.\r\n\r\nThanks!",
+    "LastUpdatedDate": "2011-12-05T07:51:29.567-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-10-21T03:31:17.813-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Mashing non-JS/CSS files",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 105
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "The latest source contains a fix for this.",
+      "PostedDate": "2011-12-05T07:51:25.007-08:00",
+      "Id": 50240
+    }
+  ]
+}

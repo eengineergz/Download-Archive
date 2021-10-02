@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "491151",
+    "ThreadId": "226591",
+    "Html": "<p>Absolutely loving the new release of Chirpy, especially the new inline translation/minfication feature.</p>\r\n<p>The only issue I've found so far was on a page that was using the jquery.tmpl templating library&nbsp;<a href=\"http://github.com/jquery/jquery-tmpl\">http://github.com/jquery/jquery-tmpl</a></p>\r\n<p>This uses script blocks to define templates, eg</p>\r\n<p>&nbsp;&nbsp; &nbsp;&lt;script id=&quot;myTemplate&quot; type=&quot;text/html&quot;&gt;</p>\r\n<p>or</p>\r\n<p>&nbsp;&nbsp; &nbsp;&lt;script id=&quot;myTemplate&quot; type=&quot;text/x-jquery-tmpl&quot;&gt;</p>\r\n<p>If you try and use the inline minification on a page that contains this, the generated file looks like</p>\r\n<p>&nbsp;&nbsp; &nbsp;&lt;script id=&quot;myTemplate&quot; type=&quot;text/html&quot;&gt;/* error */&lt;/script&gt;</p>\r\n<p>Is there any way to disable minification on an individual script block?</p>",
+    "PostedDate": "2010-09-09T02:57:26.563-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "491414",
+    "ThreadId": "226591",
+    "Html": "<p>This is not possible yet. But it definitely should be. (lo siento) I'll add it as a feature to complete.</p>\r\n<p>&nbsp;</p>\r\n<p>Cheers!</p>\r\n<p>E</p>",
+    "PostedDate": "2010-09-09T11:50:40.5-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "560241",
+    "ThreadId": "226591",
+    "Html": "\r\n<p>Actually, I trying the following and need to exclude the *.min.js from minification, which is not working now ..</p>\r\n<p>&lt;?xml version=&quot;1.0&quot;?&gt;<br>\r\n&lt;root&gt;<br>\r\n&nbsp;&nbsp;&nbsp; &lt;FileGroup Name=&quot;main.scripts.js&quot;&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Folder Path=&quot;/&quot; Type=&quot;*.min.js&quot; Minify=&quot;false&quot;/&gt;<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Folder Path=&quot;/&quot; Type=&quot;*.js&quot; <strong>\r\nExclude=&quot;*.min.js&quot;</strong> Minify=&quot;true&quot;/&gt;<br>\r\n&nbsp;&nbsp;&nbsp; &lt;/FileGroup&gt;<br>\r\n&lt;/root&gt;</p>\r\n",
+    "PostedDate": "2011-02-03T09:07:43.07-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

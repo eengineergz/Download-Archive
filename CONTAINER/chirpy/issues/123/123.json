@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 3,
+    "Custom": null,
+    "Description": "I installed Chirpy 2.01 on my Windows 7 machine. I had to fix the installation of VS2008 because the addin file had 10.0 and it should have been 9.0 for VS2008. Before the change, Chirpy didn't show up in tools at all. After the change, when Chirpy saves a file, I get this in the output window:\r\n\r\nClosureCompilerEngine --  C:\\Projects\\...\\SourceCode\\...\\WebServer\\JS\\Utilities.chirp.js\r\nJSHintEngine -- C:\\Projects\\...\\SourceCode\\...\\WebServer\\JS\\Utilities.chirp.js\r\nError: Jurassic.JavaScriptException: SyntaxError: Unexpected token '<' in expression.\r\n   at Jurassic.Compiler.Parser.ParseExpression(Token[] endTokens)\r\n   at Jurassic.Compiler.Parser.ParseLabelOrExpressionStatement()\r\n   at Jurassic.Compiler.Parser.ParseStatementNoNewContext()\r\n   at Jurassic.Compiler.Parser.ParseStatement()\r\n   at Jurassic.Compiler.Parser.Parse()\r\n   at Jurassic.Compiler.GlobalMethodGenerator.Parse()\r\n   at Jurassic.ScriptEngine.Execute(ScriptSource source)\r\n   at Jurassic.ScriptEngine.Execute(String code)\r\n   at UglifyCS.Environment.Run(String script, Expression`1[] vars)\r\n   at UglifyCS.Environment.RunFile(String file)\r\n   at UglifyCS.JSHint.OnInit()\r\n   at UglifyCS.Environment.Init()\r\n   at UglifyCS.Environment.get_Context()\r\n   at UglifyCS.Environment.set_Item(String name, Object value)\r\n   at UglifyCS.JSHint.JSHINT(String source, options options)\r\n   at Zippy.Chirp.Engines.JSHintEngine.Run(String fullFileName, ProjectItem projectItem)\r\n   at Zippy.Chirp.Engines.EngineManager.Process(ProjectItem projectItem)\r\n\r\n(Product name obfuscated)\r\n",
+    "LastUpdatedDate": "2012-07-26T19:16:33.013-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-02-23T16:31:40.93-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Error on VS2008 on Windows 7",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 3,
+    "Id": 123
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I also get this in VS2010. Let me know if I can help out in debugging the problem.",
+      "PostedDate": "2012-07-16T01:54:43.997-07:00",
+      "Id": 70200
+    },
+    {
+      "Message": "(using Chirpy 2.01)",
+      "PostedDate": "2012-07-16T01:57:15.187-07:00",
+      "Id": 70202
+    },
+    {
+      "Message": "The problem seems to have been resolved in release 2.06 (http://chirpy.codeplex.com/releases/view/88455).",
+      "PostedDate": "2012-07-16T02:04:01.08-07:00",
+      "Id": 70203
+    }
+  ]
+}

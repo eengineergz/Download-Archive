@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi,\r\n\r\nWhen default JS minification engine is selected as Google Closure Tools, Chirpy uses that engine for views as well. problem is, view path is passed to closure tools with --js parameter, so it try to parse my razor view instead of javascript block in it.",
+    "LastUpdatedDate": "2012-11-07T01:41:03.293-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-11-07T01:41:03.293-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Closure and ViewEngine",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 164
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

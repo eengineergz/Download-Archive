@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "TT support added.",
+    "ClosedDate": "2010-07-17T18:45:49.367-07:00",
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "Auto-updated tt file. e.g., Wayne's AddIn for T4MVC.",
+    "LastUpdatedDate": "2010-07-17T18:45:49.367-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-06-02T11:42:14.933-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Add support for .chirp.tt files.",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 6
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "http://blog.waynebrantley.com/2010/03/t4mvc-add-in-to-auto-run-template.html",
+      "PostedDate": "2010-06-05T17:56:24.253-07:00",
+      "Id": 12842
+    },
+    {
+      "Message": "http://devtalk.dk/default,month,2010-03.aspx",
+      "PostedDate": "2010-06-05T18:31:35.353-07:00",
+      "Id": 12843
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 3,
+    "Custom": null,
+    "Description": "Using folder directive in chrip.config makes VS slow, also VS can crash or hang! Tried do disable all other plugins (source control, ReSharper) but it makes no effect. Before crashes and hangs getting error that minified file can't be accessed.\r\nWhit first Chirpy version everything is ok. Using VS2010",
+    "LastUpdatedDate": "2011-12-13T07:33:42.653-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-04-20T03:29:31.347-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Using folder directive in chrip.config makes VS slow",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 4,
+    "Id": 72
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Mpdreamz : It probably cause by your modification (http://chirpy.codeplex.com/SourceControl/changeset/changes/4e452cc4e671)",
+      "PostedDate": "2011-04-21T16:28:34.397-07:00",
+      "Id": 34634
+    },
+    {
+      "Message": "hi, guys, has this been fixed? The following does not work in VS 2010:  <Folder Path=\"some\\path\" Pattern=\"*.js\"  />.\n\nChirpy throws a file access exception and then keeps trying to recreate the file in an infinite loop. Everything works fine when individual files are specified in the config.\n\nHere is the stack trace:\n\nError: System.IO.IOException: The process cannot access the file '<myfile>.js' because it is being used by another process.\n   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)\n   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)\n   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)\n   at System.IO.StreamWriter.CreateFile(String path, Boolean append)\n   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)\n   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding)\n   at System.IO.File.InternalWriteAllText(String path, String contents, Encoding encoding)\n   at System.IO.File.WriteAllText(String path, String contents, Encoding encoding)\n   at Zippy.Chirp.Manager.VSProjectItemManager.SaveFile(String filename, Object content)\n   at Zippy.Chirp.Manager.VSProjectItemManager.Process()\n   at Zippy.Chirp.Manager.VSProjectItemManager.Dispose()\n   at Zippy.Chirp.Engines.ConfigEngine.Run(String fullFileName, ProjectItem projectItem)\n   at Zippy.Chirp.Engines.EngineManager.Process(ProjectItem projectItem)",
+      "PostedDate": "2011-10-05T06:34:38.733-07:00",
+      "Id": 46144
+    },
+    {
+      "Message": "This exception is the result of changes in the xsd of *.chirp.config file. The new version of config file must be like this :\n\n<root xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns=\"urn:ChirpyConfig\">\n  <FileGroup Name=\"MyGroup1.js\">\n    <File Path=\"javascript1.js\" Minify=\"false\" />\n    <File Path=\"javascript2.js\" Minify=\"false\" />\n  </FileGroup>\n  <FileGroup Name=\"MyGroup2.js\" Minify=\"both\">\n    <Folder Pattern=\"/subDir/*.js\" Deep=\"true\"/>\n    <Folder Pattern=\"/subDir/*.temp.js\" Deep=\"true\"/>\n  </FileGroup>\n</root>",
+      "PostedDate": "2011-12-13T07:33:42.653-08:00",
+      "Id": 50738
+    }
+  ]
+}

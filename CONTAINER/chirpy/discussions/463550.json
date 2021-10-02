@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "1112033",
+    "ThreadId": "463550",
+    "Html": "Anyone knows if this project is still alive? I see no activity here.\r<br />\nShould we consider to create a fork and continue the project?\r<br />\n<br />\nAny answer from the project owner will be really appreciated.\r<br />\n<br />\nCheers!!<br />\n",
+    "PostedDate": "2013-10-25T03:52:29.017-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1112084",
+    "ThreadId": "463550",
+    "Html": "Project is dead for me.\r<br />\nIn my development the plugin is replace with  <a href=\"http://vswebessentials.com/\" rel=\"nofollow\">http://vswebessentials.com/</a>.\r<br />\n<br />\nPlugin is also open source : \r<br />\n<a href=\"https://github.com/madskristensen/WebEssentials2013\" rel=\"nofollow\">https://github.com/madskristensen/WebEssentials2013</a>\r<br />\n<a href=\"https://github.com/madskristensen/WebEssentials2012\" rel=\"nofollow\">https://github.com/madskristensen/WebEssentials2012</a><br />\n",
+    "PostedDate": "2013-10-25T06:34:53.453-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1112093",
+    "ThreadId": "463550",
+    "Html": "Thank you very much for you honest answer. I've seen this extension but it seems it's only useful for vs2012 and up. Is there any way we can minify js in VS2010 with webessentials?\r<br />\n<br />\nBest regards!<br />\n",
+    "PostedDate": "2013-10-25T06:45:49.683-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1112232",
+    "ThreadId": "463550",
+    "Html": "Use web essentiels <br />\n<a href=\"http://visualstudiogallery.msdn.microsoft.com/6ed4c78f-a23e-49ad-b5fd-369af0c2107f\" rel=\"nofollow\">http://visualstudiogallery.msdn.microsoft.com/6ed4c78f-a23e-49ad-b5fd-369af0c2107f</a> <br />\n",
+    "PostedDate": "2013-10-25T12:33:12.31-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1230270",
+    "ThreadId": "463550",
+    "Html": "VS Addin Chirpy dead. \r<br />\n<br />\nNew VS Package WebEssentials.\r<br />\n<br />\nAny full source code sample for more interesting VS Packages?<br />\n",
+    "PostedDate": "2014-04-04T03:06:12.947-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1230446",
+    "ThreadId": "463550",
+    "Html": "WebEssentials source code is available on github : <br />\n<a href=\"https://github.com/madskristensen/WebEssentials2013\" rel=\"nofollow\">https://github.com/madskristensen/WebEssentials2013</a><br />\n<a href=\"https://github.com/madskristensen/WebEssentials2012\" rel=\"nofollow\">https://github.com/madskristensen/WebEssentials2012</a>  <br />\n",
+    "PostedDate": "2014-04-04T10:39:04.317-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

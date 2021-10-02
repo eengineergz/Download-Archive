@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Last source code version use internal coffeeScript compiler.",
+    "ClosedDate": "2011-09-01T15:05:36.263-07:00",
+    "CommentCount": 2,
+    "Custom": null,
+    "Description": "Hello,\r\n\r\nBy default, CoffeeScript wraps all compiled code with \r\n\r\n(function() {\r\n  // code here\r\n}).call(this);\r\n\r\n\r\nThis prevents any symbols export making result javascript file useless in term of including into webpage.\r\n\r\nOriginal CS compiler have a switch \"-b\" to prevent this, but it seems there is no way to pass compilation options currently to Chirpy's build-in CoffeeScript compiler.\r\n\r\nAdditionally, i've tried to make the custom build of \"coffee.exe\" compiler, changed the dir to it, but Chirpy ignores this new custom directory (i guess it is a bug) and continues to bind with its build-in coffeescript compiler, which i can't locate on my hard disk (i guess it is embedded in some dll then).\r\n\r\nSo the solution would be to fix the \"Path\" option in Options>Chirpy>Coffeescript.\r\n\r\nGreat work on Chirpy. I'am planning to use it once this issue got fixed.\r\n\r\nBest wishes\r\n\r\nDmitry\r\n",
+    "LastUpdatedDate": "2011-09-02T07:14:35.397-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-08-21T07:41:09.18-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "CoffeeScript bare compilation mode",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 95
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I think I'll be able to slip in a fix today, which should make it into our pending release.",
+      "PostedDate": "2011-09-02T06:55:13.09-07:00",
+      "Id": 43806
+    },
+    {
+      "Message": "It was easier than I anticipated.  I've just checked in support for passing arguments to CoffeeScript the same way JSHint handles them.  In your CoffeeScript file, create a comment block \n     /* CoffeeScript: bare: true */  \n\nThe values present after \"CoffeeScript:\" are wrapped in {} and passed directly to the compiler.  So \"/* CoffeeScript: someOption: true */\" becomes \"var options = { someOption: true }; jscode = CoffeeScript.compile(jscode, options);\".  This handles the \"bare\" option and should handle any options that may be added in the future.",
+      "PostedDate": "2011-09-02T07:14:35.397-07:00",
+      "Id": 43810
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hey,\r\n\r\nFirst off I just wanted to say great job so far, and I think you've established a great concept that has so much potential for integration into build processes.\r\n\r\n</pleasantries>\r\n\r\n \r\n\r\nThat being said I am currently unable to use chirpy in my build configuration with its current set of options.  Google Closure support without the ability to send in all my files with the\r\n\r\n\"--manage_closure_dependencies true\" flag (or its equivalent) hamstrings the utility of using the Closure compiler.  I would love to fork this project and make the requisite modifications for better closure support however I would like to test the waters  on the feasibility of this before I waste my time...\r\n\r\nIn short:\r\n\r\nWould it be possible to use a config file (example below) inside chirpy and have everything work as it should?  Or would it make a ton of breaking changes to the point where I would be better off either starting from scratch or continuing to use my batch  files and build events...?\r\n\r\nEdit: Also, there needs to be an \"output\" of the errors / warnings that are generated...\r\n\r\n[file] chirpy.closure.config:\r\n\r\n--------------------------------------------------\r\n\r\n<closure>\r\n \r\n\t<compile>\r\n\t\t<output>outputfile.min.js</output>\r\n\t\t<compilation_level>ADVANCED_OPTIMIZATIONS</compilation_level>\r\n\t\t<summary_detail_level>3</summary_detail_level>\r\n\t\t<warning_level>VERBOSE</warning_level>\r\n\t\t<manage_closure_dependencies>true</manage_closure_dependencies>\r\n\t\t<output_wrapper>\r\n\t\t\t<![CDATA[(function(){%output%}());]]>\r\n\t\t</output_wrapper>\r\n\t\t\r\n\t\t<define>NAMESPACE.debug=false</define>\r\n\t\t<define>NAMESPACE.release=true</define>\r\n \r\n\t\t<file>../src/file1.js</file>\r\n\t\t<file>../src/file2.js</file>\r\n\t\t<folder>../src/lib1/</folder>\r\n\t\t<folder pattern=\"*.src.js\" ignore=\"*.vsdoc.js\">../src/lib2/</folder>\r\n\t\t\r\n\t</compile>\r\n \r\n\t<compile>\r\n\t\t<output>outputfile.debug.js</output>\r\n\t\t<compilation_level>WHITESPACE_ONLY</compilation_level>\r\n\t\t<formatting>PRETTY_PRINT</formatting>\r\n\t\t<formatting>PRINT_INPUT_DELIMITER</formatting>\r\n\t\t<manage_closure_dependencies>true</manage_closure_dependencies>\r\n\t\t<output_wrapper>\r\n\t\t\t<![CDATA[function _trace(x){window.console && console.log(x)}%output%]]>\r\n\t\t</output_wrapper>\r\n \r\n\t\t<define>NAMESPACE.debug=true</define>\r\n\t\t<define>NAMESPACE.release=false</define>\r\n \r\n\t\t<file>../src/file1.js</file>\r\n\t\t<file>../src/file2.js</file>\r\n\t\t<folder>../src/lib1/</folder>\r\n\t\t<folder pattern=\"*.src.js\" ignore=\"*.vsdoc.js\">../src/lib2/</folder>\r\n \r\n\t</compile>\r\n \r\n</closure>\r\n------------------------------------------\r\n\r\n \r\n\r\n-- thanks for your time & sorry for the verbosity... -chris",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-06-19T07:17:01.783-07:00",
+    "Status": {
+      "Name": "Active",
+      "Id": 2
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Google Closure Advanced Compilation Support",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 85
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

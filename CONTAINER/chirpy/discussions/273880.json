@@ -1,0 +1,82 @@
+[
+  {
+    "Id": "676798",
+    "ThreadId": "273880",
+    "Html": "\r\n<p>I get this error when i try to save myfile.js</p>\r\n<p>JSHintEngine -- C:\\website\\myfile.js</p>\r\n<p>Error: Jurassic.JavaScriptException: ReferenceError: JSHINT is not defined</p>\r\n<p>at global_(ScriptEngine , Scope , Object )</p>\r\n<p>&nbsp; &nbsp;at Jurassic.Compiler.GlobalMethodGenerator.Execute()</p>\r\n<p>&nbsp; &nbsp;at Jurassic.ScriptEngine.Execute(ScriptSource source)</p>\r\n<p>&nbsp; &nbsp;at UglifyCS.Environment.Run(String script, Expression`1[] vars)</p>\r\n<p>&nbsp; &nbsp;at UglifyCS.JSHint.JSHINT(String source, options options)</p>\r\n<p>&nbsp; &nbsp;at Zippy.Chirp.Engines.JSHintEngine.Run(String fullFileName, ProjectItem projectItem)</p>\r\n<p>&nbsp; &nbsp;at Zippy.Chirp.Engines.EngineManager.Process(ProjectItem projectItem)</p>\r\n",
+    "PostedDate": "2011-09-26T11:01:18.197-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "678674",
+    "ThreadId": "273880",
+    "Html": "<p>Last source code version use new engine.</p>\r\n<p>Probably fix your error.</p>",
+    "PostedDate": "2011-09-30T07:39:35.603-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "683023",
+    "ThreadId": "273880",
+    "Html": "<p>Using VS2010 I also get this error. I just downloaded the addin this morning.</p>",
+    "PostedDate": "2011-10-12T02:46:36.163-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "686163",
+    "ThreadId": "273880",
+    "Html": "<p>I also get this error in VS2010 SP1 on Windows 7. I just installed the latest version from codeplex today.</p>\r\n<p>Error: Jurassic.JavaScriptException: ReferenceError: JSHINT is not defined&nbsp; &nbsp;<br />at global_(ScriptEngine , Scope , Object ) &nbsp;&nbsp;<br />at Jurassic.Compiler.GlobalMethodGenerator.Execute() &nbsp;&nbsp;<br />at Jurassic.ScriptEngine.Execute(ScriptSource source) &nbsp;&nbsp;<br />at Jurassic.ScriptEngine.Execute(String code) &nbsp;&nbsp;<br />at UglifyCS.Environment.Run(String script, Expression`1[] vars) &nbsp;<br />at UglifyCS.JSHint.JSHINT(String source, options options) &nbsp;&nbsp;<br />at Zippy.Chirp.Engines.JSHintEngine.Run(String fullFileName, ProjectItem projectItem) &nbsp;<br />at Zippy.Chirp.Engines.EngineManager.Process(ProjectItem projectItem)</p>",
+    "PostedDate": "2011-10-18T22:25:37.057-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "686443",
+    "ThreadId": "273880",
+    "Html": "<blockquote style=\"border: solid .1em #ccc; font-style: italic; margin: .25em 1em 0 1em; padding: 0 .25em 0 .25em;\"><strong>paddywhack wrote:</strong><br />\r\n<p>I also get this error in VS2010 SP1 on Windows 7. I just installed the latest version from codeplex today.</p>\r\n<p>Error: Jurassic.JavaScriptException: ReferenceError: JSHINT is not defined&nbsp; &nbsp;<br /> at global_(ScriptEngine , Scope , Object ) &nbsp;&nbsp;<br /> at Jurassic.Compiler.GlobalMethodGenerator.Execute() &nbsp;&nbsp;<br /> at Jurassic.ScriptEngine.Execute(ScriptSource source) &nbsp;&nbsp;<br /> at Jurassic.ScriptEngine.Execute(String code) &nbsp;&nbsp;<br /> at UglifyCS.Environment.Run(String script, Expression`1[] vars) &nbsp;<br /> at UglifyCS.JSHint.JSHINT(String source, options options) &nbsp;&nbsp;<br /> at Zippy.Chirp.Engines.JSHintEngine.Run(String fullFileName, ProjectItem projectItem) &nbsp;<br /> at Zippy.Chirp.Engines.EngineManager.Process(ProjectItem projectItem)</p>\r\n</blockquote>\r\n<p>Same to me as well</p>",
+    "PostedDate": "2011-10-19T09:20:18.22-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "688469",
+    "ThreadId": "273880",
+    "Html": "<p>Me three</p>",
+    "PostedDate": "2011-10-24T08:10:29.393-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "690387",
+    "ThreadId": "273880",
+    "Html": "<p>Vote here guys:</p>\r\n<p><a href=\"http://chirpy.codeplex.com/workitem/103\">http://chirpy.codeplex.com/workitem/103</a></p>",
+    "PostedDate": "2011-10-27T10:04:56.053-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "692462",
+    "ThreadId": "273880",
+    "Html": "<p>I took matters into my own hands a month ago and found the following workaround. But it involves building 2 different solutions in VS.</p>\n<p>1. Download the Jurassic bits from CodePlex. I grabbed the latest changeset back then, but in the meantime there have been more changes.&nbsp;<a href=\"http://jurassic.codeplex.com/SourceControl/list/changesets\">http://jurassic.codeplex.com/SourceControl/list/changesets</a></p>\n<p>2. Open this solution and rebuild it. I built both debug &amp; release (in that order). There were some projects that didn't open, but I just ignored them.</p>\n<p>3. Download the Chripy bits from CodePlex and open the SLN in Visual Studio.</p>\n<p>4. Delete the package reference to Jurassic from Chirpy (in references). Then, point to the binary (I used retail) you built in Step #2 above.</p>\n<p>5. Rebuild Chirpy.</p>\n<p>6. Find the Chirpy.vsi file in the 'bin' directory and run it.</p>\n<p>7. When Chripy prompts you that various files already exist, just chose the overwrite option (e.g. *don't* create a newly named version of the same file).</p>",
+    "PostedDate": "2011-11-01T16:37:43.6-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "698207",
+    "ThreadId": "273880",
+    "Html": "<blockquote style=\"border: solid .1em #ccc; font-style: italic; margin: .25em 1em 0 1em; padding: 0 .25em 0 .25em;\"><strong>ArmchairBronco wrote:</strong><br />\r\n<p>I took matters into my own hands a month ago and found the following workaround. But it involves building 2 different solutions in VS.</p>\r\n<p>1. Download the Jurassic bits from CodePlex. I grabbed the latest changeset back then, but in the meantime there have been more changes.&nbsp;<a href=\"http://jurassic.codeplex.com/SourceControl/list/changesets\">http://jurassic.codeplex.com/SourceControl/list/changesets</a></p>\r\n<p>2. Open this solution and rebuild it. I built both debug &amp; release (in that order). There were some projects that didn't open, but I just ignored them.</p>\r\n<p>3. Download the Chripy bits from CodePlex and open the SLN in Visual Studio.</p>\r\n<p>4. Delete the package reference to Jurassic from Chirpy (in references). Then, point to the binary (I used retail) you built in Step #2 above.</p>\r\n<p>5. Rebuild Chirpy.</p>\r\n<p>6. Find the Chirpy.vsi file in the 'bin' directory and run it.</p>\r\n<p>7. When Chripy prompts you that various files already exist, just chose the overwrite option (e.g. *don't* create a newly named version of the same file).</p>\r\n</blockquote>\r\n<p>Thanks! This solved it perfectly.</p>",
+    "PostedDate": "2011-11-14T19:38:44.417-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "897341",
+    "ThreadId": "273880",
+    "Html": "<p>Thanks <strong>ArmchairBronco</strong>,</p>\r\n<p>Those steps almost got me all the way there. &nbsp;However, when I compiled the shirpy.sln, I received an error \"<strong>exited with code 9009</strong>\". &nbsp;So for the next adventurer who happens upon this, I'll tell you how to resolve it, or at least in my case. &nbsp;In my instance this error is cause when the post build event passes a project path to the \"postBuild.bat\" that contains spaces. So to resolve this;</p>\r\n<ol>\r\n<li>First, Right-Click on Zippy.Chirp and select <strong>Properties</strong>.</li>\r\n<li>Next, Select the <strong>Build Events</strong> Tab, and add quotation marks&nbsp;around&nbsp;the function in the <strong>Post-Build event command line</strong> window.<ol>\r\n<li>For example, my new&nbsp;value was&nbsp;<strong>\"</strong>$(ProjectDir)$(OutDir)\\postBuild.bat<strong>\" (</strong>See, the string is now quoted&nbsp;<strong>)</strong></li>\r\n</ol></li>\r\n<li>Finally, Just recompile it, and continue on to the remaining steps from above;</li>\r\n</ol>\r\n<p style=\"padding-left: 60px;\">6. Find the Chirpy.vsi file in the 'bin' directory and run it.</p>\r\n<p style=\"padding-left: 60px;\">7. When Chripy prompts you that various files already exist, just chose the overwrite option (e.g. *don't* create a newly named version of the same file).</p>\r\n<p style=\"padding-left: 60px;\">&nbsp;</p>\r\n<p>Hope this helps</p>",
+    "PostedDate": "2012-08-08T20:53:25.27-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

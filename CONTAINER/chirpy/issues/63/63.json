@@ -1,0 +1,65 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 5,
+    "Custom": null,
+    "Description": "When chirpy minify a css file, the minified file is generated, that 's good\r\nbut it drives my Visual Studio 2010 to death afterward, and that's pretty bad...\r\n\r\nI would be pleased to help diagnosing this problem though, because chirpy rocks !",
+    "LastUpdatedDate": "2011-05-23T08:08:06.403-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-03-04T12:54:27.4-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Makes my VS2010 crashing when minifying css",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 63
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Hey gleborgne,\n\nIs this an issue with the new release only? Which minifier are you using? Is it all files or just this particular file?\n\nMuch thanks! And apologies for the issue. :/\n\nCheers,\nEvan",
+      "PostedDate": "2011-03-04T14:04:34.917-08:00",
+      "Id": 30014
+    },
+    {
+      "Message": "I got this with 1.0.0.5, I just discovered that there was a V2. I tryied with \".chirp.css\" and \".yui.css\" with the same result, it is doing this with all css files I tried\n\nI will try with v2 !\n\nGuillaume",
+      "PostedDate": "2011-03-06T23:58:11.56-08:00",
+      "Id": 30087
+    },
+    {
+      "Message": "With V2 I have a message box with the error detail. It is a problem related to TFS source control. After minifying, Chirpy tries to trigger T4MVC, and T4MVC.tt file is locked by TFS, If I check out the file, I have no error.\n\nCheers\n\nGuillaume",
+      "PostedDate": "2011-03-07T00:10:40.027-08:00",
+      "Id": 30089
+    },
+    {
+      "Message": "This happening for me as well -- chirpy will nolonger minify and it constantly crashing VS2010. \n\nI'm using V2 and I'm using Chirpy for CSS only.  I use \"config\" files to combine and compresses css. \n\nWhat other details can I give to help debugging?\n\n",
+      "PostedDate": "2011-03-24T13:19:13.713-07:00",
+      "Id": 31702
+    },
+    {
+      "Message": "sherpa99 :\n\nSend your test file.",
+      "PostedDate": "2011-05-23T08:08:06.403-07:00",
+      "Id": 36241
+    }
+  ]
+}

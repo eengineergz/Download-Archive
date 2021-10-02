@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "674436",
+    "ThreadId": "273249",
+    "Html": "\r\n<p>First, thanks for this great add-in!</p>\r\n<p>Is there a way to leverage the combining feature from the console?</p>\r\n<p>A little background on what I'm trying to accomplish. Our team is setting up a continuous integration server and I want to be able to have the latest .less/.js files get pulled from source control repo and &quot;compiled&quot; at build time (since save-time compilation\r\n won't work in this scenario). I figure I can set up a post-build event to call the Chirpy.exe, but I'm not sure how to use the mash.chirp.config file, etc.</p>\r\n<p>Is this possible? Or is there another approach that I can take?</p>\r\n<p>Thanks,<br>\r\nGregg&nbsp;</p>\r\n",
+    "PostedDate": "2011-09-20T14:58:49.187-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "675561",
+    "ThreadId": "273249",
+    "Html": "<p>Console application support :</p>\r\n<ol>\r\n<li>config engine</li>\r\n<li><span style=\"font-family: Consolas, 'Courier New', Courier, monospace; white-space: pre;\">(Yahoo css minifier)YuiCssEngine</span></li>\r\n<li><span style=\"font-family: Consolas, 'Courier New', Courier, monospace; white-space: pre;\">(Yahoo javascript minifier) YuiJsEngine</span></li>\r\n<li><span style=\"font-family: Consolas, 'Courier New', Courier, monospace; white-space: pre;\">(google closure compiler) ClosureCompilerEngine</span></li>\r\n<li><span style=\"font-family: Consolas, 'Courier New', Courier, monospace; white-space: pre;\">(less) LessEngine</span></li>\r\n<li><span style=\"font-family: Consolas, 'Courier New', Courier, monospace; white-space: pre;\">(coffeScript) CoffeeScriptEngine</span></li>\r\n<li><span style=\"font-family: Consolas, 'Courier New', Courier, monospace; white-space: pre;\">UglifyEngine</span></li>\r\n<li><span style=\"font-family: Consolas, 'Courier New', Courier, monospace; white-space: pre;\">(Microsoft javascript minifier) MsJsEngine</span></li>\r\n<li><span style=\"font-family: Consolas, 'Courier New', Courier, monospace; white-space: pre;\">(Microsoft css minifier)MsCssEngine</span></li>\r\n<li><span style=\"font-family: Consolas, 'Courier New', Courier, monospace; white-space: pre;\">ViewEngine</span></li>\r\n</ol>\r\n<pre><pre><br /></pre>\r\n</pre>",
+    "PostedDate": "2011-09-22T15:54:03.917-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

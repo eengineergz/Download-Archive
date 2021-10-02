@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2010-07-24T19:25:01.143-07:00",
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "//Could not load file or assembly 'EcmaScript.NET.modified, Version=0.1.1.0, Culture=neutral, PublicKeyToken=7d53ba4f537753a5' or one of its dependencies. The system cannot find the file specified.\r\nWhen I try compress JavaScript. \r\n",
+    "LastUpdatedDate": "2017-12-09T07:44:01.45-08:00",
+    "PlannedForRelease": "Chirpy Installer for VS 2010 (Ver-1.0.0.3)",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "High",
+      "Severity": 150,
+      "Id": 3
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-06-19T12:56:14.803-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Could not load file or assembly EcmaScript.NET.modified",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 11
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "EcmaScript.Net.modified.dll might not have been added to your Documents/Visual Studio 2010/AddIns folder. You can add the dll manually if you'd like. Or, if you can wait a day or two, I should have a fix for this problem. Stay tuned. And sorry for the hassle.\r\n",
+      "PostedDate": "2010-06-19T17:04:11.793-07:00",
+      "Id": 13056
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Source code update\nhttp://chirpy.codeplex.com/SourceControl/changeset/changes/16a615f55b52",
+    "ClosedDate": "2010-10-01T16:15:18.517-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi,\r\n\r\nLoading of files from some folder didn't work for me. \r\nI needed to correct FileGroupXml.cs to correct this issue.\r\n\r\nChanged:\r\n\r\nif (folderFiles.Count() == 0)\r\n                folderFiles = xElement.Descendants(XName.Get(\"Folder\", \"urn:ChirpyConfig\"))\r\n                .Select(n => new FileXml(n, basePath));\r\n\r\nto this:\r\n\r\nif (folderFiles.Count() == 0)\r\n                folderFiles = xElement.Descendants(XName.Get(\"Folder\", \"urn:ChirpyConfig\"))\r\n                .Select(n => new FolderXml(n, basePath))\r\n                .SelectMany(n => n.FileXmlList);\r\n\r\nIt would be nice to be fixed in next release. Thanx.",
+    "LastUpdatedDate": "2010-10-01T16:15:18.517-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-09-27T08:46:55.63-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Unable to load Folder Items from config file",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 40
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

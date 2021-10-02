@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Work for me (last source code version).\n\n@grayLighter:\"#e6e6e6\";\ninput::-webkit-input-placeholder {\ncolor: @grayLighter;\n}\n\nGenerate\ninput::-webkit-input-placeholder {\n  color: #e6e6e6;\n}\n\nSend more detail.",
+    "ClosedDate": "2011-12-29T07:33:14.63-08:00",
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "I'm trying to get this kind of css declaration, with the double colon:\r\n\r\ninput::-webkit-input-placeholder {\r\n  color: #e6e6e6;\r\n}\r\n\r\nI try to do this, but I get an error from the less parser:\r\n\r\ninput {\r\n     &::-webkit-input-placeholder {\r\n      color: @grayLighter;\r\n    }\r\n}\r\n\r\nAny solution to solve this scenario?\r\n\r\n",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-12-20T10:09:04.59-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Issue when trying to append ::-webkit-input-placeholder",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 111
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Thanks, that I already knew. I was wondering if there was any chance to use .less syntax here.\nCheers!",
+      "PostedDate": "2011-12-29T08:29:52.227-08:00",
+      "Id": 51775
+    }
+  ]
+}

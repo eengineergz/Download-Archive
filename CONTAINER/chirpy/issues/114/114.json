@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Chirpy use dotlesscss (http://www.dotlesscss.org/) for convert less to css.\nGoto dotlesscss for help or send more detail in ticket.\n",
+    "ClosedDate": "2012-01-13T16:42:48.233-08:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Color functions as specified on http://lesscss.org/ do not work. When the chirp files are compiled they output exactly as they were written and not as the expected result.",
+    "LastUpdatedDate": "2012-01-13T16:42:48.233-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-01-10T19:09:05.67-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Color functions do not work",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 114
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

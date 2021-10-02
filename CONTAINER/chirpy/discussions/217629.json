@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "460862",
+    "ThreadId": "217629",
+    "Html": "<p>Congrats on an excellent add in - trying it out at the moment. Was considering integrating minification combination of js and css into MSBuild until I came across this and this does something very similar.</p>\r\n<p>Wonder though if it would be possible to integrate in the conversion of images in css into a base64 string, resulting in less http requests. I believe only IE8+ supports such so it would need to an optional feature, ie. create a css with the conversion and a css without. A demo of what I mean in the following video -&gt; http://madskristensen.net/post/Embed-images-in-stylesheets.aspx</p>\r\n<p>Any thoughts on this? Just another area in which this add in could help improve the performance of css.</p>",
+    "PostedDate": "2010-06-28T15:11:41.47-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "462372",
+    "ThreadId": "217629",
+    "Html": "<p>@amateur,</p>\r\n<p>Thanks for the interesting idea! I'll check 'er out.</p>\r\n<p>Cheers,</p>\r\n<p>Evan</p>",
+    "PostedDate": "2010-07-01T14:25:59.883-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "468801",
+    "ThreadId": "217629",
+    "Html": "<p>Add work item for this :</p>\r\n<p><a href=\"http://chirpy.codeplex.com/workitem/14\">http://chirpy.codeplex.com/workitem/14</a></p>",
+    "PostedDate": "2010-07-18T16:40:18.807-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "477128",
+    "ThreadId": "217629",
+    "Html": "<p>See new microsoft product &quot;<span id=TitleLabel>Sprite and Image Optimization Framework</span>&quot;:</p>\r\n<p>http://aspnet.codeplex.com/releases/view/50140</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-08-05T14:30:32.783-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "532868",
+    "ThreadId": "217629",
+    "Html": "\r\n<p>Was this feature added to chirpy or are there any plans to do so in the future? Thanks</p>\r\n",
+    "PostedDate": "2010-12-08T06:39:45.297-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "533159",
+    "ThreadId": "217629",
+    "Html": "\r\n<p>Presently is not in me plan.</p>\r\n<p>The next feature is : CoffeeScript</p>\r\n",
+    "PostedDate": "2010-12-08T15:27:53.807-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "533160",
+    "ThreadId": "217629",
+    "Html": "\r\n<p>Thats fine, thanks for getting back to me. Was just wondering. I will look at introducing the new Sprite and Image Optimization framework instead.</p>\r\n<p>Out of interest, what is CoffeeScript?</p>\r\n",
+    "PostedDate": "2010-12-08T15:30:44.1-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "533164",
+    "ThreadId": "217629",
+    "Html": "\r\n<p>The next best thing after sliced bread. It's a rubification of javascript, basically adding some language elements that drastically reduce code size and uglyness. See here:&nbsp;&lt;cite&gt;jashkenas.github.com/coffee-script/&lt;/cite&gt;&nbsp;</p>\r\n<p>It is very new and will gain incredible momentum in 2011.&nbsp;</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2010-12-08T15:38:56.77-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

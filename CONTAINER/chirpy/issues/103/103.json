@@ -1,0 +1,65 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 5,
+    "Custom": null,
+    "Description": "We are getting the following error in VS2010SP1 with a brand new MVC3 project -\r\n\r\n \r\n\r\n\r\n\r\nCSSLintEngine -- c:\\research\\MvcApplication1\\Content\\themes\\base\\jquery.ui.theme.css\r\nCSSLintEngine -- c:\\research\\MvcApplication1\\Content\\themes\\base\\jquery.ui.tabs.css\r\nCSSLintEngine -- c:\\research\\MvcApplication1\\Content\\themes\\base\\jquery.ui.slider.css\r\nCSSLintEngine -- c:\\research\\MvcApplication1\\Content\\themes\\base\\jquery.ui.selectable.css\r\nCSSLintEngine -- c:\\research\\MvcApplication1\\Content\\themes\\base\\jquery.ui.resizable.css\r\nCSSLintEngine -- c:\\research\\MvcApplication1\\Content\\themes\\base\\jquery.ui.progressbar.css\r\nCSSLintEngine -- c:\\research\\MvcApplication1\\Content\\themes\\base\\jquery.ui.dialog.css\r\nCSSLintEngine -- c:\\research\\MvcApplication1\\Content\\themes\\base\\jquery.ui.datepicker.css\r\nError: Jurassic.JavaScriptException: ReferenceError: CSSLint is not defined\r\n   at global_(ScriptEngine , Scope , Object )\r\n   at Jurassic.Compiler.GlobalMethodGenerator.Execute()\r\n   at Jurassic.ScriptEngine.Execute(ScriptSource source)\r\n   at Jurassic.ScriptEngine.Execute(String code)\r\n   at UglifyCS.Environment.Run(String script, Expression`1[] vars)\r\n   at UglifyCS.CSSLint.CSSLINT(String source, options options)\r\n   at Zippy.Chirp.Engines.CSSLintEngine.Run(String fullFileName, ProjectItem projectItem)\r\n   at Zippy.Chirp.Engines.EngineManager.Process(ProjectItem projectItem)\r\nCSSLintEngine -- c:\\research\\MvcApplication1\\Content\\themes\\base\\jquery.ui.core.css\r\nCSSLintEngine -- c:\\research\\MvcApplication1\\Content\\themes\\base\\jquery.ui.button.css\r\nCSSLintEngine -- c:\\research\\MvcApplication1\\Content\\themes\\base\\jquery.ui.base.css\r\nCSSLintEngine -- c:\\research\\MvcApplication1\\Content\\themes\\base\\jquery.ui.autocomplete.css\r\nCSSLintEngine -- c:\\research\\MvcApplication1\\Content\\themes\\base\\jquery.ui.all.css\r\nCSSLintEngine -- c:\\research\\MvcApplication1\\Content\\themes\\base\\jquery.ui.accordion.css\r\n\r\n\r\n \r\n\r\nAny suggestions as to how to correct?",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "High",
+      "Severity": 150,
+      "Id": 3
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-10-07T18:32:29.98-07:00",
+    "Status": {
+      "Name": "Active",
+      "Id": 2
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Problems with CSSLint (error new project)",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 15,
+    "Id": 103
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "In my case, it doesn't happen with an MVC3 project, just a regular web application one.",
+      "PostedDate": "2011-10-27T12:52:49.133-07:00",
+      "Id": 48060
+    },
+    {
+      "Message": "MVC 3 - happens every time I save a JS file in VS2010, which is - every 10 seconds when I'm writing Javascript.  SUPER annoying.",
+      "PostedDate": "2011-12-30T07:59:57.637-08:00",
+      "Id": 51813
+    },
+    {
+      "Message": "I'm having this annoying issue also (VS2010, Windows 7).\n\nOn another chat ( ) i've noticed that saving an offline version somewhere specific could fix this as well:\n\n\"This happened to me as well. My workaround was to just download the jshint source and put it in the location \"C:\\Documents and settings\\admin\\Local Settings\\http___jshint.com_js_jshint.js\". Then JSHint worked. The other option is to turn off JSHint. \"\n\nAlthough, i don't know where this should be on a Windows 7 machine??",
+      "PostedDate": "2012-01-18T02:24:43.077-08:00",
+      "Id": 52894
+    },
+    {
+      "Message": "This is super annoying.  A user found a fix for this which is documented here:\n\nhttp://chirpy.codeplex.com/discussions/273880\n\nHopefully this helps!",
+      "PostedDate": "2012-01-27T15:56:10.403-08:00",
+      "Id": 54896
+    },
+    {
+      "Message": "I'm getting this error as well. Often it happens during code demonstrations and reviews, and I have to explain to the whole room why I'm getting this weird error when I save a perfectly legitimate file. Please fix.",
+      "PostedDate": "2012-05-11T06:04:45.883-07:00",
+      "Id": 65479
+    }
+  ]
+}

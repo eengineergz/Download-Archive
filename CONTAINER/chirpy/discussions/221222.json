@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "472081",
+    "ThreadId": "221222",
+    "Html": "<p>Hi,</p>\r\n<p>&nbsp;</p>\r\n<p>just been testing Chirpy and it works great! but on the mash up files it doesn't combine the 2 tags i.e. I get this</p>\r\n<p>&nbsp;</p>\r\n<pre><span>body</span>{<span>border-bottom</span>:<span>1px</span>;}<br><span>body</span>{<span>background-color</span>:<span>White</span>;}<br></pre>\r\n<pre><br></pre>\r\n<pre>when it would be better like this</pre>\r\n<pre><br></pre>\r\n<pre><pre><span>body</span>{</pre>\r\n<pre><span>border-bottom</span>:<span>1px</span>;</pre>\r\n<pre><span>background-color</span>:<span>White</span>;}<br></pre>\r\n<br></pre>\r\n<p>Here is my simple config file.</p>\r\n<p>&nbsp;</p>\r\n<pre><span>&lt;</span><span>root</span><span>&gt;&nbsp;</span><br><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span>FileGroup</span><span>&nbsp;</span><span>Name</span><span>=</span>&quot;<span>group1.css</span>&quot;<span>&gt;&nbsp;</span><br><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span>File</span><span>&nbsp;</span><span>Path</span><span>=</span>&quot;<span>login.min.css</span>&quot;<span>&nbsp;/&gt;&nbsp;</span><br><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span>File</span><span>&nbsp;</span><span>Path</span><span>=</span>&quot;<span>generic.min.css</span>&quot;<span>&nbsp;/&gt;&nbsp;</span><br><span>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/</span><span>FileGroup</span><span>&gt;&nbsp;</span><br><span>&lt;/</span><span>root</span><span>&gt;&nbsp;</span></pre>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-07-24T05:54:49.897-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "472110",
+    "ThreadId": "221222",
+    "Html": "<p>Presently &quot;filegroup&quot; only merge file after minifies.</p>\r\n<p>&nbsp;</p>\r\n<p>Snippet</p>\r\n<pre style=\"font-family:consolas\">&nbsp;allFileText.Append(text);<br></pre>",
+    "PostedDate": "2010-07-24T07:56:00.437-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "472111",
+    "ThreadId": "221222",
+    "Html": "<p>Thanks for the reply,</p>\r\n<p>&nbsp;</p>\r\n<p>So are you saying that currently its not supported but maybe in the future?</p>\r\n<p>&nbsp;</p>\r\n<p>thanks again</p>",
+    "PostedDate": "2010-07-24T07:58:24.62-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "472253",
+    "ThreadId": "221222",
+    "Html": "Hey madrid john,\r\n\r\nYeah, hopefully it should be supported soon. Right now, we're working on adding some extra config abilities. If you have any other suggestions related to the config file, please let us know! Or, if you're feeling super-supportive, you can always submit an update. :)\r\n\r\nThanks again!\r\n\r\nCheers,\r\nEvan",
+    "PostedDate": "2010-07-24T21:25:01.933-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "472259",
+    "ThreadId": "221222",
+    "Html": "<p>Thanks for the reply.. I just love this piece of software!!!&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>Ermm with regards to config, i notice with the JS example there is a property called&nbsp;<span>Minify</span>=<span>&quot;false&quot;</span><span>/&gt;</span>&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>So currently i am using the minify versions ALREADY of the CSS files, so the property minify in the config isn't needed ?</p>\r\n<p>&nbsp;</p>\r\n<p>I presume i am doing it correct, as i am pointing my config to the MIN versions of the css and not PRE MIN</p>\r\n<p>&nbsp;</p>\r\n<p>here is my config</p>\r\n<pre><span>&lt;</span><span>root</span><span>&gt;&nbsp;</span><br><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span>FileGroup</span><span>&nbsp;</span><span>Name</span><span>=</span>&quot;<span>stylesheet-final.css</span>&quot;<span>&gt;</span><br><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span>File</span><span>&nbsp;</span><span>Path</span><span>=</span>&quot;<span>generic.min.css</span>&quot;<span>&nbsp;/&gt;</span><br><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span>File</span><span>&nbsp;</span><span>Path</span><span>=</span>&quot;<span>login.min.css</span>&quot;<span>&nbsp;/&gt;&nbsp;</span><br><span>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/</span><span>FileGroup</span><span>&gt;&nbsp;</span><br><span>&lt;/</span><span>root</span><span>&gt;&nbsp;</span></pre>\r\n<p>&nbsp;</p>\r\n<p>here is an example of one of your config files, notice on Folder Path.</p>\r\n<p>Is Folder Path also supported for .CSS files? and what about the minify=False attribute</p>\r\n<p>&nbsp;</p>\r\n<p><span>&lt;root</span><span>&gt;</span>&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;FileGroup</span>&nbsp;<span>Name</span>=<span>&quot;main.scripts.js&quot;</span><span>&gt;</span>&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;Folder</span>&nbsp;<span>Path</span>=<span>&quot;/&quot;</span>&nbsp;<span>Type</span>=<span>&quot;*.min.js&quot;</span>&nbsp;<span>Minify</span>=<span>&quot;false&quot;</span><span>/&gt;</span>&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;File</span>&nbsp;<span>Path</span>=<span>&quot;MicrosoftAjax.js&quot;</span>&nbsp;<span>/&gt;</span>&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;/FileGroup&gt;</span>&nbsp;<br><span>&lt;/root&gt;</span>&nbsp;<br><br></p>\r\n<p>Best regards</p>\r\n<p>And really great utlity!! Love it! THanks a bunch!</p>",
+    "PostedDate": "2010-07-24T22:28:16.287-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "472320",
+    "ThreadId": "221222",
+    "Html": "<p>By default all css minifier don't merge tag.</p>\r\n<p>- YUI compressor all compession type (http://developer.yahoo.com/yui/compressor/#work)</p>\r\n<p>- Ms Ajax compressor (http://www.asp.net/ajaxLibrary/AjaxMinCssMin.ashx)</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-07-25T06:49:51.16-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "472909",
+    "ThreadId": "221222",
+    "Html": "Hey John,\r\n\r\nGlad you like it. And thanks for the support, as we're still ironing out some of the finer points.\r\n\r\nAs for your question--even if a file has &quot;.min&quot; in its path name, you still have to specify that you don't want the config file to re-minify the file (set Minify=&quot;false&quot;). \r\n\r\nAnd, stylesheet FileGroups work exactly the same as Javascript FileGroups (or they should), so you can definitely use all of the same attributes.\r\n\r\nIn the next release, we're going to be making some pretty big changes to the way that the config file works (we hear a lot of folks asking for a lot more flexibility). So, stay tuned. And, if you have any other issues/suggestions, please let us hear 'em!\r\n\r\nCheers,\r\nEvan",
+    "PostedDate": "2010-07-26T18:48:51.773-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "473657",
+    "ThreadId": "221222",
+    "Html": "<p>Thanks everyone for answering my questions,</p>\r\n<p>&nbsp;</p>\r\n<p>I will keep my eye on future releases, although from what i have seen currently i like it so i am going ahead and going to use it...</p>\r\n<p>&nbsp;</p>\r\n<p>Best regards</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-07-28T05:49:27.8-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

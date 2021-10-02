@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "This is *finally* implemented.  :]  Been on my personal to-do list for a while.\n\nSee http://chirpy.codeplex.com/SourceControl/changeset/changes/a5516796f2cd",
+    "ClosedDate": "2011-09-28T11:56:33.553-07:00",
+    "CommentCount": 4,
+    "Custom": null,
+    "Description": "I have a bunch of .less files that are imported into my main styles.chirp.less to better organize all the css I have.  My styles.chirp.less file looks kind of like\r\n\r\n@import \"reset\";\r\n@import \"960gs\";\r\n@import \"common\";\r\n@import \"sidebar\";\r\n\r\nwith a few more imports.  Needless to say it doesn't change that often while I'm debugging, but all the .less files it's including do change often.  Problem is that chirpy doesn't rebuild the styles.css again unless I touch styles.chirp.css.  Please make chirpy watch for changes in dependencies.  Also, I thought I could work around it with a quick CRTL+SHIFT+B build of the project, but chirpy doesn't even rebuild css files when I build the project.  \r\n",
+    "LastUpdatedDate": "2017-12-09T07:44:00.32-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-07-31T18:02:23.813-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Watch for changes in dotless files that are @import'ed ",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 6,
+    "Id": 24
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Hey Matt,\n\nSorry for the issue. \n\nRight now, only Chirp.config files update when a dependent file is changed. So, as a workaround, you could choose to mash all of your files via a chirp.config file. Then, whenever you update any dependency, the mashed file will also be updated. Granted, that might not be ideal, as you'll lose the interfile Less transformation that you get with the @import call.\n\nI'm voting the issue up, as I do think that we should add:\n\na. less file updates based on changes to imported files\nb. optional file recreation upon project build\n\nLet me know whatcha think. If you're up for adding either of the features to Chirpy, I'd love to have your help!\n\nCheers,\nEvan\n\n\n\n",
+      "PostedDate": "2010-07-31T19:08:21.123-07:00",
+      "Id": 14865
+    },
+    {
+      "Message": "Thanks for the quick response.  I don't think the css mashing will work because the less files are dependent on functions/classes/vars in other less files.  But good try.  Build seems like it would be easier to implement and an ok workaround until imports can be traced.\n\nBTW ... chirpy's a great tool. Thanks for building it.",
+      "PostedDate": "2010-08-01T13:24:50.213-07:00",
+      "Id": 14868
+    },
+    {
+      "Message": "Ah, you got me there.  :)\n\nSo, yes, definitely a feature we need to add in the next go-round.\n\nThanks for the feedback!\n\n",
+      "PostedDate": "2010-08-01T15:47:40.41-07:00",
+      "Id": 14873
+    },
+    {
+      "Message": "Chirpy is awesome...so far this is the only issue I would love to see fixed.",
+      "PostedDate": "2011-01-20T16:52:37.86-08:00",
+      "Id": 26955
+    }
+  ]
+}

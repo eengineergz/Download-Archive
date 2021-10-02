@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 3,
+    "Custom": null,
+    "Description": "After installing Chirpy into Visual Studio 2010, whenever I attempt to click Tools/Options, Visual Studio crashes.  Removing chirpy resolves this problem.",
+    "LastUpdatedDate": "2012-06-09T02:17:20.07-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-03-05T10:26:42.067-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Installing Chipy causes Visual Studio options screen to crash",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 125
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Admin right on your pc ?\n\nSetting is save in registry.",
+      "PostedDate": "2012-03-11T09:53:56.143-07:00",
+      "Id": 57512
+    },
+    {
+      "Message": "Yes, I am an admin on my PC.",
+      "PostedDate": "2012-03-11T12:23:47.833-07:00",
+      "Id": 57517
+    },
+    {
+      "Message": "I am not able to remove chirpy.\ncan you please tell me how can i remove it from VS 2010?",
+      "PostedDate": "2012-06-09T02:17:20.07-07:00",
+      "Id": 67661
+    }
+  ]
+}

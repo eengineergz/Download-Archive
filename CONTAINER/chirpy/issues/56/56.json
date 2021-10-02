@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "My web page uses themes.   So if I use either chirp.css   I end up with both the uncompressed and the compress files included in my page.\r\n\r\nIf I change the input filename to chirp.css.x   and my options I then loose my text editing ability.",
+    "LastUpdatedDate": "2011-01-19T15:01:59.873-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-01-19T15:00:11.707-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Chripy and themes",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 56
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "For .less files it would be nice to be able to rename the .less full files to .css.full so it does not participate as well.",
+      "PostedDate": "2011-01-19T15:01:59.873-08:00",
+      "Id": 26896
+    }
+  ]
+}

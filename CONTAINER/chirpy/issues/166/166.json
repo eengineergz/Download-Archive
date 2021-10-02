@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "currently if a view is a chirp compressed file like `View.chirp.cshtml` there is no way to tell chirpy to skip one script block.  It would be nice to have such ability.\r\n\r\nWhy I need this, because sometimes I use two script blocks. One is specific to that partial view, second is generated (which contains c# code).",
+    "LastUpdatedDate": "2013-02-27T13:20:27.223-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2013-02-27T13:20:27.223-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "skip-able script tags",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 166
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

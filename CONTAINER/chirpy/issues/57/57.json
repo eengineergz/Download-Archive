@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi all!\r\n\r\nI just wanted to report an issue I found today after struggling for a bit to find what was wrong. My mashed JS file was not getting updated when changes were made to any of the files in the .chirp.config file. In addition, I nuked the generated files attached to the .config file and re-saved, made changes and saved, etc. with nothing being generated. I even recreated the config file to no avail. I checked the Output window and only saw \"ConfigEngine -- [path to my .chrip.config file]\".\r\n\r\nAfter staring at the config file for another 5 minutes without blinking, it hit me! I deleted one of the .js files that was in a FileGroup yesterday. So, Chirpy wasn't finding the file. The \"bug\" isn't that it didn't regenerate, it's that it didn't report what the problem was. ;-)\r\n\r\nThanks for such a great product!",
+    "LastUpdatedDate": "2011-03-03T11:40:03.337-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-02-22T11:46:16.71-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "No Error Reported when Referenced File in config is Missing",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 57
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

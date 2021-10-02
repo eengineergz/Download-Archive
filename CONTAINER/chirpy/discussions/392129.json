@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "900992",
+    "ThreadId": "392129",
+    "Html": "\r\n<p>I use offline google minifier,but compiler.jar&nbsp;not found in Documents\\Visual Studio 2012\\Addins, but&nbsp;Chirpy-VisualStudio11.vsi has it.</p>\r\n",
+    "PostedDate": "2012-08-18T01:19:50.31-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "900994",
+    "ThreadId": "392129",
+    "Html": "<p>maybe&nbsp;Chirpy.vscontent not setting</p>",
+    "PostedDate": "2012-08-18T01:27:28.94-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

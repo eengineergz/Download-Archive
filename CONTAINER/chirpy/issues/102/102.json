@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "changeset=2075b4f94ae6\nhttp://chirpy.codeplex.com/SourceControl/changeset/changes/2075b4f94ae6",
+    "ClosedDate": "2011-10-10T11:32:07.677-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "If i create a css or js file and then rename it to add the .chirp i get no errors but the \"min\" file that should be created is not. There is no error in the log.\r\n\r\nIf i edit the .chirp file and save it, i get this error in the log..\r\n\r\nSystem.InvalidCastException: No such interface supported (Exception from HRESULT: 0x80004002 (E_NOINTERFACE))   at EnvDTE.ProjectItem.get_Collection()   at Zippy.Chirp.Utilities.GetParent(ProjectItem projectItem)   at Zippy.Chirp.Engines.EngineManager.Enqueue(ProjectItem projectItem)   at Zippy.Chirp.Chirp.ProjectItemsEvents_ItemAdded(ProjectItem projectItem)\r\n\r\nSome help would be appreciated.\r\n\r\n \r\n\r\nThanks.",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-10-07T18:27:26.147-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Chirpy with other project types",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 102
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

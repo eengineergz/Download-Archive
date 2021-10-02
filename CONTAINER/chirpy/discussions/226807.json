@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "491959",
+    "ThreadId": "226807",
+    "Html": "<p>I have seen a few performance recommendations to remove all &quot;extra&quot; whitespace namely carriage returns tabs etc. from ASPX files and ASCX files to improve the performance of a site.&nbsp; Can you use Chirpy to remove all but single spaces from ASPX and ASCX files when you deploy a web site?&nbsp; I am wanting a way to test this and see what the performance enhancements are.</p>",
+    "PostedDate": "2010-09-10T13:16:04.663-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "492006",
+    "ThreadId": "226807",
+    "Html": "<p>Presently this feature is not support by chirpy.</p>\r\n<p>Chirpy 1.0.0.5 is more modularized create you custom module.</p>\r\n<p>http://www.weirdlover.com/2010/09/07/chirpy-to-the-xxxtreme-v1-0-0-5-da-kine-release/#third</p>",
+    "PostedDate": "2010-09-10T14:50:57.197-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "494312",
+    "ThreadId": "226807",
+    "Html": "<p>Hey runxc1,</p>\r\n<p>I think the performance gain is probably negligible. That said, if it's something that you feel obliged to do, we'd love to possibly include the engine in the project.</p>\r\n<p>Cheers,</p>\r\n<p>Evan</p>",
+    "PostedDate": "2010-09-16T01:33:56.247-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

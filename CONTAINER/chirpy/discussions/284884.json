@@ -1,0 +1,74 @@
+[
+  {
+    "Id": "720078",
+    "ThreadId": "284884",
+    "Html": "<p>Dear All,</p>\n<p>I find this really great addin for visual studio, but I'm not able to get it work.</p>\n<p>I install the latest version 2.0.3, but in my vs2008 nothing happend. I try to create a simple.yui.js file, but the codebehind does't appair.</p>\n<p>I follow the documentation in first page of codeplex.</p>\n<p>Can you help me?</p>\n<p>Is Crirpy for only vs2010?</p>\n<p>Thanks</p>\n<p>Claudio</p>",
+    "PostedDate": "2012-01-03T15:19:53.147-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "720097",
+    "ThreadId": "284884",
+    "Html": "<p>Copy file in&nbsp;C:\\Users\\&lt;user name&gt;\\Documents\\Visual Studio 2008\\AddIns</p>\r\n<p>Change in file *.Addin version number 10.0 to 9.0</p>\r\n<p>Sample :</p>\r\n<p>&lt;HostApplication&gt;<br />&lt;Name&gt;Microsoft Visual Studio Macros&lt;/Name&gt;<br />&lt;Version&gt;<strong>9.0</strong>&lt;/Version&gt;<br />&lt;/HostApplication&gt;<br />&lt;HostApplication&gt;<br />&lt;Name&gt;Microsoft Visual Studio&lt;/Name&gt;<br />&lt;Version&gt;<strong>9.0</strong>&lt;/Version&gt;<br />&lt;/HostApplication&gt;</p>\r\n<p>Watch in menu&nbsp;tools &gt; add-in Manager ... <br />Chirpy is probably in list after copy/change.</p>\r\n<p>Same request for vs 2011 :&nbsp;<a href=\"http://chirpy.codeplex.com/discussions/284633\">http://chirpy.codeplex.com/discussions/284633</a></p>",
+    "PostedDate": "2012-01-03T16:24:29.507-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "720207",
+    "ThreadId": "284884",
+    "Html": "<p>[Problem 1 solved - Install AjaxMinifier to use this function]</p>\n<p>I install http://aspnet.codeplex.com/releases/view/40584 this and with .msajax.js extension now work.</p>\n<p>[Problem 2]</p>\n<p>Dear All,<br />I try some combination, but I don't achieve my target... <br />Before use Chirpy I use http://www.minifyjs.com/javascript-compressor/ with normal compression<br />For example:</p>\n<p>&nbsp;</p>\n<div style=\"color: black; background-color: white;\">\n<pre><span style=\"color: blue;\">function</span> AddHandler() {\n\n    $(<span style=\"color: #a31515;\">'.boxItem'</span>).mousedown(<span style=\"color: blue;\">function</span>() {\n        <span style=\"color: green;\">//alert('Handler for .click() called.');</span>\n        $(LastBoxMod).removeClass(<span style=\"color: #a31515;\">\"selectedBox\"</span>);\n        $(<span style=\"color: blue;\">this</span>).addClass(<span style=\"color: #a31515;\">\"selectedBox\"</span>);\n        SyncInformation(<span style=\"color: blue;\">this</span>);\n        ShowPnlEdit();\n    });\n\n}\n</pre>\n</div>\n<p>&nbsp;</p>\n<p>and the minified version is</p>\n<p>&nbsp;</p>\n<div style=\"color: black; background-color: white;\">\n<pre>eval(<span style=\"color: blue;\">function</span>(p,a,c,k,e,d){e=<span style=\"color: blue;\">function</span>(c){<span style=\"color: blue;\">return</span> c.toString(36)};<span style=\"color: blue;\">if</span>(!<span style=\"color: #a31515;\">''</span>.replace(/^/,String)){<span style=\"color: blue;\">while</span>(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[<span style=\"color: blue;\">function</span>(e){<span style=\"color: blue;\">return</span> d[e]}];e=<span style=\"color: blue;\">function</span>(){<span style=\"color: blue;\">return</span><span style=\"color: #a31515;\">'\\\\w+'</span>};c=1};<span style=\"color: blue;\">while</span>(c--){<span style=\"color: blue;\">if</span>(k[c]){p=p.replace(<span style=\"color: blue;\">new</span> RegExp(<span style=\"color: #a31515;\">'\\\\b'</span>+e(c)+<span style=\"color: #a31515;\">'\\\\b'</span>,<span style=\"color: #a31515;\">'g'</span>),k[c])}}<span style=\"color: blue;\">return</span> p}(<span style=\"color: #a31515;\">'1 4(){$(\\'</span>.5\\<span style=\"color: #a31515;\">').3(1(){$(a).6(\"0\");$(2).8(\"0\");7(2);9()})}'</span>,11,11,<span style=\"color: #a31515;\">'selectedBox|function|this|mousedown|AddHandler|boxItem|removeClass|SyncInformation|addClass|ShowPnlEdit|LastBoxMod'</span>.split(<span style=\"color: #a31515;\">'|'</span>),0,{}))\n</pre>\n</div>\n<p>How can have a similar minified (with eval at begin and all the strings at the end?)</p>\n<p>[Problem 3]<br />When I publish my website appair both js file, minized and \"source\". Is there an option for publish only the minify version?</p>",
+    "PostedDate": "2012-01-04T02:08:31.393-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "720386",
+    "ThreadId": "284884",
+    "Html": "<p><span>[Problem 1]</span></p>\r\n<p>The <span>Microsoft Ajax Minifier 4.0 is merge with ILMerge in main dll.</span></p>\r\n<p><span><strong>ILMerge </strong>/out:\"Chirpy.dll\" \"TempChirpy.dll\" \"EcmaScript.NET.modified.dll\" \"Yahoo.YUI.Compressor.dll\" \"dotless.Core.dll\" <strong>\"AjaxMin.dll\"</strong> \"Jurassic.dll\" /targetplatform:v4,C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319<br /></span></p>\r\n<p><span>[Problem 2]</span></p>\r\n<p>Test (<span>http://www.minifyjs.com/javascript-compressor/) and no output with eval begin.</span></p>\r\n<p><span>Normally minified file don't content extra javascript.</span></p>\r\n<p><span>[Problem 3]</span></p>\r\n<p><span>Create new feature request.</span></p>\r\n<p><span><a href=\"http://chirpy.codeplex.com/workitem/113\">http://chirpy.codeplex.com/workitem/113</a><br /></span></p>",
+    "PostedDate": "2012-01-04T09:52:18.82-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "722069",
+    "ThreadId": "284884",
+    "Html": "<p>Dear All,<br />thanks for your reply, but I don't understand your reply about my \"problem 2\"<br />Before I foud Chirpy I manually create my minified with http://www.minifyjs.com/javascript-compressor/ <br />In the Advanced Option I use fast decode e normal encoding. My source example and my output was in the previous post.<br />This minified works great for my poupose, but I connot find and equivalent settings in Chirpy.</p>\r\n<p>Can I have a similar minified js with Chirpy?</p>",
+    "PostedDate": "2012-01-08T05:23:08.707-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "722107",
+    "ThreadId": "284884",
+    "Html": "<p>No.</p>\n<p>Your normal file -&gt; length : 280</p>\n<p>Your minified version -&gt; length : 483</p>\n<p>With google closure compiler (simple) -&gt;169</p>\n<p>Normaly the minified version is small.</p>\n<p>Your file is packed not minified (<a href=\"http://stackoverflow.com/questions/3158869/javascript-packer-versus-minifier\">http://stackoverflow.com/questions/3158869/javascript-packer-versus-minifier</a>)</p>",
+    "PostedDate": "2012-01-08T08:15:22.66-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "724126",
+    "ThreadId": "284884",
+    "Html": "<p>Ok, so I need a Packer instead a minifier?<br />Chirpy is a great vs add on, there is a way to add a Packer in his features?</p>",
+    "PostedDate": "2012-01-12T01:41:03.577-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "725040",
+    "ThreadId": "284884",
+    "Html": "<p>Request add in issue tracker:</p>\r\n<p><a href=\"http://chirpy.codeplex.com/workitem/115\">http://chirpy.codeplex.com/workitem/115</a></p>",
+    "PostedDate": "2012-01-13T16:37:15.033-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "725312",
+    "ThreadId": "284884",
+    "Html": "<p>Add javascript <a href=\"http://dean.edwards.name/packer/\">packer</a></p>\r\n<p>Change set :&nbsp;<a href=\"http://chirpy.codeplex.com/SourceControl/changeset/changes/bec84bb7f37f\">http://chirpy.codeplex.com/SourceControl/changeset/changes/bec84bb7f37f</a></p>",
+    "PostedDate": "2012-01-14T17:20:29.58-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

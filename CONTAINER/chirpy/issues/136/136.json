@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I'm using @import in my .less file. The chirp.config file includes the parent.less file and updates correctly when I save it, but does not update when I save the child.less file. \r\n\r\nIt would be nice if Chirpy could recursively find the imports and update when those are saved. Alternatively, I would be happy if I could just add the files to watch in the chirp.config file without those being included in the output (eg, add a <Watch Path=\"\" /> element).",
+    "LastUpdatedDate": "2013-09-18T03:46:42.95-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-04-28T12:38:24.26-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Update mashed file when .less imported file is updated",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 4,
+    "Id": 136
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

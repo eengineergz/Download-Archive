@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Probably cause by new feature JsHint (http://jshint.com/)\n\nDisable in options > Chirpy > Javascruot (js) > checkbox \"run js Hint\"",
+    "ClosedDate": "2011-04-22T06:06:47.407-07:00",
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "Every time I save my javascript file, the Error List tool window pops up.  Some useless warnings are added to it like \"Bad line breaking before ','.\"  I frequently save my files as I'm working and this completely ruins the user experience as the focus is taken away from the javascript file and to the Error List tool window.",
+    "LastUpdatedDate": "2011-04-22T06:06:47.407-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-04-08T09:58:54.437-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Error List window pops up on EVERY save",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 69
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "My apologies... it appears that chirpy v2 is less forgiving than v1.  After moving some commas around, the file validated and was processed correctly.  It's worth noting that this was happening on a javascript file that was not being minified. ",
+      "PostedDate": "2011-04-08T10:14:05.59-07:00",
+      "Id": 33838
+    }
+  ]
+}

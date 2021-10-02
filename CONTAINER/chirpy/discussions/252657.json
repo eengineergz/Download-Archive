@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "592334",
+    "ThreadId": "252657",
+    "Html": "\r\n<p>I use many many .less (.css) files when I build my solution. It really helps me maintain my styles and wrap my head around the project.</p>\r\n<p>I've started using Chirpy, and now I add it to every solution. It's a great tool and I absolutely love it.</p>\r\n<p>One thing I've noticed is that I have to COPY/PASTE my reusable .less variables to the top of all of my files, and when I need to make a variable adjustment, I need to go into each file to make the adjustment.</p>\r\n<p>I'm wondering if there is any way to create a MASTER.less file whereby I can add all of my variables and reusable settings, and then have Chirpy utilize them across all of my .less files.</p>\r\n<p>EXAMPLE:</p>\r\n<p>master.less</p>\r\n<p></p>\r\n<div style=\"color:black; background-color:white\">\r\n<pre>@brand_color: #9fdf40;\r\n@note: #ffffbe;\r\n@borders: #696969;\r\n@light_borders: #DDD;\r\n@font_family: Verdana, Arial, Helvetica, sans-serif;\r\n\r\n.two-corner-radius(@radius){\r\n    -webkit-border-top-left-radius: @radius;\r\n    -moz-border-radius-topleft: @radius;\r\n    border-top-left-radius: @radius;\r\n    -webkit-border-bottom-right-radius: @radius;\r\n    -moz-border-radius-bottomright: @radius;\r\n    border-bottom-right-radius: @radius;\r\n}\r\n</pre>\r\n</div>\r\n<p></p>\r\n",
+    "PostedDate": "2011-04-05T13:04:33.163-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "592445",
+    "ThreadId": "252657",
+    "Html": "<p>I also put this question up on <a title=\"DotLess master file for variables and functions\" href=\"http://stackoverflow.com/questions/5559614/dotless-less-master-less-file-for-variables-and-functions\" target=\"_blank\">StackOverflow</a></p>",
+    "PostedDate": "2011-04-05T16:12:59.417-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "592516",
+    "ThreadId": "252657",
+    "Html": "<p>I found my answer. I just need to \"@import\" the master.less file at the top of each subsequent .less file.</p>\r\n<pre class=\"lang-css prettyprint\"><code><span class=\"kwd\">@import</span><span class=\"pln\"> </span><span class=\"str\">\"E:\\Projects\\MyApp\\UI\\Assets\\Css\\master.less\"</span><span class=\"pun\">;</span><span class=\"pln\"><br /></span></code></pre>",
+    "PostedDate": "2011-04-05T21:36:04.21-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

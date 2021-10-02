@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 2,
+    "Custom": null,
+    "Description": "We like to keep all our minified files checked into to TFS, this means that every time you modify the config or the js files an error occurs if you haven't manually checked out the minified files. Is it possible to automate the check out of the files when chirpy attempts to modify them.",
+    "LastUpdatedDate": "2013-01-08T03:55:53.507-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-07-08T07:39:31.587-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "TFS check out of minified files",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 9,
+    "Id": 88
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "In changeset : b0fea5d13101\nRemove file attribute read-only before create minifed file.",
+      "PostedDate": "2011-09-30T15:26:54.447-07:00",
+      "Id": 45932
+    },
+    {
+      "Message": "There are still issues here I believe. We have this mainly with the config functionality. Upon saving the config file, checkout is prompted for that config file, but checkout prompts are not correctly fired for all the minified files to be generated as part of the config.\n\nHave looked at the code for this, and it appeared as if though for every file being generated as part of the config, it was checking out the config again (if it wasn't already checked out), not the JS file itself. Have tested a change in my development environment and appears to be working correctly, but not sure if there have been any repercussions as of yet, still need to test it, but I do get the checkout prompts for the correct files now so if it all seems to be working correctly, I will submit a pull request with the fix.",
+      "PostedDate": "2013-01-08T03:55:38.727-08:00",
+      "Id": 85545
+    }
+  ]
+}

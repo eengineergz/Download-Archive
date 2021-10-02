@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi,\r\n\r\nWhen using chirp in razor views (js minifier is YUI), if I include an external script, content of script element becomes \r\n\r\n/* error = Value cannot be null.\r\nParameter name: javaScript */\r\n\r\n<script type=\"text/javascript\" src=\"my-awesome-script.js\"></script>\r\n\r\nbecomes\r\n\r\n<script type=\"text/javascript\" src=\"my-awesome-script.js\">/* error = Value cannot be null.\r\nParameter name: javaScript */</script>\r\n\r\nSorry for not fixing this, but i have no Hg experience.\r\n\r\nI believe problem can be easily fixed by testing is \"code\" variable is empty in ViewEngine.Transform\r\n\r\nsincerely",
+    "LastUpdatedDate": "2012-06-28T06:37:46.28-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-06-28T06:37:46.28-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "ViewEngine + YUI Js Compressor + Script Tag w/ src = error",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 146
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

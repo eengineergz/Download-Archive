@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "690318",
+    "ThreadId": "277431",
+    "Html": "<p>Hi All,</p>\n<p>I wanted to upgrade the DotLess.core hoping to fix below issue, but it doesn't seem to work. The reason I want to upgrade is that below issue, eventhough it is 'escaped', still throws an error:</p>\n<div style=\"color: black; background-color: white;\">\n<pre>..\\Safarinow.Web\\res<span style=\"color: gray;\">/</span>css<span style=\"color: gray;\">/</span>Generic.less(7448,5)Expected <span style=\"color: #a31515;\">'}'</span> on line 7448 <span style=\"color: blue;\">in</span> file <span style=\"color: #a31515;\">'..\\Safarinow.Web\\res/css/Generic.less'</span>:\n<span style=\"color: gray;\">[</span><span style=\"color: teal;\">7447</span><span style=\"color: gray;\">]</span>:     background: <span style=\"color: gray;\">-</span>ms<span style=\"color: gray;\">-</span>linear<span style=\"color: gray;\">-</span>gradient(top, white 0<span style=\"color: gray;\">%</span>,<span style=\"color: green;\">#F0F0F0 100%);</span>\n<span style=\"color: gray;\">[</span><span style=\"color: teal;\">7448</span><span style=\"color: gray;\">]</span>:     <span style=\"color: blue;\">filter</span>: ~<span style=\"color: #a31515;\">\"progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f0f0f0',GradientType=0 )\"</span>;\n       <span style=\"color: gray;\">--</span><span style=\"color: gray;\">--</span>^\n<span style=\"color: gray;\">[</span><span style=\"color: teal;\">7449</span><span style=\"color: gray;\">]</span>:     background: linear<span style=\"color: gray;\">-</span>gradient(top, white 0<span style=\"color: gray;\">%</span>,<span style=\"color: green;\">#F0F0F0 100%);</span>\n</pre>\n</div>\n<p>Chirpy currently contains DotLess version 1.1.0.7, but DotLess is currently at 1.2.1.0. I tried replacing the&nbsp;dotless.Core.dll and&nbsp;dotless.Core.pdb files, but that results in following error:</p>\n<div style=\"color: black; background-color: white;\">\n<pre>Unhandled Exception: System.IO.FileLoadException: Could not load file or assembly <span style=\"color: #a31515;\">'dotless.Core, Version=1.1.0.7, Culture=neutral, PublicKeyToken=96b446c9e63eae34'</span> or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception <span style=\"color: blue;\">from</span> HRESULT: 0x80131040)\n   at Zippy.Chirp.Engines.LessEngine.TransformToCss(String fullFileName, String text, ProjectItem projectItem)\n   at Zippy.Chirp.Engines.ConfigEngine.Run(String fullFileName, ProjectItem projectItem) <span style=\"color: blue;\">in</span> C:\\Users\\enagle\\Desktop\\Chirpy 3211\\Engines\\ConfigEngine.cs:line 130\n   at Console.Chirp.Program.Main(String[] args) <span style=\"color: blue;\">in</span> C:\\Users\\enagle\\Desktop\\Chirpy 3211\\Console.Chirp\\Program.cs:line 50\n\n</pre>\n</div>\n<p>&nbsp;</p>\n<p>How do I fix this issue?</p>\n<p>&nbsp;</p>\n<p>Thanks!</p>",
+    "PostedDate": "2011-10-27T07:49:55.48-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "692402",
+    "ThreadId": "277431",
+    "Html": "<p>Download last source code.</p>\r\n<p>Dotless is change to 1.2.1.0 in changeset :&nbsp;<a href=\"http://chirpy.codeplex.com/SourceControl/changeset/changes/6a8c1be48669\">6a8c1be48669</a></p>",
+    "PostedDate": "2011-11-01T14:35:31.523-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "693408",
+    "ThreadId": "277431",
+    "Html": "<p>I downloaded the latest source code,&nbsp;<a id=\"ChangeSetLink0\" title=\"View change set 2075b4f94ae6\" href=\"http://chirpy.codeplex.com/SourceControl/changeset/changes/2075b4f94ae6\">2075b4f94ae6</a>, opened the zip file and ran&nbsp;&nbsp;\\bin\\Chirpy.vsi.&nbsp;</p>\r\n<p>This did not solve this problem. Did I do something wrong or is this an issue with VS?</p>",
+    "PostedDate": "2011-11-03T09:10:15.07-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "694155",
+    "ThreadId": "277431",
+    "Html": "<p>Download last version and build on your pc.</p>",
+    "PostedDate": "2011-11-04T16:17:55.977-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

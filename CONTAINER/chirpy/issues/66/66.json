@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "Doing something silly like setting the extension for chirpy to be .debug.js causes an infinite loop and VS to wander off into the darkness to die.",
+    "LastUpdatedDate": "2011-05-23T08:05:04.773-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-03-16T09:18:21.877-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Validate extension configuration values",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 66
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Chirpy version ?\nSet extension to Closure compiler advanced, Closure compiler simple ... ?",
+      "PostedDate": "2011-05-23T08:05:04.773-07:00",
+      "Id": 36240
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "I would like to see the RequireJS optimizer included in chirpy.\r\n\r\nIt seems like it can be done in the same way as the GoogleClosureOfflineCompiler. (requiring NodeJs.exe and r.js  https://github.com/jrburke/r.js)\r\n\r\nWould this be feasible?",
+    "LastUpdatedDate": "2012-11-05T12:28:27.763-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-03-13T09:02:11.493-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Add RequireJS Optimizer to JS minifier",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 130
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I think this would be a great addition.  I have been on two projects now, where we would like to use RequireJS.",
+      "PostedDate": "2012-11-05T12:28:04.733-08:00",
+      "Id": 81701
+    }
+  ]
+}

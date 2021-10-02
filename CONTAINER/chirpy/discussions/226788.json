@@ -1,0 +1,82 @@
+[
+  {
+    "Id": "491874",
+    "ThreadId": "226788",
+    "Html": "<p>I'm having problems with chirpy on vs2010.</p>\r\n<p>at a certain point it just stopped to work and it does not minify my js&nbsp;any more.</p>\r\n<p>any idea??</p>\r\n<p>&nbsp;</p>\r\n<p>best</p>",
+    "PostedDate": "2010-09-10T09:43:22.66-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "492001",
+    "ThreadId": "226788",
+    "Html": "<p>More detail available in output windows have section for chirpy error.</p>\r\n<p>You are projet is : &quot;web site projet&quot; or &quot;web site application&quot; or &quot;mvc&quot; ?</p>",
+    "PostedDate": "2010-09-10T14:46:05.703-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "492133",
+    "ThreadId": "226788",
+    "Html": "<p>it's a web site project</p>",
+    "PostedDate": "2010-09-11T02:32:02.893-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "492151",
+    "ThreadId": "226788",
+    "Html": "<p>Bug fix <span id=UpdatedOnDateTime>Wed at 7:55 PM</span></p>\r\n<p>Watch work item&nbsp; 32</p>\r\n<p>http://chirpy.codeplex.com/workitem/32</p>",
+    "PostedDate": "2010-09-11T04:08:41.053-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "492154",
+    "ThreadId": "226788",
+    "Html": "<p>I do have the latest version on&nbsp;chirpy installed, but still not working.</p>\r\n<p>Is there any way to see chirpy logs and see what is going wrong?</p>\r\n<p>&nbsp;</p>\r\n<p>best</p>",
+    "PostedDate": "2010-09-11T04:20:44.62-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "492161",
+    "ThreadId": "226788",
+    "Html": "<p>In output windows or error list.</p>\r\n<p>New source code with more error handling (changeset= f8b3d178565e).</p>",
+    "PostedDate": "2010-09-11T05:26:58.83-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "492665",
+    "ThreadId": "226788",
+    "Html": "<p>output windows is empty and there are no errors in the error list.<br>From the addin manager I can see that chirpy is enabled, as I Can see the Chirpy configuration on the options windows, but having a file called aaa.chirp.js, when I save it, the .min.js file is not generated...</p>\r\n<p>is there a way to manually execute chirpy on a specific file?</p>",
+    "PostedDate": "2010-09-13T01:56:04.537-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "493034",
+    "ThreadId": "226788",
+    "Html": "<p>Chirpy configuration is now root node not under Environment.</p>\r\n<p>Fix bug in changeset: 53e0dfee342e</p>\r\n<p>http://chirpy.codeplex.com/SourceControl/changeset/changes/53e0dfee342e</p>",
+    "PostedDate": "2010-09-13T15:07:44.233-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "494310",
+    "ThreadId": "226788",
+    "Html": "<p>Big thanks to Francis for handling this madness. Apologies for the issues--we expected to introduce some new bugs when we moved over to the modularized/engine-driven version of Chirpy, but we're slowing ironing out the details.</p>\r\n<p>I've updated the 1.0.0.5 download to subversion 1.0.0.5.2. If you're still having issues, please consider downloading and installing the new version. If the problem persists, don't hesitate to let me know!</p>\r\n<p>&nbsp;</p>\r\n<p>Cheers,</p>\r\n<p>Evan</p>",
+    "PostedDate": "2010-09-16T01:32:38.293-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "494316",
+    "ThreadId": "226788",
+    "Html": "<p>hi Evans, thanks for this, and thanks to&nbsp;ploufs for the fix.<br>I downloaded the code last night and the latest code base seems to work fine now. thanks</p>",
+    "PostedDate": "2010-09-16T01:36:08.83-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

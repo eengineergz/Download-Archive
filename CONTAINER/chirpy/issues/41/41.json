@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "This feature is available in last code source.\n\nIn setting have item google closure compiler",
+    "ClosedDate": "2010-10-01T16:08:25.98-07:00",
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "after you change a js files many times in an error appear:\r\n\"Too many compiles performed recently. Try again later\"\r\n\r\nthis is due to the limitation of google api.\r\nIt happened to me a couple of times, nothing so frustrating, but it would be nice if you could implement the minify feature using the offline version of closure...\r\n\r\nhttp://code.google.com/closure/compiler/docs/gettingstarted_app.html",
+    "LastUpdatedDate": "2010-10-04T09:19:59.973-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-10-01T08:13:04.333-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "google closure limit - Too many compiles performed recently. Try again later",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 41
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "you are the best ! :)",
+      "PostedDate": "2010-10-04T09:19:59.973-07:00",
+      "Id": 16670
+    }
+  ]
+}

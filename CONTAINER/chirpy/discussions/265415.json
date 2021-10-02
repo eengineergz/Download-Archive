@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "643315",
+    "ThreadId": "265415",
+    "Html": "\r\n<p>I've got JSHint running. The problem is, I don't know how to set the options for JSHint, or even to see what options are on by default.</p>\r\n<p>I tried the inline syntax (see below) but Chirpy seems to ignore that. Does anyone know how to set the options?</p>\r\n<pre><code><span>/*jshint evil: true, boss: true */</span></code></pre>\r\n<p>I asked this question on Stack Overflow but no one even looked at it. <a href=\"http://stackoverflow.com/questions/6713563/how-do-i-set-jshint-options-using-chirpy\">\r\nhttp://stackoverflow.com/questions/6713563/how-do-i-set-jshint-options-using-chirpy</a></p>\r\n",
+    "PostedDate": "2011-07-16T12:57:58.87-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "656586",
+    "ThreadId": "265415",
+    "Html": "<p>Config screen for JsHint is now add.</p>\r\n<p><a href=\"http://chirpy.codeplex.com/SourceControl/changeset/changes/fd920b4a693a\">http://chirpy.codeplex.com/SourceControl/changeset/changes/fd920b4a693a</a></p>",
+    "PostedDate": "2011-08-11T07:51:41.623-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

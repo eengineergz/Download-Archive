@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "Since installing the Chirpy add-in (although the add-in itself works great) every time I open my solution now, my Web Application (in which a chirpy config file is present) gets checked out from TFS. I assume this would also be the case in other source control systems, but no changes are made to the project, it simply gets checked out. Its not a big deal but a minor headache none-the-less.",
+    "LastUpdatedDate": "2012-06-21T04:39:20.653-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-05-27T00:57:03.06-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "TFS Check-Out of Web Application on Opening Solution",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 11,
+    "Id": 82
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Same here!",
+      "PostedDate": "2012-03-01T07:21:59.483-08:00",
+      "Id": 56916
+    }
+  ]
+}

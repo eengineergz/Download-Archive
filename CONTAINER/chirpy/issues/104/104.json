@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "Visual Studio 2010 jsHint throw an \"Error in jsHint...\".\r\nI've understood that the update path in file \"C:\\Users\\[username]\\AppData\\Local\\Microsoft\\Windows\\http___jshint.com_jshint.js\" is wrong.\r\nThe corret path should be \"http://www.jshint.com/src/js/jshint.js\"\r\n\r\nIs it possible to fix it?\r\nI've got this error very often, at least one time a day.\r\nThanks in advance.",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-10-20T02:06:35.627-07:00",
+    "Status": {
+      "Name": "Active",
+      "Id": 2
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "jsHint wrong update path, please fix ASAP",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 104
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Test with last version (source code) or ver 2.03 (http://chirpy.codeplex.com/releases/view/78571).\n\nProbably solve your problem.",
+      "PostedDate": "2011-12-31T18:08:15.21-08:00",
+      "Id": 51863
+    }
+  ]
+}

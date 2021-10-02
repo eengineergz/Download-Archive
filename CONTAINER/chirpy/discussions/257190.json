@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "610879",
+    "ThreadId": "257190",
+    "Html": "\r\n<p>I'm considering creating one and I just wanted to know if anyone else thinks it's worth it.</p>\r\n<p>Cheers</p>\r\n",
+    "PostedDate": "2011-05-11T05:10:19.413-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "612110",
+    "ThreadId": "257190",
+    "Html": "<p>Create fork.</p>\n<p>When work send pull request.</p>",
+    "PostedDate": "2011-05-12T18:32:38.12-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "625622",
+    "ThreadId": "257190",
+    "Html": "<p>I think that would be awesome</p>",
+    "PostedDate": "2011-06-09T13:42:32.62-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "654251",
+    "ThreadId": "257190",
+    "Html": "<p>+1 Here I would like Nuget.</p>",
+    "PostedDate": "2011-08-07T18:10:55.883-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "710551",
+    "ThreadId": "257190",
+    "Html": "<p>NuGet package (Dll only)</p>\r\n<p><a href=\"https://nuget.org/packages/ChirpyDllOnly\">https://nuget.org/packages/ChirpyDllOnly</a></p>",
+    "PostedDate": "2011-12-11T10:00:34.703-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "804645",
+    "ThreadId": "257190",
+    "Html": "<p>How can I make use of this NuGet package since it's DLLL only? Right now I'm using VS 11 Express Beta for Web and unfortunately the Express version doesn't have Add In support! :(</p>",
+    "PostedDate": "2012-03-02T13:09:05.13-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "804700",
+    "ThreadId": "257190",
+    "Html": "<p>VS 11 include&nbsp;bundling&nbsp;and minification (framework 4.5)</p>\n<p><a href=\"http://www.asp.net/vnext/overview/whitepapers/whats-new#_Toc318097384\">http://www.asp.net/vnext/overview/whitepapers/whats-new#_Toc318097384</a></p>\n<p>Other solution use Chirpy console app.</p>",
+    "PostedDate": "2012-03-02T15:18:09.467-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "804736",
+    "ThreadId": "257190",
+    "Html": "<p>Yeah. I went the console app direction. I'm using .NET 4.0...</p>",
+    "PostedDate": "2012-03-02T16:47:37.407-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "GoogleClosureJavaPath= java bin path",
+    "ClosedDate": "2011-12-02T18:19:46.703-08:00",
+    "CommentCount": 4,
+    "Custom": null,
+    "Description": "We would love to not have to install the extension on each machine, as it's just one more thing to do. I currently have Chirpy set as a post-build task in our solution, but it still uses the non-local Google Closure service, and we've been getting rate limited.\r\n\r\nIs there a way to tell the console version of Chirpy to use offline google closure compiler?\r\n\r\nIt seems to me that the console app should have all the functionality of the extension, and that the extension should just forward commands to the console app...",
+    "LastUpdatedDate": "2011-12-05T00:22:09.45-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-02-22T16:20:25.137-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "no way to enable offline google closure compilation from the command line (console app)",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 58
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "All chirpy setting save in registry.\n\nGo to windows registry\nHKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\VisualStudio\\10.0\\Chirp\\\nitem GoogleClosureOffline\nSet False or True",
+      "PostedDate": "2011-02-27T16:28:18.387-08:00",
+      "Id": 29710
+    },
+    {
+      "Message": "Does it look in the console app's working directory for the compiler.jar file, or does the path to that need to be specified as well?",
+      "PostedDate": "2011-02-28T07:58:14.377-08:00",
+      "Id": 29736
+    },
+    {
+      "Message": "Hi,\nIm having some issues with the offline compiler, it doesn't seem to work. I've set GoogleClosureOffline=True, put compiler.jar in in the folder with chirpy.exe and the command gets run from that folder. When Im connected to the internet, it run's fine, but when I disconnect internet I get this message: \n..\\..\\path\\folder\\file.chirp.js(0,0)Java error : System.InvalidOperationException: Cannot start process because a file name has not been provided.\n   at System.Diagnostics.Process.Start()\n   at System.Diagnostics.Process.Start(ProcessStartInfo startInfo)\n   at System.Diagnostics.Process.Start(String fileName, String arguments)\n   at Zippy.Chirp.GoogleClosureOfflineCompiler.Compress(String fileName, ClosureCompilerCompressMode compressMode, Action`4 onError, IList`1 ReferencePathsOrUrls) in C:\\Users\\enagle\\Desktop\\Chirpy 3211\\Engines\\GoogleClosureOfflineCompiler.cs:line 36\n\nWhen I set GoogleClosureJavaPath=C:\\dev\\Scripts\\chirpy\\compiler.jar it just opens the .jar file in winrar... Do I need to add something to that command?\n\nWhat to do? :-)",
+      "PostedDate": "2011-12-02T07:00:15.307-08:00",
+      "Id": 50061
+    },
+    {
+      "Message": "great, thanks!",
+      "PostedDate": "2011-12-05T00:22:09.45-08:00",
+      "Id": 50191
+    }
+  ]
+}

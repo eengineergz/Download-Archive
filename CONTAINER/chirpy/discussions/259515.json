@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "620248",
+    "ThreadId": "259515",
+    "Html": "\r\n<p>hi, I'm new to this project and web apps performance.</p>\r\n<p>I have been reading since morning <a href=\"http://www.weirdlover.com/\">http://www.weirdlover.com</a>&nbsp;starting from caching images to caching js/css to caching aspx.</p>\r\n<p>later I found chirpy and read about it as well.</p>\r\n<p>I would appreciate if someone could explain to me how the whole thing fits together.</p>\r\n<p>Today if i wish to implement performance in my web app,where do I start, do I start with chirpy and minify my js, css files.&nbsp;</p>\r\n<p>Then do i use Zippy&nbsp;to cache them along with images and aspx pages (I'm still using mvc2)&nbsp;</p>\r\n<p>&nbsp;as in&nbsp;http://www.weirdlover.com/2010/05/11/more-better-harder-zippy-cache-controller-in-asp-net-mvc/.</p>\r\n<p>or did I miss something?</p>\r\n<p>Thanks&nbsp;</p>\r\n<p>arnab</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2011-05-30T04:07:24.287-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "620465",
+    "ThreadId": "259515",
+    "Html": "<p>Sprite and Image Optimization Framework</p>\n<p>http://aspnet.codeplex.com/releases/view/50140</p>",
+    "PostedDate": "2011-05-30T14:48:25.79-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

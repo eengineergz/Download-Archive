@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Same issue\nhttp://chirpy.codeplex.com/workitem/60",
+    "ClosedDate": "2011-03-12T09:42:20.793-08:00",
+    "CommentCount": 2,
+    "Custom": null,
+    "Description": "When in the regional settings of the computer the decimal symbol is set to , (for example in the Netherlands) Chirpy generates a comma instead of a dot in decimals when minifying javascript with for example the YUI engine. I fixed the problem with this:\r\n\r\nSystem.Threading.Thread.CurrentThread.CurrentUICulture = CultureInfo.InvariantCulture;\r\n            System.Threading.Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture; \r\n\r\nin void OnConnection(object application, ext_ConnectMode connectMode, object addInInst, ref Array custom) of Chirp.cs. I don't know if this the best location for it, but not commas are generated anymore...",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-03-04T05:18:07.16-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Chirpy and regional settings",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 61
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Same error with version 2 ?",
+      "PostedDate": "2011-03-07T15:13:49.63-08:00",
+      "Id": 30132
+    },
+    {
+      "Message": "Yes, I do have the same problem on version 2. I did Mercurial checkout on the 4th of March.",
+      "PostedDate": "2011-03-08T01:02:08.48-08:00",
+      "Id": 30154
+    }
+  ]
+}

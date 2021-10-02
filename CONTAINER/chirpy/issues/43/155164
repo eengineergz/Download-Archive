@@ -1,0 +1,15 @@
+diff -r e3e0a70c05e1 Settings.cs
+--- a/Settings.cs	Wed Oct 06 09:17:08 2010 +1100
++++ b/Settings.cs	Wed Oct 06 09:39:03 2010 +1100
+@@ -97,9 +97,9 @@
+ 
+                     Settings.GoogleClosureJavaPath = Convert.ToString(regKey.GetValue("GoogleClosureJavaPath", string.Empty));
+                     Settings.GoogleClosureOffline = Convert.ToBoolean(regKey.GetValue("GoogleClosureOffline", false));
++                }
+ 
+-                    LoadExtensions();
+-                }
++                LoadExtensions();
+             } catch (Exception ex) {
+                 Debug.WriteLine("Chrip - failed to load: " + ex.Message);
+             } finally {

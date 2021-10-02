@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "solve in changeset : cc5bc0a2c7ef\nhttp://chirpy.codeplex.com/SourceControl/changeset/changes/cc5bc0a2c7ef",
+    "ClosedDate": "2011-10-10T10:23:26.953-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I'm building from source and it fails due to Zippy.Chirp.Yui namespace missing.\r\n\r\nThe problem is CssSettings.cs and JsSettings.cs files are not included in project.",
+    "LastUpdatedDate": "2011-10-10T10:23:26.953-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-10-05T23:13:28.457-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Yui folder is not included in project",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 100
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

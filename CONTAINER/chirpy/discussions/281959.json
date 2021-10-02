@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "708067",
+    "ThreadId": "281959",
+    "Html": "\r\n<p>Hi,</p>\r\n<p>We have recently started using the&nbsp;Console Chirpy, but it now appears that .less files only go through the&nbsp;LessEngine, but not through the&nbsp;YuiCssEngine. I have tried with file names .chirp.less and .yui.less, but in both cases files are not\r\n minified.&nbsp;</p>\r\n<p></p>\r\n<pre>YuiCssEngine -- ..\\res\\css\\Currency.chirp.css\r\nYuiCssEngine -- ..\\res\\css\\customIE6.chirp.css\r\nYuiCssEngine -- ..\\res\\css\\customIE7.chirp.css\r\nYuiCssEngine -- ..\\res\\css\\jquery-ui-1.8.13.custom.chirp.css\r\nYuiCssEngine -- ..\\res\\css\\realtime-calendar.chirp.css\r\nLessEngine -- ..\\res\\css\\corpzone.chirp.less // =&gt; output unminified 'corpzone.css'\r\nLessEngine -- ..\\res\\css\\Generic2.chirp.less // =&gt; output unminified 'Generic2.css'</pre>\r\n<p></p>\r\n<p>Because the file name is rename and .chirp is removed, I also can't put 2 lines below each other to minify after the LessEngine.&nbsp;</p>\r\n<p>How can I change this so that it does minify?</p>\r\n<p>Thanks!</p>\r\n",
+    "PostedDate": "2011-12-06T04:54:46.637-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "710151",
+    "ThreadId": "281959",
+    "Html": "<p>Changeset&nbsp;<a id=\"ChangeSetLink8\" title=\"View change set d217df7ad4c3\" href=\"http://chirpy.codeplex.com/SourceControl/changeset/changes/d217df7ad4c3\">d217df7ad4c3</a>&nbsp;</p>\r\n<p>Fix for LessEngine; it should always output expanded CSS.</p>\r\n<p>Probably fix your problem.</p>",
+    "PostedDate": "2011-12-09T16:41:26.597-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "710894",
+    "ThreadId": "281959",
+    "Html": "<p>It is already spitting out expanded CSS, but I'm looking for the minimized stuff... We're using the console version via a build script.&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>I have created a work around now, by manually running the YUI CSS engine after the Chirpy stuff for a particular file. But it's is not ideal in the case that new files get added.</p>",
+    "PostedDate": "2011-12-12T05:57:28.657-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

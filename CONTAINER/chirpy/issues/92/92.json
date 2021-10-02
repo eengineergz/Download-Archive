@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "http://groups.google.com/group/dotless/browse_thread/thread/25f273c7894672f0/e2db5de1f7c1ec87?lnk=gst&q=filter#e2db5de1f7c1ec87",
+    "ClosedDate": "2011-08-10T11:35:48.363-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I receive an error when using the filter property in a chirp.less file like so:\r\n\r\ndiv.someClass {\r\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#aaaaaa', endColorstr='#000000');\r\n}\r\n\r\nThe error I'm receiving is:\r\n\r\nError 54 Expected '}' on line 2 in file 'C:\\Users\\Administrator\\Projects\\Project\\Content\\test.chirp.less': [1]: body { [2]: filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#aaaaaa', endColorstr='#000000'); ----^ [3]: } C:\\Users\\Administrator\\Projects\\Project\\Content\\test.chirp.less 2 5 Project\r\n\r\nThis error causes the .css file to not be generated.",
+    "LastUpdatedDate": "2011-08-10T11:35:48.363-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-08-09T11:03:08.633-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Chirpy LESS erroring on \"filter\" css property",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 92
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

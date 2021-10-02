@@ -1,0 +1,582 @@
+[
+  {
+    "Id": "215565",
+    "Title": "When does it do its magic?",
+    "LatestDate": "2010-06-10T10:53:44.173-07:00"
+  },
+  {
+    "Id": "217629",
+    "Title": "Convert any image into a base64 string in CSS",
+    "LatestDate": "2010-12-08T15:38:56.77-08:00"
+  },
+  {
+    "Id": "218156",
+    "Title": ".less @import",
+    "LatestDate": "2010-07-16T17:09:29.633-07:00"
+  },
+  {
+    "Id": "220816",
+    "Title": "Crash on launch with error 80131515",
+    "LatestDate": "2010-07-22T16:56:11.35-07:00"
+  },
+  {
+    "Id": "221222",
+    "Title": "mash up files questions?",
+    "LatestDate": "2010-07-28T05:49:27.8-07:00"
+  },
+  {
+    "Id": "222423",
+    "Title": "CSS3 and minify error",
+    "LatestDate": "2010-08-04T02:53:37.843-07:00"
+  },
+  {
+    "Id": "222635",
+    "Title": "Sprites/Base64 Released by MS",
+    "LatestDate": "2010-08-05T14:09:34.13-07:00"
+  },
+  {
+    "Id": "222917",
+    "Title": "Zippy?  Chirpy?  Which is it?",
+    "LatestDate": "2010-09-09T11:52:26.867-07:00"
+  },
+  {
+    "Id": "223383",
+    "Title": "Is there a way to run Chirpy from the Command Line?",
+    "LatestDate": "2010-08-12T14:33:46.773-07:00"
+  },
+  {
+    "Id": "223446",
+    "Title": "Is there a \"Run on build\" for .chirp.config files ?",
+    "LatestDate": "2010-08-13T04:20:21.377-07:00"
+  },
+  {
+    "Id": "226591",
+    "Title": "Inline minification - how to ignore jquery.tmpl script blocks?",
+    "LatestDate": "2011-02-03T09:07:43.07-08:00"
+  },
+  {
+    "Id": "226788",
+    "Title": "chirpy & VS2010",
+    "LatestDate": "2010-09-16T01:36:08.83-07:00"
+  },
+  {
+    "Id": "226807",
+    "Title": "Compressing aspx and ascx files?",
+    "LatestDate": "2010-09-16T01:33:56.247-07:00"
+  },
+  {
+    "Id": "227730",
+    "Title": "Running multiple T4 templates",
+    "LatestDate": "2010-09-20T07:04:27.72-07:00"
+  },
+  {
+    "Id": "228429",
+    "Title": "Not work on proxy",
+    "LatestDate": "2010-09-24T15:45:46.147-07:00"
+  },
+  {
+    "Id": "229148",
+    "Title": "No files are being generated",
+    "LatestDate": "2010-10-19T23:03:49.657-07:00"
+  },
+  {
+    "Id": "230171",
+    "Title": "Getting error when starting VS 2010",
+    "LatestDate": "2010-10-12T06:11:36-07:00"
+  },
+  {
+    "Id": "232543",
+    "Title": "Re-generate all minified files on build/deploy?",
+    "LatestDate": "2012-12-25T13:00:22.3-08:00"
+  },
+  {
+    "Id": "232681",
+    "Title": "1.0.0.5 crashes on VS 2008 Load",
+    "LatestDate": "2010-10-30T12:51:45.857-07:00"
+  },
+  {
+    "Id": "233385",
+    "Title": "Automatically running T4MVC?",
+    "LatestDate": "2011-05-17T01:03:17.903-07:00"
+  },
+  {
+    "Id": "233721",
+    "Title": "can not procress with chinese？",
+    "LatestDate": "2010-11-06T00:10:17.86-07:00"
+  },
+  {
+    "Id": "236442",
+    "Title": "CSS is working but JS is not",
+    "LatestDate": "2010-12-03T12:57:10.743-08:00"
+  },
+  {
+    "Id": "236467",
+    "Title": "Feature Requests: For an already amazing product.",
+    "LatestDate": "2010-11-29T19:48:44.13-08:00"
+  },
+  {
+    "Id": "238545",
+    "Title": "rewrite url path in css",
+    "LatestDate": "2011-01-10T13:12:49.477-08:00"
+  },
+  {
+    "Id": "238923",
+    "Title": "Need help to create new engine",
+    "LatestDate": "2011-01-02T16:17:21.057-08:00"
+  },
+  {
+    "Id": "240116",
+    "Title": "Move to GitHub",
+    "LatestDate": "2011-01-10T13:07:14.457-08:00"
+  },
+  {
+    "Id": "240314",
+    "Title": "T4MVC Generated Code and *.chirp.aspx",
+    "LatestDate": "2011-01-03T12:39:01.677-08:00"
+  },
+  {
+    "Id": "240326",
+    "Title": "Assume minify in .chirp.config",
+    "LatestDate": "2011-01-10T13:03:26.043-08:00"
+  },
+  {
+    "Id": "241652",
+    "Title": "Google Closure - extern files",
+    "LatestDate": "2011-01-21T07:05:31.337-08:00"
+  },
+  {
+    "Id": "242513",
+    "Title": "The latest release bits are over 4 months old",
+    "LatestDate": "2011-03-12T10:04:24.367-08:00"
+  },
+  {
+    "Id": "243351",
+    "Title": "ability to disable all compression",
+    "LatestDate": "2011-04-21T16:40:49.83-07:00"
+  },
+  {
+    "Id": "245130",
+    "Title": "Visual Studio extension instead of msi",
+    "LatestDate": "2011-02-08T15:40:08.783-08:00"
+  },
+  {
+    "Id": "245578",
+    "Title": "Possibility to add build version in generated file",
+    "LatestDate": "2011-03-12T09:57:13.5-08:00"
+  },
+  {
+    "Id": "246702",
+    "Title": "Minify HTML contained in the view",
+    "LatestDate": "2011-06-01T00:31:12.52-07:00"
+  },
+  {
+    "Id": "247769",
+    "Title": "Skipping generated files when using Find in VS?",
+    "LatestDate": "2011-06-01T04:00:51.697-07:00"
+  },
+  {
+    "Id": "248255",
+    "Title": "Changelog?",
+    "LatestDate": "2011-03-06T15:02:15.337-08:00"
+  },
+  {
+    "Id": "248918",
+    "Title": "Problem with Install on VS 2010 (64 bit)",
+    "LatestDate": "2011-03-19T05:28:02.307-07:00"
+  },
+  {
+    "Id": "250256",
+    "Title": "How to Install for \"All Users\"",
+    "LatestDate": "2011-03-19T08:22:10.477-07:00"
+  },
+  {
+    "Id": "252657",
+    "Title": "Multiple .less files with a single config",
+    "LatestDate": "2011-04-05T21:36:04.21-07:00"
+  },
+  {
+    "Id": "253288",
+    "Title": "WebMatrix",
+    "LatestDate": "2011-04-10T08:13:02.65-07:00"
+  },
+  {
+    "Id": "254187",
+    "Title": "Remove console statements option",
+    "LatestDate": "2011-04-21T16:40:00.023-07:00"
+  },
+  {
+    "Id": "254629",
+    "Title": "Negative patterns in  folder's pattern",
+    "LatestDate": "2011-04-21T20:06:50.85-07:00"
+  },
+  {
+    "Id": "254839",
+    "Title": "Combine files in folder using chirp.config works in v1.0.0.5 but not v2.0",
+    "LatestDate": "2011-04-21T16:16:38.867-07:00"
+  },
+  {
+    "Id": "257190",
+    "Title": "Is there interest in creating a nuget package?",
+    "LatestDate": "2012-03-02T16:47:37.407-08:00"
+  },
+  {
+    "Id": "257210",
+    "Title": "Joining",
+    "LatestDate": "2011-05-12T18:33:22.783-07:00"
+  },
+  {
+    "Id": "257484",
+    "Title": "Saving CoffeeScript does nothing",
+    "LatestDate": "2011-08-21T09:27:56.39-07:00"
+  },
+  {
+    "Id": "258114",
+    "Title": "Using the latest version of DotLess etc.",
+    "LatestDate": "2011-05-18T15:33:34.853-07:00"
+  },
+  {
+    "Id": "259515",
+    "Title": "Newbie Question",
+    "LatestDate": "2011-05-30T14:48:25.79-07:00"
+  },
+  {
+    "Id": "260826",
+    "Title": "Feature Request - SASS Support",
+    "LatestDate": "2011-06-19T07:16:05.267-07:00"
+  },
+  {
+    "Id": "261346",
+    "Title": "Google Closure Advanced Compilation Support",
+    "LatestDate": "2011-06-24T16:14:55.947-07:00"
+  },
+  {
+    "Id": "262017",
+    "Title": "Problem with less compiler",
+    "LatestDate": "2011-06-24T15:13:12.767-07:00"
+  },
+  {
+    "Id": "262421",
+    "Title": "appending .min to file names",
+    "LatestDate": "2011-06-24T14:52:41.16-07:00"
+  },
+  {
+    "Id": "262804",
+    "Title": "Please remove. Sorry.",
+    "LatestDate": "2011-06-25T17:34:33.737-07:00"
+  },
+  {
+    "Id": "264662",
+    "Title": "t4mvc handling minified js and css files generated with chirpy",
+    "LatestDate": "2011-08-09T11:02:27.167-07:00"
+  },
+  {
+    "Id": "264769",
+    "Title": "Scriptmanager scriptmode (using .debug.js and minified files)",
+    "LatestDate": "2011-08-09T11:04:52.113-07:00"
+  },
+  {
+    "Id": "265300",
+    "Title": "Right-click minify?",
+    "LatestDate": "2011-07-15T17:15:07.127-07:00"
+  },
+  {
+    "Id": "265415",
+    "Title": "How do I set JSHint options?",
+    "LatestDate": "2011-08-11T07:51:41.623-07:00"
+  },
+  {
+    "Id": "265600",
+    "Title": "Problem With Parametric Nested Mixins?",
+    "LatestDate": "2011-08-10T11:23:38.197-07:00"
+  },
+  {
+    "Id": "266099",
+    "Title": "What's new/fixed in 2.0.1",
+    "LatestDate": "2011-07-21T14:58:32.287-07:00"
+  },
+  {
+    "Id": "266418",
+    "Title": "Turn of minify",
+    "LatestDate": "2011-08-16T04:19:47.41-07:00"
+  },
+  {
+    "Id": "266541",
+    "Title": "Move minified files to a different folder and keep name as is",
+    "LatestDate": "2011-07-25T20:12:48.26-07:00"
+  },
+  {
+    "Id": "268691",
+    "Title": "Problems with CSSLint",
+    "LatestDate": "2011-10-07T18:32:30.027-07:00"
+  },
+  {
+    "Id": "269800",
+    "Title": "Error in vs2008",
+    "LatestDate": "2011-09-09T14:06:25.96-07:00"
+  },
+  {
+    "Id": "270422",
+    "Title": "Not working VS 2010",
+    "LatestDate": "2011-10-07T18:30:40.35-07:00"
+  },
+  {
+    "Id": "271726",
+    "Title": "Closure Advanced option selected, but whitespace-only performed",
+    "LatestDate": "2011-09-09T01:20:03.753-07:00"
+  },
+  {
+    "Id": "271747",
+    "Title": "Minify files within a folder each one to separate file",
+    "LatestDate": "2011-09-07T04:29:58.487-07:00"
+  },
+  {
+    "Id": "272513",
+    "Title": "Chirpy with other project types",
+    "LatestDate": "2011-11-14T14:31:28.667-08:00"
+  },
+  {
+    "Id": "273249",
+    "Title": "Combine/Mash from Console",
+    "LatestDate": "2011-09-22T15:54:03.917-07:00"
+  },
+  {
+    "Id": "273880",
+    "Title": "JSHINT is not defined",
+    "LatestDate": "2012-08-08T20:53:25.27-07:00"
+  },
+  {
+    "Id": "274248",
+    "Title": "Combining files with MS Minifier",
+    "LatestDate": "2011-12-30T13:16:40.347-08:00"
+  },
+  {
+    "Id": "275118",
+    "Title": "Less not being compiled",
+    "LatestDate": "2011-11-09T11:09:54.563-08:00"
+  },
+  {
+    "Id": "276261",
+    "Title": "Downloads",
+    "LatestDate": "2011-10-19T14:10:32.837-07:00"
+  },
+  {
+    "Id": "276275",
+    "Title": "Mashing sometimes just stops working..",
+    "LatestDate": "2011-11-18T06:08:12.23-08:00"
+  },
+  {
+    "Id": "277431",
+    "Title": "Upgrading dotLess",
+    "LatestDate": "2011-11-04T16:17:55.977-07:00"
+  },
+  {
+    "Id": "281954",
+    "Title": "Upgrading components without updating Chirpy",
+    "LatestDate": "2011-12-29T08:41:45.343-08:00"
+  },
+  {
+    "Id": "281959",
+    "Title": "Console Chirpy does not minify .less files",
+    "LatestDate": "2011-12-12T05:57:28.657-08:00"
+  },
+  {
+    "Id": "282133",
+    "Title": "Release a new build",
+    "LatestDate": "2011-12-11T14:05:45.467-08:00"
+  },
+  {
+    "Id": "282268",
+    "Title": "Build Tasks",
+    "LatestDate": "2011-12-09T16:30:10.357-08:00"
+  },
+  {
+    "Id": "283079",
+    "Title": "Using Chirpy with Razor Syntax",
+    "LatestDate": "2012-03-11T10:10:08.567-07:00"
+  },
+  {
+    "Id": "283116",
+    "Title": "System.Xml.XmlException: Data at the root level is invalid. Line 1, position 1.",
+    "LatestDate": "2011-12-31T13:02:58.903-08:00"
+  },
+  {
+    "Id": "283493",
+    "Title": "[Feature] Support \"Eco: Embedded CoffeeScript templates\"",
+    "LatestDate": "2011-12-29T07:24:13.757-08:00"
+  },
+  {
+    "Id": "284472",
+    "Title": "MS Ajax Minifier 4.41 is out",
+    "LatestDate": "2011-12-29T07:23:13.127-08:00"
+  },
+  {
+    "Id": "284633",
+    "Title": "Support for VS11?",
+    "LatestDate": "2012-06-21T14:49:23.607-07:00"
+  },
+  {
+    "Id": "284794",
+    "Title": "Chirpy doesn't work anymore for generating debug file",
+    "LatestDate": "2012-01-04T09:58:35.633-08:00"
+  },
+  {
+    "Id": "284884",
+    "Title": "Why don't work?",
+    "LatestDate": "2012-01-14T17:20:29.58-08:00"
+  },
+  {
+    "Id": "286430",
+    "Title": "Chirpy & Team Foundation Server",
+    "LatestDate": "2012-01-18T07:03:42.913-08:00"
+  },
+  {
+    "Id": "290449",
+    "Title": "Disable chirpy support for .less files",
+    "LatestDate": "2012-02-19T15:42:16.827-08:00"
+  },
+  {
+    "Id": "291024",
+    "Title": "minified arrows went missing...",
+    "LatestDate": "2012-02-11T14:29:56.517-08:00"
+  },
+  {
+    "Id": "303318",
+    "Title": "Mash file isn't parsed..",
+    "LatestDate": "2012-02-20T00:13:46.897-08:00"
+  },
+  {
+    "Id": "328184",
+    "Title": "Not getting syntax highlighting for *.chirp.less files",
+    "LatestDate": "2012-02-22T14:36:42.113-08:00"
+  },
+  {
+    "Id": "328958",
+    "Title": "Mashing entire folders does not work",
+    "LatestDate": "2012-02-19T16:04:45.497-08:00"
+  },
+  {
+    "Id": "340418",
+    "Title": "Expected output files of mashed content & ClosureCompilerCompressMode",
+    "LatestDate": "2012-02-26T11:33:59.043-08:00"
+  },
+  {
+    "Id": "344588",
+    "Title": "Can't get t4 \"run on build\" to work",
+    "LatestDate": "2012-02-27T00:52:32.1-08:00"
+  },
+  {
+    "Id": "344827",
+    "Title": "Error on VS2008 on Windows 7",
+    "LatestDate": "2012-09-03T21:06:24.717-07:00"
+  },
+  {
+    "Id": "348025",
+    "Title": "How to change myfilename.chirp.coffee to just myfilename.coffee?",
+    "LatestDate": "2012-03-11T07:13:41.167-07:00"
+  },
+  {
+    "Id": "348640",
+    "Title": "Chirpy leaves context menu items in VS after uninstalling",
+    "LatestDate": "2012-03-18T09:37:40.263-07:00"
+  },
+  {
+    "Id": "349352",
+    "Title": "Recent Pull Request",
+    "LatestDate": "2012-03-27T11:31:34.243-07:00"
+  },
+  {
+    "Id": "349364",
+    "Title": "DotLess Ampersand Support ",
+    "LatestDate": "2012-04-06T11:25:02.237-07:00"
+  },
+  {
+    "Id": "351504",
+    "Title": "New CSS3 attribute 'animation'",
+    "LatestDate": "2012-05-24T03:54:34.75-07:00"
+  },
+  {
+    "Id": "352701",
+    "Title": "debug javascript not being created",
+    "LatestDate": "2012-04-20T16:14:16.657-07:00"
+  },
+  {
+    "Id": "354111",
+    "Title": "Localized script files and ScriptManager",
+    "LatestDate": "2012-05-20T07:59:17.583-07:00"
+  },
+  {
+    "Id": "354123",
+    "Title": "Inline minification for Razor Views will turn CRLF to LF",
+    "LatestDate": "2012-05-20T07:59:58.43-07:00"
+  },
+  {
+    "Id": "357317",
+    "Title": "2.05: Chrip - failed to load: CssType=Object reference not set to an instance of an object.",
+    "LatestDate": "2012-06-02T10:25:49-07:00"
+  },
+  {
+    "Id": "357747",
+    "Title": "VS 2010 Mindscape Web Workbench Intellisense and Highlighting",
+    "LatestDate": "2012-06-01T17:32:20.897-07:00"
+  },
+  {
+    "Id": "358564",
+    "Title": "Dependencies in .less-files (and maybe others)",
+    "LatestDate": "2012-07-31T11:20:02.023-07:00"
+  },
+  {
+    "Id": "362187",
+    "Title": "CoffeeScript Switch Statements",
+    "LatestDate": "2012-07-05T14:21:25.97-07:00"
+  },
+  {
+    "Id": "390601",
+    "Title": "Is there a way to disable the output of a single less file?",
+    "LatestDate": "2012-08-07T09:33:02.557-07:00"
+  },
+  {
+    "Id": "392129",
+    "Title": "Compiler.jar not correct install",
+    "LatestDate": "2012-08-18T01:27:28.94-07:00"
+  },
+  {
+    "Id": "397948",
+    "Title": "Typescript support",
+    "LatestDate": "2012-10-03T15:52:14.427-07:00"
+  },
+  {
+    "Id": "400218",
+    "Title": "Minifier options",
+    "LatestDate": "2012-10-23T11:01:36.21-07:00"
+  },
+  {
+    "Id": "400220",
+    "Title": "Source Maps",
+    "LatestDate": "2012-10-21T15:30:05.81-07:00"
+  },
+  {
+    "Id": "401545",
+    "Title": "New \"beta\" version?",
+    "LatestDate": "2012-11-19T22:09:26.257-08:00"
+  },
+  {
+    "Id": "401740",
+    "Title": "Empty javascript generated",
+    "LatestDate": "2012-11-09T17:11:04.813-08:00"
+  },
+  {
+    "Id": "428376",
+    "Title": "VS 2012 and CSS, does it work?",
+    "LatestDate": "2013-02-05T07:52:29.863-08:00"
+  },
+  {
+    "Id": "463550",
+    "Title": "Is Chirpy project dead? ",
+    "LatestDate": "2014-04-04T10:39:04.317-07:00"
+  },
+  {
+    "Id": "463945",
+    "Title": "Chirpy with dotless 1.3.1.0 support in GitHub",
+    "LatestDate": "2013-10-28T11:49:37.307-07:00"
+  }
+]

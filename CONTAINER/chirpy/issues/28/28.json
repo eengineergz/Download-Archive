@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2010-09-15T16:20:49.16-07:00",
+    "CommentCount": 3,
+    "Custom": null,
+    "Description": "When trying to install chirpy with my \"My Documents\" folder located on a network path (according to domain group policy), it fails with an error stating:\r\n\r\nCould not access network location \\\\<remote machine name>\\Shares\\Users\\<user name>\\My Documents\\\\Visual Studio 2010\\AddIns.\r\n\r\nNOTE: the double backslash after the \"My Documents\" section of the path.\r\n\r\nOtherwise I have had no problems installing to a local \"My Documents\" folder.",
+    "LastUpdatedDate": "2010-09-16T02:02:10.813-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-08-23T09:40:13.947-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Fix installation to network path",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 5,
+    "Id": 28
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I can install it just fine, but on Visual Studio 2010 launch I get this error referring a UNC path, which I guess might be related as the documents folder here is also redirected to the IP that appears:\n\nThe Add-in 'Zippy.Chirp' failed to load or caused an exception.\nWould you like to remove this Add-in?\nIf you choose yes, the file it was loaded from, '\\\\192.168.0.1\\users$\\username\\Visual Studio 2010\\Addins\\Zippy.Chirp.Addin', will be renamed.\n\nError Message: <Unknown Error>\nError number: 80131515",
+      "PostedDate": "2010-08-25T07:00:09.373-07:00",
+      "Id": 15511
+    },
+    {
+      "Message": "Has anyone tried any of these solutions?\nhttp://blog.tabsstudio.com/2010/06/23/running-add-ins-from-a-network-location-in-visual-studio-2010/",
+      "PostedDate": "2010-08-27T16:24:10.187-07:00",
+      "Id": 15580
+    },
+    {
+      "Message": "The solution of adding the following switch to the devenv.exe.config file in the blog post linked to by \"weirdlover\" worked for me.\n\n<configuration>\n   <runtime>\n      <loadFromRemoteSources enabled=\"true\"/>\n   </runtime>\n</configuration>",
+      "PostedDate": "2010-09-16T02:02:10.813-07:00",
+      "Id": 16095
+    }
+  ]
+}

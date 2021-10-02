@@ -1,0 +1,70 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "See http://chirpy.codeplex.com/SourceControl/changeset/changes/545c2664560a",
+    "ClosedDate": "2010-10-05T16:40:23.763-07:00",
+    "CommentCount": 6,
+    "Custom": null,
+    "Description": "Hi.\r\n\r\nI just downloaded the latest version of Chirpy. I add a new *.yui.js file but nothings happens. I see nothing in the output windows, no code-behind file, nothing.\r\n\r\nAm I missing something?",
+    "LastUpdatedDate": "2010-10-05T16:40:23.763-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-09-21T23:40:46.983-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "No codebehind files in VS2010 Windows Server 2008R2",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 3,
+    "Id": 38
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Same here, I downloaded v1.0.0.5.2, made not difference. Is there a setting in VS that needs enabling to make Chirpy work?",
+      "PostedDate": "2010-09-24T02:38:38.557-07:00",
+      "Id": 16379
+    },
+    {
+      "Message": "In visual studio menu :\ntools -­>add-in manager ...\nCheck add-in : chirpy",
+      "PostedDate": "2010-09-24T14:43:37.24-07:00",
+      "Id": 16407
+    },
+    {
+      "Message": "Chirpy is enabled in the add-in manger. Sometimes I also see some log in the output windows about YUIJsCompressor. But no code behind",
+      "PostedDate": "2010-09-25T00:03:34.907-07:00",
+      "Id": 16421
+    },
+    {
+      "Message": "Hey guys--\n\nSorry for the issue. We're still working out some of the kinks.\n\nA few quick questions:\n\nWhen you go to Tools > Add-In Manager, is Chirpy checked (both boxes)?\nWhen you open Documents\\Visual Studio 2010\\AddIns\\Zippy.AddIn, what info do you see?\nAre ANY of the extensions working (e.g. .whitespace.js, .chirp.css, .chirp.config, etc.)?\n\nI'm happy to help, so, if you want to troubleshoot further, I'd be happy to do it over e-mail, or via this forum.\n\nThanks!\nEvan\n",
+      "PostedDate": "2010-09-25T15:48:11.017-07:00",
+      "Id": 16432
+    },
+    {
+      "Message": "So for the records. I contacted weirlover but here are my details:\n\nIn the add-in manager only the first box is checked.\nI tried with some extension and none was working.\n",
+      "PostedDate": "2010-09-26T06:33:36.17-07:00",
+      "Id": 16441
+    },
+    {
+      "Message": "A new comp (64bit), and Chirpy doesnt work at all again. ",
+      "PostedDate": "2010-10-05T06:01:36.027-07:00",
+      "Id": 16684
+    }
+  ]
+}

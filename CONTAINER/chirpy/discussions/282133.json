@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "708767",
+    "ThreadId": "282133",
+    "Html": "\r\n<p>Could you please release the latest build? The current build from march is out of date and&nbsp;I've been trying for some time to build a version of Chirpy that works. It doesn't build out of the box and there are no build instructions.</p>\r\n<p>First off, ilmerge and 7za need to be installed and in the PATH before the build will succeed. No problem. Done.</p>\r\n<p>Now I can build, but i get several warnings about references.&nbsp;Nevertheless, it succeeds so I copy the dll into the Addin folder. The addin gets picked up by VS and is marked as enabled. But when I save any file which Chirpy should be watching I get\r\n nothing. The only output from Chirpy is &quot;Ready&quot; when VS starts.</p>\r\n<p>I'm using a fairly fresh install of 64bit Windows 7 and VS 2010.</p>\r\n",
+    "PostedDate": "2011-12-07T05:39:49.473-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "710148",
+    "ThreadId": "282133",
+    "Html": "<p>Warning reference :&nbsp;Chirpy use NuGet for package.</p>\n<p>Check last <a href=\"http://chirpy.codeplex.com/SourceControl/changeset/changes/e9a9a07d15e9\">changeset</a>&nbsp;solve error with post-build event</p>\n<p>Release new build when some issue fix :</p>\n<p>-<a href=\"http://chirpy.codeplex.com/workitem/103\">Problems with CSSLint (error new project)</a></p>\n<p>- ...</p>",
+    "PostedDate": "2011-12-09T16:35:08.223-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "710556",
+    "ThreadId": "282133",
+    "Html": "<p>New release :&nbsp;</p>\r\n<p><a href=\"http://chirpy.codeplex.com/releases/view/78571\">http://chirpy.codeplex.com/releases/view/78571</a></p>",
+    "PostedDate": "2011-12-11T10:18:04.67-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "710627",
+    "ThreadId": "282133",
+    "Html": "<p>Excellent. Thank you.</p>",
+    "PostedDate": "2011-12-11T14:05:45.467-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

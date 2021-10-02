@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2010-09-14T16:56:29.66-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "projectItem.ProjectItems is nothing",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "Chirpy to the XXXtreme (ver. 1.0.0.5)",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "High",
+      "Severity": 150,
+      "Id": 3
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-09-08T16:49:36.3-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Version 1.0.0.....5 don't work correctly in \"web site\" projet",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 32
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

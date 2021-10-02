@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "http://groups.google.com/group/dotless/browse_thread/thread/105932a913a5a49f",
+    "ClosedDate": "2011-06-28T15:44:02.37-07:00",
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": ".gradient(@color: #ddd, @start: -10%, @stop: 5%) {\r\n\t@start: lightness(@color, @start);\r\n\t@stop: lightness(@color, @stop);\r\n\t\r\n\tbackground: @color;\r\n\tbackground: -webkit-gradient(linear,\r\n\t    \t\t\tleft bottom,\r\n\t    \t\t\tleft top,\r\n\t    \t\t\tcolor-stop(0, @start),\r\n\t    \t\t\tcolor-stop(1, @stop));\r\n\tbackground: -moz-linear-gradient(center bottom,\r\n\t    \t\t\t@start 0%,\r\n\t    \t\t\t@stop 100%);\r\n}\r\n\r\n\r\n.gradient(#6f905e, -10%, 20%);\r\n\r\nIt should be syntax error or warning. But vs2010 crash.",
+    "LastUpdatedDate": "2011-06-28T15:44:02.37-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-05-29T21:55:29.587-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "appcrash when less file saving",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 83
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Line : LessParser.Parse(text, fullFileName).ToCSS(); throw System.StackOverflowException was unhandled\nError is in dotless engine.\n\nhttp://groups.google.com/group/dotless/browse_thread/thread/105932a913a5a49f",
+      "PostedDate": "2011-06-24T16:37:12.097-07:00",
+      "Id": 38265
+    }
+  ]
+}

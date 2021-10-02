@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "645738",
+    "ThreadId": "266099",
+    "Html": "\r\n<p>Do you have any release notes for the changes in 2.0.1 ??</p>\r\n",
+    "PostedDate": "2011-07-21T12:22:15.663-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "645740",
+    "ThreadId": "266099",
+    "Html": "<p>Hopefully issue <a href=\"http://chirpy.codeplex.com/workitem/62\">v2 no longer generating both minified and unminified version</a>&nbsp;has been fixed.</p>",
+    "PostedDate": "2011-07-21T12:24:26.483-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "645814",
+    "ThreadId": "266099",
+    "Html": "<p>Check comment in</p>\r\n<p><a href=\"http://chirpy.codeplex.com/SourceControl/list/changesets\">http://chirpy.codeplex.com/SourceControl/list/changesets</a></p>\r\n<p>&nbsp;</p>\r\n<p>- Fix : bug?: combobox items added repeatedly in Chirpy v2.0</p>\r\n<p>- Update xsd (update enumation MinifyType)</p>\r\n<p>- New config setting Options &gt; Chirpy &gt; Config &gt; checkbox \"show detail log\"</p>\r\n<p>- \"Root element not found\" error when creating chirp.config</p>\r\n<p>- Adding support for CSSLint</p>\r\n<p>- Fix for relative paths for files in a config c:\\test\\content\\plugin\\..\\script.js</p>\r\n<p>- ...</p>",
+    "PostedDate": "2011-07-21T14:58:32.287-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

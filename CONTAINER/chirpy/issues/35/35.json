@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2010-09-14T16:56:17.76-07:00",
+    "CommentCount": 4,
+    "Custom": null,
+    "Description": "Idk why, but chirp extensions doesn't work anymore...",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-09-12T17:55:07.463-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Stoped working ",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 3,
+    "Id": 35
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Chirpy version ?\nChangeset ?",
+      "PostedDate": "2010-09-13T14:58:49.94-07:00",
+      "Id": 16027
+    },
+    {
+      "Message": "Chirpy to the XXXtreme (ver. 1.0.0.5)\n\nI just realized that Chirp.js files are not processed any more, but .yui.js are\nsame for .chirp.css (.michaelash.css works)",
+      "PostedDate": "2010-09-14T08:43:33.087-07:00",
+      "Id": 16039
+    },
+    {
+      "Message": "I resolved issue by downgrade to 1.0.0.4\n",
+      "PostedDate": "2010-09-14T11:20:46.507-07:00",
+      "Id": 16042
+    },
+    {
+      "Message": "Fix in changeset : 53e0dfee342e\nhttp://chirpy.codeplex.com/SourceControl/changeset/changes/53e0dfee342e",
+      "PostedDate": "2010-09-14T16:16:51.613-07:00",
+      "Id": 16062
+    }
+  ]
+}

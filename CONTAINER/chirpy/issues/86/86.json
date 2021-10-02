@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Chirpy use : http://www.dotlesscss.org/\nprobably not implemented in dotlesscss",
+    "ClosedDate": "2011-06-28T15:45:08.47-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "in the sample from http://lesscss.org/#-string-interpolation :\r\n@base-url: \"http://assets.fnord.com\";\r\nbackground-image: url(\"@{base-url}/images/bg.png\");\r\n\r\n@{base-url} stays intact",
+    "LastUpdatedDate": "2011-06-28T15:45:08.47-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-06-28T06:08:01.237-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "String interpolation doesn't work",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 86
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

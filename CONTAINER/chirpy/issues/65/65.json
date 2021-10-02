@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "It would be nice to have a setting in the configuration file to add the build version of the CSS/JS file into the filename. \r\n\r\nCurrently when I publish a new version of my website the users are not getting the new version of my css file in some occasions. If the build version would be in the filename of my CSS file, then I would know for certain that they would have the latest version\r\n of my CSS.",
+    "LastUpdatedDate": "2012-01-16T02:24:00.237-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-03-12T09:57:13.343-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Possibility to add build version in generated file",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 3,
+    "Id": 65
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "same for image version:\nthis css in the less file\nbackground-image:url(/Resources/Insight/BackgroundGradient.jpg);\nshould be transformed to \nbackground-image:url(/Resources/Insight/BackgroundGradient.jpg?v=1);\n\nwhere 1 could be an hash of the file created date time",
+      "PostedDate": "2011-05-04T06:00:05.62-07:00",
+      "Id": 35217
+    }
+  ]
+}

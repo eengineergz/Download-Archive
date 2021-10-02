@@ -1,0 +1,654 @@
+[
+  {
+    "Id": 3,
+    "Title": "Vs 2010 - group file style \"codebehind\""
+  },
+  {
+    "Id": 5,
+    "Title": "Possibility to customize file extension chirp.js,simple.js...."
+  },
+  {
+    "Id": 6,
+    "Title": "Add support for .chirp.tt files."
+  },
+  {
+    "Id": 7,
+    "Title": "Encoding problem"
+  },
+  {
+    "Id": 8,
+    "Title": "I would like to set it to run based on 'convention'."
+  },
+  {
+    "Id": 9,
+    "Title": "Show friendly message on file access error"
+  },
+  {
+    "Id": 10,
+    "Title": "Create VSIX file for VS Gallery"
+  },
+  {
+    "Id": 11,
+    "Title": "Could not load file or assembly EcmaScript.NET.modified"
+  },
+  {
+    "Id": 12,
+    "Title": "Change errors messages in CSS to /**/ format"
+  },
+  {
+    "Id": 13,
+    "Title": "change less file extension to less.css"
+  },
+  {
+    "Id": 14,
+    "Title": "Convert any image into a base64 string in CSS    "
+  },
+  {
+    "Id": 15,
+    "Title": "Mashing via config file not working"
+  },
+  {
+    "Id": 16,
+    "Title": "Allow outputted files (generated via config file) to be placed in any folder"
+  },
+  {
+    "Id": 17,
+    "Title": "pseudos doesnt work in last version"
+  },
+  {
+    "Id": 19,
+    "Title": "Use .less suffix instead .chirp.less suffix"
+  },
+  {
+    "Id": 20,
+    "Title": "CssCompressor support CompressionType:StockYuiCompressor,MichaelAshRegexEnhancements,Hybrid "
+  },
+  {
+    "Id": 21,
+    "Title": "Support Microsoft Ajax Minifier"
+  },
+  {
+    "Id": 22,
+    "Title": "Can I choose js compressor in mash files"
+  },
+  {
+    "Id": 23,
+    "Title": "Choose default setting of Minify based on build configuration"
+  },
+  {
+    "Id": 24,
+    "Title": "Watch for changes in dotless files that are @import'ed "
+  },
+  {
+    "Id": 25,
+    "Title": "LESS specify min. method"
+  },
+  {
+    "Id": 26,
+    "Title": "Add intellisense in config file"
+  },
+  {
+    "Id": 27,
+    "Title": "Don't attach .css and .min.css to the solutoin"
+  },
+  {
+    "Id": 28,
+    "Title": "Fix installation to network path"
+  },
+  {
+    "Id": 29,
+    "Title": "Add FileDependency to XML Schema"
+  },
+  {
+    "Id": 30,
+    "Title": "Allow Nested Config Files"
+  },
+  {
+    "Id": 31,
+    "Title": "Config Value For Less Files Can't Be .Less.Css"
+  },
+  {
+    "Id": 32,
+    "Title": "Version 1.0.0.....5 don't work correctly in \"web site\" projet"
+  },
+  {
+    "Id": 33,
+    "Title": "Inline Minification - Allow Certain Inline Scripts to NOT Be Minified"
+  },
+  {
+    "Id": 34,
+    "Title": "Saving .less File not Updating Mashed File Always"
+  },
+  {
+    "Id": 35,
+    "Title": "Stoped working "
+  },
+  {
+    "Id": 36,
+    "Title": "Error on open solution"
+  },
+  {
+    "Id": 37,
+    "Title": "Console runner"
+  },
+  {
+    "Id": 38,
+    "Title": "No codebehind files in VS2010 Windows Server 2008R2"
+  },
+  {
+    "Id": 39,
+    "Title": "Offline Google Closure Compiler Console Window"
+  },
+  {
+    "Id": 40,
+    "Title": "Unable to load Folder Items from config file"
+  },
+  {
+    "Id": 41,
+    "Title": "google closure limit - Too many compiles performed recently. Try again later"
+  },
+  {
+    "Id": 42,
+    "Title": "UTF-8 with signature kill Chirpy"
+  },
+  {
+    "Id": 43,
+    "Title": "Chirpy does not generate files on x64 OS - fix included"
+  },
+  {
+    "Id": 44,
+    "Title": "Inline minification - parsing error"
+  },
+  {
+    "Id": 45,
+    "Title": "Unicode not converted in inline minified script for .aspx"
+  },
+  {
+    "Id": 46,
+    "Title": "pseudo classes don't generate correctly in dotless"
+  },
+  {
+    "Id": 47,
+    "Title": "System.UnauthorizedAccessException"
+  },
+  {
+    "Id": 48,
+    "Title": "Add support for CoffeeScript"
+  },
+  {
+    "Id": 49,
+    "Title": "Auto-save Chirpy config file when referenced source file changes - APOLOGIES, ALREADY PROPOSED"
+  },
+  {
+    "Id": 50,
+    "Title": "Chirpy with TFS"
+  },
+  {
+    "Id": 51,
+    "Title": "Attribute selector using .less generates incorrect styles"
+  },
+  {
+    "Id": 52,
+    "Title": "648c7201ae3e  does not update/create css file on document save"
+  },
+  {
+    "Id": 53,
+    "Title": "Concatinating"
+  },
+  {
+    "Id": 54,
+    "Title": "YUI minimizer does not use CultureInfo.InvariantCulture"
+  },
+  {
+    "Id": 55,
+    "Title": "Allow control over output file name"
+  },
+  {
+    "Id": 56,
+    "Title": "Chripy and themes"
+  },
+  {
+    "Id": 57,
+    "Title": "No Error Reported when Referenced File in config is Missing"
+  },
+  {
+    "Id": 58,
+    "Title": "no way to enable offline google closure compilation from the command line (console app)"
+  },
+  {
+    "Id": 59,
+    "Title": "Minify=\"false\" doesn't work for me"
+  },
+  {
+    "Id": 60,
+    "Title": "Unicode characters don't pass through minification correctly"
+  },
+  {
+    "Id": 61,
+    "Title": "Chirpy and regional settings"
+  },
+  {
+    "Id": 62,
+    "Title": "v2 no longer generating both minified and unminified version"
+  },
+  {
+    "Id": 63,
+    "Title": "Makes my VS2010 crashing when minifying css"
+  },
+  {
+    "Id": 64,
+    "Title": "bug?: combobox items added repeatedly in Chirpy v2.0"
+  },
+  {
+    "Id": 65,
+    "Title": "Possibility to add build version in generated file"
+  },
+  {
+    "Id": 66,
+    "Title": "Validate extension configuration values"
+  },
+  {
+    "Id": 67,
+    "Title": "Does't work on VS 2010 ASP.NET 4"
+  },
+  {
+    "Id": 68,
+    "Title": "Smart run T4 feature has annoying side effect"
+  },
+  {
+    "Id": 69,
+    "Title": "Error List window pops up on EVERY save"
+  },
+  {
+    "Id": 70,
+    "Title": "change your dll version to match the public version number"
+  },
+  {
+    "Id": 71,
+    "Title": "\"Root element not found\" error when creating chirp.config"
+  },
+  {
+    "Id": 72,
+    "Title": "Using folder directive in chrip.config makes VS slow"
+  },
+  {
+    "Id": 73,
+    "Title": "chirp.config schema is out of date or not accurate"
+  },
+  {
+    "Id": 74,
+    "Title": "Remove console statements option"
+  },
+  {
+    "Id": 77,
+    "Title": "open solution error"
+  },
+  {
+    "Id": 78,
+    "Title": "Value cannot be null exception"
+  },
+  {
+    "Id": 79,
+    "Title": "Using a variable in a function when neating items seems to fallback to the first used value later."
+  },
+  {
+    "Id": 80,
+    "Title": "VS 2010 minor bug"
+  },
+  {
+    "Id": 81,
+    "Title": "VS 2010 config dialog minifiers list duplicated on every config display"
+  },
+  {
+    "Id": 82,
+    "Title": "TFS Check-Out of Web Application on Opening Solution"
+  },
+  {
+    "Id": 83,
+    "Title": "appcrash when less file saving"
+  },
+  {
+    "Id": 84,
+    "Title": "Feature Request - SASS Support"
+  },
+  {
+    "Id": 85,
+    "Title": "Google Closure Advanced Compilation Support"
+  },
+  {
+    "Id": 86,
+    "Title": "String interpolation doesn't work"
+  },
+  {
+    "Id": 87,
+    "Title": "Error caused by jshint when saving JavaScript file"
+  },
+  {
+    "Id": 88,
+    "Title": "TFS check out of minified files"
+  },
+  {
+    "Id": 89,
+    "Title": "chirpy to name it's minified version "
+  },
+  {
+    "Id": 90,
+    "Title": "Right-click minify?"
+  },
+  {
+    "Id": 91,
+    "Title": "Css mash and and image paths"
+  },
+  {
+    "Id": 92,
+    "Title": "Chirpy LESS erroring on \"filter\" css property"
+  },
+  {
+    "Id": 93,
+    "Title": "LESS related error: null cannot be converted to an object "
+  },
+  {
+    "Id": 94,
+    "Title": "Access to the path '<>\\Company.Project.Web\\T4MVC.tt' is denied."
+  },
+  {
+    "Id": 95,
+    "Title": "CoffeeScript bare compilation mode"
+  },
+  {
+    "Id": 96,
+    "Title": "VS 2010 Error Window pops up every time you save a javascript file"
+  },
+  {
+    "Id": 97,
+    "Title": "Add a Socks-proxy"
+  },
+  {
+    "Id": 98,
+    "Title": "Support JSLint"
+  },
+  {
+    "Id": 99,
+    "Title": "When writing out compressed or combined files get security exception"
+  },
+  {
+    "Id": 100,
+    "Title": "Yui folder is not included in project"
+  },
+  {
+    "Id": 101,
+    "Title": "Ability to specify VS Macros (e.g. $(SolutionDir)) in config"
+  },
+  {
+    "Id": 102,
+    "Title": "Chirpy with other project types"
+  },
+  {
+    "Id": 103,
+    "Title": "Problems with CSSLint (error new project)"
+  },
+  {
+    "Id": 104,
+    "Title": "jsHint wrong update path, please fix ASAP"
+  },
+  {
+    "Id": 105,
+    "Title": "Mashing non-JS/CSS files"
+  },
+  {
+    "Id": 106,
+    "Title": "Config files are not auto mashed if source files are in a different directory"
+  },
+  {
+    "Id": 107,
+    "Title": "Support Google Closure Stylesheets"
+  },
+  {
+    "Id": 108,
+    "Title": "Escaping in LESS files"
+  },
+  {
+    "Id": 109,
+    "Title": "NuGet Standalone Package"
+  },
+  {
+    "Id": 110,
+    "Title": "100% CPU"
+  },
+  {
+    "Id": 111,
+    "Title": "Issue when trying to append ::-webkit-input-placeholder"
+  },
+  {
+    "Id": 112,
+    "Title": "Support \"Eco: Embedded CoffeeScript templates\""
+  },
+  {
+    "Id": 113,
+    "Title": "When publish only min file."
+  },
+  {
+    "Id": 114,
+    "Title": "Color functions do not work"
+  },
+  {
+    "Id": 115,
+    "Title": "Add feature packer"
+  },
+  {
+    "Id": 116,
+    "Title": "In the latest 2.04 config file issue"
+  },
+  {
+    "Id": 117,
+    "Title": "Chirpy breaks .less in Mindscape Web Workbench"
+  },
+  {
+    "Id": 118,
+    "Title": "Installer Error - Could not access network location"
+  },
+  {
+    "Id": 119,
+    "Title": "uninstall"
+  },
+  {
+    "Id": 120,
+    "Title": "scss not process in config file"
+  },
+  {
+    "Id": 121,
+    "Title": "Mashing entire folders does not work"
+  },
+  {
+    "Id": 122,
+    "Title": " Data at the root level is invalid. Line 1, position 1."
+  },
+  {
+    "Id": 123,
+    "Title": "Error on VS2008 on Windows 7"
+  },
+  {
+    "Id": 124,
+    "Title": "Methode and Object Renaming failure"
+  },
+  {
+    "Id": 125,
+    "Title": "Installing Chipy causes Visual Studio options screen to crash"
+  },
+  {
+    "Id": 126,
+    "Title": "Variables in Media Queries in dotless files not supported"
+  },
+  {
+    "Id": 127,
+    "Title": "JSHINT error on new install"
+  },
+  {
+    "Id": 128,
+    "Title": "How to change myfilename.chirp.coffee to just myfilename.coffee?"
+  },
+  {
+    "Id": 129,
+    "Title": "Using Chirpy with Razor Syntax"
+  },
+  {
+    "Id": 130,
+    "Title": "Add RequireJS Optimizer to JS minifier"
+  },
+  {
+    "Id": 131,
+    "Title": "ViewData References in In-Line JS Break Minified HTML"
+  },
+  {
+    "Id": 132,
+    "Title": "Error parsing \"filter\" property in Bootstrap 2.0.2"
+  },
+  {
+    "Id": 133,
+    "Title": "YUI doesn't compress JavaScript in a single line anymore"
+  },
+  {
+    "Id": 134,
+    "Title": "debug javascript not being created"
+  },
+  {
+    "Id": 135,
+    "Title": "Allow .less.css extension in .chirp.config"
+  },
+  {
+    "Id": 136,
+    "Title": "Update mashed file when .less imported file is updated"
+  },
+  {
+    "Id": 137,
+    "Title": "reference path js validator"
+  },
+  {
+    "Id": 138,
+    "Title": "Inline minification for Razor Views will turn CRLF to LF"
+  },
+  {
+    "Id": 139,
+    "Title": "Add support for Uglify JS's --define or --define-from-module parameters"
+  },
+  {
+    "Id": 140,
+    "Title": "EngineType file is missing"
+  },
+  {
+    "Id": 141,
+    "Title": "minify=\"both\" creates \"excluded\" non-minified file from project"
+  },
+  {
+    "Id": 142,
+    "Title": "Minifier doesn't work"
+  },
+  {
+    "Id": 143,
+    "Title": "Chirpy doesn't uninstalled"
+  },
+  {
+    "Id": 144,
+    "Title": "Minified file is not checked out from TFS with offline  Google Closure"
+  },
+  {
+    "Id": 145,
+    "Title": "Visual Studio errors not cleared"
+  },
+  {
+    "Id": 146,
+    "Title": "ViewEngine + YUI Js Compressor + Script Tag w/ src = error"
+  },
+  {
+    "Id": 147,
+    "Title": "VS 2008 - Loading Add-in error (Latest Version)"
+  },
+  {
+    "Id": 148,
+    "Title": "Syntax error: JSHint"
+  },
+  {
+    "Id": 149,
+    "Title": "Proposed bug fix: \"file does not exist\" when using Closure offline"
+  },
+  {
+    "Id": 150,
+    "Title": "Can't see the Chirpy add-in in VS 2012 RC"
+  },
+  {
+    "Id": 151,
+    "Title": "Problem with Closure compilation"
+  },
+  {
+    "Id": 152,
+    "Title": "Get a Visual Studio exception after installing."
+  },
+  {
+    "Id": 153,
+    "Title": "Config Documentation"
+  },
+  {
+    "Id": 154,
+    "Title": "Allow specifying browser option for JSHint"
+  },
+  {
+    "Id": 155,
+    "Title": "Building Chirpy fails when spaces in working path"
+  },
+  {
+    "Id": 156,
+    "Title": "Show error on each save on VS2012 ASP.NET 4 "
+  },
+  {
+    "Id": 157,
+    "Title": "Minify=\"both\" only creates .min. version in VS2012"
+  },
+  {
+    "Id": 158,
+    "Title": "Fatal error, cannot continue: The method 'ToStringJS' is not generic"
+  },
+  {
+    "Id": 159,
+    "Title": "Typescript support"
+  },
+  {
+    "Id": 160,
+    "Title": "OutputExtensionJSsetting do not work"
+  },
+  {
+    "Id": 161,
+    "Title": "less: \"lighten\" \"saturate\" functions do not work"
+  },
+  {
+    "Id": 162,
+    "Title": "Source Maps"
+  },
+  {
+    "Id": 163,
+    "Title": "Cannot specify DefaultJavaScriptMinifier in config file"
+  },
+  {
+    "Id": 164,
+    "Title": "Closure and ViewEngine"
+  },
+  {
+    "Id": 165,
+    "Title": "Java x64"
+  },
+  {
+    "Id": 166,
+    "Title": "skip-able script tags"
+  },
+  {
+    "Id": 167,
+    "Title": "Sass Mixins not Parsing"
+  },
+  {
+    "Id": 168,
+    "Title": "Console issue: execution order makes minification fail"
+  },
+  {
+    "Id": 169,
+    "Title": "Getting error while installing Chirpy.vsi"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "930102",
+    "ThreadId": "400220",
+    "Html": "\r\n<p><span>Have you heard of&nbsp;</span><a href=\"http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/\">Source Maps</a><span>? Source Maps are an idea that has come out of Mozilla for addressing the debugging issues that are raised by *-to-JavaScript\r\n compilers and JavaScript minifiers, the problem is that when you use these you ultimately aren't debugging what you wrote.</span></p>\r\n<p>Please create source map option on chirpy to easier to debug javascript files.</p>\r\n<p><a href=\"http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/\">http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/</a></p>\r\n<p>Thanks</p>\r\n",
+    "PostedDate": "2012-10-21T11:50:47.88-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "930175",
+    "ThreadId": "400220",
+    "Html": "This discussion has been copied to a work item. Click <a href=\"http://chirpy.codeplex.com/workitem/162\">here</a> to go to the work item and continue the discussion.",
+    "PostedDate": "2012-10-21T15:30:05.81-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

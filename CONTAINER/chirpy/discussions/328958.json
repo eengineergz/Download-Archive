@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "781608",
+    "ThreadId": "328958",
+    "Html": "\r\n<p>Hi, Guys, I think Chirpy is great and all that (same as everyone else :-)</p>\r\n<p>But this simple bug does not seem to have been fixed for a while now.</p>\r\n<p>This is the entry in the MyMash.chirp.config:</p>\r\n<p></p>\r\n<div style=\"color:black; background-color:white\">\r\n<pre>    <span style=\"color:blue\">&lt;</span><span style=\"color:#a31515\">FileGroup</span> <span style=\"color:red\">Name</span><span style=\"color:blue\">=</span><span style=\"color:black\">&quot;</span><span style=\"color:blue\">SomeTests.js</span><span style=\"color:black\">&quot;</span><span style=\"color:blue\">&gt;</span>\r\n        <span style=\"color:blue\">&lt;</span><span style=\"color:#a31515\">Folder</span> <span style=\"color:red\">Path</span><span style=\"color:blue\">=</span><span style=\"color:black\">&quot;</span><span style=\"color:blue\">..\\..\\..\\TestProj\\TestFolder\\</span><span style=\"color:black\">&quot;</span> <span style=\"color:red\">Pattern</span><span style=\"color:blue\">=</span><span style=\"color:black\">&quot;</span><span style=\"color:blue\">*.js</span><span style=\"color:black\">&quot;</span> <span style=\"color:red\">Minify</span><span style=\"color:blue\">=</span><span style=\"color:black\">&quot;</span><span style=\"color:blue\">false</span><span style=\"color:black\">&quot;</span> <span style=\"color:blue\">/&gt;</span>\r\n    <span style=\"color:blue\">&lt;/</span><span style=\"color:#a31515\">FileGroup</span><span style=\"color:blue\">&gt;</span>\r\n</pre>\r\n</div>\r\n<p></p>\r\n<p>&nbsp;</p>\r\n<p>This config entry has the effect of putting chirpy into an infinite loop; and from the console one can see SomeTests.js being repeated written to.</p>\r\n<p>I am using the latest version (2.0.0.4 released on 04-Jan-2012).</p>\r\n<p>Is there a solution to this problem? Needless to say this will be much appreciated.</p>\r\n<p>Thanks!</p>\r\n",
+    "PostedDate": "2012-02-19T15:05:54.9-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "781763",
+    "ThreadId": "328958",
+    "Html": "This discussion has been copied to a work item. Click <a href=\"http://chirpy.codeplex.com/workitem/121\">here</a> to go to the work item and continue the discussion.",
+    "PostedDate": "2012-02-19T15:45:15.493-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "781845",
+    "ThreadId": "328958",
+    "Html": "<p>hi, ploufs, thanks for the quick response. But isn't this a case of fixing the bug and making a release? I'm happy to discuss this further but do you know what I else I need to provide to have this fixed?</p>\r\n<p>I wish I had the time to look into the source, but that's just not feasible.</p>",
+    "PostedDate": "2012-02-19T16:04:45.497-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

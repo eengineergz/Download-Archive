@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "516646",
+    "ThreadId": "233385",
+    "Html": "\r\n<p>Hi there,</p>\r\n<p>&nbsp;</p>\r\n<p>I can't seem to get this to work. I have gone to options and set Smart Run T4MVC and also tried setting Run T4 Template.</p>\r\n<p>&nbsp;</p>\r\n<p>I created a new controller, Saved my controller, my project and even did a new build</p>\r\n<p>&nbsp;</p>\r\n<p>But t4mvc isn't updated with my new controller.</p>\r\n<p>&nbsp;</p>\r\n<p>Am I missing something?</p>\r\n",
+    "PostedDate": "2010-11-03T13:11:37.973-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "516647",
+    "ThreadId": "233385",
+    "Html": "\r\n<p>Sorry forgot &nbsp;to mention:- Of course if i select Run Custom Tool manually it creates the file.</p>\r\n",
+    "PostedDate": "2010-11-03T13:12:58.1-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "613763",
+    "ThreadId": "233385",
+    "Html": "<p>Hi,</p>\n<p>Go to menu&nbsp; Tools &gt; Options.</p>\n<p>Browse nodes Chirpy &gt; T4template (tt).</p>\n<p>Add \"T4MVC.tt\" in the textbox \"Template\".</p>\n<p>&nbsp;</p>\n<p>Cheers...</p>",
+    "PostedDate": "2011-05-17T01:03:17.903-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

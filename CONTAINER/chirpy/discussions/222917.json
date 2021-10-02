@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "478048",
+    "ThreadId": "222917",
+    "Html": "Looks like a great tool, but the identifier needs to be consistent - is it Chirpy or is it Zippy?",
+    "PostedDate": "2010-08-09T05:33:39.34-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "478574",
+    "ThreadId": "222917",
+    "Html": "<p>Chirpy is its name. Zippy is its game.</p>\r\n<p>Initially, the project was named &quot;Zippy Chirpy&quot;.</p>\r\n<p>Then, the project name was shortened to &quot;Chirpy&quot;.</p>\r\n<p>Now, any references to &quot;Zippy&quot; are passe.</p>\r\n<p>In the next release, all the &quot;Zippy&quot; references should no longer be visible.</p>",
+    "PostedDate": "2010-08-10T06:28:40.25-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "491416",
+    "ThreadId": "222917",
+    "Html": "<p>Just an FYI: this issue should be resolved in the newest release. Chirpy is Chirpy, and that is all. :)</p>",
+    "PostedDate": "2010-09-09T11:52:26.867-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "513503",
+    "ThreadId": "232543",
+    "Html": "\r\n<p>Greetings and thank you for contributing the Chirpy tool.&nbsp; As our team researched and experimented with Chirpy to see how it would fit into our development process (primarily to manage minification of js and css files), we grew concerned about the potential\r\n for deploy-time differences between the non-minified version of the files and the minified versions.&nbsp; From my understanding, the Chirpy add-in will re-generate&nbsp;the minified version every time a js/css file is saved.&nbsp; That's nice, but the critical\r\n moment for our files to be minified is on deployment and we'd want to guarantee that any changes in development were part of the deploy.&nbsp; It's not difficult to envision a team member editing js/css while inadvertently having Chirpy not installed or not\r\n enabled or whatever.&nbsp; It's scary to think that if this developer is the last person to have saved the file, the minified file will be out of date and that's what we'll deploy.&nbsp;&nbsp;To workaround this, we actually determined we would need to open\r\n and save every one of our js/css files&nbsp;as part of our initial deployment steps.&nbsp; Are we looking at Chirpy the wrong way?&nbsp; Is there a solution for what we're describing?&nbsp; A way to generate all min files on build/deploy?</p>\r\n",
+    "PostedDate": "2010-10-27T10:16:53.793-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "513640",
+    "ThreadId": "232543",
+    "Html": "\r\n<p>Use console mode.</p>\r\n<p>Console is available in source code after change set : <a id=\"x_ChangeSetLink7\" title=\"View change set b1b7a2d4cca9\" href=\"../SourceControl/changeset/changes/b1b7a2d4cca9\" style=\"font-weight:bold\">\r\nb1b7a2d4cca9</a></p>\r\n",
+    "PostedDate": "2010-10-27T14:58:28.207-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "520002",
+    "ThreadId": "232543",
+    "Html": "\r\n<p>Thank you for the response.&nbsp; We were able to use Chirpy.exe in our project's post build events to achieve the kind of failsafe generation of min files we needed.</p>\r\n",
+    "PostedDate": "2010-11-10T07:56:13.487-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "634792",
+    "ThreadId": "232543",
+    "Html": "<p>Good morning I am running into the same issue and was wondering if you could please provide me with the steps necessary for running chirpy as a build task to re-minify my js and css. &nbsp;Thanks in advance for your assistance.</p>",
+    "PostedDate": "2011-06-29T07:34:29.483-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "636400",
+    "ThreadId": "232543",
+    "Html": "<p>call program with folder path in argument.<br />Sample : Chirpy.exe c:\\testsite\\</p>",
+    "PostedDate": "2011-07-02T06:15:06.423-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "970893",
+    "ThreadId": "232543",
+    "Html": "\r\n<p>Seems that console app doesn't checkout minified files from TFS. Is it possible to extend it so it does?&nbsp;</p>\r\n",
+    "PostedDate": "2012-12-25T13:00:22.3-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

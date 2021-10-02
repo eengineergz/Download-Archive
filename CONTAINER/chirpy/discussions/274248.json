@@ -1,0 +1,122 @@
+[
+  {
+    "Id": "678175",
+    "ThreadId": "274248",
+    "Html": "\r\n<p>I haven't tried other combinations, but Chirpy seems to have an issue when combining multiple inline functions / libraries. &nbsp;I'm not sure who is at fault, but when you combine to files that look like (function(){...})(); &nbsp;The ending ';' is removed\r\n from both files. &nbsp;This is an error when they are combined. &nbsp;It combines like... (function(){...})()(function(){...}(), but it should have had the ';' between the two files. &nbsp;I sure hope this makes sense. &nbsp;The new MS code when you pass it\r\n an XML file to combine files works correctly.&nbsp;</p>\r\n<p>Thanks for the great tool. &nbsp;I hope this is something that can be resolved so that I can continue using it with our project.</p>\r\n<p>&nbsp;</p>\r\n<p>Ricky</p>\r\n",
+    "PostedDate": "2011-09-29T06:51:33.12-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "713716",
+    "ThreadId": "274248",
+    "Html": "<p>Test with :&nbsp;</p>\r\n<pre><span>&lt;</span><span>FileGroup</span><span>&nbsp;</span><span>Name</span><span>=</span>\"<span>mash.js</span>\"<span>&nbsp;&nbsp;</span><strong>Minify=\"False\"</strong><span>&gt;</span>\r\n<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span>File</span><span>&nbsp;</span><span>Path</span><span>=</span>\"<span>../scripts/jquery-1.4.4.js</span>\"<span>&nbsp;</span><strong>Minify=\"True\"&nbsp;MinifyWith=\"msAjax\"</strong><span>&nbsp;/&gt;</span>\r\n<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span>File</span><span>&nbsp;</span><span>Path</span><span>=</span>\"<span>../scripts/jquery-ui.js</span>\"<span>&nbsp;&nbsp;</span><strong>Minify=\"True\"&nbsp;&nbsp;MinifyWith=\"msAjax\"</strong><span>&nbsp;/&gt;</span>\r\n<span>&nbsp;&nbsp;&nbsp;&lt;/</span><span>FileGroup</span><span>&gt;</span></pre>",
+    "PostedDate": "2011-12-17T18:54:11.207-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "713719",
+    "ThreadId": "274248",
+    "Html": "<p>I'll test tomorrow, but... is the key to put on the FileGroup Minify=\"False\"</p>\r\n<p>When I had walked thru the code initially it looked like the issue was that each file is passed individually to ajaxmin. &nbsp;This will cause the trailing semi-colon on the closure to be removed.</p>\r\n<p>I'll let you know...</p>",
+    "PostedDate": "2011-12-17T19:12:37.13-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "713941",
+    "ThreadId": "274248",
+    "Html": "<p>I tested with the latest Beta release and it still fails. &nbsp;The trailing semi-colon from each file is removed. &nbsp;If you combine the files first and then minify them... it works appropriately. &nbsp;This is the way I finally had to setup things in the my build. &nbsp;I'm using Chirpy to do the combining of the files and then I have a build task that has ajaxmin compress them.</p>\r\n<p>Thanks for looking at this.</p>",
+    "PostedDate": "2011-12-18T13:21:52.527-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "713981",
+    "ThreadId": "274248",
+    "Html": "<p>Go to config and check \"terms semicolons\"</p>\r\n<p>Menu \"Tools\" &gt; \"options\"</p>\r\n<p>Item \"Chirpy\"</p>\r\n<p>Sub item \"Ms JS Ajax Minifier\"</p>",
+    "PostedDate": "2011-12-18T15:46:46.21-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "713986",
+    "ThreadId": "274248",
+    "Html": "<p>No difference there's no semi-colon at the end of the jquery library between the next file.</p>",
+    "PostedDate": "2011-12-18T16:20:19.023-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "713999",
+    "ThreadId": "274248",
+    "Html": "<p>In Chirpy&nbsp;<span>ver 2.03 have bug setting in \"Ms Js Ajax minifier\" and \"Ms Css minifier\" don't save.</span></p>\r\n<p><span>Download last source code.</span></p>",
+    "PostedDate": "2011-12-18T18:24:13.693-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "714180",
+    "ThreadId": "274248",
+    "Html": "<p>I saw that in the source after testing. &nbsp;I'll try to download and compile today. &nbsp;Thanks again. &nbsp;Love the tool and it will work great for what I'm trying to do with my javascript library.</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2011-12-19T05:16:50.13-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "714461",
+    "ThreadId": "274248",
+    "Html": "<p>I downloaded and compiled the code. &nbsp;After I installed it... it went into a endless loop about an Int16. &nbsp;I didn't have time to look close because I'm working on a project at work.</p>",
+    "PostedDate": "2011-12-19T13:13:28.007-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "714592",
+    "ThreadId": "274248",
+    "Html": "<p>I compiled on a new VS 2010 setup and everything was fine until I checked the 'term' box and the clicked saved. &nbsp;Then it went into a endless set of error dialogs with the following message -</p>\r\n<p>&nbsp;</p>\r\n<p>Chrip - failed to load: LineBreak Threshold=Value was either too large or too small for an Int16.</p>",
+    "PostedDate": "2011-12-19T20:41:20.077-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "716770",
+    "ThreadId": "274248",
+    "Html": "<p>I looked at it closer today. &nbsp;The problem has to do with the value initially stored in the registry for CSS and JS LineBreakThreshold. &nbsp;For some reason it believes this value should be an Int16. &nbsp;This value is a DWORD which is 32bit and of course the acceptable  value is an int which is also 32bit for ajaxmin. &nbsp;</p>\n<p>Also... The threshold value by default should be set to a max value and not something so little as 50. &nbsp;The max value from ajaxmin is Int32-1000. &nbsp;In my testing... I set it to the max value of Int16.</p>\n<p>Anyway... hopefully this can help you id where the expectation of the Int16 is coming from.</p>\n<p>&nbsp;</p>\n<p>P.S - the ending term works. :-)</p>",
+    "PostedDate": "2011-12-23T13:03:55.783-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "716809",
+    "ThreadId": "274248",
+    "Html": "<p>I contributed the fixes and also added a new Preserve Important Comments MSJS option.</p>\r\n<p><a href=\"http://chirpy.codeplex.com/SourceControl/network/Forks/rralston4/rralston4\">http://chirpy.codeplex.com/SourceControl/network/Forks/rralston4/rralston4</a></p>",
+    "PostedDate": "2011-12-23T17:42:13.403-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "718384",
+    "ThreadId": "274248",
+    "Html": "<p>Fix changeset:</p>\r\n<p><a id=\"ChangeSetLink3\" title=\"View change set 929ec4575ac0\" href=\"http://chirpy.codeplex.com/SourceControl/changeset/changes/929ec4575ac0\">929ec4575ac0</a><span>&nbsp;</span></p>\r\n<p><span><a id=\"ChangeSetLink2\" title=\"View change set 1f0f186cc7df\" href=\"http://chirpy.codeplex.com/SourceControl/changeset/changes/1f0f186cc7df\">1f0f186cc7df</a><span>&nbsp;</span></span></p>\r\n<p><span><span><a id=\"ChangeSetLink1\" title=\"View change set 4d7e2defe84a\" href=\"http://chirpy.codeplex.com/SourceControl/changeset/changes/4d7e2defe84a\">4d7e2defe84a</a><span>&nbsp;</span></span></span></p>\r\n<p><span><span><span><a id=\"ChangeSetLink0\" title=\"View change set 319e0ccdecfb\" href=\"http://chirpy.codeplex.com/SourceControl/changeset/changes/319e0ccdecfb\">319e0ccdecfb</a><span>&nbsp;</span><br /></span></span></span></p>",
+    "PostedDate": "2011-12-29T10:17:26.907-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "718727",
+    "ThreadId": "274248",
+    "Html": "<p>The merge on settings.cs wasn't correct. &nbsp;Search the code for Int16 and replace with Int32. &nbsp;You'll find it in the&nbsp;<span>LoadOptionsFromRegistry routine.</span></p>",
+    "PostedDate": "2011-12-30T07:58:59.5-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "718831",
+    "ThreadId": "274248",
+    "Html": "<p><a id=\"ChangeSetLink0\" title=\"View change set efb6821b6741\" href=\"http://chirpy.codeplex.com/SourceControl/changeset/changes/efb6821b6741\">efb6821b6741</a>&nbsp;</p>\r\n<p><span>LoadOptionsFromRegistry routine</span><br /><span>Int16 replace with Int32.</span></p>",
+    "PostedDate": "2011-12-30T13:16:40.347-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

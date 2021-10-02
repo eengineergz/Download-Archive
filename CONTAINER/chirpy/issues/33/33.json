@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "Not sure how this might look -- but if the user specifies that an inline script shouldn't be minified, the engine ignores it.",
+    "LastUpdatedDate": "2010-09-11T04:10:04.897-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-09-09T11:51:32.787-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Inline Minification - Allow Certain Inline Scripts to NOT Be Minified",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 33
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "http://chirpy.codeplex.com/Thread/View.aspx?ThreadId=226591",
+      "PostedDate": "2010-09-11T04:10:04.897-07:00",
+      "Id": 15988
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "System.Runtime.InteropServices.COMException (0x80004005): Unspecified error (Exception from HRESULT: 0x80004005 (E_FAIL))\r\n   at EnvDTE.ProjectItem.get_FileNames(Int16 index)\r\n   at Zippy.Chirp.Engines.EngineManager.<>c__DisplayClass10.<Enqueue>b__f(ProjectItem i)\r\n   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source, Func`2 predicate)\r\n   at Zippy.Chirp.Threading.ServiceQueue`1.Any(Func`2 predicate)\r\n   at Zippy.Chirp.Engines.EngineManager.Enqueue(ProjectItem projectItem)\r\n   at Zippy.Chirp.Chirp.ProjectItemsEvents_ItemAdded(ProjectItem projectItem)\r\nSystem.Runtime.InteropServices.COMException (0x80004005): Unspecified error (Exception from HRESULT: 0x80004005 (E_FAIL))\r\n   at EnvDTE.ProjectItem.get_FileNames(Int16 index)\r\n   at Zippy.Chirp.Engines.EngineManager.<>c__DisplayClass10.<Enqueue>b__f(ProjectItem i)\r\n   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source, Func`2 predicate)\r\n   at Zippy.Chirp.Threading.ServiceQueue`1.Any(Func`2 predicate)\r\n   at Zippy.Chirp.Engines.EngineManager.Enqueue(ProjectItem projectItem)\r\n   at Zippy.Chirp.Chirp.ProjectItemsEvents_ItemAdded(ProjectItem projectItem)",
+    "LastUpdatedDate": "2011-04-27T07:27:34.66-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-04-27T07:27:34.66-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "open solution error",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 77
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

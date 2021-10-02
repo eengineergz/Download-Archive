@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "582597",
+    "ThreadId": "250256",
+    "Html": "\r\n<p>Hello,</p>\r\n<p>Our team works in VM with all users running off the same VS2010 install.&nbsp; When I run the chirpy install, the bits are placed in my User folder -- like this:</p>\r\n<p>C:\\Users\\JohnDoe\\Documents\\Visual Studio 2010\\Addins</p>\r\n<p>How do I run the install so it's available for All Users?</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2011-03-18T06:25:42.797-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "583055",
+    "ThreadId": "250256",
+    "Html": "<p>http://chirpy.codeplex.com/discussions/248918</p>\r\n<p>last post :</p>\r\n<p>\"The solution here was to create a folder like c:\\vs-addins\\ and dump  all my custom addins in there instead, and then add that folder to the  visual studio addin paths.</p>\r\n<p>Download the vsix, open it as a zip, and take the files from inside and place the in for example your folder c:\\vs-addins\\chirpy\"</p>",
+    "PostedDate": "2011-03-19T08:22:10.477-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

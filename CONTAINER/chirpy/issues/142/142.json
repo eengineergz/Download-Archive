@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "Hi, I have downloaded the latest version & installed.\r\nBut I have asp.net website & it contain several javascript files. I have tried all options to minify my js files (renaming to somename.yui.js etc) but nothing happens.\r\n\r\nIs this tool work only for MVC project & not for simple asp.net wesite?\r\n",
+    "LastUpdatedDate": "2012-06-09T08:09:18.54-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-06-09T01:20:29.957-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Minifier doesn't work",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 142
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Work in MVC and regular web project.\n\nIn web site project the min file not auto add to solution.",
+      "PostedDate": "2012-06-09T08:09:18.54-07:00",
+      "Id": 67671
+    }
+  ]
+}

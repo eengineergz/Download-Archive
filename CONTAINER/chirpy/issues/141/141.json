@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I'm trying to generate noth the minified as well as non-minified file upon save.\r\n\r\nUsing the following configuration, chirpy generates both files but only site.min.css is included in the csproj under site.chirp.scss.\r\n\r\nsite.css is generated but it is excluded from the project. Even including it manually has no effect as the next time chirpy generates the files, it overwrites the csproj.\r\n\r\n<root>\r\n\t<FileGroup Path=\"Styles\\Site.css\" Minify=\"false\">\r\n\t\t<File Path=\"Styles\\Site.chirp.scss\" />\r\n\t</FileGroup>\r\n</root>",
+    "LastUpdatedDate": "2012-05-31T15:27:44.833-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-05-31T15:27:44.833-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "minify=\"both\" creates \"excluded\" non-minified file from project",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 141
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

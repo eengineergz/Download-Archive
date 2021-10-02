@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I was using YUI minifier, and everything was working fine. All files being minified automatically got checked out from TFS both with source file.\r\n\r\nBut I realized, that offline Google Closure compiler performs better, I saved almost 100KB in result size. But, unfortunately - when I use it, it some why doesn't check out minified files.",
+    "LastUpdatedDate": "2012-07-05T13:24:47.767-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-06-21T03:22:29.643-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Minified file is not checked out from TFS with offline  Google Closure",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 144
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "614747",
+    "ThreadId": "258114",
+    "Html": "\r\n<p>Hi</p>\r\n<p>What happens when a new version of one of the libraries is released? is it possible to swap out the old one or do we have to wait for Chirpy to include the update?</p>\r\n<p>James</p>\r\n",
+    "PostedDate": "2011-05-18T10:40:47.453-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "614932",
+    "ThreadId": "258114",
+    "Html": "<p>Download source code and build on you computer.</p>\r\n<p>Libraries is package in main dll with post-build event.</p>\r\n<pre>\"$(ProjectDir)$(OutDir)\\ILMerge\" /out:\"$(ProjectDir)$(OutDir)Chirpy.dll\" \"$(TargetPath)\" \"$(ProjectDir)$(OutDir)EcmaScript.NET.modified.dll\" \"$(ProjectDir)$(OutDir)Yahoo.YUI.Compressor.dll\" \"$(ProjectDir)$(OutDir)dotless.Core.dll\" \"$(ProjectDir)$(OutDir)AjaxMin.dll\" \"$(ProjectDir)$(OutDir)UglifyCS.dll\" \"$(ProjectDir)$(OutDir)Jurassic.dll\"\r\n\"$(ProjectDir)$(OutDir)7za.exe\" u Chirpy.zip \"$(ProjectDir)$(OutDir)Chirpy.dll\" \"$(ProjectDir)$(OutDir)Chirpy.vscontent\" \"$(ProjectDir)$(OutDir)Zippy.AddIn\"\r\n rename \"$(ProjectDir)$(OutDir)Chirpy.zip\" \"Chirpy.vsi\"<br /><br /></pre>",
+    "PostedDate": "2011-05-18T15:33:34.853-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

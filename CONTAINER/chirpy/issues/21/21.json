@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2010-07-24T17:02:24.25-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "http://aspnet.codeplex.com/releases/view/40584\r\n\r\n\"improve the performance of your Ajax applications by reducing the size of your Cascading Style Sheet and JavaScript files\"\r\n\r\nDocumentation DLL Version of Ajax Minifier \r\nhttp://www.asp.net/ajaxLibrary/AjaxMinDLL.ashx",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-07-24T12:21:39.477-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Support Microsoft Ajax Minifier",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 21
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

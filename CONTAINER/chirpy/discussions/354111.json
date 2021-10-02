@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "830575",
+    "ThreadId": "354111",
+    "Html": "\r\n<p>I use the ScriptManager control with the EnableScriptLocalization property. I want to minify the following files:</p>\r\n<ul>\r\n<li>constants.debug.js </li><li>constants.debug.fr-CA.js </li></ul>\r\n<p>I want them both minified to:</p>\r\n<ul>\r\n<li>constants.js </li><li>constants.fr-CA.js </li></ul>\r\n<p>Is there a way to specify a wildcard file name in the Options dialog so that both versions get minified? I tried .debug*.js in the YUI field, but it doesn't seem to work. Is this something that I can do with a config file?</p>\r\n",
+    "PostedDate": "2012-05-01T04:27:27.623-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "838569",
+    "ThreadId": "354111",
+    "Html": "<p>Use folder node in config file.</p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"http://chirpy.codeplex.com/SourceControl/changeset/changes/430799f2874d\">http://chirpy.codeplex.com/SourceControl/changeset/changes/430799f2874d</a></p>\r\n<p><span>\"</span></p>\r\n<p><span>Folder is now &lt;Folder Pattern=\"TestFolder\\*.js\" Recursive=\"False\" /&gt;</span></p>\r\n<p><span>\"</span></p>",
+    "PostedDate": "2012-05-20T07:59:17.583-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

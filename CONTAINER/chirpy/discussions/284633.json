@@ -1,0 +1,74 @@
+[
+  {
+    "Id": "718923",
+    "ThreadId": "284633",
+    "Html": "\r\n<p>I know it's just a developer preview right now, but any chance you'll add support for VS11 soon? I tried d/l the source and making my own Add-in, but alas, I'm a mere mortal and it failed.</p>\r\n",
+    "PostedDate": "2011-12-30T21:07:33.157-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "719040",
+    "ThreadId": "284633",
+    "Html": "<p>Work in VS11.</p>\r\n<p>Copy file in&nbsp;C:\\Users\\&lt;user name&gt;\\Documents\\Visual Studio 11\\AddIns</p>\r\n<p>Change in file *.Addin version number 10.0 to 11.0</p>\r\n<p>Sample :</p>\r\n<p>&lt;HostApplication&gt;<br />&lt;Name&gt;Microsoft Visual Studio Macros&lt;/Name&gt;<br />&lt;Version&gt;<strong>11.0</strong>&lt;/Version&gt;<br />&lt;/HostApplication&gt;<br />&lt;HostApplication&gt;<br />&lt;Name&gt;Microsoft Visual Studio&lt;/Name&gt;<br />&lt;Version&gt;<strong>11.0</strong>&lt;/Version&gt;<br />&lt;/HostApplication&gt;</p>",
+    "PostedDate": "2011-12-31T10:37:49.3-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "719224",
+    "ThreadId": "284633",
+    "Html": "<p>Awesome, thanks. I was unzipping the VSI and editing the .addin file there, then installing, which wasn't working. Editing the .addin in the folder as you described worked pefectly.</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks again and thanks for an awesome product!</p>",
+    "PostedDate": "2012-01-01T16:04:39.583-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "760649",
+    "ThreadId": "284633",
+    "Html": "<p>Awesome! Thank you very much for telling us how to do that! :-)</p>",
+    "PostedDate": "2012-02-13T06:49:26.073-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "822091",
+    "ThreadId": "284633",
+    "Html": "<blockquote style=\"border: solid .1em #ccc; font-style: italic; margin: .25em 1em 0 1em; padding: 0 .25em 0 .25em;\"><strong>luebster wrote:</strong><br />\r\n<p>Awesome, thanks. I was unzipping the VSI and editing the .addin file there, then installing, which wasn't working.&nbsp;</p>\r\n</blockquote>\r\n<p>After editing, just re-zip it and rename it to .VSI.</p>\r\n<p>While zipping back, you need to zip it using \"Deflate\" method.</p>\r\n<p>7-zip allows you to specify that and I think WinZip too (just that I haven't use WinZip in a long time, so not sure).</p>",
+    "PostedDate": "2012-04-10T12:09:48.2-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "840336",
+    "ThreadId": "284633",
+    "Html": "<p>Could you update the build-script (I'm a bit afraid of touching it tbh xD) so that a .vs11.vsi is created as well? Either by doing some xpath-replace in the xml-file or simply creating a second .v11 xml-file?</p>",
+    "PostedDate": "2012-05-24T03:56:22.607-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "843756",
+    "ThreadId": "284633",
+    "Html": "<p>New vsi support visual studio 2008,2010,2012.</p>\r\n<p><a href=\"http://chirpy.codeplex.com/releases/view/88455\">http://chirpy.codeplex.com/releases/view/88455</a></p>",
+    "PostedDate": "2012-06-01T17:33:53.793-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "852348",
+    "ThreadId": "284633",
+    "Html": "<p>After installing 88455, I don't see the add-in in Visual Studio 2012 RC.&nbsp; Is there something else that I need to do?</p>",
+    "PostedDate": "2012-06-21T14:18:16.923-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "852365",
+    "ThreadId": "284633",
+    "Html": "<p>Ah, apparently it's installing the Addin in:</p>\r\n<p>C:\\Users\\Me\\Documents\\Visual Studio 2012\\Addins</p>\r\n<p>however, 2012 RC is actually loading it's addins from:</p>\r\n<p>C:\\Users\\Me\\Documents\\Visual Studio 11\\Addins</p>\r\n<p>Whoops!</p>",
+    "PostedDate": "2012-06-21T14:49:23.607-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

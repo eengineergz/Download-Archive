@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 2,
+    "Custom": "",
+    "Description": "See: http://groups.google.com/group/dotless/browse_thread/thread/155735c1814e52c2\r\nAnd: https://blogs.msdn.com/b/visualstudio/archive/2009/10/27/vsix-and-msi.aspx",
+    "LastUpdatedDate": "2011-04-08T09:25:53.293-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-06-15T01:25:36.273-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Create VSIX file for VS Gallery",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 8,
+    "Id": 10
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Here is what I think needs to be done.\n\n   1. When you build - the output should be 'Tempzippy.dll'.   \n   2. Using a post build step, you run ILMerge and merge dotless.core.dll and yahoo.yui.compressor.dll into zippy.dll.   You will see I did this in my original project.   My post build step was: [\"C:\\Program Files (x86)\\Microsoft\\ILMerge\\ILMerge\" /out:$(ProjectDir)$(OutDir)DotLessAddIn.dll $(TargetPath) $(ProjectDir)$(OutDir)dotless.Core.dll]\n   3. We now only need to distribute 2 files - the .addin and the .dll.    We can put these two files into a zip file with a Zippy.vscontent file.  After that, rename the \".zip\" file to \".vsi\" and we now have a visual studio add-in installer.  Here is an article on what is needed and I implemented this for my T4MVC add-in.  http://msdn.microsoft.com/en-us/library/ms246580%28VS.80%29.aspx  I also attached my T4MVC xml file here.\n   4. Finally, we should be able to upload this .vsi (or maybe .vsix now) to the visual studio gallery so iit can be easily installed by uses in the extension manager feature of VS2010. http://visualstudiogallery.msdn.microsoft.com/en-us/0c59e7c6-06ba-41b6-8ce3-2c5fb9d2ca1c\n",
+      "PostedDate": "2010-06-16T14:29:45.47-07:00",
+      "Id": 13010
+    },
+    {
+      "Message": "This will make updating Chripy a whole lot easier and user-friendly.",
+      "PostedDate": "2010-07-20T01:51:51.58-07:00",
+      "Id": 14620
+    }
+  ]
+}

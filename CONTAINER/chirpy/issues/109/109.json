@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "First version NuGet package\nhttps://nuget.org/packages/ChirpyDllOnly",
+    "ClosedDate": "2011-12-11T09:59:24.887-08:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hello!\r\n\r\nAny chance of a standalone, strongly typed DLL that can be referenced by projects that wish to use your functionality on a manual call basis?  For example I've got a custom CSS and JavaScript handler in my MVC3 project but not all team members have or want to install the Chirpy VS Addin, so we'd love a NuGet package for Visual Studio so that we can manually call a particular TransformEngine with specified settings whenever we want.\r\n\r\n\r\nCheers!",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-11-29T06:36:16.603-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "NuGet Standalone Package",
+    "Type": {
+      "Name": "Task",
+      "Id": 2
+    },
+    "VoteCount": 1,
+    "Id": 109
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

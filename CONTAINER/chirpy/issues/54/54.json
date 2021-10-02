@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Test last changeset\nhttp://chirpy.codeplex.com/SourceControl/changeset/changes/a4802018acc5",
+    "ClosedDate": "2011-02-08T16:55:42.693-08:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I think de YUI javascript minimizer does not user an InvariantCulture for formatting. Because my local culture is Dutch, al my javascript numbers get converter from decimal-point to decimal-comma's. Which gives a totaly different meaning to my code.\r\n\r\nFor example:\r\n\r\nif( a > 0.05 )\r\nbecomes\r\nif(a>0,05)\r\n\r\nnow suddenly the test is always true, because a comma is a command seperator. And 5 is always true.\r\n",
+    "LastUpdatedDate": "2011-02-08T16:55:42.693-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-12-29T05:58:48.973-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "YUI minimizer does not use CultureInfo.InvariantCulture",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 54
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

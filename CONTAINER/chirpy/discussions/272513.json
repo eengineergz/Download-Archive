@@ -1,0 +1,58 @@
+[
+  {
+    "Id": "671472",
+    "ThreadId": "272513",
+    "Html": "\r\n<p>Hi Guys,</p>\r\n<p>I can get Chirpy working great with new ASP.NET projects but i also use VS.php add-on which allows me to create PHP projects etc. When i create a file.chirp.css no min file is created.</p>\r\n<p>Do you know if there is any way to get chirp activated EVERYTIME i create a css or js file??</p>\r\n<p>Thanks,</p>\r\n<p>&nbsp;</p>\r\n<p>Ray.</p>\r\n",
+    "PostedDate": "2011-09-13T19:07:30.4-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "677439",
+    "ThreadId": "272513",
+    "Html": "<p>Ok, i have taken a look at the error log....</p>\r\n<p>If i create a css or js file and then rename it to add the .chirp i get no errors but the \"min\" file that should be created is not. There is no error in the log.</p>\r\n<p>If i edit the .chirp file and save it, i get this error in the log..</p>\r\n<p>System.InvalidCastException: No such interface supported (Exception from HRESULT: 0x80004002 (E_NOINTERFACE))&nbsp; &nbsp;at EnvDTE.ProjectItem.get_Collection()&nbsp; &nbsp;at Zippy.Chirp.Utilities.GetParent(ProjectItem projectItem)&nbsp; &nbsp;at Zippy.Chirp.Engines.EngineManager.Enqueue(ProjectItem projectItem)&nbsp; &nbsp;at Zippy.Chirp.Chirp.ProjectItemsEvents_ItemAdded(ProjectItem projectItem)</p>\r\n<p>Some help would be appreciated.</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks.</p>",
+    "PostedDate": "2011-09-27T16:42:07.58-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "681537",
+    "ThreadId": "272513",
+    "Html": "This discussion has been copied to a work item. Click <a href=\"http://chirpy.codeplex.com/workitem/102\">here</a> to go to the work item and continue the discussion.",
+    "PostedDate": "2011-10-07T18:27:26.287-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "693100",
+    "ThreadId": "272513",
+    "Html": "\r\n<div>\r\n<p>HI!</p>\r\n<p></p>\r\n<p>Ok the css files are working great!</p>\r\n<p></p>\r\n<p>However the JS files are not.</p>\r\n<p></p>\r\n<p>The .min file is created however it is empty??</p>\r\n<p>Log below.</p>\r\n<p style=\"text-autospace:none\"><span style=\"font-size:9.0pt; font-family:Consolas\">ClosureCompilerEngine -- starting F:\\Websites\\VisualStudioProjects\\PHP Project1\\PHP Project1\\JScript1.chirp.js</span></p>\r\n<p style=\"text-autospace:none\"><span style=\"font-size:9.0pt; font-family:Consolas\">ClosureCompilerEngine -- finished F:\\Websites\\VisualStudioProjects\\PHP Project1\\PHP Project1\\JScript1.chirp.js</span></p>\r\n<p style=\"text-autospace:none\"><span style=\"font-size:9.0pt; font-family:Consolas\">JSHintEngine -- starting F:\\Websites\\VisualStudioProjects\\PHP Project1\\PHP Project1\\JScript1.chirp.js</span></p>\r\n<p style=\"text-autospace:none\"><span style=\"font-size:9.0pt; font-family:Consolas\">JSHintEngine -- finished F:\\Websites\\VisualStudioProjects\\PHP Project1\\PHP Project1\\JScript1.chirp.js</span></p>\r\n<p></p>\r\n<p><b><span lang=\"EN-US\">Thanks,</span></b></p>\r\n<p><b><span lang=\"EN-US\"></span></b></p>\r\n<p><b><span lang=\"EN-US\">Ray.</span></b></p>\r\n</div>\r\n",
+    "PostedDate": "2011-11-02T23:32:07.267-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "694161",
+    "ThreadId": "272513",
+    "Html": "<p>Work for me.</p>\r\n<p><strong>Test.chirp.js</strong></p>\r\n<pre><span>function</span>&nbsp;hello(name)&nbsp;{\r\n&nbsp;&nbsp;&nbsp;&nbsp;alert(<span>'Hello,&nbsp;'</span>&nbsp;+&nbsp;name);\r\n}\r\nhello(<span>'New&nbsp;qwetretsgdfgdfthg'</span>);\r\n</pre>\r\n<p><strong>test.min.js</strong></p>\r\n<pre>alert(\"Hello,&nbsp;New&nbsp;qwetretsgdfgdfthg\");</pre>\r\n<pre><br /></pre>\r\n<p>Please send more detail :</p>\r\n<p>Engine use (closure compiler - advanced, Simple, Whitespace only ?</p>\r\n<p>Closure compiler offline ?</p>\r\n<p>Javascript file content ?</p>",
+    "PostedDate": "2011-11-04T16:56:59.607-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "694181",
+    "ThreadId": "272513",
+    "Html": "\r\n<div>\r\n<p><span style=\"font-size:11.0pt; font-family:\">Hi ! ok yes it seems to be working on a new project so sorry for the mistake. The only issue is you cannot see the “min” files in the solution explorer under the main file like you can in an ASP.net project but\r\n that is fine! Not like I really need to look at them!</span></p>\r\n<p><span style=\"font-size:11.0pt; font-family:\"></span></p>\r\n<div>\r\n<p><b><span lang=\"EN-US\" style=\"font-size:11.0pt; font-family:\">Ray Barnes</span></b></p>\r\n<p><span lang=\"EN-US\" style=\"font-size:10.0pt; font-family:\">Technical Specialist<br>\r\n<br>\r\n</span></p>\r\n<p><b><span lang=\"EN-US\" style=\"font-size:10.0pt; font-family:\">PLEASE NOTE NEW CONTACT DETAILS</span></b><span lang=\"EN-US\" style=\"font-size:10.0pt; font-family:\"><br>\r\n<b>P:</b> 0420 90 90 33 | <b>E:</b> <a href=\"mailto:ray@impressitsolutions.com.au\">\r\n<span style=\"color:#1F497D\">helpdesk@impressitsolutions.com.au</span></a> | <b>W:</b>\r\n<a href=\"\"><span style=\"color:#1F497D\">impressitsolutions.com.au</span></a> <br>\r\n</span><span lang=\"EN-US\" style=\"font-size:14.0pt; font-family:\">IMPRESS I.T. SOLUTIONS</span><span lang=\"EN-US\" style=\"font-size:10.0pt; font-family:\"></span></p>\r\n<p><span style=\"font-size:11.0pt; font-family:\"><img border=\"0\" width=\"25\" height=\"24\" id=\"Picture_x0020_1\" src=\"cid:image001.jpg@01CC9BBD.CE292930\" alt=\"Description: en\"></span><span lang=\"EN-US\" style=\"font-size:10.0pt; font-family:\">Please consider the\r\n environment before printing this email.</span><span lang=\"EN-US\" style=\"font-size:11.0pt; font-family:\"></span></p>\r\n</div>\r\n<p><span style=\"font-size:11.0pt; font-family:\"></span></p>\r\n<div>\r\n<div style=\"border:none; border-top:solid #B5C4DF 1.0pt; padding:3.0pt 0cm 0cm 0cm\">\r\n<p><b><span lang=\"EN-US\" style=\"font-size:10.0pt; font-family:\">From:</span></b><span lang=\"EN-US\" style=\"font-size:10.0pt; font-family:\"> ploufs [email removed]\r\n<br>\r\n<b>Sent:</b> Saturday, 5 November 2011 10:57 AM<br>\r\n<b>To:</b> ray@impressitsolutions.com.au<br>\r\n<b>Subject:</b> Re: Chirpy with other project types [chirpy:272513]</span></p>\r\n</div>\r\n</div>\r\n<p></p>\r\n<p><span style=\"font-size:9.0pt; font-family:\">From: ploufs</span></p>\r\n<div id=\"ThreadNotificationPostBody\" style=\"margin-bottom:24.0pt\">\r\n<p><span style=\"font-size:9.0pt; font-family:\">Work for me.</span></p>\r\n<p><strong><span style=\"font-size:9.0pt; font-family:\">Test.chirp.js</span></strong><span style=\"font-size:9.0pt; font-family:\"></span></p>\r\n<pre><span style=\"font-size:11.5pt\">function hello(name) {</span></pre>\r\n<pre><span style=\"font-size:11.5pt\">    alert('Hello, ' &#43; name);</span></pre>\r\n<pre><span style=\"font-size:11.5pt\">}</span></pre>\r\n<pre><span style=\"font-size:11.5pt\">hello('New qwetretsgdfgdfthg');</span></pre>\r\n<p><strong><span style=\"font-size:9.0pt; font-family:\">test.min.js</span></strong><span style=\"font-size:9.0pt; font-family:\"></span></p>\r\n<pre><span style=\"font-size:11.5pt\">alert(&quot;Hello, New qwetretsgdfgdfthg&quot;);</span></pre>\r\n<pre><span style=\"font-size:11.5pt\"> </span></pre>\r\n<p><span style=\"font-size:9.0pt; font-family:\">Please send more detail :</span></p>\r\n<p><span style=\"font-size:9.0pt; font-family:\">Engine use (closure compiler - advanced, Simple, Whitespace only ?</span></p>\r\n<p><span style=\"font-size:9.0pt; font-family:\">Closure compiler offline ?</span></p>\r\n<p><span style=\"font-size:9.0pt; font-family:\">Javascript file content ?</span></p>\r\n</div>\r\n</div>\r\n",
+    "PostedDate": "2011-11-04T19:21:47.25-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "698105",
+    "ThreadId": "272513",
+    "Html": "<p>OK The only issue i have is that the .min files are not automatically UPDATED when i save the .chirp files. If i right-click the files i can then select \"chirpy minifier file\" it the creates/updates the .min file.</p>\r\n<p>The issue is how can i get .chirp.config to work??</p>\r\n<p>i have created&nbsp;</p>\r\n<pre><span>&lt;</span><span>root</span><span>&gt;</span>\r\n<span>&nbsp;&nbsp;&lt;</span><span>FileGroup</span><span>&nbsp;</span><span>Name</span><span>=</span>\"<span>group1.js</span>\"<span>&gt;</span>\r\n<span>&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span>File</span><span>&nbsp;</span><span>Path</span><span>=</span>\"<span>JScript2.js</span>\"<span>&nbsp;/&gt;</span>\r\n<span>&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span>File</span><span>&nbsp;</span><span>Path</span><span>=</span>\"<span>JScript3.js</span>\"<span>&nbsp;/&gt;</span>\r\n<span>&nbsp;&nbsp;&lt;/</span><span>FileGroup</span><span>&gt;</span>\r\n<span>&lt;/</span><span>root</span><span>&gt;</span></pre>\r\n<p>Saving the config file does nothing.</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks,</p>",
+    "PostedDate": "2011-11-14T14:31:28.667-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

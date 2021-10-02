@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "736659",
+    "ThreadId": "290449",
+    "Html": "\r\n<p>Hello,</p>\r\n<p>Since chirpy breaks highlight support for .less files when used with Mindscape's Web Workbench, I would like to simply fully disable (highlight) support for .less files. I wouldn't mind disabling the support for those files alltogether, since it's not useful\r\n to me. Any pointers on how I would go about doing that in source?</p>\r\n",
+    "PostedDate": "2012-02-02T05:25:03.68-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "736685",
+    "ThreadId": "290449",
+    "Html": "<p>Found it, had to break this method in Chirp.cs:</p>\r\n<p>(line 622)</p>\r\n<p>&nbsp;public void TreatLessAsCss(bool force)</p>",
+    "PostedDate": "2012-02-02T05:43:31.937-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "737348",
+    "ThreadId": "290449",
+    "Html": "<p>Chirpy should add and option to the .less options dialog to disable treating .less as css</p>",
+    "PostedDate": "2012-02-02T13:37:01.24-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "738699",
+    "ThreadId": "290449",
+    "Html": "<p>Fix in changeset :</p>\r\n<p><span><a href=\"http://chirpy.codeplex.com/SourceControl/changeset/changes/d8dbe8ecc108\">http://chirpy.codeplex.com/SourceControl/changeset/changes/d8dbe8ecc108</a></span></p>",
+    "PostedDate": "2012-02-03T18:04:32.467-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "780813",
+    "ThreadId": "290449",
+    "Html": "<p>I'm still having problems with this. originally i had mindscape workbench installed, and then in installed chirpy.</p>\r\n<p>There was no syntax highlighting. So i uninsatlled workbench, still no highlighting.</p>\r\n<p>Uninstalled chirpy and built it from latest source, re-installed, no highlighting.&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>My file name is Less1.chirp.less</p>\r\n<p>&nbsp;</p>\r\n<p>Is there a special way to uninstall the add-in, other than deleting the contents of c:\\users\\&lt;my user name&gt;\\documents\\visual studio 2010\\addins\\ ? Are there some registry settings or something left over that I need to reset? If so how?&nbsp;</p>",
+    "PostedDate": "2012-02-19T11:44:03.237-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "781749",
+    "ThreadId": "290449",
+    "Html": "<p>Chirpy Treat Less as css . For advance syntax highlighting use&nbsp;mindscape workbench,</p>\r\n<p><strong>uninstall&nbsp;</strong></p>\r\n<p>Yes delete files.</p>\r\n<p><strong>registry settings</strong></p>\r\n<p>HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\VisualStudio\\10.0\\Chirp</p>",
+    "PostedDate": "2012-02-19T15:42:16.827-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

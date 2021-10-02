@@ -1,0 +1,51 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "I have chirpy under a \"Visual Studio\" folder.  When building, it can't find postBuild.bat, because of the spaces.  I've attached a patch.",
+    "LastUpdatedDate": "2012-10-06T08:52:10.69-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-07-27T09:26:07.157-07:00",
+    "Status": {
+      "Name": "Resolved",
+      "Id": 7
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Building Chirpy fails when spaces in working path",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 155
+  },
+  "FileAttachments": [
+    {
+      "FileId": 463756,
+      "FileName": "fixPostBuild.diff",
+      "DownloadUrl": ".\\463756"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "http://chirpy.codeplex.com/SourceControl/changeset/3a154f30af96#Zippy.Chirp.csproj",
+      "PostedDate": "2012-10-06T08:52:10.69-07:00",
+      "Id": 78819
+    }
+  ]
+}

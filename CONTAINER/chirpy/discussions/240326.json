@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "543398",
+    "ThreadId": "240326",
+    "Html": "\r\n<p>I'm creating a fork that assumes files under a filegroup want to be minified unless explicitly set to false.&nbsp;</p>\r\n<p>[FileGroup]<br>\r\n<span style=\"white-space:pre\"></span>[File X Minify=false]<br>\r\n&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;[File Y]<br>\r\n&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;[File Z]&nbsp;</p>\r\n<p>all files except x are minified</p>\r\n<p>[FileGroup]<br>\r\n<span style=\"white-space:pre\"></span>[File X Minify=true]<br>\r\n&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;[File Y]<br>\r\n&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;[File Z]&nbsp;</p>\r\n<p>All files are still minified&nbsp;</p>\r\n<p>[FileGroup Minify=false]<br>\r\n<span style=\"white-space:pre\"></span>[File X Minify=true]<br>\r\n&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;[File Y]<br>\r\n&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;[File Z]&nbsp;</p>\r\n<p>Only file X is minified.</p>\r\n<p>I think this definition is less confusing.</p>\r\n<p>Right now the code in ConfigEngine checks if minify == true || null but later on still only minifies if its true, this seems contrary to what the comments in FileGroupXml.cs state.</p>\r\n<p>Whats your guys opinion on this ?</p>\r\n",
+    "PostedDate": "2011-01-03T14:09:02.667-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "546928",
+    "ThreadId": "240326",
+    "Html": "\r\n<p>Implemented this and several other fixes.</p>\r\n",
+    "PostedDate": "2011-01-10T13:03:26.043-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

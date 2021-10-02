@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "I'm using vs 2010. Everytime I save a file chirpy builds my web project. This is great except when the build finishes the errors window pops and focus shifts to it (with no errors). This is bad for people who compulsivley hit ctrl+s every 5 seconds. I've tried closing the errors windows but it just comes back.",
+    "LastUpdatedDate": "2011-09-19T12:52:44.093-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-04-08T07:41:08.683-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Smart run T4 feature has annoying side effect",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 68
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I have the same issue. Hitting Ctrl+S is a reflex for me. I save the file and often continue typing. However if any file in the project has a warning the T4 run will trigger the Error List to show. With the focus shifted to that pane, key strokes end up there. If one of those keys is enter, an unrelated file that happens to have a warning pops open and I end up modifying that file.\n\nMy only workaround is to disable \"Smart run T4\" from time to time, but that's basically the best feature of Chirpy for me. I would really appreciate it if focus stays in the edit window. I really don't mind the error list popping up, I do want to know about warnings and errors of course.",
+      "PostedDate": "2011-09-19T12:52:44.093-07:00",
+      "Id": 44996
+    }
+  ]
+}

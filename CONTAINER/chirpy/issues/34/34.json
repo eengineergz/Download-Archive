@@ -1,0 +1,116 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 13,
+    "Custom": null,
+    "Description": "I have v1.0.0.5 installed in  VS 2010 with the default configuration. I have 1 .chirp.css file and 1 .chirp.less file. Those are working perfectly. The first one is generating a minified .min.css file upon saves. The second file is transforming into a .css file and minifying to a .min.css file upon saves.\r\n\r\nI have a .chirp.config file that mashes the 2 minified files together without further minifying them. Here is the .chirp.config file:\r\n<?xml version=\"1.0\" encoding=\"utf-8\" ?>\r\n<root xmlns=\"urn:ChirpyConfig\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\r\n\t<FileGroup Name=\"merged.css\">\r\n\t\t<File Path=\"baseline.min.css\" Minify=\"false\" />\r\n\t\t<File Path=\"prototype.min.css\" Minify=\"false\" />\r\n\t</FileGroup>\r\n</root>\r\n\r\nThe merged file was created immediately, as expected. However, now when I make changes to the second file, prototype.chirp.less, and save it, merged.css is not regenerated automatically (prototype.min.css is properly updated). In addition, I can save prototype.chirp.less 2 times in a row to force merged.css to update. In some cases, even saving the less file twice won't initiate the merged.css update (this is rare, but does happen).\r\n\r\nI understand that this is a chained relationship: prototype.chirp.less auto-updates prototype.min.css which should be detected by the .chirp.config file in order to auto-update merged.css. Perhaps, this is the source of the issue. It sounds reasonable since a double save seems to work 99% of the time.\r\n\r\nI've tried setting the Minify attribute to false on the FileGroup instead of the individual File elements without better success.\r\n\r\n\r\nLove this tool, by the way!",
+    "LastUpdatedDate": "2011-01-18T12:44:10.353-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-09-10T20:59:11.297-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Saving .less File not Updating Mashed File Always",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 6,
+    "Id": 34
+  },
+  "FileAttachments": [
+    {
+      "FileId": 151117,
+      "FileName": "Chirp.PNG",
+      "DownloadUrl": ".\\151117"
+    },
+    {
+      "FileId": 151119,
+      "FileName": "Chirp2.PNG",
+      "DownloadUrl": ".\\151119"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "After updating to 1.0.0.5.1 my .chirp.less.css files are not updating. I tried deleting the .css file, so far I've not managed to get VS to recreate it.\n\nRich",
+      "PostedDate": "2010-09-15T06:37:21.067-07:00",
+      "Id": 16079
+    },
+    {
+      "Message": "I have rolled back first to 1.0.0.4, and then to 1.0.0.3. 10.0.3 is the last version that creates .min.css and .css files for files with the .chirp.less.css extension, for me.",
+      "PostedDate": "2010-09-15T07:43:44.8-07:00",
+      "Id": 16080
+    },
+    {
+      "Message": "I hasten to add, that I'm sure 1.0.04 used to work for me.",
+      "PostedDate": "2010-09-15T07:44:32.663-07:00",
+      "Id": 16081
+    },
+    {
+      "Message": "Hey Rich,\n\nReally sorry for the issue, friend. Francis and Andy have updated the project with some new bug fixes. I'll take a look to see if your problem (which is an important one to squelch) has been resolved. If not, I shall get to the bottom of it! Hmm.\n\nCheers,\nEvan",
+      "PostedDate": "2010-09-16T01:36:49.927-07:00",
+      "Id": 16094
+    },
+    {
+      "Message": "Hi Evan,\n\nThat'd be great, because Chirpy is such a good tool. I eventually ran into problems with 1.0.0.3 as well and have had to revert to @haack's T4CSS.tt for my Less sheets.\n\nThis might show ignorance on my part, but I find it odd that the plugin doesn't install any of the DLLs required for compression or parsing of Less. Is this a step I've missed out? Should the installer be installing third party DLLs? I tried dropping the DDLs into the plugins folder to no avail.\n\nRich",
+      "PostedDate": "2010-09-17T04:27:23.03-07:00",
+      "Id": 16126
+    },
+    {
+      "Message": "I've taken a couple of screen shots in case they help.",
+      "PostedDate": "2010-09-17T04:38:06.177-07:00",
+      "Id": 16128
+    },
+    {
+      "Message": "The other is my add-ins folder. I dropped in dotless, EcmaScript and Yahoo in myself.",
+      "PostedDate": "2010-09-17T05:09:11.74-07:00",
+      "Id": 16129
+    },
+    {
+      "Message": "Other dll is merge in main dll with ilmerge",
+      "PostedDate": "2010-09-17T14:55:23.293-07:00",
+      "Id": 16215
+    },
+    {
+      "Message": "Chirp.PNG\n\nSee work item 31\nhttp://chirpy.codeplex.com/workitem/31",
+      "PostedDate": "2010-09-17T14:59:22.71-07:00",
+      "Id": 16216
+    },
+    {
+      "Message": "I can confirm that using a .less extension instead of a .less.css extension resolves the issue, albeit at the expense of CSS support within the file.\n\nSorry, it should have occurred to me to reset the file extension, but I set it so long ago it slipped my mind.",
+      "PostedDate": "2010-09-21T03:03:04.397-07:00",
+      "Id": 16310
+    },
+    {
+      "Message": "Which of course is resolved by using Noah Richards' extension. http://visualstudiogallery.msdn.microsoft.com/en-us/dd5635b0-3c70-484f-abcb-cbdcabaa9923",
+      "PostedDate": "2010-09-21T03:06:34.4-07:00",
+      "Id": 16311
+    },
+    {
+      "Message": "Try store files as UTF-8_without_ signature. It works for me.\n (file - advanced save options)",
+      "PostedDate": "2010-10-07T05:50:59.31-07:00",
+      "Id": 16872
+    },
+    {
+      "Message": "I have the same problem as described at the top.\nI'm using Chripy 1.0.0.5.3 on Win7 x64 with VS2010 Pro in a ASP.NET MVC 3 Beta project.\nDid you guys find any solutions yet?\n\nGoran",
+      "PostedDate": "2010-10-11T18:27:50.687-07:00",
+      "Id": 17039
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "479795",
+    "ThreadId": "223383",
+    "Html": "Looks like a great tool!  Is there a way that I could use this outside of visual studio?  Some the projects I do I like to use rake for the builds instead of visual studio.  ",
+    "PostedDate": "2010-08-12T09:43:29.583-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "479920",
+    "ThreadId": "223383",
+    "Html": "Presently no.\r\n\r\nMs-Ajax minifier support command prompt, MSBuild Task ....\r\nhttp://aspnet.codeplex.com/releases/view/35893\r\n\r\nGoogle Closure Compiler Application\r\nhttp://code.google.com/intl/fr/closure/compiler/docs/gettingstarted_app.html\r\n",
+    "PostedDate": "2010-08-12T14:33:46.773-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

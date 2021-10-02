@@ -1,0 +1,86 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Fixed in http://chirpy.codeplex.com/SourceControl/changeset/changes/77f2078c5082",
+    "ClosedDate": "2011-12-05T06:56:52.59-08:00",
+    "CommentCount": 6,
+    "Custom": null,
+    "Description": "- Including a Fix that solves this issue.\r\n\r\nI have added my solution to TFS, which has the habit of setting files to readonly. This causes Chirpy to shriek and die with the following last tweet:\r\n\r\n---------------------------\r\nSystem.UnauthorizedAccessException: Access to the path 'S:\\Mvc\\Sarens.Kracom.Mvc\\Sarens.Kracom.Web\\T4MVC.tt' is denied.\r\n   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)\r\n   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)\r\n   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access)\r\n   at Microsoft.VisualStudio.Text.Implementation.TextDocument.PerformSave(FileMode fileMode, String filePath, Boolean createFolder)\r\n   at Microsoft.VisualStudio.Text.Implementation.TextDocument.Save()\r\n   at Microsoft.VisualStudio.Editor.Implementation.VsDocDataAdapter.<Save>b__a()\r\n   at Microsoft.VisualStudio.Editor.Implementation.VsDocDataAdapter.Save(Action saver)\r\n   at Microsoft.VisualStudio.Editor.Implementation.VsDocDataAdapter.Save(String pszFilename, Int32 fRemember, UInt32 nFormatIndex)\r\n   at EnvDTE.ProjectItem.Save(String FileName)\r\n   at Zippy.Chirp.Engines.T4Engine.RunT4Template(DTE2 app, String t4TemplateList)\r\n---------------------------\r\nI took a look at the sourcecode and figure you can change the RunT4Template method (in \\Engines\\T4Engine.cs)\r\n                       \r\nSee the second solution, the first (which I removed here) did not quite work.",
+    "LastUpdatedDate": "2012-01-30T12:26:12.27-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-08-12T02:58:46.003-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Access to the path '<>\\Company.Project.Web\\T4MVC.tt' is denied.",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 94
+  },
+  "FileAttachments": [
+    {
+      "FileId": 269251,
+      "FileName": "T4Engine.cs",
+      "DownloadUrl": ".\\269251"
+    },
+    {
+      "FileId": 269277,
+      "FileName": "T4Engine.cs",
+      "DownloadUrl": ".\\269277"
+    },
+    {
+      "FileId": 309930,
+      "FileName": "RunT4OnBuild.zip",
+      "DownloadUrl": ".\\309930"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Ah, found a good solution, and tested it a little more ;-)\r\n\r\n                    ProjectItem projectItem = app.Solution.FindProjectItem(t4Template.Trim());\r\n                    if (projectItem != null)\r\n                    {\r\n                        // see http://msdn.microsoft.com/en-us/library/vslangproj.vsprojectitem.aspx\r\n                        VSProjectItem vsProjectItem = projectItem.Object as VSProjectItem;\r\n                        if (vsProjectItem != null)\r\n                        {\r\n                            vsProjectItem.RunCustomTool();\r\n                            continue;\r\n                        }\r\n                        // try the old way\r\n                        if (!projectItem.IsOpen)\r\n                        {\r\n                            projectItem.Open();\r\n                        }\r\n                        projectItem.Save();\r\n                    }",
+      "PostedDate": "2011-08-12T04:27:45.61-07:00",
+      "Id": 42553
+    },
+    {
+      "Message": "Same issue here...",
+      "PostedDate": "2011-11-01T08:35:40.423-07:00",
+      "Id": 48245
+    },
+    {
+      "Message": "Perforce also marks the T4MVC.tt readonly. I'd like to see this fix applied as well.  Thanks.",
+      "PostedDate": "2011-12-04T09:23:27.897-08:00",
+      "Id": 50162
+    },
+    {
+      "Message": "I no longer use chirpy; and have since then developed a small add-in; just for running the T4MVC.tt on each build and when asp.net MVC views/controllers are Added/Changed/Renamed/Removed.\r\n\r\nSee the attached zip file.\r\nIn the RunT4OnBuild\\bin\\Debug folder there is an RunT4OnBuild.vsi to easily install the add-in.\r\n\r\nThere is still a quirck in that it not always detects the T4MVC.tt file; closing the solution and opening it again (leaving VS2010 running) solves that.",
+      "PostedDate": "2011-12-05T05:23:15.743-08:00",
+      "Id": 50227
+    },
+    {
+      "Message": "Ahhh... sorry.  I should read more closely.  `RunCustomTool()` is a much better way of doing it.  Now in code: http://chirpy.codeplex.com/SourceControl/changeset/changes/f2e290e51f40.",
+      "PostedDate": "2011-12-05T07:05:48.697-08:00",
+      "Id": 50235
+    },
+    {
+      "Message": "I grabbed the following release and my concerns have been resolved.  Many thanks! http://chirpy.codeplex.com/releases/79914/download/322375",
+      "PostedDate": "2012-01-30T12:26:12.27-08:00",
+      "Id": 55006
+    }
+  ]
+}

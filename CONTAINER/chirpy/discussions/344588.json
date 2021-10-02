@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "799213",
+    "ThreadId": "344588",
+    "Html": "<p>The T4 template 'Run on build' feature would be great for us but I can't get it to work.</p>\n<p>I have checked the 'Run on Build' checkbox in the Chirpy options Dialog, but when I build my project in VS the files are not generated.</p>\n<p>Do I have to enter anything in the &nbsp;'Template:' text box?</p>\n<p><strong><br /></strong></p>",
+    "PostedDate": "2012-02-24T01:53:54.257-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "800666",
+    "ThreadId": "344588",
+    "Html": "<p><strong>Do I have to enter anything in the &nbsp;'Template:' text box?</strong></p>\r\n<p><span>Enter your t4 template file.</span></p>\r\n<p>Sample : t4mvc.tt, NHibernate.tt</p>\r\n<p><a href=\"http://www.weirdlover.com/2010/07/18/chirpy-attains-godlike-abilities-in-version-1-0-0-4/#autorun\">http://www.weirdlover.com/2010/07/18/chirpy-attains-godlike-abilities-in-version-1-0-0-4/#autorun</a></p>",
+    "PostedDate": "2012-02-26T11:26:44.333-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "801681",
+    "ThreadId": "344588",
+    "Html": "<p>I now found out that I need to enter either the absolute path of the tt file or the relative path from the solution folder (my tt file is in a sub-folder of the solution folder). If Chirpy does not find the tt file there is no warning or error message.</p>\n<p>But I still have a problem, I get a 'System.UnauthorizedAccessException' error when I build. e.g. Access to the path 'C:\\Code\\search\\myTemplate.tt' is denied.</p>\n<p>This is because the tt file is not checked out and it is read-only. We are using TFS.</p>\n<p>This makes it unusable for our requirements - we don't want to check out the tt file. The tt file does not change often, but the source model that the tt file uses to generate code changes regularly.</p>",
+    "PostedDate": "2012-02-27T00:52:32.1-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

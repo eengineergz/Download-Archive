@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Fix is now merge in main source code.",
+    "ClosedDate": "2010-10-05T16:38:10.03-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "The registry key the app is looking for does not exist in my machine. More than likely this is related to the fact that I'm running VS2010(32 bit process) on 64 bit OS.\r\nAnyway, it would be good to stay away from the windows registry. ",
+    "LastUpdatedDate": "2010-10-05T16:38:10.03-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-10-05T15:43:44.303-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Chirpy does not generate files on x64 OS - fix included",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 43
+  },
+  "FileAttachments": [
+    {
+      "FileId": 155164,
+      "FileName": "settings_fix.diff",
+      "DownloadUrl": ".\\155164"
+    }
+  ],
+  "Comments": []
+}

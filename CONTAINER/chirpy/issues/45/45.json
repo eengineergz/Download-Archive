@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Is work for me. Update you chirpy to last version.\n\n<head id=\"Head1\" runat=\"server\">\n<title>✄信息✈</title>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n\n<script type=\"text/javascript\">alert(\"\\u2704\\u4fe1\\u606f\\u2708\");alert(\"test\");</script>\n\n</head>",
+    "ClosedDate": "2011-05-23T07:56:07.647-07:00",
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "Unicode in strings are convert to \"????\" after the inline minification is processed.\r\n\r\n\r\n<head runat=\"server\">\r\n   <title>✄信息✈</title>\r\n   <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\r\n\r\n   <script type=\"text/javascript\">\r\n      alert('✄信息✈');\r\n      alert('test');\r\n   </script>\r\n\r\n</head>\r\n\r\n                becomes:\r\n\r\n<head runat=\"server\">\r\n   <title>✄信息✈</title>\r\n   <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\r\n\r\n   <script type=\"text/javascript\">alert(\"????\");alert(\"test\");</script>\r\n\r\n</head>",
+    "LastUpdatedDate": "2011-05-23T07:56:07.647-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-10-25T22:18:07.52-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Unicode not converted in inline minified script for .aspx",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 4,
+    "Id": 45
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Same here. Please add “--charset utf-8” option support for YUI.",
+      "PostedDate": "2011-05-22T22:54:02.397-07:00",
+      "Id": 36225
+    }
+  ]
+}

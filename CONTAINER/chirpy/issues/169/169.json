@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I'm having a problem while installing the Chirpy.vsi in my machine. I'm getting a following error \r\n\r\n_____\"A problem occured while running the installer. Please contact the content author for problems with the content.\r\n\r\nError message:\r\nCould not load file or assembly 'Microsoft.VisualStudio.VSContentInstaller, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies. The system cannot find the file specified.\"_____\r\n\r\nI'm new to chirpy tool. Can some guide me the step by step process of installing the chirpy.vsi.",
+    "LastUpdatedDate": "2014-05-26T22:38:53.41-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2014-05-26T22:38:53.223-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Getting error while installing Chirpy.vsi",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 169
+  },
+  "FileAttachments": [
+    {
+      "FileId": 850294,
+      "FileName": "ChirpyInstallationProblem.jpg",
+      "DownloadUrl": ".\\850294"
+    }
+  ],
+  "Comments": []
+}

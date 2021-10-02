@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "821046",
+    "ThreadId": "351504",
+    "Html": "\r\n<p>I installed twitterbootstrap today. I renamed main file bootstrap.less to bootstrap.chirp.less and managed to compile it with latest (2.0.0.4) version. Although I still had an error in progress-bars.less file:</p>\r\n<p></p>\r\n<pre>Error    2    Parse Error on line 9 in file 'progress-bars.less':\r\n  [8]: // Webkit\r\n  [9]: @-webkit-keyframes progress-bar-stripes {\r\n       ----------------------------------------^\r\n [10]:   from  { background-position: 0 0; }    bootstrap\\bootstrap.chirp.less    9    41</pre>\r\n<p></p>\r\n<p>&nbsp;</p>\r\n<p>I started to investigate an found that guys from bootstrap team are using new CSS3 animation attribute with its @keyframes syntax which does not supported by chirp:</p>\r\n<p></p>\r\n<div style=\"color:black; background-color:white\">\r\n<pre>// Webkit\r\n@-webkit-keyframes progress-bar-stripes {\r\n<span style=\"color:#a31515\">  from  </span>{ <span style=\"color:red\">background-position</span>: <span style=\"color:blue\">0 0</span>; }\r\n<span style=\"color:#a31515\">  to    </span>{ <span style=\"color:red\">background-position</span>: <span style=\"color:blue\">40px 0</span>; }\r\n}\r\n\r\n// Firefox\r\n@-moz-keyframes progress-bar-stripes {\r\n<span style=\"color:#a31515\">  from  </span>{ <span style=\"color:red\">background-position</span>: <span style=\"color:blue\">0 0</span>; }\r\n<span style=\"color:#a31515\">  to    </span>{ <span style=\"color:red\">background-position</span>: <span style=\"color:blue\">40px 0</span>; }\r\n}\r\n\r\n// Spec\r\n@keyframes progress-bar-stripes {\r\n<span style=\"color:#a31515\">  from  </span>{ <span style=\"color:red\">background-position</span>: <span style=\"color:blue\">0 0</span>; }\r\n<span style=\"color:#a31515\">  to    </span>{ <span style=\"color:red\">background-position</span>: <span style=\"color:blue\">40px 0</span>; }\r\n}\r\n\r\n</pre>\r\n</div>\r\nFor now, I've just commented this block (I am not going to use progress bars anyway) but I think it needs to be fixed.\r\n<p></p>\r\n",
+    "PostedDate": "2012-04-07T00:27:04.753-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "823918",
+    "ThreadId": "351504",
+    "Html": "<p>Chirpy use dotless for convert less to css.</p>\r\n<p>Probably dotless not support this feature.</p>\r\n<p><a href=\"https://github.com/dotless/dotless/issues/110\">https://github.com/dotless/dotless/issues/110</a></p>\r\n<p><a href=\"https://github.com/dotless/dotless/issues/163\">https://github.com/dotless/dotless/issues/163</a></p>",
+    "PostedDate": "2012-04-14T17:35:18.237-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "824200",
+    "ThreadId": "351504",
+    "Html": "<p>Yes, you are probably right. But I tried latest dotless version and it works fine with @keyframe. Moreover, twitterbootstrap team suggests to use dotless. I installed it using nuget and it was fine.</p>",
+    "PostedDate": "2012-04-15T22:47:52.573-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "824953",
+    "ThreadId": "351504",
+    "Html": "<p>What version of dotless is chirpy using? Maybe it's because they are using an older one? If so, this seems like a chirpy or dotless issue, not Orchard or the Orchard bootstrap theme.&nbsp;</p>",
+    "PostedDate": "2012-04-17T09:34:41.773-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "826735",
+    "ThreadId": "351504",
+    "Html": "<p>Chripy use NuGet package for Dotless.</p>\r\n<p>In last source code Chipry use version :&nbsp;1.3.0.0.</p>",
+    "PostedDate": "2012-04-20T16:03:43.82-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "840332",
+    "ThreadId": "351504",
+    "Html": "<p>I used twitter bootstrap with chirpy without any problems at all, though I grabbed all the sources of bootstrap (not the precompiled version).</p>",
+    "PostedDate": "2012-05-24T03:54:34.75-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

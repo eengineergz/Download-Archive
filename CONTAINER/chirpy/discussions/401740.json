@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "935986",
+    "ThreadId": "401740",
+    "Html": "\r\n<p>I am using Chirpy to convert coffeescript to javascript, it works when I installed it few months ago.&nbsp; But today when I save the coffeescript file, or select &quot;Chirpy minifier file&quot; on the item, a blank javascript file is generated.</p>\r\n<p>I can find the line of CoffeeScriptEngine - started and finished in the Chirpy output.</p>\r\n<p>The another function I using, Chirpy minifier on a javascript, is working.</p>\r\n<p>I tried to reinstall chirpy, doesn't help.</p>\r\n<p>Any idea how to solve the problem?</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks.</p>\r\n",
+    "PostedDate": "2012-11-03T01:06:01.443-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "939220",
+    "ThreadId": "401740",
+    "Html": "<p>Hello,</p>\r\n<p>Please disregard my last question.&nbsp; After I upgraded to 2.06, it start working again.</p>\r\n<p>Thanks.</p>\r\n<p>Regards<br />Joseph Leung</p>",
+    "PostedDate": "2012-11-09T08:59:19.487-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "939442",
+    "ThreadId": "401740",
+    "Html": "<p>Normally file is empty when error in your script.</p>",
+    "PostedDate": "2012-11-09T17:11:04.813-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

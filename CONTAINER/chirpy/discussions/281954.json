@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "708045",
+    "ThreadId": "281954",
+    "Html": "\r\n<p>Hi</p>\r\n<p>I was wondering if it would be possible to update the version of one of the engines by simply placing the newer version of the dll in the same folder.</p>\r\n<p>Assuming the interface hasn't changed Chirpy should be able to work with it. If it has changed (or it doesn't find a newer version) it could then fall back to the built in version.</p>\r\n<p>Just from a conceptual point of view, Chirpy is ideal for this type of dynamic composition.</p>\r\n<p>What are your thoughts?</p>\r\n",
+    "PostedDate": "2011-12-06T03:58:33.507-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "708884",
+    "ThreadId": "281954",
+    "Html": "<p>Here is a basic implementation of composing engines using MEF</p>\r\n<p><a href=\"https://github.com/jamesfoster/ChirpyMEF\">https://github.com/jamesfoster/ChirpyMEF</a></p>\r\n<p>As you can see from the example, you can override the built in implementation just by dropping the dotless dll into the same folder. You can even have one engine rely on another simply by [Import]ing the IEngineResolver.</p>\r\n<p>All you need to do to create an external engine is reference ChirpyInterface, implement IChirpyEngine, decorate your class with the [Export] attribute and the [ChirpyEngineMetadata(...)] attribute passing in the name of the engine, a category and a default file extension. (the attributes of the metadata object are provided mainly for example)</p>\r\n<p>With this setup you can extend existing engines and even add new engines without having to recompile Chirpy.</p>\r\n<p>You will obviously want to expand the IChirpyEngine interface to allow all the behviour you need.&nbsp;You could even expose a method for each engine to supply its own configuration options and use that to build dynamic config pages? (I don't know, I've not done any VS plugin development before.)</p>\r\n<p>Cheers</p>",
+    "PostedDate": "2011-12-07T08:55:51.08-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "713697",
+    "ThreadId": "281954",
+    "Html": "<p>Config page is create with xml file (Zippy.Addin).</p>\r\n<p>Each tab is node&nbsp;SubCategory.</p>",
+    "PostedDate": "2011-12-17T16:16:35.883-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "713709",
+    "ThreadId": "281954",
+    "Html": "Hi ploufs\r\n<div><br>\r\n</div>\r\n<div>Did you check out the project? What did you think?</div>\r\n<div><br>\r\n</div>\r\n<div>Thanks<br>\r\n</div>\r\n",
+    "PostedDate": "2011-12-17T17:36:33.49-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "713718",
+    "ThreadId": "281954",
+    "Html": "<p><strong>Did you check out the project</strong>?</p>\r\n<p>No</p>\r\n<p>Check project probably next week.</p>\r\n<p>This week task : Sass and scss support.</p>",
+    "PostedDate": "2011-12-17T19:08:05.83-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "718351",
+    "ThreadId": "281954",
+    "Html": "<p>Great work \"<a class=\"UserProfileLink\" href=\"http://www.codeplex.com/site/users/view/tgmdbm\">tgmdbm</a>'..</p>\r\n<p>Suggest:</p>\r\n<ul>\r\n<li>&nbsp;Valid your code with styleCop</li>\r\n<li>Add comment.</li>\r\n</ul>",
+    "PostedDate": "2011-12-29T08:41:45.343-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

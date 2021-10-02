@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "When merging together css file from multiple folders the image paths should be rewritten to local the files. \r\nFor instance consider the following mash config:\r\n\r\n<root>\r\n  <FileGroup Name=\"theme.css\">\r\n    <File Path=\"jqtouch/jqtouch.css\" />\r\n    <File Path=\"themes/jqt/theme.css\" />\r\n    <File Path=\"cutom.chirp.less\" />\r\n  </FileGroup>\r\n</root>\r\n\r\nthemes/jqt/theme.css has references to images within its local img folder:\r\nbackground:url(img/toolbar.png) - relative to themes/jqt/\r\n\r\nWhen merged and minified the paths remain the same, so images will not be found.",
+    "LastUpdatedDate": "2013-04-09T12:40:27.103-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-07-25T01:53:32.147-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Css mash and and image paths",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 6,
+    "Id": 91
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

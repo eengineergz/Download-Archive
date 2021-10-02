@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi,\r\n\r\nI've had a problem when using the console to minify and bundle my js files. The problem is that I reference chirpy-minified files from the bundles and now, in the Main method of the Program.cs file the execution is first bundling and then minifying for each directory. \r\n\r\nIn my case, bundles are also refering to other folder chirpy minifed items so I had to implement a change to the code in order to make it work:\r\n\r\nstatic void Main(string[] args)\r\n{\r\n    System.DateTime d = System.DateTime.Now;\r\n    System.Console.WriteLine(\"PLEASE, MAKE SURE ALL THE FILES IN YOUR FOLDER ARE NOT WRITE PROTECTED.\\nPRESS ANY KEY TO CONTINUE\");\r\n    System.Console.Read();\r\n    string findPath = string.Empty;\r\n    if (args.Length > 0)\r\n    {\r\n        findPath = args[0];\r\n    }\r\n            \r\n    //GoogleClosureJavaPath = \"\";\r\n\r\n    string[] dirs = Directory.GetDirectories(findPath, \"*\", SearchOption.AllDirectories);\r\n            \r\n    //first we make only file compressions\r\n    EngineDirectory(findPath);\r\n    foreach (var directory in dirs)\r\n    {\r\n        EngineDirectory(directory);\r\n    }\r\n\r\n    //then we make bundles.\r\n    //double iteration but bundles can now make a reference to already minified files.\r\n                     \r\n    ConfigDirectory(findPath);\r\n    foreach (var directory in dirs)\r\n    {\r\n        ConfigDirectory(directory);\r\n    }\r\n    System.Console.WriteLine(\"Spent time: \" + (d - System.DateTime.Now).ToString());\r\n\r\n}\r\n\r\n\r\nAs you can see I've splitted the execution in two loops and inverted the order. I think this works in all situations although it takes more execution time.\r\n\r\nI just wanted to let you know my scenario in case you want to update the project to cover it.\r\n\r\nBest regards,\r\n\r\nRoberto.",
+    "LastUpdatedDate": "2013-06-11T04:52:24.72-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2013-06-11T04:52:24.72-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Console issue: execution order makes minification fail",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 168
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Can we have the option so the generated files don't getting attached into the solution?\r\n\r\nI have the followings problems with the generated files included as a part of my solution:\r\n\r\n1. When negating to file by name, (with Resharper: ctrl + shift + T), I have to choose the less file over the generated css files. \r\n2. Each time that I copy-paste less file,  in order to create a new one, I get an error that the css files already created.\r\n3. After each copy-paste less file, in order to create a new one, I need to make my VisualHG to forget about the generated files, in order to don't get them source controlled.\r\n\r\nThanks for a great time saver project!",
+    "LastUpdatedDate": "2010-08-08T17:37:21.09-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-08-08T17:36:39.69-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Don't attach .css and .min.css to the solutoin",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 27
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

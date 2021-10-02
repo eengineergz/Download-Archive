@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "Chirpy doesn't work when create a new web site using file -> new -> web site -> asp.net 4\r\nbut works fine when using file -> new -> project -> c# (or vb.net) -> web site -> asp.net 4\r\n\r\nand when save every script (css, js and ...) got JSHint Error",
+    "LastUpdatedDate": "2011-05-18T15:34:45.643-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-05-17T23:46:02.11-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "VS 2010 minor bug",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 80
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Send your JSHint Error.",
+      "PostedDate": "2011-05-18T15:34:45.643-07:00",
+      "Id": 36023
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I just tried the \"Inline minification for Razor Views\" feature, I found that Chirpy will change the minified lines from my originalCRLF toLF which cause my Visual Studio 2010 notice me about the inconsistency linefeed problem.\r\n\r\nHope Chirpy can keep my original line feed characters.",
+    "LastUpdatedDate": "2012-05-20T07:59:58.227-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-05-20T07:59:58.227-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Inline minification for Razor Views will turn CRLF to LF",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 138
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

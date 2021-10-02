@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "799934",
+    "ThreadId": "344827",
+    "Html": "\r\n<p>I installed Chirpy 2.01 on my Windows 7 machine. I had to fix the installation of VS2008 because the addin file had 10.0 and it should have been 9.0 for VS2008. Before the change, Chirpy didn't show up in tools at all. After the change, when Chirpy saves\r\n a file, I get this in the output window:<br>\r\n<br>\r\nClosureCompilerEngine -- C:\\Projects\\...\\SourceCode\\...\\WebS</p>\r\n<div id=\"DescriptionPanel\">erver\\JS\\Utilities.chirp.js<br>\r\nJSHintEngine -- C:\\Projects\\...\\SourceCode\\...\\WebServer\\JS\\Utilities.chirp.js<br>\r\nError: Jurassic.JavaScriptException: SyntaxError: Unexpected token '&lt;' in expression.<br>\r\nat Jurassic.Compiler.Parser.ParseExpression(Token[] endTokens)<br>\r\nat Jurassic.Compiler.Parser.ParseLabelOrExpressionStatement()<br>\r\nat Jurassic.Compiler.Parser.ParseStatementNoNewContext()<br>\r\nat Jurassic.Compiler.Parser.ParseStatement()<br>\r\nat Jurassic.Compiler.Parser.Parse()<br>\r\nat Jurassic.Compiler.GlobalMethodGenerator.Parse()<br>\r\nat Jurassic.ScriptEngine.Execute(ScriptSource source)<br>\r\nat Jurassic.ScriptEngine.Execute(String code)<br>\r\nat UglifyCS.Environment.Run(String script, Expression`1[] vars)<br>\r\nat UglifyCS.Environment.RunFile(String file)<br>\r\nat UglifyCS.JSHint.OnInit()<br>\r\nat UglifyCS.Environment.Init()<br>\r\nat UglifyCS.Environment.get_Context()<br>\r\nat UglifyCS.Environment.set_Item(String name, Object value)<br>\r\nat UglifyCS.JSHint.JSHINT(String source, options options)<br>\r\nat Zippy.Chirp.Engines.JSHintEngine.Run(String fullFileName, ProjectItem projectItem)<br>\r\nat Zippy.Chirp.Engines.EngineManager.Process(ProjectItem projectItem)<br>\r\n<br>\r\n(Product name obfuscated)</div>\r\n<div></div>\r\n<div>Any ideas?</div>\r\n",
+    "PostedDate": "2012-02-25T12:57:44.233-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "808753",
+    "ThreadId": "344827",
+    "Html": "<p>Test with chirpy 2.04</p>\r\n<p><a href=\"http://chirpy.codeplex.com/releases/view/79914\">http://chirpy.codeplex.com/releases/view/79914</a></p>",
+    "PostedDate": "2012-03-11T09:58:47.987-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "809225",
+    "ThreadId": "344827",
+    "Html": "I installed 2.04 and edited the Addin file to reflect VS 9.0 rather than 10.0 to run on VS 2008. Now I get this On 3/11/2012 11:58 AM, ploufs wrote: &gt; &gt; From: ploufs &gt; &gt; Test with chirpy 2.04 &gt; &gt; http://chirpy.codeplex.com/releases/view/79914 &gt; &gt; Read\r\n the full discussion online &gt; . &gt; &gt; To add a post to this discussion, reply to this email &gt; (chirpy@discussions.codeplex.com &gt; ) &gt; &gt; To start a new discussion for this project, email &gt; chirpy@discussions.codeplex.com &gt; &gt; You are receiving this email because\r\n you subscribed to this discussion &gt; on CodePlex. You can unsubscribe &gt; on &gt; CodePlex.com. &gt; &gt; Please note: Images and attachments will be removed from emails. Any &gt; posts to this discussion will also be available online at CodePlex.com &gt; I installed 2.04 and\r\n edited the Addin file to reflect VS 9.0 rather than 10.0 to run on VS 2008. Now I get this<br>\r\n<br>\r\n<img src=\"cid:part1.07060100.00090309@MillerMicroSystems.com\" alt=\"\"><br>\r\n<br>\r\n<br>\r\nOn 3/11/2012 11:58 AM, ploufs wrote:\r\n<blockquote id=\"mid_CO1MSFTVADM02xt5BBB00011342_discussions_codeplex_com\" type=\"cite\">\r\n<p>From: ploufs</p>\r\n<div id=\"ThreadNotificationPostBody\">\r\n<p>Test with chirpy 2.04</p>\r\n<p><a href=\"http://chirpy.codeplex.com/releases/view/79914\">http://chirpy.codeplex.com/releases/view/79914</a></p>\r\n</div>\r\n</blockquote>\r\n",
+    "PostedDate": "2012-03-12T12:00:41.36-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "908017",
+    "ThreadId": "344827",
+    "Html": "<p>I just tried again, this time with 2.06 into VS 2008 (and 2010).</p>\r\n<p>&nbsp;</p>\r\n<p>After running the installer, when I tried to bring up VS 2008, I got this:</p>\r\n<p>--------------------------------------------------</p>\r\n<p>The Add-in 'Chirpy' failed to load or caused an exception.</p>\r\n<p>Would you like to remove this Add-in?</p>\r\n<p>...</p>\r\n<p>Error number: 8013101b</p>\r\n<p>---------------------------------------------------</p>\r\n<p>Is there any hope that Chirpy will ever work?</p>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2012-09-03T21:06:24.717-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

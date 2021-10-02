@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I'm getting an error when Chirpy tries to generate files from Bootstrap 2.0.2 that is currently available from Initializr.com. \r\n\r\nError\t88\tFatal error, cannot continue: null cannot be converted to an object\r\n\r\nError\t88\tExpected '}' on line 305 in file 'bootstrap/mixins.less':\r\n[304]:   opacity: @opacity / 100;\r\n[305]:    filter: ~\"alpha(opacity=@{opacity})\";\r\n       ---^\r\n[306]: }\t\r\n\r\nIf I simply delete line 305, another error is raised on the next line with a \"filter\" element.\r\n\r\nIt could be related to this: https://github.com/dotless/dotless/issues/155",
+    "LastUpdatedDate": "2012-04-26T13:13:01.933-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-04-07T17:46:43.483-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Error parsing \"filter\" property in Bootstrap 2.0.2",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 132
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

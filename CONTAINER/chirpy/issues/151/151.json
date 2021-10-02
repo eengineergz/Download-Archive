@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "I have no idea what the problem is, but I have the following js: http://pastie.org/4303569, and the resulting minified js is only \"window.a={};\". I get no warnings, or errors either.",
+    "LastUpdatedDate": "2012-07-23T06:36:23.13-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-07-22T18:40:24.273-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Problem with Closure compilation",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 151
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "You're probably using the advanced optimization mode, which is really aggressive. Below is a link to the docs explaining the advanced optimization mode. You probably want to switch it to use simple optimization in the Chirpy settings (Tools -> Options -> Chirpy -> Config -> Default JavaScript Minifier - select \"Google Closure Tools - Simple\").\nhttps://developers.google.com/closure/compiler/docs/api-tutorial3\n\n",
+      "PostedDate": "2012-07-23T06:36:23.13-07:00",
+      "Id": 70686
+    }
+  ]
+}

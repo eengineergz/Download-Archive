@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "568838",
+    "ThreadId": "246702",
+    "Html": "<p>Hi, first i'm a big fan of your ostrich :). I was reinventing the wheel when I found your project. The only thing that miss me is the ability to minify the html of the view in your ViewEngine, just after the inline style/script minification.</p>\n<p>I've done that in a post-build task but it would be awsome to have that in your project.</p>\n<p>The only trick is to fix some pecularities of Razor/WebForm Syntaxes: So far, I had to fix the view typing and the block syntax : they both need a carriage return character.</p>\n<p>Something like that :</p>\n<p>\n<div style=\"color: black; background-color: white;\">\n<pre><span style=\"color: green;\">//fix @model</span>\nviewText = Regex.Replace(viewText, <span style=\"color: #a31515;\">@\"(@model\\s+\\S+\\s*)\"</span>, <span style=\"color: #a31515;\">\"$1\\r\"</span>);\n<span style=\"color: green;\">//fix @{ }</span>\nviewText = Regex.Replace(viewText, <span style=\"color: #a31515;\">@\"(@{(\\s)*[^}]*}\\s*)\"</span>, <span style=\"color: #a31515;\">\"$1\\r\"</span>);\n</pre>\n</div>\n</p>\n<p>And it works great :)</p>\n<p>Cheers</p>",
+    "PostedDate": "2011-02-18T18:08:13.063-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "621222",
+    "ThreadId": "246702",
+    "Html": "<p>This feature would be awesome!</p>",
+    "PostedDate": "2011-06-01T00:31:12.52-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "http://chirpy.codeplex.com/SourceControl/changeset/changes/233f9dad62cd\nlibrary is now update to dotless 1.2.4.0",
+    "ClosedDate": "2012-03-09T16:23:48.607-08:00",
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "Currently it is not possible to use variables in media queries, e.g.\r\n\r\n@gp_mobileScreenWidth: 960px;\r\n@media screen and (max-width: @gp_mobileScreenWidth) {}\r\n\r\nWill in less render as:\r\n\r\n@media screen and (max-width: @gp_mobileScreenWidth) {}\r\n\r\nBut it should render:\r\n\r\n@media screen and (max-width: 960px) {}\r\n\r\nLooks like this was already fixed in dotless:\r\nhttps://github.com/dotless/dotless/issues/105\r\n\r\nAny chance of integrating this fix in chirpy?\r\n",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-03-08T02:38:02.47-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Variables in Media Queries in dotless files not supported",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 126
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Thanks for your quick update!",
+      "PostedDate": "2012-03-13T02:14:54.387-07:00",
+      "Id": 57603
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "I use intellisense in js files through visual studio 2010 at design time\r\n\r\nFor example in my .js files they will typically start with \r\n\r\n///<reference name=\"MicrosoftAjax.js\"/>\r\n///<reference name=\"MicrosoftAjaxWebForms.js\"/>\r\n/// <reference path=\"jQuery.js\" />\r\n/// <reference path=\"jQueryUI.js\" />\r\n\r\nAnd might include a service reference\r\n\r\n/// <reference path=\"../Service/sessionTick.asmx\" />\r\n\r\nCode within this file will then reference the jQuery global \"$\" and similarly the APSAjax \"sys\" object and any other objects accessible through the includes such as the document object etc.\r\n\r\nIf the intellisense engine can work out that the objects are available through the aforementioned \"silent\" includes, why cant chirpy realise that it doesn't need to report hundreds of warnings about objects it thinks are not available but really are?\r\n\r\neg chiroy reports to me that\r\n\r\n1. the silent includes are \"bad options: 'regex'\r\n\r\n2. the Sys references to the ajax object is \"'Sys' is not defined\"\r\n\r\n3. the jQuery instance is \"'$' is not defined\"\r\n\r\nand so on and so forth\r\n\r\nIs there any way to configure this to not report on these warnings so that i can see the woods for the trees because there are valid warnings buried amongst these invalid warnings\r\n",
+    "LastUpdatedDate": "2012-09-25T01:07:45.2-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-05-17T08:55:34.567-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "reference path js validator",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 4,
+    "Id": 137
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I am also facing the same problem.\nIs there any way to add $(jquery) intellisense  support in my .js files?",
+      "PostedDate": "2012-06-09T08:09:58.79-07:00",
+      "Id": 67672
+    }
+  ]
+}

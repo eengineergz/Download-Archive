@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Now that Chirpy supports CoffeeScript, it wold be great if it could also support:\r\n\r\nEco: Embedded CoffeeScript templates\r\n\r\nhttps://github.com/sstephenson/eco\r\n\r\n\"...or compile your templates to JavaScript with the eco command-line utility.\"",
+    "LastUpdatedDate": "2013-06-06T07:26:13.863-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-12-29T07:24:13.63-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Support \"Eco: Embedded CoffeeScript templates\"",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 112
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

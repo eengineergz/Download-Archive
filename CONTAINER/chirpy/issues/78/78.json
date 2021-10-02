@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "Everytime i try to combine my javascript files I get an exception. I'm using the latest version of Chirpy (VS 2010).\r\n\r\nError: System.ArgumentNullException: Value cannot be null.\r\nParameter name: key\r\n   at System.Collections.Generic.Dictionary`2.FindEntry(TKey key)\r\n   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)\r\n   at Zippy.Chirp.Engines.ConfigEngine.ReloadConfigFileDependencies(ProjectItem projectItem)\r\n   at Zippy.Chirp.Engines.ConfigEngine.Run(String fullFileName, ProjectItem projectItem)\r\n   at Zippy.Chirp.Engines.EngineManager.Process(ProjectItem projectItem)\r\n\r\nConfig file:\r\n<root\r\n  xmlns=\"urn:ChirpyConfig\"\r\n  xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n  xsi:schemaLocation=\"urn:ChirpyConfig http://www.weirdlover.com/chirpy/chirp.xsd\">\r\n    <FileGroup Name=\"scripts.js\">\r\n        <File Path=\"plugins/fancyzoom.js\" />\r\n        <File Path=\"plugins/jquery.watermark.js\" />\r\n        <File Path=\"plugins/jquery.tools.min.js\" />\r\n        <File Path=\"plugins/jquery.validate.js\" />\r\n        <File Path=\"plugins/MicrosoftMvcJQueryValidation.js\" />\r\n        <File Path=\"promo.js\" />\r\n    </FileGroup>\r\n</root>    ",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-04-27T07:36:07.197-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Value cannot be null exception",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 78
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Config file work in me test project.\r\n\r\nPlease attach full file in you issue",
+      "PostedDate": "2011-04-30T05:51:41.603-07:00",
+      "Id": 35046
+    }
+  ]
+}

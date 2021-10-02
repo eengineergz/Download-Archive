@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 3,
+    "Custom": null,
+    "Description": "Changing the .chirp.less suffix to just .less (in the setting) don't seems to work.\r\n\r\nI'm not sure why, but after restarting VS, it is working.",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-07-21T21:39:35.407-07:00",
+    "Status": {
+      "Name": "Resolved",
+      "Id": 7
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Use .less suffix instead .chirp.less suffix",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 19
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Is work in my test project.\n1. Create file test.less\n2. Change setting to .less\n3. open file test.less\n4. Save file (css is generate)\n\nThe css is generate on file save.\n\nMore detail : \nVisual studio version ?\nfile name before changing configuration ?",
+      "PostedDate": "2010-07-24T07:35:57.437-07:00",
+      "Id": 14688
+    },
+    {
+      "Message": "ploufs -- you're right. You have to resave the file in order to update. But couldn't we auto-update the project on config changes?",
+      "PostedDate": "2010-07-24T15:07:45.937-07:00",
+      "Id": 14694
+    },
+    {
+      "Message": "I don't sure what happened, but now it's working good.",
+      "PostedDate": "2010-08-08T17:30:13.167-07:00",
+      "Id": 15000
+    }
+  ]
+}

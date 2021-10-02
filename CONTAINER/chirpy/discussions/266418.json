@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "646962",
+    "ThreadId": "266418",
+    "Html": "\r\n<p>Chirpy is one the the only way for me to use LESS for .Net but i'd like to do so config for it.</p>\r\n<p>Is it possible not to create .less files if output css is empty?</p>\r\n<p>Is it possible to turn of minify option in and generate only .less file without .min.less?</p>\r\n",
+    "PostedDate": "2011-07-25T00:36:54.527-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "656030",
+    "ThreadId": "266418",
+    "Html": "<p><em>\"Chirpy is one the the only way for me to use LESS for .Net but i'd like to do so config for it\"</em></p>\n<p>Watch other product <a href=\"http://www.mindscapehq.com/products/web-workbench\"> http://www.mindscapehq.com/products/web-workbench</a></p>\n<p><em>\"Is it possible not to create .less files if output css is empty?\"</em></p>\n<p>No</p>\n<p><em>\"Is it possible to turn of minify option in and generate only .less file without .min.less?\"</em></p>\n<p>Yes, <span id=\"result_box\" class=\"short_text\" lang=\"en\"><span class=\"hps\">with </span></span>config file.</p>\n<pre style=\"font-family: Consolas; font-size: 13; color: black; background: white;\"><span style=\"color: blue;\">&lt;?</span><span style=\"color: #a31515;\">xml</span><span style=\"color: blue;\">&nbsp;</span><span style=\"color: red;\">version</span><span style=\"color: blue;\">=</span>\"<span style=\"color: blue;\">1.0</span>\"<span style=\"color: blue;\">?&gt;&nbsp;</span>\n<span style=\"color: blue;\">&nbsp;</span>\n<span style=\"color: blue;\">&lt;</span><span style=\"color: #a31515;\">root</span><span style=\"color: blue;\">&nbsp;</span>\n<span style=\"color: blue;\">&nbsp;&nbsp;</span><span style=\"color: red;\">xmlns</span><span style=\"color: blue;\">=</span>\"<span style=\"color: blue;\">urn:ChirpyConfig</span>\"<span style=\"color: blue;\">&nbsp;</span>\n<span style=\"color: blue;\">&nbsp;&nbsp;</span><span style=\"color: red;\">xmlns:xsi</span><span style=\"color: blue;\">=</span>\"<span style=\"color: blue;\">http://www.w3.org/2001/XMLSchema-instance</span>\"<span style=\"color: blue;\">&nbsp;</span>\n<span style=\"color: blue;\">&nbsp;&nbsp;</span><span style=\"color: red;\">xsi:schemaLocation</span><span style=\"color: blue;\">=</span>\"<span style=\"color: blue;\">urn:ChirpyConfig&nbsp;http://www.weirdlover.com/chirpy/chirp.xsd</span>\"<span style=\"color: blue;\">&gt;&nbsp;</span>\n<span style=\"color: blue;\">&nbsp;</span>\n<span style=\"color: blue;\">&nbsp;&nbsp;&lt;</span><span style=\"color: #a31515;\">FileGroup</span><span style=\"color: blue;\">&nbsp;</span><span style=\"color: red;\">Name</span><span style=\"color: blue;\">=</span>\"<span style=\"color: blue;\">mash.css</span>\"<span style=\"color: blue;\">&nbsp;</span><span style=\"color: red;\">Minify</span><span style=\"color: blue;\">=</span>\"<span style=\"color: blue;\">False</span>\"<span style=\"color: blue;\">&gt;&nbsp;</span>\n<span style=\"color: blue;\">&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style=\"color: #a31515;\">File</span><span style=\"color: blue;\">&nbsp;</span><span style=\"color: red;\">Path</span><span style=\"color: blue;\">=</span>\"<span style=\"color: blue;\">test.less</span>\"<span style=\"color: blue;\">/&gt;&nbsp;</span>\n<span style=\"color: blue;\">&nbsp;&nbsp;&lt;/</span><span style=\"color: #a31515;\">FileGroup</span><span style=\"color: blue;\">&gt;&nbsp;</span>\n<span style=\"color: blue;\">&nbsp;</span>\n \n<span style=\"color: blue;\">&lt;/</span><span style=\"color: #a31515;\">root</span><span style=\"color: blue;\">&gt; <br /></span></pre>",
+    "PostedDate": "2011-08-10T11:44:08.9-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "658773",
+    "ThreadId": "266418",
+    "Html": "<p>Many thanks for clear answer!</p>",
+    "PostedDate": "2011-08-16T04:19:47.41-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

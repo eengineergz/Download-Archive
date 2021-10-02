@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 3,
+    "Custom": null,
+    "Description": "Dear chirpy!\r\nChirpy got an message box error on each js or css save (that need to be minimized).\r\nWin7x64, VS 2012 RC, Chirpy  2.06\r\nR# 7, RedGate .NET Demon 1.2.0.1278 (vs extension)\r\n\r\n------------\r\nError: System.IO.IOException: The process cannot access the file 'D:\\...\\test.min.js' because it is being used by another process.\r\n   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)\r\n   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)\r\n   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)\r\n   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)\r\n   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)\r\n   at System.IO.File.InternalWriteAllText(String path, String contents, Encoding encoding, Boolean checkHost)\r\n   at System.IO.File.WriteAllText(String path, String contents, Encoding encoding)\r\n   at Zippy.Chirp.Manager.VSProjectItemManager.SaveFile(String filename, Object content)\r\n   at Zippy.Chirp.Manager.VSProjectItemManager.Process()\r\n   at Zippy.Chirp.Manager.VSProjectItemManager.Dispose()\r\n   at Zippy.Chirp.Engines.TransformEngine.Run(String fullFileName, ProjectItem projectItem)\r\n   at Zippy.Chirp.Engines.EngineManager.Process(ProjectItem projectItem)\r\n-----\r\n\r\nBut no any lock on selected file.\r\n\r\nThanks",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-08-03T19:21:03.617-07:00",
+    "Status": {
+      "Name": "Active",
+      "Id": 2
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Show error on each save on VS2012 ASP.NET 4 ",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 156
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "...It will be work fine if save file again and after some errors, chirpy may be disabled.\n\nThanks",
+      "PostedDate": "2012-08-03T21:14:15.477-07:00",
+      "Id": 73431
+    },
+    {
+      "Message": "MVC projet ?\nSource control ?\nOther add-in ?",
+      "PostedDate": "2012-10-06T09:18:23.423-07:00",
+      "Id": 78822
+    },
+    {
+      "Message": "ASP.NET WebForm\nSVN Source control with  AnkhSVN \nR# 7",
+      "PostedDate": "2012-10-10T13:28:35.757-07:00",
+      "Id": 79383
+    }
+  ]
+}

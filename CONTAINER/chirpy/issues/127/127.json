@@ -1,0 +1,80 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 8,
+    "Custom": null,
+    "Description": "Installed Chirpy on VS 2012 Ultimate SP1, created a file called asdf.yui.js, got this message. I was considering showing off Chirpy with the team but I am not going to install JSHINT nor Uglify nor tell my teammates to do so; there is a minified file despite this message.\r\n\r\n---------------------------\r\n\r\n---------------------------\r\nError: ReferenceError: JSHINT is not defined. See output window for details.\r\n---------------------------\r\nOK   \r\n---------------------------\r\n\r\nError: Jurassic.JavaScriptException: ReferenceError: JSHINT is not defined\r\n   at global_(ScriptEngine , Scope , Object )\r\n   at Jurassic.Compiler.GlobalMethodGenerator.Execute()\r\n   at Jurassic.ScriptEngine.Execute(ScriptSource source)\r\n   at Jurassic.ScriptEngine.Execute(String code)\r\n   at UglifyCS.Environment.Run(String script, Expression`1[] vars)\r\n   at UglifyCS.JSHint.JSHINT(String source, options options)\r\n   at Zippy.Chirp.Engines.JSHintEngine.Run(String fullFileName, ProjectItem projectItem)\r\n   at Zippy.Chirp.Engines.EngineManager.Process(ProjectItem projectItem)",
+    "LastUpdatedDate": "2012-06-10T13:48:17.597-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-03-08T15:00:50.31-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "JSHINT error on new install",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 127
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Chirpy version 2.01 or 2.04 ?",
+      "PostedDate": "2012-03-10T19:59:04.85-08:00",
+      "Id": 57489
+    },
+    {
+      "Message": "2.01 as I believe that was the recommended/default binary download when I posted this issue (still is).",
+      "PostedDate": "2012-03-10T22:57:06.51-08:00",
+      "Id": 57490
+    },
+    {
+      "Message": "Test with Chirpy version 2.04",
+      "PostedDate": "2012-03-11T10:12:58.743-07:00",
+      "Id": 57514
+    },
+    {
+      "Message": "2.04 fixed this problem for me (VS 2010, Windows 7).",
+      "PostedDate": "2012-04-24T07:54:24.837-07:00",
+      "Id": 63136
+    },
+    {
+      "Message": "I am using chirpy version 2.04 but still facing the same problem.\n\nAny solution  please ????",
+      "PostedDate": "2012-06-09T03:09:07.317-07:00",
+      "Id": 67664
+    },
+    {
+      "Message": "I am using chirpy 2.04 but still facing the same problem.\n\nIs there any solution guys ??",
+      "PostedDate": "2012-06-09T03:10:55.01-07:00",
+      "Id": 67665
+    },
+    {
+      "Message": "Test last build v 2.06\nhttp://chirpy.codeplex.com/releases/view/88455",
+      "PostedDate": "2012-06-09T08:11:04.84-07:00",
+      "Id": 67673
+    },
+    {
+      "Message": "solved by version 2.06",
+      "PostedDate": "2012-06-10T13:48:17.597-07:00",
+      "Id": 67701
+    }
+  ]
+}

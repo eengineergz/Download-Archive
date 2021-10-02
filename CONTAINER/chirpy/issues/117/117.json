@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Fix in changeset :\nhttp://chirpy.codeplex.com/SourceControl/changeset/changes/d8dbe8ecc108",
+    "ClosedDate": "2012-02-03T18:03:58.857-08:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "If chirpy is installed alongside Web WorkBench\r\nhttps://www.mindscapehq.com/products/web-workbench\r\n\r\nit breaks WW intellisense code.\r\n\r\n\r\nThe problem is TreatLessAsCss() in chirp.cs:\r\nhttp://chirpy.codeplex.com/SourceControl/changeset/view/4bb5f1101193#Chirp.cs\r\n\r\nSee:\r\nhttps://www.mindscapehq.com/forums/thread/271601#271600\r\n\r\n-\r\nRobert",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-02-02T12:03:11.323-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Chirpy breaks .less in Mindscape Web Workbench",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 117
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

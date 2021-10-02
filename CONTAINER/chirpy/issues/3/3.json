@@ -1,0 +1,76 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2010-08-03T06:22:35.007-07:00",
+    "CommentCount": 6,
+    "Custom": null,
+    "Description": "I vs 2010 version grouping style \"codebehind\" don't work.",
+    "LastUpdatedDate": "2010-08-03T06:22:35.007-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2010-06-01T14:51:52.747-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Vs 2010 - group file style \"codebehind\"",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 3
+  },
+  "FileAttachments": [
+    {
+      "FileId": 125531,
+      "FileName": "HelloChirpCss.png",
+      "DownloadUrl": ".\\125531"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Not sure what you mean by this? Can you give me an example?",
+      "PostedDate": "2010-06-02T01:33:04.463-07:00",
+      "Id": 12769
+    },
+    {
+      "Message": "Generate file is not show in children of source file.\r\n\r\nView attach file (vs2008 version).\r\n\r\nIn code _projectItem.ProjectItems ==null in vs2010.",
+      "PostedDate": "2010-06-04T16:00:54.46-07:00",
+      "Id": 12830
+    },
+    {
+      "Message": "Awesome project!\n\nI'm getting the same behaviour in VS2010\n\nEssentially, when I create a .chirp.config file in vs2010, no code-behind files are generated.\n\nI've tried changing the extension for config files in options->tools->chirpy but it exhibits the same behavior (i.e. nothing)\n\nThe other extensions DO properly kick in the T4 generation, I'm only seeing this behavior with the config file.",
+      "PostedDate": "2010-07-23T18:21:42.573-07:00",
+      "Id": 14682
+    },
+    {
+      "Message": "regKey.SetValue(\"ChirpconfigFile\", Settings.ChirpConfigFile);\n\nshouldn't this be 'ChirpConfigFile' like the in GetValue call?\n\nThat might be our problem.",
+      "PostedDate": "2010-07-23T18:42:55.517-07:00",
+      "Id": 14683
+    },
+    {
+      "Message": "Work on project type : ASP.NET MVC 2 Web Application, ASP.NET Web Application ...\nDon't work on project type :  ASP.NET Web Site\n\ndifference between Web-Site and Web-Application-Project : http://www.megasolutions.net/AspNet/difference-between-Web-Site-and-Web-Application-Project-27210.aspx",
+      "PostedDate": "2010-07-24T06:58:04.59-07:00",
+      "Id": 14687
+    },
+    {
+      "Message": "I can reproduce the problem if I use absolute paths in the config xml (i.e. /scripts/blahblah.min.js)\nNo error about not being able to use absolute paths and no t4 generation.\nWorkaround: Use relative paths\n\nThanks again for this great addin!\n",
+      "PostedDate": "2010-07-24T14:48:35.917-07:00",
+      "Id": 14693
+    }
+  ]
+}

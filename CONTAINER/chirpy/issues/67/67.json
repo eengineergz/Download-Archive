@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 4,
+    "Custom": null,
+    "Description": "Chirpy does't work with VS 2010 SP1 on ASP.NET 4 but works fine with VS 2010 SP1 on ASP.NET 3.5 or earlier!!!\r\nSome confusing...\r\nThanks",
+    "LastUpdatedDate": "2012-06-09T01:43:30.633-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-04-03T02:08:54.27-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Does't work on VS 2010 ASP.NET 4",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 4,
+    "Id": 67
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "More detail.\nFile type js, css...\nFile minifer mode (yui,google...)",
+      "PostedDate": "2011-04-17T08:43:46.007-07:00",
+      "Id": 34319
+    },
+    {
+      "Message": "I just installed Chirpy for the first time directly through the VS addins menu in VS2010.  I have a .NET 4 website that I am trying Chirpy on.  \n\nI've tried creating a test.yui.js and a test.chirpy.js file and neither one of them did anything.  No min files were created and no codebehind shows up.  All of our code is in TFS if that helps.  ",
+      "PostedDate": "2011-04-21T11:55:59.357-07:00",
+      "Id": 34622
+    },
+    {
+      "Message": "Update: I looked into this even more.  It appears that the version that appears in the VS2010 Extention Manager is not the latest version of Chirpy.  I downloaded v2 from the front page of Codeplex and installed it.  Chirpy appears to be working just fine on my .NET 4 website.  It does add the .min files and they appear as \"code-behind\" files in the UI.  Thanks!",
+      "PostedDate": "2011-04-21T12:23:41.93-07:00",
+      "Id": 34625
+    },
+    {
+      "Message": "Details:\n - VS 2010 (with no SP or with SP1), ASP.NET 4 (not ASP.NET 3.5)\n - File types: js, css, less and any other\n - File minifer mode: ms, google, yui and any other!!!\n\n* Some times files are minifed, but isn't included in project\n* When you want save a js (or any other) without minifer, got an error\n",
+      "PostedDate": "2011-05-16T01:36:55.857-07:00",
+      "Id": 35812
+    }
+  ]
+}

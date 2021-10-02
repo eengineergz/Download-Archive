@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "813087",
+    "ThreadId": "349352",
+    "Html": "<p>The change on <a href=\"http://chirpy.codeplex.com/SourceControl/network/forks/GregWa/BleedingChirpy/changeset/changes/c7d5b1cf6f5d#Engines%2fConfigEngine.cs\"> 221</a>&nbsp;in the ConfigEngine was required to resolve <a href=\"http://chirpy.codeplex.com/workitem/122\"> http://chirpy.codeplex.com/workitem/122</a>&nbsp;unless the logic changes from EndsWith to Contains otherwise the bug is not resolved as .less.css will never be properly detected.</p>",
+    "PostedDate": "2012-03-20T09:12:31.687-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "814973",
+    "ThreadId": "349352",
+    "Html": "<p><a href=\"http://chirpy.codeplex.com/SourceControl/changeset/changes/a164a04528d5\">http://chirpy.codeplex.com/SourceControl/changeset/changes/a164a04528d5</a></p>",
+    "PostedDate": "2012-03-24T06:13:54.9-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "816196",
+    "ThreadId": "349352",
+    "Html": "<p>That definitely will resolve it. Thanks for incorporating that change.</p>",
+    "PostedDate": "2012-03-27T11:31:34.243-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

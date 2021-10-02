@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "647492",
+    "ThreadId": "266541",
+    "Html": "\r\n<p>Would it be possible to add some more flexible options in how to deal with the output file?</p>\r\n<p>It would be nice if /js/<span style=\"color:#ff0000\">dev</span>/myjs-uglify.js could be moved to /js/<span style=\"color:#ff0000\">prod</span>/myjs-uglify.js</p>\r\n",
+    "PostedDate": "2011-07-25T20:12:48.26-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

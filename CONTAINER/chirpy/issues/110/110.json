@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 2,
+    "Custom": null,
+    "Description": "I installed on VS 2010 SP1, created a small all.chirp.config and saved it.  the Output windows displays the line:\r\n\r\nConfigEngine -- C:\\Users\\me\\Documents\\Visual Studio 2010\\Projects\\MyPrj\\Website\\Content\\all.chirp.config\r\n\r\nover and over and over, whilst my CPU gets pegged... the config file contains:\r\n\r\n<root>\r\n    <FileGroup Name=\"system.css\">\r\n        <File Path=\"Fonts/all.css\" />\r\n        <File Path=\"Google.Prettify.css\" />\r\n    </FileGroup>\r\n    <FileGroup Name=\"MyPrj.css\">\r\n        <File Path=\"site.css\" />\r\n        <Folder Path=\"MyPrj\" Pattern=\"*.css\" />\r\n    </FileGroup>\r\n    <FileGroup Name=\"system.js\">\r\n        <File Path=\"../Scripts/browserDetect.js\" />\r\n    </FileGroup>\r\n    <FileGroup Name=\"MyPrj.js\">\r\n        <Folder Path=\"../Scripts/MyPrj\" Pattern=\"*.js\" />\r\n    </FileGroup>\r\n</root>\r\n\r\nwhere the first folder (with the *.css) contains 6 files and the second (with the *.js) contains 14 files.  should be no big deal...\r\n\r\nhelp?",
+    "LastUpdatedDate": "2011-12-31T18:14:24.09-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-12-18T01:42:55.513-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "100% CPU",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 110
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "as an aside, I get the error: \"The 'root' element is not declared\" from the tool...",
+      "PostedDate": "2011-12-18T15:38:34.977-08:00",
+      "Id": 51303
+    },
+    {
+      "Message": "\"as an aside, I get the error: \"The 'root' element is not declared\" from the tool...\"\nFile encoding problem set to utf-8",
+      "PostedDate": "2011-12-31T18:14:24.09-08:00",
+      "Id": 51864
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "http://chirpy.codeplex.com/SourceControl/changeset/changes/b0fea5d13101",
+    "ClosedDate": "2011-09-30T15:25:17.927-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I am using the chirpy console during the build process in TFS.  During the build process TFS fetches the files from source control and then performs the build. The file attributes defaults to readonly and chirpy console cannot overwrite these files. I have fixed this in my version of your code by editing Zippy.Chirp.Manager.VSProjectItemManager\r\n\r\n        public void SaveFile(string filename, object content)\r\n        {\r\n            var exists = System.IO.File.Exists(filename);\r\n            if (exists)\r\n            {\r\n                bool isReadOnly = ((File.GetAttributes(filename) & FileAttributes.ReadOnly) == FileAttributes.ReadOnly);\r\n                if (isReadOnly)\r\n                {\r\n                    File.SetAttributes(filename, File.GetAttributes(filename) & ~FileAttributes.ReadOnly);\r\n                }\r\n            }\r\n            if (content is string || content == null)\r\n            {\r\n                System.IO.File.WriteAllText(filename, (string)content, System.Text.Encoding.UTF8);\r\n            }\r\n            else if (content is byte[])\r\n            {\r\n                System.IO.File.WriteAllBytes(filename, (byte[])content);\r\n            }\r\n            else\r\n            {\r\n                throw new NotSupportedException();\r\n            }\r\n        }\r\n\r\nAlso, found a bug in Console project, Program.cs, the config file could not be found, its the last few lines of code.\r\nchanged \r\nforeach (string filename in Directory.GetFiles(findPath, \"*\" + new Settings(directory).ChirpConfigFile, SearchOption.TopDirectoryOnly))\r\nto\r\nforeach (string filename in Directory.GetFiles(directory, \"*\" + new Settings(directory).ChirpConfigFile, SearchOption.TopDirectoryOnly))\r\n",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-09-27T03:29:34.76-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "When writing out compressed or combined files get security exception",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 99
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

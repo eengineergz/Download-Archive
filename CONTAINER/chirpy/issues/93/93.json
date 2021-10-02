@@ -1,0 +1,65 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 5,
+    "Custom": null,
+    "Description": "I receive the following error for any chirp.less file I have, regardless of if it contains content or not:\r\n\r\nError 53 Fatal error, cannot continue: null cannot be converted to an object C:\\Users\\Administrator\\Projects\\Project\\Content\\test.css 1 1 Project\r\n\r\nThis error does not seem to block the generation of the .css file, however.",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-08-09T11:05:53.93-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "LESS related error: null cannot be converted to an object ",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 3,
+    "Id": 93
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Work perfectly on my dev pc with last source code.\nPlease send you less file",
+      "PostedDate": "2011-12-17T16:21:01.427-08:00",
+      "Id": 51283
+    },
+    {
+      "Message": "+1 same issue - I'm compiling Twitter's Bootstrap less files.",
+      "PostedDate": "2011-12-18T20:14:27.22-08:00",
+      "Id": 51307
+    },
+    {
+      "Message": "\"brentonw\" \nWork \"bootstrap.less\" on web site https://github.com/twitter/bootstrap/downloads\n\nTest with last version (source code) the dotless engine is update.",
+      "PostedDate": "2011-12-31T17:50:15.47-08:00",
+      "Id": 51862
+    },
+    {
+      "Message": "@ploufs - do you have a new build of chirpy available?",
+      "PostedDate": "2012-01-02T15:21:48.133-08:00",
+      "Id": 51903
+    },
+    {
+      "Message": "@brentonw - yes (ver 2.03)\nhttp://chirpy.codeplex.com/releases/view/78571",
+      "PostedDate": "2012-01-02T16:50:39.163-08:00",
+      "Id": 51908
+    }
+  ]
+}

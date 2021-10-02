@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "http://chirpy.codeplex.com/SourceControl/changeset/changes/a63fdd779876\n\n<root>\n<FileGroup Name=\"Main.css\">\n<File Path=\"Main.less.css\" Engine=\"Less\" />\n</FileGroup>\n</root>",
+    "ClosedDate": "2012-05-20T09:08:30.393-07:00",
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "It would be cool if I could create a .less file with a .css extension and have Chirpy process it as .less. This would allow people to have syntax highlighting and Intellisense for their .less files.\r\n\r\nLike this...\r\n\r\n<root>\r\n    <FileGroup Name=\"Main.css\">\r\n        <File Path=\"Main.less.css\" />\r\n    </FileGroup>\r\n</root>\r\n",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-04-23T16:45:38.02-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Allow .less.css extension in .chirp.config",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 135
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Thanks.",
+      "PostedDate": "2012-05-20T11:06:33.233-07:00",
+      "Id": 66277
+    }
+  ]
+}

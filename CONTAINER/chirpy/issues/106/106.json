@@ -1,0 +1,91 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 9,
+    "Custom": null,
+    "Description": "As reported by various others, the config file is not automatically regenerated.\r\n\r\nThis is a different bug to the one that was fixed a while back. This one only occurs when the source files are not in the same directory as the config file.\r\n\r\nThis is a very old bug, so I dearly hope it can be fixed. I tried the trunk code, but the problem is still there.",
+    "LastUpdatedDate": "2017-12-09T07:44:00.32-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2011-10-23T03:46:50.02-07:00",
+    "Status": {
+      "Name": "Active",
+      "Id": 2
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Config files are not auto mashed if source files are in a different directory",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 106
+  },
+  "FileAttachments": [
+    {
+      "FileId": 309983,
+      "FileName": "bin.zip",
+      "DownloadUrl": ".\\309983"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "This should be fixed.  This is quite a common scenario for me.  I did find another issue related to this, where config files may not be refreshed when a source file changes, but it didn't matter what directory they were in.  Please try the latest source (http://chirpy.codeplex.com/SourceControl/changeset/changes/81fbfb2db28d), and if there's still a problem, please let me know.",
+      "PostedDate": "2011-12-05T07:31:53.98-08:00",
+      "Id": 50238
+    },
+    {
+      "Message": "Thanks for working on it. I'm going around in circles, trying to get it to compile, so many references and dependencies... Is there perhaps a build server on here from which I can grab the binaries? If not, can I just drop some of the binaries into my VS addins directory, or do I need to do the formal install from the msi (that's the compile I can't get to work).",
+      "PostedDate": "2011-12-05T08:34:22.977-08:00",
+      "Id": 50241
+    },
+    {
+      "Message": "You can just drop the binary (Chirp.dll) into your My Documents/Visual Studio 2010/Addins directory.  I've also attached my latest build.",
+      "PostedDate": "2011-12-05T08:53:34.107-08:00",
+      "Id": 50243
+    },
+    {
+      "Message": "I used your binaries, but unfortunately they didn't have the desired effect, in fact, mashing didn't work at all. I'm going to try compiling the main project again to get the required Chirpy.dll.",
+      "PostedDate": "2011-12-05T10:03:16.073-08:00",
+      "Id": 50250
+    },
+    {
+      "Message": "Nope, my build didn't work at all either. I compiled the main project, and copied the TempChirp.dll and pdb to the VS folder, and renamed them \"Chirpy.dll\" and pdb. Mashing doesn't work at all for some reason. I reverted back to changeset b448c4bb5d24.",
+      "PostedDate": "2011-12-05T10:26:21.987-08:00",
+      "Id": 50252
+    },
+    {
+      "Message": "Try this installer: http://andy.edinborough.org/Zippy.Setup.VS10.msi.zip",
+      "PostedDate": "2011-12-05T10:44:58.12-08:00",
+      "Id": 50253
+    },
+    {
+      "Message": "Okay, what happens now is that the auto-mashing still doesn't work (when dependency is in a different directory to the config file), so as before I need to manually save the \".config\" file, and then it mashes all the stuff within. Another bug that may interest you: with this version, as soon as I install it and reopen my solution, all my mashed \".css\" and \".js\" files are still there, but it kills my minified files  \".min.css\" and \".min.js\" files. When I manually save the config, it makes no difference, it only mashes the first \"FileGroup\"--my first is \"Minify=False\" and the second is \"Minify=True\", and so it only mashes the first one. Maybe this is related to the dependency problem?",
+      "PostedDate": "2011-12-05T13:20:47.19-08:00",
+      "Id": 50273
+    },
+    {
+      "Message": "Okay finally managed to compile from the trunk and everything is back to \"normal\" (so ignore my last comment as it's probably something to do with that msi). But, the dependency bug is still there.",
+      "PostedDate": "2011-12-10T14:16:46.013-08:00",
+      "Id": 50636
+    },
+    {
+      "Message": "Spoke to soon, that trashing of the minified files bug is back. I cannot unfortunately replicate the bug yet. However it may be an unrelated bug. It only occurs in the latest version.",
+      "PostedDate": "2011-12-11T11:42:37.757-08:00",
+      "Id": 50653
+    }
+  ]
+}

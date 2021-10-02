@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "562700",
+    "ThreadId": "245130",
+    "Html": "\r\n<p>Hi all,</p>\r\n<p>Is it possible to convert Chirpy to a Visual Studio extension rather than a standalone msi install? &nbsp;That way, it can take advantage of the update functionality baked into the Visual Studio Extension Manager. &nbsp;</p>\r\n",
+    "PostedDate": "2011-02-08T07:49:42.87-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "562961",
+    "ThreadId": "245130",
+    "Html": "\r\n<p>http://chirpy.codeplex.com/workitem/10</p>\r\n",
+    "PostedDate": "2011-02-08T15:37:26.487-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "562964",
+    "ThreadId": "245130",
+    "Html": "\r\n<p>Missed that one, thanks!</p>\r\n",
+    "PostedDate": "2011-02-08T15:40:08.783-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

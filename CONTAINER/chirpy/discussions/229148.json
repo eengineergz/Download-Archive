@@ -1,0 +1,122 @@
+[
+  {
+    "Id": "500485",
+    "ThreadId": "229148",
+    "Html": "<p>Hi,</p>\r\n<p>Just downloaded and installed the latest version of Chirpy. I can see in the VS2010 addin manager that the addin has been loaded. When I create (for example)</p>\r\n<p>foo.yui.js or bar.chirp.less I can see in the output windows that LessEngine and YuiJsEngine are being invoked for the files - however no files are being outputted</p>\r\n<p>by the addin.</p>\r\n<p>They are not displaying in the solution explorer nor are they actually available in the folder on the drive either. There are no errors being reported.</p>\r\n<p>Any ideas on how I can resolve this?</p>\r\n<p>&nbsp;</p>\r\n<p>/Andreas</p>",
+    "PostedDate": "2010-09-30T05:58:46.55-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "500790",
+    "ThreadId": "229148",
+    "Html": "<p>More detail</p>\r\n<p>Windows version.</p>\r\n<p>VS2010 version .</p>\r\n<p>Project type</p>",
+    "PostedDate": "2010-09-30T19:30:48.163-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "500820",
+    "ThreadId": "229148",
+    "Html": "<p>Windows 7 x64<br>Visual Studio 2010 Professional<br>ASP.NET MVC2 Project<br>Latest version (from codeplex) of Chripy&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>I've now tried it on two different machiens with the same setup and the same results - I see that the engines are being invoked but there are no</p>\r\n<p>files being generated for me.&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>EDIT: Just tried it with an ASP.NET project as well - same results</p>",
+    "PostedDate": "2010-09-30T21:49:13.337-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "501291",
+    "ThreadId": "229148",
+    "Html": "<p>Send your solution.</p>\r\n<p>\r\n<hr>\r\nThe console version work on your file ?</p>",
+    "PostedDate": "2010-10-01T16:22:16.78-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "501372",
+    "ThreadId": "229148",
+    "Html": "<p>There's nothing to be seen in the solution.. I created a brand new ASP.NET MVC (and later ASP.NET Website) project just to try it out</p>\r\n<p>How do I run the console version?</p>\r\n<p>Also I have not downloaded any of the minimizers etc as&nbsp;separate&nbsp;tools, I assume they are baked into Chirpy?</p>",
+    "PostedDate": "2010-10-02T00:16:59.25-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "501428",
+    "ThreadId": "229148",
+    "Html": "<p>All minimizers is merge in Chirpy dll.</p>\r\n<p>&nbsp;</p>\r\n<p>Console version information :</p>\r\n<p>Watch changeset : b1b7a2d4cca9</p>\r\n<p>http://chirpy.codeplex.com/SourceControl/changeset/changes/b1b7a2d4cca9</p>\r\n<p>Add chirpy command-line<br>Only support engine : YuiCssEngine,YuiJsEngine,ClosureCompilerEngine,LessEngine,MsJsEngine,MsCssEngine<br>Simply call program with folder path in argument.<br>Sample : Chirpy.exe c:\\testsite\\</p>",
+    "PostedDate": "2010-10-02T05:59:56.217-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "502346",
+    "ThreadId": "229148",
+    "Html": "<p>Hi,</p>\r\n<p>So I just ran the console version and there were some issues with running it out of the box. I called the exe as following</p>\r\n<p>chirpy.exe &quot;pathToProject&quot; and the project I was testing it on had one foo.yui.js and one bar.chirp.less file</p>\r\n<p>&nbsp;</p>\r\n<p>(1) Following line threw an NullReferenceException</p>\r\n<p style=\"padding-left:30px\"><em><span style=\"color:#ff0000\">extensions = extensions == null ? Settings.AllExtensions : extensions.Union(Settings.AllExtensions).ToArray();</span></em></p>\r\n<p>In the Utilities.GetBaseFileName method. The reason for it is that Settings.AllExtensions is null. However, if I commented</p>\r\n<p>out the line then it was able to build a foo.min.js file as expected!</p>\r\n<p>&nbsp;</p>\r\n<p>(2) When it got to the bar.chirp.less file there was another problem. The TransformToCss method in the LessEngine.cs file</p>\r\n<p>throw another NullReferenceException, this time for the following line</p>\r\n<p style=\"padding-left:30px\"><span style=\"color:#ff0000\"><em>TaskList.Instance.Add(projectItem.ContainingProject, Microsoft.VisualStudio.Shell.TaskErrorCategory.Error, fullFileName, line, column, description);</em></span></p>\r\n<p>The reason being that TaskList.Instance is null.</p>\r\n<p>&nbsp;</p>\r\n<p>All in all it doesnt appear that Chirpy is quite ready for a console runner since there seem to be a couple of dependencies for the IDE</p>\r\n<p>still.&nbsp;However, I'm not quite sure why either engines work when they are invoked from inside of Visual Studio by the add-in, even though that I can see</p>\r\n<p>in the output window that they have executed. I really hope you can help me resolve this since the capabilities it adds to a web developer is</p>\r\n<p>awesome.&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks you, looking forward to resolving this issue soon</p>",
+    "PostedDate": "2010-10-05T00:35:39.51-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "502459",
+    "ThreadId": "229148",
+    "Html": "<p>I'm seeing the same issue. I'm using&nbsp;http://chirpy.codeplex.com/SourceControl/changeset/changes/16a615f55b52 and it does not seem to work with regular ASP.NET MVC 2 project.</p>\r\n<p>It does not generate files but the output windows indicates some kind of activity: &nbsp;ClosureCompilerEngine -- c:\\Temp\\MvcApplication3\\MvcApplication3\\Scripts\\jquery-1.4.1-vsdoc.chirp.js</p>\r\n<p>My Setup:</p>\r\n<ul>\r\n<li>Windows 7 x64</li>\r\n<li>VS 2010 Premium</li>\r\n</ul>\r\n<p>Anything I can do to help you with the issue ? Is there a log I can look at ?</p>",
+    "PostedDate": "2010-10-05T06:14:25.167-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "502738",
+    "ThreadId": "229148",
+    "Html": "<p>I believe this issue is specific to 64 bit OS that we are both running. I've fixed it and you can grab the diff file from here:&nbsp;<a href=\"http://chirpy.codeplex.com/workitem/43\">http://chirpy.codeplex.com/workitem/43</a></p>\r\n<p>&nbsp;</p>\r\n<p>Cheers</p>\r\n<p>Pawel</p>",
+    "PostedDate": "2010-10-05T15:45:55.6-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "502748",
+    "ThreadId": "229148",
+    "Html": "<p>thecodejunkie,</p>\r\n<p>Console application work on my test PC (windows 7 32bit)</p>\r\n<p>New version of code source available show message box when error throw on load setting in registry and fix for x64.</p>\r\n<p>&nbsp;</p>\r\n<p><a href=\"http://chirpy.codeplex.com/SourceControl/changeset/changes/545c2664560a\">http://chirpy.codeplex.com/SourceControl/changeset/changes/545c2664560a</a></p>",
+    "PostedDate": "2010-10-05T16:05:09.593-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "505718",
+    "ThreadId": "229148",
+    "Html": "<p>I've got Win7 x64 and I just downloaded the latest source code.</p>\r\n<p>The Console application works for me, but no entirely as I expected.</p>\r\n<p>When I run it, it just transforms the .less files (I don't have any other), but it does nothing with the .config file.</p>\r\n<p>Is there a way to make it make groups as defined in the .config file?</p>\r\n<p>I have the same problem as described here: http://chirpy.codeplex.com/workitem/34, and I though I could temporarily bypass it with a pre-compile events, as I really need the files for groups only when I build (no IntelliSense in Razor views yet).</p>\r\n<p>&nbsp;</p>\r\n<p>Cheers,</p>\r\n<p>Goran</p>",
+    "PostedDate": "2010-10-11T18:07:35.717-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "506295",
+    "ThreadId": "229148",
+    "Html": "<p>Presently console application don't support .config file.</p>\r\n<p>UPDATE: Changeset 0a122aa3007d support .config file.</p>\r\n<p>http://chirpy.codeplex.com/SourceControl/changeset/changes/0a122aa3007d</p>",
+    "PostedDate": "2010-10-12T15:01:55.04-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "508637",
+    "ThreadId": "229148",
+    "Html": "<p>Hi,</p>\r\n<p>I just tried the version you posted on the 6th of October (<a href=\"http://chirpy.codeplex.com/SourceControl/changeset/changes/545c2664560a\">http://chirpy.codeplex.com/SourceControl/changeset/changes/545c2664560a</a>) and it works fine when I run it in the Console</p>\r\n<p>runner, but if I build the solution and copy the Chirpy.dll and Zippy.AddIn files to my VS2010 Addins folder I get the same results as before - I can see in the output windows that it</p>\r\n<p>is being invoked but there are no files being generated and included in my project. In fact I did a search for the files on my entire harddrive and they are noway to be found, it's not</p>\r\n<p>a rouge path thats the problem, there is no file, at all, being generated.</p>\r\n<p>&nbsp;</p>\r\n<p>This is killing me! Really want to use this awesome tool! :-)</p>",
+    "PostedDate": "2010-10-17T23:27:41.15-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "509647",
+    "ThreadId": "229148",
+    "Html": "<p>Test new code source.</p>\r\n<p>﻿<a href=\"http://chirpy.codeplex.com/SourceControl/changeset/changes/dd3c317c3aa0\">http://chirpy.codeplex.com/SourceControl/changeset/changes/dd3c317c3aa0</a></p>\r\n<p>This new code content :</p>\r\n<p>- try-catch when action run.</p>",
+    "PostedDate": "2010-10-19T15:50:13.137-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "509761",
+    "ThreadId": "229148",
+    "Html": "<p>I have no idea why, but this version works and I don't get the messagebox/output window trace that you added. Odd, but awesome at the same time!</p>",
+    "PostedDate": "2010-10-19T23:03:49.657-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

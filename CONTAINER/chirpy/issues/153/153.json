@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "This isn't an issue, but I didn't see any other place that made sense to submit this (or that allowed me to attach files).\r\n\r\nI wrote up some basic documentation for the XML config file. Mostly for my personal reference so I didn't have to keep searching through code and blog posts, but figured I'd share what I put together. It's not pretty, but it gets the job done.",
+    "LastUpdatedDate": "2017-12-09T07:44:01.02-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "chirpy",
+    "ReportedDate": "2012-07-23T11:02:11.257-07:00",
+    "Status": {
+      "Name": "Active",
+      "Id": 2
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Config Documentation",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 4,
+    "Id": 153
+  },
+  "FileAttachments": [
+    {
+      "FileId": 462461,
+      "FileName": "chirpy-config-doc.html",
+      "DownloadUrl": ".\\462461"
+    }
+  ],
+  "Comments": []
+}
